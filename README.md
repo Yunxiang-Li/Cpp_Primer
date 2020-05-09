@@ -33,7 +33,7 @@ You can check all answers for C++ Primer 5th Edition in this repo.(Although all 
 
 ## FastLink
 
-- [Chapter 1. Getting Started](ch01/README.md)
+- [Chapter 1. Getting Started](Chapter 1. Getting Started/README.md)
 - Part I: The Basics
   - [Chapter 2. Variables and Basic Types]
   - [Chapter 3. Strings, Vectors, and Arrays]
