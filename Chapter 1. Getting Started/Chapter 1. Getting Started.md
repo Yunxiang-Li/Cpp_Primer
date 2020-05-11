@@ -308,6 +308,8 @@ If all equal, the count of this number will be printed out. If there are no dupl
 
 > <http://www.informit.com/title/032174113> contains a copy of Sales_item.h in the Chapter 1 code directory. Copy that file to your working directory. Use it to write a program that reads a set of book sales transactions, writing each transaction to the standard output.
 
+You may also use [Sales_item.h](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/Codes/Sales_item.h) here.
+
 check [code](ex1_20.cpp).
 
 Test it using the `data`/`book.txt`:
