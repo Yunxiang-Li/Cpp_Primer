@@ -254,15 +254,11 @@ int main()
     - Clear when there is only one static condition.
     - Readable when the global variables incremented in the body.
 
------
-
-[A similar question on Stack Overflow](http://stackoverflow.com/questions/2950931/for-vs-while-in-c-programming)
-
 ## Exercise 1.15
 
 > Write programs that contain the common errors discussed in the box on page 16. Familiarize yourself with the messages the compiler generates.
 
-Self-training.
+**Skip**
 
 ## Exercise 1.16
 
@@ -273,11 +269,13 @@ Self-training.
 
 int main()
 {
-    int sum = 0;
-    for (int value = 0; std::cin >> value; )
-        sum += value;
-    std::cout << sum << std::endl;
-    return 0;
+    int number, sum = 0;
+    std::cout << "Please input a set of integers: " << std::endl;
+
+    while (std::cin >> number)
+        sum += number;
+
+    std::cout << "The sum of all input integers is: " << sum << std::endl;
 }
 ```
 
