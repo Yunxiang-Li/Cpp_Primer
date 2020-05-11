@@ -111,9 +111,9 @@ int main()
 }
 ```
 
-Compiled result(g++):
+Compiled result:
 
-![ex1_7](https://cloud.githubusercontent.com/assets/1147451/8334581/4fb4a408-1acb-11e5-98e3-54c0929198ec.png)
+![ex1_7](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/Pictures/1.7.PNG)
 
 ## Exercise 1.8
 
