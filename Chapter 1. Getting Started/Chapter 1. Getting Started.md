@@ -147,11 +147,31 @@ Output:
     /**/ */ /*
 ```
 
-## [Exercise 1.9](ex1_09.cpp)
+## Exercise 1.9
 
-## [Exercise 1.10](ex1_10.cpp)
+>Write a program that uses a while to sum the numbers from 50 to 100.
 
-## [Exercise 1.11](ex1_11.cpp)
+```
+#include <iostream>
+
+int main()
+{
+    int i = 50;
+    int sum = 0;
+
+    while (i < 101) {
+        sum += i;
+        i++;
+    }
+    std::cout << "The sum of numbers from 50 to 100 is " << sum << std::endl;
+}
+```
+
+## Exercise 1.10
+
+>In addition to the ++ operator that adds 1 to its operand, there is a decrement operator (--) that subtracts 1. Use the decrement operator to write a while that prints the numbers from ten down to zero.
+
+## Exercise 1.11
 
 ## Exercise 1.12
 
