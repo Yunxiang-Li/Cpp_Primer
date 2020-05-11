@@ -201,7 +201,7 @@ for (int i = -100; i <= 100; ++i)
     sum += i;
 ```
 
-the loop sums the numbers from -100 to 100. the final value of sum is zero.
+This for loop add the sum of integers from -100 to 100 together, the final value is 0(since -100 + 100 = 0, -99 + 99 = 0, ..., -1 + 1 = 0, 0 = 0).
 
 ## Exercise 1.13
 
@@ -241,28 +241,7 @@ int main()
 
 **Ex1.11**:
 
-```cpp
-#include <iostream>
-
-int main()
-{
-    int small = 0, big = 0;
-    std::cout << "please input two integers:";
-    std::cin >> small >> big;
-
-    if (small > big) {
-        int tmp = small;
-        small = big;
-        big = tmp;
-    }
-
-    for (int i = small; i <= big; ++i)
-        std::cout << i << " ";
-    std::cout << std::endl;
-
-    return 0;
-}
-```
+[Rewrite 1.11 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/Codes/re%201.1%20Solution.cpp)
 
 ## Exercise 1.14
 
