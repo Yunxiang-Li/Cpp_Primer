@@ -85,9 +85,7 @@ std::cout << "The sum of " << v1;
 
 This program is illegal.
 
-**`[Error] expected primary-expression before '<<' token`**
-
-Fixed it: remove the spare semicolons.
+There should be no semicolons behind ```v1``` and ```v2```.
 
 ```cpp
 std::cout << "The sum of " << v1
