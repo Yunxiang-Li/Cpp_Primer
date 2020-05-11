@@ -20,4 +20,6 @@ int main()
         output(lower, higher);
     else
         output(higher, lower);
+    
+    return 0;
 }
