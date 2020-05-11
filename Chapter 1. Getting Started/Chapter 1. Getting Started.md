@@ -151,7 +151,7 @@ Output:
 
 >Write a program that uses a while to sum the numbers from 50 to 100.
 
-```
+```cpp
 #include <iostream>
 
 int main()
@@ -171,7 +171,25 @@ int main()
 
 >In addition to the ++ operator that adds 1 to its operand, there is a decrement operator (--) that subtracts 1. Use the decrement operator to write a while that prints the numbers from ten down to zero.
 
+```cpp
+#include <iostream>
+
+int main()
+{
+    int i = 10;
+
+    while (i > -1) {
+        std::cout << i << std::endl;
+        i--;
+    }
+}
+```
+
 ## Exercise 1.11
+
+>Write a program that prompts the user for two integers. Print each number in the range specified by those two integers.
+
+[1.11 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/Codes/1.11%20Solution.cpp)
 
 ## Exercise 1.12
 
