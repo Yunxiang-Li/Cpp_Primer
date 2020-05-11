@@ -164,6 +164,8 @@ int main()
         i++;
     }
     std::cout << "The sum of numbers from 50 to 100 is " << sum << std::endl;
+    
+    return 0;
 }
 ```
 
@@ -182,6 +184,8 @@ int main()
         std::cout << i << std::endl;
         i--;
     }
+    
+    return 0;
 }
 ```
 
@@ -276,6 +280,8 @@ int main()
         sum += number;
 
     std::cout << "The sum of all input integers is: " << sum << std::endl;
+    
+    return 0;
 }
 ```
 
@@ -283,13 +289,14 @@ int main()
 
 > What happens in the program presented in this section if the input values are all equal? What if there are no duplicated values?
 
-If all equal, the count will be printed out. If there are no duplicated values, A new line will be printed when `Enter` clicked.
+If all equal, the count of this number will be printed out. If there are no duplicated values, each line will be responsible for one single number.
 
 ## Exercise 1.18
 
 > Compile and run the program from this section giving it only equal values as input. Run it again giving it values in which no number is repeated.
 
-![ex1_18](https://cloud.githubusercontent.com/assets/1147451/8335404/0861c478-1ad0-11e5-8083-c05a0cd9e758.png)
+![ex1_18_1](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/Pictures/1.18_1.PNG)
+![ex1_18_2](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/Pictures/1.18_2.PNG)
 
 ## Exercise 1.19
 
