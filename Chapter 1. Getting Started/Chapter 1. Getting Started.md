@@ -130,9 +130,9 @@ std::cout << /* "*/" /* "/*" */;
 
 Compiled result(g++):
 
-![ex1_8](https://cloud.githubusercontent.com/assets/1147451/8334603/6aa321e0-1acb-11e5-988a-57e87a53b141.png)
+![ex1_8](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/Pictures/1.8.PNG)
 
-Corrected? just added a quote:
+I just added one more quote behind ```std::cout << /* "*/" */``` in third line to correct it
 
 ```cpp
 std::cout << "/*";
