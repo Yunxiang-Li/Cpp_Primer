@@ -302,7 +302,7 @@ If all equal, the count of this number will be printed out. If there are no dupl
 
 > Revise the program you wrote for the exercises in § 1.4.1 (p. 13) that printed a range of numbers so that it handles input in which the first number is smaller than the second.
 
-check [ex1_11.cpp](https://github.com/pezy/Cpp-Primer/blob/master/ch01/ex1_11.cpp)
+[1.19 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/Codes/1.11%20Solution.cpp)
 
 ## Exercise 1.20
 
