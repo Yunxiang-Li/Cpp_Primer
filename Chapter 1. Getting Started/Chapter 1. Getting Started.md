@@ -331,38 +331,30 @@ int main()
 
 The program should check whether the objects have the same ISBN.(check 1.5.2)
 
-[Code](ex1_21.cpp)
+[1.21 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/Codes/1.21%20Solution.cpp)
 
 ## Exercise 1.22
 
 > Write a program that reads several transactions for the same ISBN. Write the sum of all the transactions that were read.
 
-Tip: this program will appear in the section 1.6.
-
-[Code](ex1_22.cpp).
-
-![ex1_22](https://cloud.githubusercontent.com/assets/1147451/8335700/d85ee22c-1ad1-11e5-9612-1155145606c1.png)
+[1.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/Codes/1.22%20Solution.cpp).
 
 ## Exercise 1.23
 
 > Write a program that reads several transactions and counts
 how many transactions occur for each ISBN.
 
-Tip: please review the `1.4.4`.
-
-[Code](ex1_23.cpp).
+[1.23 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/Codes/1.23%20Solution.cpp).
 
 ## Exercise 1.24
 
 > Test the previous program by giving multiple transactions representing multiple ISBNs. The records for each ISBN should be grouped together.
 
-`data`/`book.txt` may be used as the records.
-
-![ex1_24](https://cloud.githubusercontent.com/assets/1147451/8335734/0fbefbbc-1ad2-11e5-9df3-fa1203dffb42.png)
+**Skip**
 
 ## Exercise 1.25
 
 > Using the `Sales_item.h` header from the Web site, compile and execute the bookstore program presented in this section.
 
-![ex1_25](https://cloud.githubusercontent.com/assets/1147451/8335742/1efb475c-1ad2-11e5-9484-69ae44b79385.png)
+**Skip**
 
