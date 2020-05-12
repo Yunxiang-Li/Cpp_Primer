@@ -310,11 +310,20 @@ If all equal, the count of this number will be printed out. If there are no dupl
 
 You may also use [Sales_item.h](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/Codes/Sales_item.h) here.
 
-check [code](ex1_20.cpp).
+```cpp
+#include <iostream>
+#include "Sales_item.h"
 
-Test it using the `data`/`book.txt`:
+int main()
+{
+    Sales_item item;
+    while (std::cin >> item) std::cout << item << std::endl;
 
-![ex1_20](https://cloud.githubusercontent.com/assets/1147451/8335638/8f5c2bca-1ad1-11e5-9c51-288382710df2.png)
+    return 0;
+}
+```
+
+![result](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/Pictures/1.20.PNG)
 
 ## Exercise 1.21
 
