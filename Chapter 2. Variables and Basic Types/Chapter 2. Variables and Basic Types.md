@@ -43,8 +43,6 @@ When it comes to **money**, precision **matters**!
 > std::cout << u - i << std::endl;
 > ```
 
-Output(g++ 4.8):
-
 ```shell
 32 4294967264 32 -32 0 0
 ```
