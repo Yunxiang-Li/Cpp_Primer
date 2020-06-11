@@ -136,10 +136,10 @@ Reference:
 
 int main()
 {
-    std::cout << "\062\115\012";
-    std::cout << "\062\t\115\012";
+    std::cout << "\x32\x4D\xA";
+    std::cout << "\x32\x9\x4D\xA";
+    return 0;
 }
-
 ```
 
 ## Exercise 2.9
