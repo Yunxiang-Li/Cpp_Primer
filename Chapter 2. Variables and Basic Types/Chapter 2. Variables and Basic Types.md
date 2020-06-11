@@ -114,7 +114,8 @@ However:
 > - (c) 1024f
 > - (d) 3.14L
 
-(a): Who goes with Fergus?(new line) "string"
+(a): "Who goes with Fergus?(new line)
+"
 
 (b): 31.4 "long double"
 
