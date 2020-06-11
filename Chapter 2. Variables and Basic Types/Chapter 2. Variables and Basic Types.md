@@ -85,7 +85,7 @@ int main()
 
 (c): double, float, long double.
 
-(d): decimal, unsigned decimal, double, double.
+(d): decimal integer, unsigned decimal integer, double, double.
 
 ## Exercise 2.6
 
@@ -96,12 +96,14 @@ int main()
 > int month = 09, day = 07;
 > ```
 
-The first line's integer is decimal.
+The first line's integers are decimal integers.
 
-The second line:
+The second line's integers are all octal integers.
+
+However:
 
 1. `int month = 09` is invalid, cause octal don't have digit `9`.
-1. `day` is octal.
+2. `day` is an octal integer.
 
 ## Exercise 2.7
 
