@@ -68,6 +68,7 @@ int main()
     return 0;
 }
 ```
+![result](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%202.%20Variables%20and%20Basic%20Types/Pictures/2.4.PNG)
 
 ## Exercise 2.5
 
