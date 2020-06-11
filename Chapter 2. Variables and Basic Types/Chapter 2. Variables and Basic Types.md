@@ -81,7 +81,7 @@ int main()
 
 (a): character literal, wide character literal, string literal, string wide character literal.
 
-(b): decimal, unsigned decimal, long decimal, unsigned long decimal, octal, hexadecimal.
+(b): decimal integer, unsigned decimal integer, long decimal integer, unsigned long decimal integer, octal integer, hexadecimal integer.
 
 (c): double, float, long double.
 
