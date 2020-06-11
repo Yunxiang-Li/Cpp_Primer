@@ -75,8 +75,8 @@ int main()
 > Determine the type of each of the following literals. Explain the differences among the literals in each of the four examples:
 >
 > - (a) 'a', L'a', "a", L"a"
-> - (b) 10, 10u, 10L, 10uL, 012, 0xC*
-> - (c) 3.14, 3.14f, 3.14L*
+> - (b) 10, 10u, 10L, 10uL, 012, 0xC
+> - (c) 3.14, 3.14f, 3.14L
 > - (d) 10, 10u, 10., 10e-2
 
 (a): character literal, wide character literal, string literal, string wide character literal.
