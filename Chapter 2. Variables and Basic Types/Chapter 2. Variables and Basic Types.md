@@ -150,20 +150,20 @@ int main()
 > - (c) `double salary = wage = 9999.99;`
 > - (d) `int i = 3.14;`
 
-(a): error: expected '(' for function-style cast or type construction.
+(a): error: expected primary-expression before ‘int’
 
 ```cpp
 int input_value = 0;
 std::cin >> input_value;
 ```
 
-(b): error: type 'double' cannot be narrowed to 'int' in initializer list.
+(b): error: narrowing conversion of ‘3.1400000000000001e+0’ from ‘double’ to ‘int’ inside { } [-Wnarrowing]
 
 ```cpp
 double i = { 3.14 };
 ```
 
-(c): if declared 'wage' before, it's right. Otherwise, error would be happened: `error: use of undeclared identifier 'wage'`
+(c): if declared 'wage' before, it's right. Otherwise, error would be happened: `error: ‘wage’ was not declared in this scope`
 
 ```cpp
 double wage;
@@ -190,12 +190,10 @@ double i = 3.14;
 > }
 > ```
 
-- `global_str` is global variable, so the value is empty string.
-- `global_int` is global variable, so the value is zero.
-- `local_int` is a local variable which is not uninitialized, so it has a undefined value.
-- `local_str` is also a local variable which is not uninitialized, but it has a value that is defined by the class. So it is empty string.
-
-PS: please read P44 in the English version, P40 in Chinese version to get more information.
+- `global_str` is global variable, so the value is an empty string.
+- `global_int` is global variable, so the value is `0`.
+- `local_int` is a local variable which is not uninitialized, so it has an undefined value.
+- `local_str` is also a local variable which is not uninitialized, but it has a value that is defined by the class. So it is also an empty string.
 
 > Uninitialized objects of built-in type defined inside a function body have a undefined value. Objects of class type that we do not explicitly initialize have a value that is defined by class.
 
@@ -220,6 +218,12 @@ PS: please read P44 in the English version, P40 in Chinese version to get more i
 > - (e) `double Double = 3.14;`
 
 `a`, `c`, `d` are invalid.
+
+for `a`, double is a keyword we cannot use as variable name.
+
+for `c`, `-` is not allowed in variable names.
+
+for `d`, We cannot use numbers as start of a variable name.
 
 ## Exercise 2.13
 
@@ -247,7 +251,7 @@ for (int i = 0; i != 10; ++i)
 std::cout << i << " " << sum << std::endl;
 ```
 
-Yes. It is legal.Printed:`100, 45.`
+It is legal.Printed:`100, 45.`
 
 ## Exercise 2.15
 
