@@ -262,7 +262,7 @@ It is legal.Printed:`100, 45.`
 > - (d) `int &rval3;`
 
 - (a): valid.
-- (b): invalid. initializer must be an object.
+- (b): invalid. initializer must be an object or variable.
 - (c): valid.
 - (d): invalid. a reference must be initialized.
 
@@ -280,10 +280,10 @@ It is legal.Printed:`100, 45.`
 > - (c) i = r2;
 > - (d) r1 = d;
 
-- (a): valid. let d equal 3.14159.
+- (a): valid. let `d = 3.14159`
 - (b): valid. automatic convert will happen.
 - (c): valid. but value will be truncated.
-- (d): valid. but value will be truncated.
+- (d): valid. but value will be truncated. Same as (c)
 
 ## Exercise 2.17
 
