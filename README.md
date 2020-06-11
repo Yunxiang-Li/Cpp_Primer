@@ -35,7 +35,7 @@ You can check all answers for C++ Primer 5th Edition in this repo.(Although all 
 
 - [Chapter 1. Getting Started](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%201.%20Getting%20Started/README.md)
 - Part I: The Basics
-  - [Chapter 2. Variables and Basic Types]
+  - [Chapter 2. Variables and Basic Types](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%202.%20Variables%20and%20Basic%20Types/Chapter%202.%20Variables%20and%20Basic%20Types.md)
   - [Chapter 3. Strings, Vectors, and Arrays]
   - [Chapter 4. Expressions]
   - [Chapter 5. Statements]
