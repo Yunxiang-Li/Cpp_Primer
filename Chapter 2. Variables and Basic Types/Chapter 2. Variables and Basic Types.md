@@ -302,7 +302,7 @@ It is legal.Printed:`100, 45.`
 > Write code to change the value of a pointer. Write code to change the value to which the pointer points.
 
 ```cpp
-int a = 0, b = 1;
+int a = 1, b = 10;
 int *p1 = &a, *p2 = p1;
 
 // change the value of a pointer.
@@ -321,16 +321,14 @@ the pointer is "points to" any other type.
 
 the reference is "another name" of an **object**.
 
+reference itself does not have space, pointer itself does have space.
+
 **key difference**:
 
 1. a reference is another name of an **already existing** object. a pointer is an object in its **own right**.
-1. Once initialized, a reference remains **bound to** its initial object. There is **no way** to rebind a reference to refer to a different object. a pointer can be **assigned** and **copied**.
-1. a reference always get the object to which the reference was initially bound. a single pointer can point to **several different objects** over its lifetime.
-1. a reference must be initialized. a pointer need **not be** initialized at the time it is defined.
-
-**Usage advise**:
-
-check [here](http://www.parashift.com/c%2B%2B-faq-lite/refs-vs-ptrs.html)
+2. Once initialized, a reference remains **bound to** its initial object. There is **no way** to rebind a reference to refer to a different object. a pointer can be **assigned** and **copied**.
+3. a reference always get the object to which the reference was initially bound. a single pointer can point to **several different objects** over its lifetime.
+4. a reference must be initialized. a pointer does **not** need to be initialized at the time it is defined.
 
 ## Exercise 2.20
 
@@ -341,7 +339,7 @@ check [here](http://www.parashift.com/c%2B%2B-faq-lite/refs-vs-ptrs.html)
 > int *p1 = &i; *p1 = *p1 * *p1;
 > ```
 
-`p1` pointer to `i`, `i`'s value changed to 1764(42*42)
+`p1` pointer to `i`, Change `i`'s value to 42 * 42 (1764)
 
 ## Exercise 2.21
 
@@ -356,7 +354,7 @@ check [here](http://www.parashift.com/c%2B%2B-faq-lite/refs-vs-ptrs.html)
 > - (c) `int *p = &i;`
 
 - (a): illegal, cannot initialize a variable of type `double *` with an rvalue of type `int *`
-- (b): illegal, cannot initialize a variable of type `int *` with an lvalue of type `int`
+- (b): illegal, cannot initialize a variable of type `int *` with an rvalue of type `int`
 - (c): legal.
 
 ## Exercise 2.22
@@ -364,8 +362,8 @@ check [here](http://www.parashift.com/c%2B%2B-faq-lite/refs-vs-ptrs.html)
 > Assuming p is a pointer to int, explain the following code:
 >
 > ```cpp
-> if (p) // whether p is nullptr?
-> if (*p) // whether the value pointed by p is zero?
+> if (p) //  Check whether p is nullptr or not, if not nullptr, the result is true, else false.
+> if (*p) // Check whether the value pointed by p is zero or not, if zero, the result is false, else true.
 > ```
 
 ## Exercise 2.23
