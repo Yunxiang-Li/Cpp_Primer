@@ -401,7 +401,7 @@ Because the type `void*` is a special pointer type that can hold the address of 
 > Which of the following are legal? For those that are illegal, explain why.
 >
 > ```cpp
-> const int buf;      // illegal, buf is uninitialized const.
+> const int buf;      // illegal, const must be initialized when declaration.
 > int cnt = 0;        // legal.
 > const int sz = cnt; // legal.
 > ++cnt;              // legal.
@@ -413,13 +413,13 @@ Because the type `void*` is a special pointer type that can hold the address of 
 > Which of the following initializations are legal? Explain why.
 >
 > ```cpp
-> int i = -1, &r = 0;         // illegal, r must refer to an object.
-> int *const p2 = &i2;        // legal.
-> const int i = -1, &r = 0;   // legal.
-> const int *const p3 = &i2;  // legal.
-> const int *p1 = &i2;        // legal
-> const int &const r2;        // illegal, r2 is a reference that cannot be const.
-> const int i2 = i, &r = i;   // legal.
+> (a) int i = -1, &r = 0;         // illegal, r must refer to an object.
+> (b) int *const p2 = &i2;        // legal.
+> (c) const int i = -1, &r = 0;   // legal.
+> (d) const int *const p3 = &i2;  // legal.
+> (e) const int *p1 = &i2;        // legal
+> (f) const int &const r2;        // illegal, r2 is a reference that cannot be const.
+> (g) const int i2 = i, &r = i;   // legal.
 > ```
 
 ## Exercise 2.28
@@ -427,10 +427,10 @@ Because the type `void*` is a special pointer type that can hold the address of 
 > Explain the following definitions. Identify any that are illegal.
 >
 > ```cpp
-> int i, *const cp;       // illegal, cp must initialize.
-> const int ic, &r = ic;  // illegal, ic must initialize.
-> int *p1, *const p2;     // illegal, p2 must initialize.
-> const int *const p3;    // illegal, p3 must initialize.
+> int i, *const cp;       // illegal, cp must be initialized since it is a const pointer.
+> const int ic, &r = ic;  // illegal, ic must be initialized since it is a const integer.
+> int *p1, *const p2;     // illegal, p2 must be initialized since it is a const pointer.
+> const int *const p3;    // illegal, p3 must be initialized.
 > const int *p;           // legal. a pointer to const int.
 > ```
 
@@ -458,8 +458,9 @@ Because the type `void*` is a special pointer type that can hold the address of 
 > ```
 
 - v2 is top-level `const`, p2 is low-level `const`.
-- p3: right-most `const` is top-level, left-most is low-level.
+- p3: both top-level and low-level `const`.
 - r2 is low-level `const`.
+- p1 is neither top-level nor low-level, v1 is neither top-level nor low-level `const`.
 
 ## Exercise 2.31
 
