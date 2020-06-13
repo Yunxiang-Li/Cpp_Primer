@@ -511,7 +511,7 @@ int null = 0, *p = NULL;
 
 > Write a program containing the variables and assignments from the previous ## Exercise. Print the variables before and after the assignments to check whether your predictions in the previous ## Exercise were correct. If not, study the examples until you can convince yourself you know ￼￼what led you to the wrong conclusion.
 
-check the [2.34 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%202.%20Variables%20and%20Basic%20Types/Codes/2.34%20Solution.cpp).
+[2.34 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%202.%20Variables%20and%20Basic%20Types/Codes/2.34%20Solution.cpp)
 
 ## Exercise 2.35
 
@@ -532,7 +532,7 @@ check the [2.34 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/
 - `j2` is `const int`.
 - `k2` is `const int&`.
 
-check [Here](ex2_35.cpp).
+[2.35 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%202.%20Variables%20and%20Basic%20Types/Codes/2.35%20Solution.cpp)
 
 ## Exercise 2.36
 
@@ -546,7 +546,7 @@ check [Here](ex2_35.cpp).
 > ++d;
 > ```
 
-`c` is an int, `d` is a reference of `a`. all their value are `4`.
+`c` is an int, `d` is a reference of `a`(integer). All their value are `4`.
 
 ## Exercise 2.37
 
@@ -566,8 +566,6 @@ check [Here](ex2_35.cpp).
 > Describe the differences in type deduction between `decltype` and auto. Give an example of an expression where auto and `decltype` will deduce the same type and an example where they will deduce differing types.
 
 The way `decltype` handles top-level `const` and references differs **subtly** from the way `auto` does. Another important difference between `decltype` and `auto` is that the deduction done by `decltype` depends on the **form** of its given expression.
-
-so the key of difference is **subtly** and **form**.
 
 ```cpp
 int i = 0, &r = i;
@@ -737,7 +735,7 @@ int main()
 
 > Write your own version of the `Sales_data.h` header and use it to rewrite the ## Exercise from 2.6.2(p. 76)
 
-- [Sales_data.h](ex2_42_sales_data.h)
-- [1.5.1.](ex2_42_1.cpp)
-- [1.5.2.](ex2_42_2.cpp)
-- [1.6.](ex2_42_3.cpp)
+- [Sales_data.h](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%202.%20Variables%20and%20Basic%20Types/Codes/2.42%20Sales_data.h)
+- [1.5.1.](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%202.%20Variables%20and%20Basic%20Types/Codes/2.42%20Solution1.cpp)
+- [1.5.2.](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%202.%20Variables%20and%20Basic%20Types/Codes/2.42%20Solution2.cpp)
+- [1.6.](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%202.%20Variables%20and%20Basic%20Types/Codes/2.42%20Solution3.cpp)
