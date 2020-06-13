@@ -511,7 +511,7 @@ int null = 0, *p = NULL;
 
 > Write a program containing the variables and assignments from the previous ## Exercise. Print the variables before and after the assignments to check whether your predictions in the previous ## Exercise were correct. If not, study the examples until you can convince yourself you know ￼￼what led you to the wrong conclusion.
 
-check the [code](ex2_34.cpp).
+check the [2.34 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%202.%20Variables%20and%20Basic%20Types/Codes/2.34%20Solution.cpp).
 
 ## Exercise 2.35
 
