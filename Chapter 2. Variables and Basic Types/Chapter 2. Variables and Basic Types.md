@@ -488,6 +488,12 @@ illegal.
 int null = 0, *p = nullptr;
 ```
 
+or(need including <cstdlib> header file)
+
+```cpp
+int null = 0, *p = NULL;
+```
+
 ## Exercise 2.33
 
 > Using the variable definitions from this section, determine what happens in each of these assignments:
