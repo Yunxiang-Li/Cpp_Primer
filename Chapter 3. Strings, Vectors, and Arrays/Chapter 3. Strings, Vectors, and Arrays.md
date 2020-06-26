@@ -63,3 +63,14 @@ It will be no differences, since comipler will detect its type when we use `auto
 [3.8_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.8_2.cpp)
 
 I prefer the range for one since it is the easiest one to write.
+
+# Exercise 3.9 
+
+**What does the following program do? Is it valid? If not, why not?**
+
+```
+string s;
+cout << s[0] << endl;
+```
+
+Try to print the first element of the string but it is invalid since the s is not initialized thus this is an undefined behavior.
