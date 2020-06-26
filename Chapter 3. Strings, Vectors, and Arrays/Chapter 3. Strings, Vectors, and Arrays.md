@@ -80,3 +80,13 @@ Try to print the first element of the string but it is invalid since the s is no
 **Write a program that reads a string of characters including punctuation and writes what was read but with the punctuation removed.**
 
 [3.10 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.10.cpp)
+
+# Exercise 3.11
+
+**Is the following range `for` legal? If so, what is the type of `c`?**
+```
+const string s = "Keep out!";
+for (auto &c : s) { /* ...  */ }
+```
+
+If we just read each `c`'s value, then it is legal. If we want to change each `c` 's value then it is illegal since `c`'s type is const char.
