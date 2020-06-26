@@ -47,3 +47,19 @@ For `cin`, It will ignore the whitespace character if it is the first character,
 **Use a range for to change all the characters in a string to X.**
 
 [3.6 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.6.cpp)
+
+# Exercise 3.7
+
+**What would happen if you define the loop control variable in the previous exercise as type char? Predict the results and then change your program to use a char to see if you were right.**
+
+It will be no differences, since comipler will detect its type when we use `auto& c` and recognize it as `char& c`.
+
+# Exercise 3.8
+
+**Rewrite the program in the first exercise, first using a while and again using a traditional for loop. Which of the three approaches do you prefer and why?**
+
+[3.8_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.8_1.cpp)
+
+[3.8_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.8_2.cpp)
+
+I prefer the range for one since it is the easiest one to write.
