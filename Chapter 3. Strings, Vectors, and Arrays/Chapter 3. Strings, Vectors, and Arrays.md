@@ -74,3 +74,9 @@ cout << s[0] << endl;
 ```
 
 Try to print the first element of the string but it is invalid since the s is not initialized thus this is an undefined behavior.
+
+# Exercise 3.10 
+
+**Write a program that reads a string of characters including punctuation and writes what was read but with the punctuation removed.**
+
+[3.10 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.10.cpp)
