@@ -95,15 +95,15 @@ If we just read each `c`'s value, then it is legal. If we want to change each `c
 
 **Which, if any, of the following vector definitions are in error? For those that are legal, explain what the definition does. For those that are not legal, explain why they are illegal.**
 
-(a) vector<vector<int>> ivec; 
+> (a) vector<vector<int>> ivec; 
   
 legal
   
-(b) vector<string> svec = ivec;
+> (b) vector<string> svec = ivec;
 
 illegal, ivec is of type `vector<int>`, svec is of type `string`, copy initialization cannot work here.
   
-(c) vector<string> svec(10, "null");
+> (c) vector<string> svec(10, "null");
 
 legal, svec now has 10 "null" elements.
 
@@ -111,30 +111,30 @@ legal, svec now has 10 "null" elements.
 
 **How many elements are there in each of the following vectors? What are the values of the elements?**
 
-(a) vector<int> v1; 
+> (a) vector<int> v1; 
   
   0 element.
   
-(b) vector<int> v2(10);
+> (b) vector<int> v2(10);
   
   10 elements with 0(default) value.
   
-(c) vector<int> v3(10, 42);
+> (c) vector<int> v3(10, 42);
   
   10 elements with `42` value.
   
-(d) vector<int> v4{10};
+> (d) vector<int> v4{10};
   
   1 element with `10` value.
   
-(e) vector<int> v5{10, 42};
+> (e) vector<int> v5{10, 42};
   
   2 elements with `10` and `42` value.
   
-(f) vector<string> v6{10};
+> (f) vector<string> v6{10};
   
   10 elements with "" value.
   
-(g) vector<string> v7{10, "hi"};
+> (g) vector<string> v7{10, "hi"};
 
   10 elements with "hi" value.
