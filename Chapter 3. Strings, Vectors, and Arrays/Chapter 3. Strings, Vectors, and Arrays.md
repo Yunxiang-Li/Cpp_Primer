@@ -90,3 +90,13 @@ for (auto &c : s) { /* ...  */ }
 ```
 
 If we just read each `c`'s value, then it is legal. If we want to change each `c` 's value then it is illegal since `c`'s type is const char.
+
+# Exercise 3.12
+
+**Which, if any, of the following vector definitions are in error? For those that are legal, explain what the definition does. For those that are not legal, explain why they are illegal.**
+
+(a) vector<vector<int>> ivec; 
+  
+(b) vector<string> svec = ivec;
+  
+(c) vector<string> svec(10, "null");
