@@ -97,6 +97,12 @@ If we just read each `c`'s value, then it is legal. If we want to change each `c
 
 (a) vector<vector<int>> ivec; 
   
+legal
+  
 (b) vector<string> svec = ivec;
+
+illegal, ivec is of type `vector<int>`, svec is of type `string`, copy initialization cannot work here.
   
 (c) vector<string> svec(10, "null");
+
+legal, svec now has 10 "null" elements.
