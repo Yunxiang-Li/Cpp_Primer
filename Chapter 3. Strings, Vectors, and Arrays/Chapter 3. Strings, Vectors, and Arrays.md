@@ -110,6 +110,7 @@ legal, svec now has 10 "null" elements.
 # Exercise 3.13
 
 **How many elements are there in each of the following vectors? What are the values of the elements?**
+
 (a) vector<int> v1; 
   
   0 element.
