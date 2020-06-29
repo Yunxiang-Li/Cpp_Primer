@@ -13,6 +13,7 @@ int main()
     string str;
     cout << "Please input a sequence of strings" << '\n';
 
+    //Push each string to the vector.
     while (cin >> str)
         vec.push_back(str);
 
