@@ -10,6 +10,7 @@ int main()
 {
     string strCct, strEach;
 
+    //Concatenating what is read into one large string
     while (cin >> strEach) {
         strCct += strEach;
 
