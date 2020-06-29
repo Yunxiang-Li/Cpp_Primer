@@ -12,6 +12,7 @@ int main()
 
     decltype(str.size()) index = 0;
 
+    //Change each char of the string to 'X'.
     while (index < str.size()) {
         str[index] = 'x';
         index++;
