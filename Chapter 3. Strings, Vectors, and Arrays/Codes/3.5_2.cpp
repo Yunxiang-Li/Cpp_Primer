@@ -11,7 +11,7 @@ int main()
     string strCct, strEach;
 
     while (cin >> strEach) {
-
+        //Separate adjacent input strings by a space
         strCct += strEach + " ";
 
         //When we press enter to go to a new line, the input process is over.
