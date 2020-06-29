@@ -13,8 +13,11 @@ int main()
 
     cout << "Please input a string of characters with punctuations!" << '\n';
 
+    //For each line of string
     while (getline(cin, str)) {
+        //For each char of the string
         for (auto c : str)
+            //Ouput if it is not a punctuation.
             if (!ispunct(c))
                 cout << c ;
         cout << '\n';
