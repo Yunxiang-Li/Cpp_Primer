@@ -12,6 +12,7 @@ int main()
     vector<int> v1;
     cout << "{\n \"v1\":{\"size\":\"" << v1.size() << "\",\"value\":[";
     for (auto i : v1) cout << i << ",";
+    //'\b' is used to delete the last comma since there is no element behind the last element.
     if (!v1.empty()) cout << "\b";
     cout << "]}" << endl;
 
