@@ -166,10 +166,40 @@ legal, svec now has 10 "null" elements.
 # Exercise 3.18
 
 **Is the following program legal? If not, how might you fix it?**
+
+Not legal, because `ivec` is initialized as an empty vector which means its size is 0, thus using subscript to access first element of `ivec` is an undefined behavior.
+
 ```
 vector<int> ivec;
 ivec[0] = 42;
 ```
+We can fix it like this:
+```
+#include <vector>
+
+using std::vector;
+
+int main()
+{
+    vector<int> ivec(1);
+    ivec[0] = 42;
+    return 0;
+}
+```
+Or:
+```
+#include <vector>
+
+using std::vector;
+
+int main()
+{
+    vector<int> ivec{0};
+    ivec[0] = 42;
+    return 0;
+}
+```
+
 # Exercise 3.19
 
 **List three ways to define a vector and give it ten elements, each with the value 42. Indicate whether there is a preferred way to do so and why.**
