@@ -14,8 +14,11 @@ int main()
     cout << "Please input a sequence of strings" << '\n';
 
     //Push each string to the vector.
-    while (cin >> str)
+    while (cin >> str) {
+        //When user input "end", break the loop.
+        if (str == "end")
+            break;
         vec.push_back(str);
-
+    }
     return 0;
 }
