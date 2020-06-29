@@ -10,6 +10,7 @@ int main()
 {
     string word;
 
+    //Output one word at a time.
     while (cin >> word) {
         cout << word << '\n';
     }
