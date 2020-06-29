@@ -11,6 +11,7 @@ int main()
     int i;
     cout << "Please input a sequence of ints" << '\n';
 
+    //Push each integer to the vector.
     while (cin >> i)
         vec.push_back(i);
 
