@@ -8,6 +8,7 @@ using std::string;
 using std::cout;
 using std::endl;
 
+//Check vector<int> objects' size and values.
 void check(const vector<int>& vec)
 {
     if (vec.empty())
@@ -15,10 +16,12 @@ void check(const vector<int>& vec)
     else {
         cout << "size: " << vec.size() << "; values:";
         for (auto it = vec.begin(); it != vec.end(); ++it) cout << *it << ",";
+        //Use '\b' to delete the last comma since there is no element after the last element.
         cout << "\b." << endl;
     }
 }
 
+//Check vector<string> objects' size and values.
 void check(const vector<string>& vec)
 {
     if (vec.empty())
@@ -31,6 +34,7 @@ void check(const vector<string>& vec)
                      << ",";
             else
                 cout << *it << ",";
+        //Use '\b' to delete the last comma since there is no element after the last element.
         cout << "\b." << endl;
     }
 }
