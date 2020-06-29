@@ -138,3 +138,15 @@ legal, svec now has 10 "null" elements.
 > (g) vector<string> v7{10, "hi"};
 
   10 elements with "hi" value.
+
+# Exercise 3.14
+
+**Write a program to read a sequence of ints from cin and store those values in a vector.**
+
+[3.14 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.14.cpp)
+
+# Exercise 3.15
+
+**Repeat the previous program but read strings this time.**
+
+[3.15 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.15.cpp)
