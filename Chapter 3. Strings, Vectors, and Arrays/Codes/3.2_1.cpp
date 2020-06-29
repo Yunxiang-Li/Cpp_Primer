@@ -11,6 +11,7 @@ int main()
 {
     string line;
     
+    //Output one line at a time
     while (getline(cin, line)) {
         cout << line << '\n';
     }
