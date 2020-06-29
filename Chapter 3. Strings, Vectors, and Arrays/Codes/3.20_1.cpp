@@ -27,7 +27,7 @@ int main()
 
     else {
         for (decltype(vec.size()) i = 0; i < vec.size() - 1; i++) {
-            cout << "Sum of every two adjacent elements is " << vec[i] + vec[i + 1] << '\n';
+            cout << "Sum of these two adjacent elements is " << vec[i] + vec[i + 1] << '\n';
         }
     }
 
