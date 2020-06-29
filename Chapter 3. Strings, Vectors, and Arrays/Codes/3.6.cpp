@@ -10,6 +10,7 @@ int main()
 {
     string str ("This is a simple string");
 
+    //Change each char of a string to 'X'.
     for (auto &c : str)
         c = 'X';
 
