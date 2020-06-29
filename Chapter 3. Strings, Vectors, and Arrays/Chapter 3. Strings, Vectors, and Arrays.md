@@ -161,6 +161,8 @@ legal, svec now has 10 "null" elements.
 
 **Read a sequence of words from cin and store the values a vector. After you’ve read all the words, process the vector and change each word to uppercase. Print the transformed elements, eight words to a line.**
 
+[3.17 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.17.cpp)
+
 # Exercise 3.18
 
 **Is the following program legal? If not, how might you fix it?**
