@@ -2,6 +2,7 @@
 #include <vector>
 using std::vector;
 
+// Define a vector and give it ten elements in three ways.
 int main()
 {
     vector<int> ivec1(10, 42);
