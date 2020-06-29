@@ -150,3 +150,28 @@ legal, svec now has 10 "null" elements.
 **Repeat the previous program but read strings this time.**
 
 [3.15 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.15.cpp)
+
+# Exercise 3.16
+
+**Write a program to print the size and contents of the vectors from exercise 3.13. Check whether your answers to that exercise were correct. If not, restudy § 3.3.1 (p. 97) until you understand why you were wrong.**
+
+[3.16 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.16.cpp)
+
+# Exercise 3.17
+
+**Read a sequence of words from cin and store the values a vector. After you’ve read all the words, process the vector and change each word to uppercase. Print the transformed elements, eight words to a line.**
+
+# Exercise 3.18
+
+**Is the following program legal? If not, how might you fix it?**
+```
+vector<int> ivec;
+ivec[0] = 42;
+```
+# Exercise 3.19
+
+**List three ways to define a vector and give it ten elements, each with the value 42. Indicate whether there is a preferred way to do so and why.**
+
+# Exercise 3.20
+
+**Read a set of integers into a vector. Print the sum of each pair of adjacent elements. Change your program so that it prints the sum of the first and last elements, followed by the sum of the second and second-to-last, and so on.**
