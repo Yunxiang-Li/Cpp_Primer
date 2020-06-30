@@ -233,3 +233,9 @@ I believe the first is the best since it is the shortest.
 **Write a program to create a vector with ten int elements. Using an iterator, assign each element a value that is twice its current value. Test your program by printing the vector.**
 
 [3.23 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.23.cpp)
+
+# Exercise 3.24: Redo the last exercise from § 3.3.3 (p. 105) using iterators.
+
+[3.24_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.24_1.cpp)
+
+[3.24_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.24_2.cpp)
