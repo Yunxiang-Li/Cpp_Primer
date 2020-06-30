@@ -11,14 +11,22 @@ int main()
 {
     vector<string> vec;
     string str;
-    while (cin >> str)
+    while (cin >> str) {
+        //When user input end which means the first paragraph ends, break the loop.
+        if (str == "end")
+            break;
         vec.push_back(str);
+    }
 
+
+    //Change elements in text that correspond to the first paragraph to all uppercase.
     for (auto it = vec.begin(); it != vec.cend() && !(it -> empty()); it++) {
         for (auto &c : (*it)) {
             c = toupper(c);
         }
-        cout << (*it) << '\n';
+        
+        //Print the content.
+        cout << (*it) << ' ';
     }
 
     return 0;
