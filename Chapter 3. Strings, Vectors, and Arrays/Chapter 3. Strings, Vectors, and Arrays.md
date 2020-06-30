@@ -252,6 +252,6 @@ I believe the first is the best since it is the shortest.
 
 In the binary search program on page 112, why did we write `mid = beg + (end - beg) / 2;` instead of `mid = (beg + end) /2;`?
 
-Because the iterator of vector don't define the + operator between the two iterators[link](http://www.cplusplus.com/reference/iterator/RandomAccessIterator/). It is illegal to add two iterators.
+Because [the iterator of vector don't define the + operator between the two iterators](http://www.cplusplus.com/reference/iterator/RandomAccessIterator/). It is illegal to add two iterators.
 
 We can only use the subtraction between the two iterators.
