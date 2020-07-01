@@ -290,3 +290,11 @@ int main() {
 }
 ```
 string is not a built-in type, thus compiler will set it to empty, `sa = ""` and `sa2 = ""`(size does not matter here), integer is a built-in type, and int array `ia` is out of any functions, thus `ia = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}`, `ia2` is in main function, thus its value is undefined.
+
+# Exercise 3.29
+
+**List some of the drawbacks of using an array instead of a vector.**
+
+- 1. Array's size is fixed after it is initialized, thus we cannot modify its size even when we need to.
+- 2. Arrays have to be deallocated explicitly if defined dynamically whereas vectors are automatically de-allocated from heap memory.
+- 3. Arrays cannot be returned unless dynamically allocated from a function whereas vectors can be returned from a function.
