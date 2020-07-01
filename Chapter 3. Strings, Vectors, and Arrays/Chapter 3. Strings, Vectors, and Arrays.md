@@ -255,3 +255,38 @@ In the binary search program on page 112, why did we write `mid = beg + (end - b
 Because [the iterator of vector don't define the + operator between the two iterators](http://www.cplusplus.com/reference/iterator/RandomAccessIterator/). It is illegal to add two iterators.
 
 We can only use the subtraction between the two iterators.
+
+# Exercise 3.27
+
+**Assuming txt_size is a function that takes no arguments and returns an int value, which of the following definitions are illegal? Explain why.**
+
+> unsigned buf_size = 1024;
+
+(a) int ia[buf_size];
+
+Illegal, ia's dimension value must be a constant expression.
+
+(b) int ia[4 * 7 - 14];
+
+Legal, ia's dimension value is a constant expression(14 here).
+
+(c) int ia[txt_size()];
+
+Illegal, The dimension value must be a constant expression. We can change `txt_size()` function to `constexpr`
+
+(d) char st[11] = "fundamental";
+
+Illegal, the string's size is 11("fundamental" 's length) + 1('\0' null terminator's size) = 12 but the char array `st` can only hold 11 elements.
+
+# Exercise 3.28
+
+**What are the values in the following arrays?**
+```
+string sa[10];
+int ia[10];
+int main() {
+    string sa2[10];
+    int    ia2[10];
+}
+```
+string is not a built-in type, thus compiler will set it to empty, `sa = ""` and `sa2 = ""`(size does not matter here), integer is a built-in type, and int array `ia` is out of any functions, thus `ia = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}`, `ia2` is in main function, thus its value is undefined.
