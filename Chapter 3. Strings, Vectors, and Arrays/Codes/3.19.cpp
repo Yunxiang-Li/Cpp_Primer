@@ -14,4 +14,6 @@ int main()
     //For loop initialization.
     vector<int> ivec3;
     for (int i = 0; i != 10; ++i) ivec3.push_back(42);
+    
+    return 0;
 }
