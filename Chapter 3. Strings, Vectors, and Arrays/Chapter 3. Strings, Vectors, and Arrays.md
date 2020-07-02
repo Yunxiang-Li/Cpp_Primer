@@ -331,3 +331,13 @@ Size of `ia` is 10, so the largest index of `ia` is 9 (index starts from 0). `ix
 **What would happen if we did not initialize the scores array in the program on page 116?**
 
 If we did not initialize the `scores` array, since the array is in the main function, thus the array is undefined(built-in type int will not be initialized as 0 if it is inside any functions. This attempt is an undefined behavior.
+
+# Exercise 3.34
+
+**Given that p1 and p2 point to elements in the same array, what does the following code do? Are there values of p1 or p2 that make this code illegal?**
+
+> p1 += p2 - p1;
+
+`p1 += p2 - p1;` means `p1 = p1 + ptrdiff_t(p2 - p1) = p2;`
+
+Here comes a tricky part, if we directly write  `p1 = p1 + p2 - p1` the compiler will not compile since it will try calculate `p1 + p2` first, we can not add two pointers together since operator `+` is not defined here. This code is very smart and if `p2` and `p1` are legal then this code is always legal.
