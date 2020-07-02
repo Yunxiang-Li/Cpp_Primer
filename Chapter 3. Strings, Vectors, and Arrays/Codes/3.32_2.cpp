@@ -29,6 +29,8 @@ int main()
     for (auto& element : ia)
         cout << element << ' ';
     cout << '\n';
+    
+    return 0;
 }
 
 
