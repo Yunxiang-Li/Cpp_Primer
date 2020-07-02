@@ -298,3 +298,29 @@ string is not a built-in type, thus compiler will set it to empty, `sa = ""` and
 - 1. Array's size is fixed after it is initialized, thus we cannot modify its size even when we need to.
 - 2. Arrays have to be deallocated explicitly if defined dynamically whereas vectors are automatically de-allocated from heap memory.
 - 3. Arrays cannot be returned unless dynamically allocated from a function whereas vectors can be returned from a function.
+
+# Exercise 3.30
+
+**Identify the indexing errors in the following code:**
+
+```
+constexpr size_t array_size = 10;
+int ia[array_size];
+for (size_t ix = 1; ix <= array_size; ++ix)      
+  ia[ix] = ix;
+```
+
+Size of `ia` is 10, so the largest index of `ia` is 9 (index starts from 0). `ix` cannot be 10(larger than the largest index of `ia`).
+
+# Exercise 3.31
+
+**Write a program to define an array of ten ints. Give each element the same value as its position in the array.**
+
+[3.31 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.31.cpp)
+
+# Exercise 3.32
+
+**Copy the array you defined in the previous exercise into another array. Rewrite your program to use vectors.**
+
+[3.32_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.32_1.cpp)
+[3.32_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.32_2.cpp)
