@@ -1,9 +1,7 @@
 #include <iostream>
 #include <cstddef>
 
-using std::cin;
 using std::cout;
-using std::iterator;
 using std::begin;
 using std::end;
 using std::min;
