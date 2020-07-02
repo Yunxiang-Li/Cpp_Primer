@@ -341,3 +341,9 @@ If we did not initialize the `scores` array, since the array is in the main func
 `p1 += p2 - p1;` means `p1 = p1 + ptrdiff_t(p2 - p1) = p2;`
 
 Here comes a tricky part, if we directly write  `p1 = p1 + p2 - p1` the compiler will not compile since it will try calculate `p1 + p2` first, we can not add two pointers together since operator `+` is not defined here. This code is very smart and if `p2` and `p1` are legal then this code is always legal.
+
+# Exercise 3.35
+
+**Using pointers, write a program to set the elements in an array to zero.**
+
+[3.35 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.35.cpp)
