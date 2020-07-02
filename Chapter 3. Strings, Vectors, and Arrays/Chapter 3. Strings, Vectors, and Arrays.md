@@ -323,6 +323,7 @@ Size of `ia` is 10, so the largest index of `ia` is 9 (index starts from 0). `ix
 **Copy the array you defined in the previous exercise into another array. Rewrite your program to use vectors.**
 
 [3.32_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.32_1.cpp)
+
 [3.32_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.32_2.cpp)
 
 # Exercise 3.33
