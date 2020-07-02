@@ -28,4 +28,6 @@ int main()
     for (auto& element : ib)
         cout << element << ' ';
     cout << '\n';
+    
+    return 0;
 }
