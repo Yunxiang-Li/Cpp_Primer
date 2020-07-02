@@ -347,3 +347,7 @@ Here comes a tricky part, if we directly write  `p1 = p1 + p2 - p1` the compiler
 **Using pointers, write a program to set the elements in an array to zero.**
 
 [3.35 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.35.cpp)
+
+# Exercise 3.36
+
+**Write a program to compare two arrays for equality. Write a similar program to compare two vectors.**
