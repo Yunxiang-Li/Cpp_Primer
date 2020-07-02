@@ -324,3 +324,9 @@ Size of `ia` is 10, so the largest index of `ia` is 9 (index starts from 0). `ix
 
 [3.32_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.32_1.cpp)
 [3.32_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.32_2.cpp)
+
+# Exercise 3.33
+
+**What would happen if we did not initialize the scores array in the program on page 116?**
+
+If we did not initialize the `scores` array, since the array is in the main function, thus the array is undefined(built-in type int will not be initialized as 0 if it is inside any functions. This attempt is an undefined behavior.
