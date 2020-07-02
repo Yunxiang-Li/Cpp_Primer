@@ -351,3 +351,7 @@ Here comes a tricky part, if we directly write  `p1 = p1 + p2 - p1` the compiler
 # Exercise 3.36
 
 **Write a program to compare two arrays for equality. Write a similar program to compare two vectors.**
+
+[3.36 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.36_1.cpp)
+
+[3.36 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.36_2.cpp)
