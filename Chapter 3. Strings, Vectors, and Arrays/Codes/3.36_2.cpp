@@ -9,7 +9,7 @@ using std::end;
 using std::min;
 
 /**
- * Compare two arrays for equality
+ * Compare two vectors for equality
  */
 int main()
 {
