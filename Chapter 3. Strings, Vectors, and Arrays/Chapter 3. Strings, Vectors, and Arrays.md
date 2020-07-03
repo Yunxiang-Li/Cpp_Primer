@@ -355,3 +355,32 @@ Here comes a tricky part, if we directly write  `p1 = p1 + p2 - p1` the compiler
 [3.36_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.36_1.cpp)
 
 [3.36_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.36_2.cpp)
+
+# Exercise 3.37
+
+**What does the following program do?**
+
+```
+const char ca[] = {'h', 'e', 'l', 'l', 'o'};
+const char *cp = ca;
+while (*cp) 
+{    
+cout << *cp << endl;    ++cp;
+}
+```
+
+Print all elements of the array `ca`.
+
+# Exercise 3.38
+
+**In this section, we noted that it was not only illegal but meaningless to try to add two pointers. Why would adding two pointers be meaningless?**
+
+Because Subtracting two points gives a logically explainable result - the offset in memory between two points. Similarly, you can subtract or add an integral number to/from a pointer, which means "move the pointer up or down". Adding a pointer to a pointer is something which is hard to explain. The result is meaningless.
+
+# Exercise 3.39
+
+**Write a program to compare two strings. Now write a program to compare the values of two C-style character strings.**
+
+[3.39_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.39_1.cpp)
+
+[3.39_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.39_2.cpp)
