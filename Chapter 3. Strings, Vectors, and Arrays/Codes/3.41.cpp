@@ -16,10 +16,8 @@ int main()
     vector<int> vec(begin(a), end(a));
 
     //Output each element's value from the vector using iterator.
-    for (auto it = vec.begin(); it != vec.end(); it++) {
+    for (auto it = vec.begin(); it != vec.end(); it++) 
         cout << *it <<' ';
-
-    }
 
     cout << '\n';
 
