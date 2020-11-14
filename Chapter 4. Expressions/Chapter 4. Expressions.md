@@ -20,15 +20,11 @@ The return value is 105. ((10 * 20) / 2)) + 5
 
 (b) (* (vec.begin())) + 1
 
-## Exercise 3.3
+## Exercise 4.3
 
-**Explain how whitespace characters are handled in the string input operator and in the getline function.**
+**Order of evaluation for most of the binary operators is left undefined to give the compiler opportunities for optimization. This strategy presents a trade-off between efficient code generation and potential pitfalls in the use of the language by the programmer. Do you consider that an acceptable trade-off? Why or why not?**
 
-The `getline` function takes an input stream and a string. This function reads the given stream up to and including the first newline and stores what it read—not including the newline—in its string argument. After `getline` sees a newline, even if it is the first character in the input, it stops reading and returns. If the first character in the input is a newline, then the resulting string is the empty string.
-
-`getline` function whitespace handling, do not ignore the beginning of the line blank characters read characters until it encounters a line break, read to termination and discard newline (line breaks removed from the input stream but is not stored in the string object).
-
-For `cin`, It will ignore the whitespace character if it is the first character, and stops reading and returns after meets the next whitespace character.
+Yes
 
 ## Exercise 3.4
 
