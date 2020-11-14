@@ -24,7 +24,7 @@ The return value is 105. ((10 * 20) / 2)) + 5
 
 **Order of evaluation for most of the binary operators is left undefined to give the compiler opportunities for optimization. This strategy presents a trade-off between efficient code generation and potential pitfalls in the use of the language by the programmer. Do you consider that an acceptable trade-off? Why or why not?**
 
-Yes
+Yes, I consider this an acceptable trade-off since in C++, performance is the most important thing and we can use parenthesis to avoid undefined behavior.
 
 ## Exercise 3.4
 
