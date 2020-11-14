@@ -1,4 +1,4 @@
-# Chapter 4. Expressionsrays
+# Chapter 4. Expressions
 
 ## Exercise 3.1
 
