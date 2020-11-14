@@ -56,17 +56,25 @@ Yes, I consider this an acceptable trade-off since in C++, performance is the mo
 
 (d) -2
 
-## Exercise 3.6
+## Exercise 4.6
 
-**Use a range for to change all the characters in a string to X.**
+**Write an expression to determine whether an int value is even or odd.**
 
-[3.6 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.6.cpp)
+```cpp
+value % 2 == 0 ? "This int is even" : "This int is odd"
+```
 
-## Exercise 3.7
+## Exercise 4.7
 
-**What would happen if you define the loop control variable in the previous exercise as type char? Predict the results and then change your program to use a char to see if you were right.**
+**What does overflow mean? Show three expressions that will overflow.**
 
-It will be no differences, since comipler will detect its type when we use `auto& c` and recognize it as `char& c`.
+```cpp
+short svalue = 32767; ++svalue; // expected to be 32768, but actually -32768
+
+unsigned uivalue = 0; --uivalue;  // expected to be -1, but actually 4294967295
+
+unsigned short usvalue = 65535; ++usvalue;  // expected to be 65536, but actually 0
+```
 
 ## Exercise 3.8
 
