@@ -32,9 +32,9 @@ Yes, I consider this an acceptable trade-off since in C++, performance is the mo
 
 > 12 / 3 * 4 + 5 * 15 + 24 % 4 / 2
 
-## Exercise 3.5
+## Exercise 4.5
 
-**Write a program to read strings from the standard input, concatenating what is read into one large string. Print the concatenated string. Next, change the program to separate adjacent input strings by a space.**
+**Determine the result of the following expressions.**
 
 [3.5_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.5_1.cpp)
 
