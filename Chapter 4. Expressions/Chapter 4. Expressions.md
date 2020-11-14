@@ -10,10 +10,10 @@ The return value is 105. ((10 * 20) / 2)) + 5
 
 **Using Table 4.12 (p. 166), parenthesize the following expressions to indicate the order in which the operands are grouped:**
 
-`Cpp
+```Cpp
 (a) * vec.begin()
 (b) * vec.begin() + 1
-`
+```
 
 ## Exercise 3.3
 
