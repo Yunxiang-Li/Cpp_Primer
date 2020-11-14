@@ -30,9 +30,7 @@ Yes, I consider this an acceptable trade-off since in C++, performance is the mo
 
 **Parenthesize the following expression to show how it is evaluated. Test your answer by compiling the expression (without parentheses) and printing its result.**
 
-[3.4_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.4_1.cpp)
-
-[3.4_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.4_2.cpp)
+> 12 / 3 * 4 + 5 * 15 + 24 % 4 / 2
 
 ## Exercise 3.5
 
