@@ -26,7 +26,7 @@ The return value is 105. ((10 * 20) / 2)) + 5
 
 Yes, I consider this an acceptable trade-off since in C++, performance is the most important thing and we can use parenthesis to avoid undefined behavior.
 
-## Exercise 3.4
+## Exercise 4.4
 
 **Write a program to read two strings and report whether the strings are equal. If not, report which of the two is larger. Now, change the program to report whether the strings have the same length, and if not, report which is longer.**
 
