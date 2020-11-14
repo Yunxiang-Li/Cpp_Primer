@@ -32,13 +32,21 @@ Yes, I consider this an acceptable trade-off since in C++, performance is the mo
 
 > 12 / 3 * 4 + 5 * 15 + 24 % 4 / 2
 
+((12 / 3) * 4) + (5 * 15) + ((24 % 4) / 2)
+
 ## Exercise 4.5
 
 **Determine the result of the following expressions.**
 
-[3.5_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.5_1.cpp)
+```cpp
+(a) -30 * 3 + 21 / 5
 
-[3.5_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.5_2.cpp)
+(b) -30 + 3 * 21 / 5
+
+(c) 30 / 3 * 21 % 5
+
+(d) -30 / 3 * 21 % 4
+```
 
 ## Exercise 3.6
 
