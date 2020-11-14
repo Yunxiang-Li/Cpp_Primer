@@ -12,8 +12,13 @@ The return value is 105. ((10 * 20) / 2)) + 5
 
 ```Cpp
 (a) * vec.begin()
+
 (b) * vec.begin() + 1
 ```
+
+(a) * (vec.begin())
+
+(b) (* (vec.begin())) + 1
 
 ## Exercise 3.3
 
