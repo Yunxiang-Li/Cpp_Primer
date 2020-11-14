@@ -1,20 +1,19 @@
 # Chapter 4. Expressions
 
-## Exercise 3.1
+## Exercise 4.1
 
-**Rewrite the exercises from § 1.4.1 and § 2.6.2 with appropriate using declarations.**
+**What is the value returned by 5 + 10 * 20/2?**
 
-[3.1_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings,%20Vectors,%20and%20Arrays/Codes/3.1_1.cpp)
+The return value is 105. ((10 * 20) / 2)) + 5
 
-[3.1_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.1_2.cpp)
+## Exercise 4.2
 
-## Exercise 3.2
+**Using Table 4.12 (p. 166), parenthesize the following expressions to indicate the order in which the operands are grouped:**
 
-**Write a program to read the standard input a line at a time. Modify your program to read a word at a time.**
-
-[3.2_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.2_1.cpp)
-
-[3.2_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.2_2.cpp)
+`Cpp
+(a) * vec.begin()
+(b) * vec.begin() + 1
+`
 
 ## Exercise 3.3
 
