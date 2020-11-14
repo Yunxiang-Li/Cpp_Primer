@@ -32,7 +32,7 @@ Yes, I consider this an acceptable trade-off since in C++, performance is the mo
 
 > 12 / 3 * 4 + 5 * 15 + 24 % 4 / 2
 
-((12 / 3) * 4) + (5 * 15) + ((24 % 4) / 2)
+((12 / 3) * 4) + (5 * 15) + ((24 % 4) / 2) result is 91.
 
 ## Exercise 4.5
 
@@ -47,6 +47,14 @@ Yes, I consider this an acceptable trade-off since in C++, performance is the mo
 
 (d) -30 / 3 * 21 % 4
 ```
+
+(a) -86
+
+(b) -18
+
+(c) 0
+
+(d) -2
 
 ## Exercise 3.6
 
