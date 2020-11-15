@@ -156,11 +156,26 @@ if (42 = i)   //  Compile error: arithmetic literal cannot be lvalue.
 if (i = 42)   //  First assign 42 to i, then since i is non-zero thus if(i) is always true.
 ```
 
-## Exercise 3.15
+## Exercise 4.15
 
-**Repeat the previous program but read strings this time.**
+**The following assignment is illegal. Why? How would you correct it?**
 
-[3.15 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.15.cpp)
+```cpp
+double dval;
+int ival;
+int *pi;
+dval = ival = pi = 0;
+```
+because pi is an int pointer and we cannot assign an int pointer's value to an int.
+
+Correct it:
+
+```cpp
+double dval;
+int ival;
+int *pi;
+dval = ival = *pi = 0;
+```
 
 ## Exercise 3.16
 
