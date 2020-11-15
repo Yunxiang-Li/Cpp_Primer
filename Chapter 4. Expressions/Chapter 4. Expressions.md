@@ -95,8 +95,12 @@ const char *cp = "Hello World";
 if (cp && *cp)
 ```
 
-Try to print the first element of the string but it is invalid since the s is not initialized thus this is an undefined behavior.
+`cp` is a pointer to a const char and `*cp` is a const char, and it's not a nullptr.
+In this `if` clause, we first check whether pointer `cp` is `nullptr` or not(it's not).
+Then we check whether `*cp`'s content is an empty char or not(it's not either).
+Therefore the value of this `if` clause is true.
 
+true && true => true.
 ## Exercise 3.10 
 
 **Write a program that reads a string of characters including punctuation and writes what was read but with the punctuation removed.**
