@@ -120,21 +120,15 @@ while(cin >> a && a != 42)
 a > b && b > c && c > d
 ```
 
-## Exercise 3.12
+## Exercise 4.12
 
-**Which, if any, of the following vector definitions are in error? For those that are legal, explain what the definition does. For those that are not legal, explain why they are illegal.**
+**Assuming i, j, and k are all ints, explain what i != j < k means.**
 
-> (a) vector<vector<int>> ivec; 
-  
-legal
-  
-> (b) vector<string> svec = ivec;
+`<` has higher precedence than `!=` thus `i != j < k` is just `i != (j < k)`.
 
-illegal, ivec is of type `vector<int>`, svec is of type `string`, copy initialization cannot work here.
-  
-> (c) vector<string> svec(10, "null");
+Therefore this expression first checkes whether j is less than k and return a bool value (true if yes and false if no). 
 
-legal, svec now has 10 "null" elements.
+Then we check whether i equals to true or false.
 
 ## Exercise 3.13
 
