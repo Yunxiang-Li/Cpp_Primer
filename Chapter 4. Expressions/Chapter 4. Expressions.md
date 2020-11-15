@@ -128,7 +128,7 @@ a > b && b > c && c > d
 
 Therefore this expression first checkes whether j is less than k and return a bool value (true if yes and false if no). 
 
-Then we check whether i equals to true or false.
+Then we check whether i is not equal to 1(true) or 0(false).
 
 ## Exercise 3.13
 
