@@ -96,16 +96,21 @@ if (cp && *cp)
 ```
 
 `cp` is a pointer to a const char and `*cp` is a const char, and it's not a nullptr.
+
 In this `if` clause, we first check whether pointer `cp` is `nullptr` or not(it's not).
+
 Then we check whether `*cp`'s content is an empty char or not(it's not either).
-Therefore the value of this `if` clause is true.
 
-true && true => true.
-## Exercise 3.10 
+Therefore the value of this `if` clause is true since `true && true => true.`
 
-**Write a program that reads a string of characters including punctuation and writes what was read but with the punctuation removed.**
+## Exercise 4.10 
 
-[3.10 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.10.cpp)
+**Write the condition for a while loop that would read ints from the standard input and stop when the value read is equal to 42.**
+
+```cpp
+int a;
+while(cin >> a && a != 42)
+```
 
 ## Exercise 3.11
 
