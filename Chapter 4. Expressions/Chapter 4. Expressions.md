@@ -86,13 +86,13 @@ unsigned short usvalue = 65535; ++usvalue;  // expected to be 65536, but actuall
 
 - equality operators : true only if both operands have the same value, otherwise, it returns false.
 
-## Exercise 3.9 
+## Exercise 4.9 
 
-**What does the following program do? Is it valid? If not, why not?**
+**Explain the behavior of the condition in the following if:**
 
-```
-string s;
-cout << s[0] << endl;
+```Cpp
+const char *cp = "Hello World";
+if (cp && *cp)
 ```
 
 Try to print the first element of the string but it is invalid since the s is not initialized thus this is an undefined behavior.
