@@ -186,11 +186,15 @@ dval = ival = *pi = 0;
 (b) if (i = 1024)
 ```
 
-(a) Because `=`'s precedence is lower than `!=`, thus this expression will be `if (p = (getPtr() != 0))`. First check if `getPtr()` is equal to 0 or not and then assign the boolean result to `p` and finally check if `p` has value true or false.
+(a) Because `=`'s precedence is lower than `!=`, thus this expression will be `if (p = (getPtr() != 0))`. First check if `getPtr()` is equal to 0 or not and then assign the boolean result to `p` and finally check if `p` has bool value true or false.
 
 I believe that the programmer actually want to assign `getPtr()`'s value to `p` and then check if `p`'s value is equal to 0 or not.
 
 Therefore we can rewrite like this `if ((p = getPtr()) != 0)`
+
+(b) This expression first assign 1024 to `i` and then check `i`'s bool value. Because `i` is non-zero then `i`'s bool value is always true thus this expression is always ture.
+
+I believe that the programmer actually want to check if `i` is equal to 1024 so we can rewrite like this `if (i == 1024)`
 
 ## Exercise 3.17
 
