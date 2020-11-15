@@ -112,15 +112,13 @@ int a;
 while(cin >> a && a != 42)
 ```
 
-## Exercise 3.11
+## Exercise 4.11
 
-**Is the following range `for` legal? If so, what is the type of `c`?**
-```
-const string s = "Keep out!";
-for (auto &c : s) { /* ...  */ }
-```
+**Write an expression that tests four values, a, b, c, and d, and ensures that a is greater than b, which is greater than c, which is greater than d.**
 
-If we just read each `c`'s value, then it is legal. If we want to change each `c` 's value then it is illegal since `c`'s type is const char.
+```cpp
+a > b && b > c && c > d
+```
 
 ## Exercise 3.12
 
