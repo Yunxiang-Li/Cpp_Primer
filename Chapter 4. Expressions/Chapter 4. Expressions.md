@@ -139,19 +139,22 @@ int i;
 double d;
 ```
 
-(a) d = i = 3.5;
+> (a) d = i = 3.5;
 
-(b) i = d = 3.5;
+> (b) i = d = 3.5;
 
 (a) i = 3, d = 3.0
 
 (b) d = 3.5, i = 3
 
-## Exercise 3.14
+## Exercise 4.14
 
-**Write a program to read a sequence of ints from cin and store those values in a vector.**
+**Explain what happens in each of the if tests:**
 
-[3.14 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.14.cpp)
+```cpp
+if (42 = i)   //  Compile error: arithmetic literal cannot be lvalue.
+if (i = 42)   //  First assign 42 to i, then since i is non-zero thus if(i) is always true.
+```
 
 ## Exercise 3.15
 
