@@ -130,37 +130,22 @@ Therefore this expression first checkes whether j is less than k and return a bo
 
 Then we check whether i is not equal to 1(true) or 0(false).
 
-## Exercise 3.13
+## Exercise 4.13
 
-**How many elements are there in each of the following vectors? What are the values of the elements?**
+**What are the values of i and d after each assignment?**
 
-> (a) vector<int> v1; 
-  
-  0 element.
-  
-> (b) vector<int> v2(10);
-  
-  10 elements with 0(default) value.
-  
-> (c) vector<int> v3(10, 42);
-  
-  10 elements with `42` value.
-  
-> (d) vector<int> v4{10};
-  
-  1 element with `10` value.
-  
-> (e) vector<int> v5{10, 42};
-  
-  2 elements with `10` and `42` value.
-  
-> (f) vector<string> v6{10};
-  
-  10 elements with "" value.
-  
-> (g) vector<string> v7{10, "hi"};
+```cpp
+int i;
+double d;
+```
 
-  10 elements with "hi" value.
+(a) d = i = 3.5;
+
+(b) i = d = 3.5;
+
+(a) i = 3, d = 3.0
+
+(b) d = 3.5, i = 3
 
 ## Exercise 3.14
 
