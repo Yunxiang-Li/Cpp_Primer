@@ -76,15 +76,15 @@ unsigned uivalue = 0; --uivalue;  // expected to be -1, but actually 4294967295
 unsigned short usvalue = 65535; ++usvalue;  // expected to be 65536, but actually 0
 ```
 
-## Exercise 3.8
+## Exercise 4.8
 
-**Rewrite the program in the first exercise, first using a while and again using a traditional for loop. Which of the three approaches do you prefer and why?**
+**Explain when operands are evaluated in the logical AND, logical OR, and equality operators.**
 
-[3.8_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.8_1.cpp)
+logical **AND** : the second operand is evaluated if and only if the left side is true.
 
-[3.8_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.8_2.cpp)
+logical **OR** : the second operand is evaluated if and only if the left side is false.
 
-I prefer the range for one since it is the easiest one to write.
+equality operators : true only if both operands have the same value, otherwise, it returns false.
 
 ## Exercise 3.9 
 
