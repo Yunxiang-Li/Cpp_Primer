@@ -166,7 +166,7 @@ int ival;
 int *pi;
 dval = ival = pi = 0;
 ```
-because pi is an int pointer and we cannot assign an int pointer's value to an int.
+because pi is an int pointer and we cannot assign an int pointer's value to an int(this is not convertable).
 
 Correct it:
 
@@ -177,11 +177,20 @@ int *pi;
 dval = ival = *pi = 0;
 ```
 
-## Exercise 3.16
+## Exercise 4.16
 
-**Write a program to print the size and contents of the vectors from exercise 3.13. Check whether your answers to that exercise were correct. If not, restudy § 3.3.1 (p. 97) until you understand why you were wrong.**
+**Although the following are legal, they probably do not behave as the programmer expects. Why? Rewrite the expressions as you think they should be.**
 
-[3.16 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.16.cpp)
+```cpp
+(a) if (p = getPtr() != 0)
+(b) if (i = 1024)
+```
+
+(a) Because `=`'s precedence is lower than `!=`, thus this expression will be `if (p = (getPtr() != 0))`. First check if `getPtr()` is equal to 0 or not and then assign the boolean result to `p` and finally check if `p` has value true or false.
+
+I believe that the programmer actually want to assign `getPtr()`'s value to `p` and then check if `p`'s value is equal to 0 or not.
+
+Therefore we can rewrite like this `if ((p = getPtr()) != 0)`
 
 ## Exercise 3.17
 
