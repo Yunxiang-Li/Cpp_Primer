@@ -80,11 +80,11 @@ unsigned short usvalue = 65535; ++usvalue;  // expected to be 65536, but actuall
 
 **Explain when operands are evaluated in the logical AND, logical OR, and equality operators.**
 
-logical **AND** : the second operand is evaluated if and only if the left side is true.
+- logical **AND** : the second operand is evaluated if and only if the left side is true.
 
-logical **OR** : the second operand is evaluated if and only if the left side is false.
+- logical **OR** : the second operand is evaluated if and only if the left side is false.
 
-equality operators : true only if both operands have the same value, otherwise, it returns false.
+- equality operators : true only if both operands have the same value, otherwise, it returns false.
 
 ## Exercise 3.9 
 
