@@ -200,42 +200,9 @@ I believe that the programmer actually want to check if `i` is equal to 1024 so 
 
 **Explain the difference between prefix and postfix increment.**
 
-## Exercise 3.18
+## Exercise 4.18
 
-**Is the following program legal? If not, how might you fix it?**
-
-Not legal, because `ivec` is initialized as an empty vector which means its size is 0, thus using subscript to access first element of `ivec` is an undefined behavior.
-
-```
-vector<int> ivec;
-ivec[0] = 42;
-```
-We can fix it like this:
-```
-#include <vector>
-
-using std::vector;
-
-int main()
-{
-    vector<int> ivec(1);
-    ivec[0] = 42;
-    return 0;
-}
-```
-Or:
-```
-#include <vector>
-
-using std::vector;
-
-int main()
-{
-    vector<int> ivec{0};
-    ivec[0] = 42;
-    return 0;
-}
-```
+**What would happen if the while loop on page 148 that prints the elements from a vector used the prefix increment operator?**
 
 ## Exercise 3.19
 
