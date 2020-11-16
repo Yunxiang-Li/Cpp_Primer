@@ -200,6 +200,12 @@ I believe that the programmer actually want to check if `i` is equal to 1024 so 
 
 **Explain the difference between prefix and postfix increment.**
 
+The postfix operators increment(or decrement) the operand but yield a copy of the original, unchanged value as its result.
+
+The prefix operators return the object itself as an lvalue.
+
+The postfix operators return a copy of the object's original value as an rvalue.
+
 ## Exercise 4.18
 
 **What would happen if the while loop on page 148 that prints the elements from a vector used the prefix increment operator?**
