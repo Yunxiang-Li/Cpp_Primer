@@ -204,9 +204,9 @@ I believe that the programmer actually want to check if `i` is equal to 1024 so 
 
 **What would happen if the while loop on page 148 that prints the elements from a vector used the prefix increment operator?**
 
-## Exercise 3.19
+## Exercise 4.19
 
-**List three ways to define a vector and give it ten elements, each with the value 42. Indicate whether there is a preferred way to do so and why.**
+**Given that ptr points to an int, that vec is a vector<int>, and that ival is an int, explain the behavior of each of these expressions. Which, if any, are likely to be incorrect? Why? How might each be corrected?.**
 
 [3.19 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.19.cpp)
 
