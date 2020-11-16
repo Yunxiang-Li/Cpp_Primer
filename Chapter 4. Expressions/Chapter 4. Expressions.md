@@ -196,11 +196,9 @@ Therefore we can rewrite like this `if ((p = getPtr()) != 0)`
 
 I believe that the programmer actually want to check if `i` is equal to 1024 so we can rewrite like this `if (i == 1024)`
 
-## Exercise 3.17
+## Exercise 4.17
 
-**Read a sequence of words from cin and store the values a vector. After you’ve read all the words, process the vector and change each word to uppercase. Print the transformed elements, eight words to a line.**
-
-[3.17 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.17.cpp)
+**Explain the difference between prefix and postfix increment.**
 
 ## Exercise 3.18
 
