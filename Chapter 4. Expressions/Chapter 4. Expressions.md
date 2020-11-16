@@ -210,6 +210,8 @@ The postfix operators return a copy of the object's original value as an rvalue.
 
 **What would happen if the while loop on page 148 that prints the elements from a vector used the prefix increment operator?**
 
+It will print from the second element and dereference v.end() at last.(It's undefined and very dangerous)
+
 ## Exercise 4.19
 
 **Given that ptr points to an int, that vec is a vector<int>, and that ival is an int, explain the behavior of each of these expressions. Which, if any, are likely to be incorrect? Why? How might each be corrected?.**
