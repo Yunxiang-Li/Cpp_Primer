@@ -200,17 +200,15 @@ I believe that the programmer actually want to check if `i` is equal to 1024 so 
 
 **Explain the difference between prefix and postfix increment.**
 
-The postfix operators increment(or decrement) the operand but yield a copy of the original, unchanged value as its result.
+The prefix operators increment(or decrement) the operand first and return the incremented(or decremented) object as an lvalue.
 
-The prefix operators return the object itself as an lvalue.
-
-The postfix operators return a copy of the object's original value as an rvalue.
+The postfix operators first return a copy of the object's original value as an rvalue and then increment(or decrement) the operand.
 
 ## Exercise 4.18
 
 **What would happen if the while loop on page 148 that prints the elements from a vector used the prefix increment operator?**
 
-It will print from the second element and dereference v.end() at last.(It's undefined and very dangerous)
+It will skip the first element, print from the second element and it will also try to dereference v.end() at last.(This is an undefined behavior and very dangerous)
 
 ## Exercise 4.19
 
@@ -221,6 +219,16 @@ It will print from the second element and dereference v.end() at last.(It's unde
 (b) ival++ && ival
 (c) vec[ival++] <= vec[ival]
 ```
+
+(a) First check wheter `ptr` is a nullptr or not and check whether the pointer `ptr`'s value is zero of not and finally move on to `ptr`'s next element.
+
+This expression is correct since left part of `&&` will be evaluated first.
+
+(b) First check if `ival` is zero or not and then increment `ival` by one. Then check the new `ival` value whether it is zero or not.
+
+This expression is correct since left part of `&&` will be evaluated first.
+
+(c) This expression is incorrect since we do not know whether left part of `<=` will be evaluated first or the right part will be evaluated first thus this expression will cause an undefined bahavior.
 
 ## Exercise 3.20
 
