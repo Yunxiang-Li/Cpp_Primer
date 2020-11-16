@@ -207,10 +207,12 @@ I believe that the programmer actually want to check if `i` is equal to 1024 so 
 ## Exercise 4.19
 
 **Given that ptr points to an int, that vec is a vector<int>, and that ival is an int, explain the behavior of each of these expressions. Which, if any, are likely to be incorrect? Why? How might each be corrected?.**
-
-[3.19 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.19.cpp)
-
-I believe the first is the best since it is the shortest.
+    
+```cpp
+(a) ptr != 0 && *ptr++
+(b) ival++ && ival
+(c) vec[ival++] <= vec[ival]
+```
 
 ## Exercise 3.20
 
