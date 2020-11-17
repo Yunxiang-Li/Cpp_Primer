@@ -1,4 +1,4 @@
-# Chapter 4. Expressionsav
+# Chapter 4. Expressions
 
 ## Exercise 4.1
 
