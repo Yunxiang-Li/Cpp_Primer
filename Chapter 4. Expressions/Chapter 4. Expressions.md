@@ -248,6 +248,18 @@ This expression is correct since left part of `&&` will be evaluated first.
 (f) iter++->empty();
 ```
 
+(a) Legal, first dereference and get the string points by the `iter` iterator. Then move on to the next iterator.
+
+(b) Illegal, first dereference and get the string points by the `iter` iterator. Then try to increment the string by one which is illegal.
+
+(c) Illegal, `.` has higher order precedence than dereference. However, it is illegal to call `empty` member method on a string iterator.
+
+(d) Legal, first dereference and get the string points by the `iter` iterator. Then call `empty` method on current string to check if it is an empty string.
+
+(e) Illegal, first dereference and get the string points by the `iter` iterator. Then try to increment the string by one which is illegal.
+
+(f) Legal, first dereference and call `empty` method on current string to check if it is an empty string. Then move on to the next iterator.
+
 ## Exercise 3.21
 
 **Redo the first exercise from § 3.3.3 (p. 105) using iterators.**
