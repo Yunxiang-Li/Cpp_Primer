@@ -212,7 +212,7 @@ It will skip the first element, print from the second element and it will also t
 
 ## Exercise 4.19
 
-**Given that ptr points to an int, that vec is a vector<int>, and that ival is an int, explain the behavior of each of these expressions. Which, if any, are likely to be incorrect? Why? How might each be corrected?.**
+**Given that ptr points to an int, that vec is a `vector<int>`, and that ival is an int, explain the behavior of each of these expressions. Which, if any, are likely to be incorrect? Why? How might each be corrected?.**
     
 ```cpp
 (a) ptr != 0 && *ptr++
@@ -230,13 +230,23 @@ This expression is correct since left part of `&&` will be evaluated first.
 
 (c) This expression is incorrect since we do not know whether left part of `<=` will be evaluated first or the right part will be evaluated first thus this expression will cause an undefined bahavior.
 
-## Exercise 3.20
+## Exercise 4.20
 
-**Read a set of integers into a vector. Print the sum of each pair of adjacent elements. Change your program so that it prints the sum of the first and last elements, followed by the sum of the second and second-to-last, and so on.**
+**Assuming that iter is a `vector<string>::iterator`, indicate which, if any, of the following expressions are legal. Explain the behavior of the legal expressions and why those that aren’t legal are in error.**
 
-[3.20_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.20_1.cpp)
+```cpp
+(a) *iter++;
 
-[3.20_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.20_2.cpp)
+(b) (*iter)++;
+
+(c) *iter.empty()
+
+(d) iter->empty();
+
+(e) ++*iter;
+
+(f) iter++->empty();
+```
 
 ## Exercise 3.21
 
