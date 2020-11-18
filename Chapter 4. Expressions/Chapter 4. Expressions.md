@@ -420,11 +420,19 @@ for (int *ptr = ia, ix = 0; ix != size && ptr != ia+size; ++ix, ++ptr)   
 
 The loop use both pointer(ptr) and array index(ix) to traverse and do something on each array element. Two different ways to realize same feature.
 
-## Exercise 3.33
+## Exercise 4.33
 
-**What would happen if we did not initialize the scores array in the program on page 116?**
+**Using Table 4.12 (p. 166) explain what the following expression does:**
 
-If we did not initialize the `scores` array, since the array is in the main function, thus the array is undefined(built-in type int will not be initialized as 0 if it is inside any functions. This attempt is an undefined behavior.
+```cpp
+someValue ? ++x, ++y : --x, --y
+```
+
+Because the `,` operator has the lowest order precedence thus the expression will be `(someValue ? ++x, ++y : --x), --y`.
+
+First we check whether `someValue` has true or false value. If true, then increment `x` by one, else increment `y` by one and the result of `(someValue ? ++x, ++y : --x), --y` part is `++y`. If false, then decrement `x` by one and the result of `(someValue ? ++x, ++y : --x),` part is `--x`. However, since `(someValue ? ++x, ++y : --x),` part will always be discared then this expression's final result will always be `--y`.
+
+To conclude, we may increment or decrement `x` by one but the result of this expression is always `++y` or `--y` which has no relation with `x`.
 
 ## Exercise 3.34
 
