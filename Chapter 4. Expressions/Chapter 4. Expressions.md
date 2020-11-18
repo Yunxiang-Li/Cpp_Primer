@@ -272,11 +272,25 @@ This expression is correct since left part of `&&` will be evaluated first.
 
 [4.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%204.%20Expressions/Codes/4.22%20Solution.cpp)
 
-## Exercise 3.23
+## Exercise 4.23
 
-**Write a program to create a vector with ten int elements. Using an iterator, assign each element a value that is twice its current value. Test your program by printing the vector.**
+**The following expression fails to compile due to operator precedence. Using Table 4.12 (p. 166), explain why it fails. How would you fix it?**
 
-[3.23 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.23.cpp)
+```cpp
+string s = "word";
+string pl = s + s[s.size() - 1] == 's' ? "" : "s" ;
+```
+
+`+` operator has higher order precedence than `==` operator thus the second line will be `string pl = (s + s[s.size() - 1]) == 's' ? "" : "s" ;`.
+
+First add `s` with `s[3]`(char `d` actually) and the result is a new string `wordd`. Then compare new string with the char `s`. However, we cannot use `==` to compare a string with a char thus codes cannot compile.
+
+We can easily fix this issue by adding one more parenthesis.
+
+```cpp
+string s = "word";
+string pl = s + (s[s.size() - 1] == 's') ? "" : "s" ;
+```
 
 ## Exercise 3.24
 
