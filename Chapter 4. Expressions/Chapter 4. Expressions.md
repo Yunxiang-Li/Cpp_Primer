@@ -266,11 +266,11 @@ This expression is correct since left part of `&&` will be evaluated first.
 
 [4.21 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%204.%20Expressions/Codes/4.21%20Solution.cpp)
 
-## Exercise 3.22 
+## Exercise 4.22 
 
-**Revise the loop that printed the first paragraph in text to instead change the elements in text that correspond to the first paragraph to all uppercase. After you’ve updated text, print its contents.**
+**Extend the program that assigned high pass, pass, and fail grades to also assign low pass for grades between 60 and 75 inclusive. Write two versions: One version that uses only conditional operators; the other should use one or more if statements. Which version do you think is easier to understand and why?**
 
-[3.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.22.cpp)
+[4.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%204.%20Expressions/Codes/4.22%20Solution.cpp)
 
 ## Exercise 3.23
 
