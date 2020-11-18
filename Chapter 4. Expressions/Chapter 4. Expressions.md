@@ -407,13 +407,18 @@ for(vector<int>::size_type ix = 0; ix != ivec.size(); ix++, cnt--)
     ivec[ix] = cnt;
 ```
 
-## Exercise 3.32
+## Exercise 4.32
 
-**Copy the array you defined in the previous exercise into another array. Rewrite your program to use vectors.**
+** Explain the following loop.**
 
-[3.32_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.32_1.cpp)
+```cpp
+constexpr int size = 5;
+int ia[size] = {1,2,3,4,5};
+for (int *ptr = ia, ix = 0; ix != size && ptr != ia+size; ++ix, ++ptr)   
+{ /* ...   */ }
+```
 
-[3.32_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.32_2.cpp)
+The loop use both pointer(ptr) and array index(ix) to traverse and do something on each array element. Two different ways to realize same feature.
 
 ## Exercise 3.33
 
