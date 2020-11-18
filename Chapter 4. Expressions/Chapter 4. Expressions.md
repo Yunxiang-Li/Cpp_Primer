@@ -332,13 +332,13 @@ There are altogether 30 students in the example. According to the standard, unsi
 unsigned long ul1 = 3, ul2 = 7;
 ```
 
-(a) ul1 & ul2
+> (a) ul1 & ul2
 
-(b) ul1 | ul2
+> (b) ul1 | ul2
 
-(c) ul1 && ul2
+> (c) ul1 && ul2
 
-(d) ul1 || ul2
+> (d) ul1 || ul2
 
 
 (a) `0011` & `0111` => `0011` => `3`
