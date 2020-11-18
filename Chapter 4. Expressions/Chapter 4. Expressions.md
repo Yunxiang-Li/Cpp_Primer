@@ -324,27 +324,30 @@ Because `~` operator has a higher order precedence than `<<` operator thus we fi
 
 There are altogether 30 students in the example. According to the standard, unsigned int is only guaranteed to hold at least 16 bits. If we choose unsigned int, the result may be undefined.
 
-## Exercise 3.27
+## Exercise 4.27
 
-**Assuming txt_size is a function that takes no arguments and returns an int value, which of the following definitions are illegal? Explain why.**
+**What is the result of each of these expressions?**
 
-> unsigned buf_size = 1024;
+```cpp
+unsigned long ul1 = 3, ul2 = 7;
+```
 
-(a) int ia[buf_size];
+(a) ul1 & ul2
 
-Illegal, ia's dimension value must be a constant expression.
+(b) ul1 | ul2
 
-(b) int ia[4 * 7 - 14];
+(c) ul1 && ul2
 
-Legal, ia's dimension value is a constant expression(14 here).
+(d) ul1 || ul2
 
-(c) int ia[txt_size()];
 
-Illegal, The dimension value must be a constant expression. We can change `txt_size()` function to `constexpr`
+(a) `0011` & `0111` => `0011` => `3`
 
-(d) char st[11] = "fundamental";
+(b) `0011` | `0111` => `0111` => `7`
 
-Illegal, the string's size is 11("fundamental" 's length) + 1('\0' null terminator's size) = 12 but the char array `st` can only hold 11 elements.
+(c) `0011` && `0111` => true
+
+(d) `0011` || `0111` => true
 
 ## Exercise 3.28
 
