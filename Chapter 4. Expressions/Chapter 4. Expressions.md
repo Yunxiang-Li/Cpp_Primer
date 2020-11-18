@@ -353,18 +353,11 @@ We can use bit representations for `3` and `7`:
 
 (d) `0011` || `0111` => true
 
-## Exercise 3.28
+## Exercise 4.28
 
-**What are the values in the following arrays?**
-```
-string sa[10];
-int ia[10];
-int main() {
-    string sa2[10];
-    int    ia2[10];
-}
-```
-string is not a built-in type, thus compiler will set it to empty, `sa = ""` and `sa2 = ""`(size does not matter here), integer is a built-in type, and int array `ia` is out of any functions, thus `ia = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}`, `ia2` is in main function, thus its value is undefined.
+**Write a program to print the size of each of the built-in types.**
+
+[4.28 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%204.%20Expressions/Codes/4.28%20Solution.cpp)
 
 ## Exercise 3.29
 
