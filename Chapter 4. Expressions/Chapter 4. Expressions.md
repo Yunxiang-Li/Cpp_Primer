@@ -260,11 +260,11 @@ This expression is correct since left part of `&&` will be evaluated first.
 
 (f) Legal, first dereference and call `empty` method on current string to check if it is an empty string. Then move on to the next iterator.
 
-## Exercise 3.21
+## Exercise 4.21
 
-**Redo the first exercise from § 3.3.3 (p. 105) using iterators.**
+**Write a program to use a conditional operator to find the elements in a vector<int> that have odd value and double the value of each such element.**
 
-[3.21 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.21.cpp)
+[4.21 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.21.cpp)
 
 ## Exercise 3.22 
 
