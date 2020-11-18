@@ -430,9 +430,13 @@ someValue ? ++x, ++y : --x, --y
 
 Because the `,` operator has the lowest order precedence thus the expression will be `(someValue ? ++x, ++y : --x), --y`.
 
-First we check whether `someValue` has true or false value. If true, then increment `x` by one, else increment `y` by one and the result of `(someValue ? ++x, ++y : --x), --y` part is `++y`. If false, then decrement `x` by one and the result of `(someValue ? ++x, ++y : --x),` part is `--x`. However, since `(someValue ? ++x, ++y : --x),` part will always be discared then this expression's final result will always be `--y`.
+First we check whether `someValue` has true or false value.
 
-To conclude, we may increment or decrement `x` by one but the result of this expression is always `++y` or `--y` which has no relation with `x`.
+If true, then increment `x` by one, else increment `y` by one and the result of `(someValue ? ++x, ++y : --x),` part is `++y` and then we just discard the `someValue ? ++x, ++y : --x` part and decrement `y` by one thus the final result of the expression is just `y` if someValue is true.
+
+If false, then decrement `x` by one and the result of `(someValue ? ++x, ++y : --x),` part is `--x`. However, since `(someValue ? ++x, ++y : --x),` part will always be discared then this expression's final result will always be `--y`.
+
+To conclude, we may increment or decrement `x` by one but the result of this expression is always `y` or `--y` which has no relation with `x`.
 
 ## Exercise 3.34
 
