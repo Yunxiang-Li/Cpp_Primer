@@ -359,13 +359,20 @@ We can use bit representations for `3` and `7`:
 
 [4.28 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%204.%20Expressions/Codes/4.28%20Solution.cpp)
 
-## Exercise 3.29
+## Exercise 4.29
 
-**List some of the drawbacks of using an array instead of a vector.**
+**Predict the output of the following code and explain your reasoning. Now run the program. Is the output what you expected? If not, figure out why.**
 
-- 1. Array's size is fixed after it is initialized, thus we cannot modify its size even when we need to.
-- 2. Arrays have to be deallocated explicitly if defined dynamically whereas vectors are automatically de-allocated from heap memory.
-- 3. Arrays cannot be returned unless dynamically allocated from a function whereas vectors can be returned from a function.
+```cpp
+int x[10];
+int *p = x;
+cout << sizeof(x)/sizeof(*x) << endl;
+cout << sizeof(p)/sizeof(*p) << endl;
+```
+
+First line of codes `cout << sizeof(x)/sizeof(*x) << endl;` will output the element number of the array. Because `sizeof(x)` will output each element type's size (int here) multiplies total element number of the array `x` and `sizeof(*x)` will output each element type's size (int here) thus `sizeof(x)/sizeof(*x)` will give us the total element number of the array `x` which is 10.
+
+Second line of codes `cout << sizeof(p)/sizeof(*p) << endl;`'s result depends on system, I use 64-bit system thus `sizeof(p)` which will output the size of a pointer is 8. In practice, pointers will be 2 bytes on a 16-bit system, 3 bytes on a 24-bit system, 4 bytes on a 32-bit system, and 8 bytes on a 64-bit system. `sizeof(*p)` will output the size of the data type the pointer points to thus `sizeof(*p)` => `sizeof(int)` = 4. Therefore result on my machine is 8/4 => 2.
 
 ## Exercise 3.30
 
