@@ -379,8 +379,11 @@ Second line of codes `cout << sizeof(p)/sizeof(*p) << endl;`'s result depends on
 **Using Table 4.12 (p. 166), parenthesize the following expressions to match the default evaluation:**
 
 > (a) sizeof x + y
+
 > (b) sizeof p->mem[i]
+
 > (c) sizeof a < b
+
 > (d) sizeof f()
 
 (a) (sizeof x) + y `sizeof` operator has higher order precedence than `+`(add) operator.
@@ -391,11 +394,18 @@ Second line of codes `cout << sizeof(p)/sizeof(*p) << endl;`'s result depends on
 
 (d) (sizeof f()) return the return type size of the function `f()`, if the return type is void then the result depends on compilers.
 
-## Exercise 3.31
+## Exercise 4.31
 
-**Write a program to define an array of ten ints. Give each element the same value as its position in the array.**
+**The program in this section used the prefix increment and decrement operators. Explain why we used prefix and not postfix. What changes would have to be made to use the postfix versions? Rewrite the program using postfix operators.**
 
-[3.31 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.31.cpp)
+We used prefix just because the book said **Use Postfix Operators only When Necessary** before and also sometimes compilers can optimize prefix better than postfix.
+It will be no changes whether we choose prefix or postfix in this program, here is the version of postfix:
+
+```cpp
+vector<int>::size_type cnt = ivec.size();
+for(vector<int>::size_type ix = 0; ix != ivec.size(); ix++, cnt--)
+    ivec[ix] = cnt;
+```
 
 ## Exercise 3.32
 
