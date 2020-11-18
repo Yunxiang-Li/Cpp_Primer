@@ -312,11 +312,11 @@ If the `grade` is lower or equal to 90, then we will evaluate `(grade < 60)` par
 
 If the `grade` is higher than 90, then first conditional statement will have result `"high pass"` and then we evaluate expression `"high pass" ? "fail" : "pass"` since `high pass` will always be converted to true when considered as a bool value thus this expression will always have true result so the final output will always be "fail".
 
-## Exercise 3.25
+## Exercise 4.25
 
-**Rewrite the grade clustering program from § 3.3.3 (p. 104) using iterators instead of subscripts.**
+**What is the value of ~'q' << 6 on a machine with 32-bit ints and 8 bit chars, that uses Latin-1 character set in which 'q' has the bit pattern 01110001?**
 
-[3.25 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.25.cpp)
+Because `~` operator has a higher order precedence than `<<` operator thus we first evaluate `~'q'` which will get a negative value. Before C++ 20, left shift of a negative value is an undefined behaviour. Since C++ 20, the result is defined well and the result is `11111111111111111110001110000000`
 
 ## Exercise 3.26
 
