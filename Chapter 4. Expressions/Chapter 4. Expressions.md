@@ -318,13 +318,11 @@ If the `grade` is higher than 90, then first conditional statement will have res
 
 Because `~` operator has a higher order precedence than `<<` operator thus we first evaluate `~'q'` which will get a negative value. Before C++ 20, left shift of a negative value is an undefined behaviour. Since C++ 20, the result is defined well and the result is `11111111111111111110001110000000`
 
-## Exercise 3.26
+## Exercise 4.26
 
-In the binary search program on page 112, why did we write `mid = beg + (end - beg) / 2;` instead of `mid = (beg + end) /2;`?
+**In our grading example in this section, what would happen if we used unsigned int as the type for quiz1?**
 
-Because [the iterator of vector don't define the + operator between the two iterators](http://www.cplusplus.com/reference/iterator/RandomAccessIterator/). It is illegal to add two iterators.
-
-We can only use the subtraction between the two iterators.
+There are altogether 30 students in the example. According to the standard, unsigned int is only guaranteed to hold at least 16 bits. If we choose unsigned int, the result may be undefined.
 
 ## Exercise 3.27
 
