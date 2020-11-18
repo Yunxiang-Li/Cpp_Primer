@@ -332,6 +332,10 @@ There are altogether 30 students in the example. According to the standard, unsi
 unsigned long ul1 = 3, ul2 = 7;
 ```
 
+We can use bit representations for `3` and `7`:
+
+`0011` for `3` and `0111` for `7`
+
 > (a) ul1 & ul2
 
 > (b) ul1 | ul2
