@@ -308,9 +308,9 @@ If the operator is left associative, then the program will be:
 finalgrade = ((grade > 90) ? "high pass" : (grade < 60)) ? "fail" : "pass";
 ```
 
-If the `grade` is lower or equal to 90, then we will evaluate `(grade < 60)` part instead of the later conditional statement. And then we will evaluate expression `true ? "fail" : "pass"` or `false ? "fail" : "pass"` according to the `grade`'s value.
+If the `grade` is lower or equal to 90, then we will evaluate `(grade < 60)` part instead of the later conditional statement. And then we will evaluate expression `true ? "fail" : "pass"` or `false ? "fail" : "pass"` according to the `grade`'s value. Therefore the final output can be "pass" or "fail".
 
-If the `grade` is higher than 90, then first conditional statement will have result `"high pass"` and then we evaluate expression `"high pass" ? "fail" : "pass"` since `high pass` will always be converted to true when considered as a bool value thus this expression will always have true result so the final output will be "fail".
+If the `grade` is higher than 90, then first conditional statement will have result `"high pass"` and then we evaluate expression `"high pass" ? "fail" : "pass"` since `high pass` will always be converted to true when considered as a bool value thus this expression will always have true result so the final output will always be "fail".
 
 ## Exercise 3.25
 
