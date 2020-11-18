@@ -264,7 +264,7 @@ This expression is correct since left part of `&&` will be evaluated first.
 
 **Write a program to use a conditional operator to find the elements in a vector<int> that have odd value and double the value of each such element.**
 
-[4.21 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.21.cpp)
+[4.21 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%204.%20Expressions/Codes/4.21%20Solution.cpp)
 
 ## Exercise 3.22 
 
