@@ -374,18 +374,22 @@ First line of codes `cout << sizeof(x)/sizeof(*x) << endl;` will output the elem
 
 Second line of codes `cout << sizeof(p)/sizeof(*p) << endl;`'s result depends on system, I use 64-bit system thus `sizeof(p)` which will output the size of a pointer is 8. In practice, pointers will be 2 bytes on a 16-bit system, 3 bytes on a 24-bit system, 4 bytes on a 32-bit system, and 8 bytes on a 64-bit system. `sizeof(*p)` will output the size of the data type the pointer points to thus `sizeof(*p)` => `sizeof(int)` = 4. Therefore result on my machine is 8/4 => 2.
 
-## Exercise 3.30
+## Exercise 4.30
 
-**Identify the indexing errors in the following code:**
+**Using Table 4.12 (p. 166), parenthesize the following expressions to match the default evaluation:**
 
-```
-constexpr size_t array_size = 10;
-int ia[array_size];
-for (size_t ix = 1; ix <= array_size; ++ix)      
-  ia[ix] = ix;
-```
+> (a) sizeof x + y
+> (b) sizeof p->mem[i]
+> (c) sizeof a < b
+> (d) sizeof f()
 
-Size of `ia` is 10, so the largest index of `ia` is 9 (index starts from 0). `ix` cannot be 10(larger than the largest index of `ia`).
+(a) (sizeof x) + y `sizeof` operator has higher order precedence than `+`(add) operator.
+
+(b) sizeof(p -> mem[i]) `sizeof` operator has lower order precedence than `+`(add) operator.
+
+(c) sizeof(a) < b `sizeof` operator has higher order precedence than `<` operator.
+
+(d) (sizeof f()) return the return type size of the function `f()`, if the return type is void then the result depends on compilers.
 
 ## Exercise 3.31
 
