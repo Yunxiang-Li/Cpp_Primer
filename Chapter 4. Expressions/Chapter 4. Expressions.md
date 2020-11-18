@@ -292,13 +292,25 @@ string s = "word";
 string pl = s + (s[s.size() - 1] == 's') ? "" : "s" ;
 ```
 
-## Exercise 3.24
+## Exercise 4.24
 
-**Redo the last exercise from § 3.3.3 (p. 105) using iterators.**
+**Our program that distinguished between high pass, pass, and fail depended on the fact that the conditional operator is right associative. Describe how that operator would be evaluated if the operator were left associative.**
 
-[3.24_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.24_1.cpp)
+Here is the program:
 
-[3.24_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.24_2.cpp)
+```cpp
+finalgrade = (grade > 90) ? "high pass" : (grade < 60) ? "fail" : "pass";
+```
+
+If the operator is left associative, then the program will be:
+
+```cpp
+finalgrade = ((grade > 90) ? "high pass" : (grade < 60)) ? "fail" : "pass";
+```
+
+If the `grade` is lower or equal to 90, then we will evaluate `(grade < 60)` part instead of the later conditional statement. And then we will evaluate expression `true ? "fail" : "pass"` or `false ? "fail" : "pass"` according to the `grade`'s value.
+
+If the `grade` is higher than 90, then first conditional statement will have result `"high pass"` and then we evaluate expression `"high pass" ? "fail" : "pass"` since `high pass` will always be converted to true when considered as a bool value thus this expression will always have true result so the final output will be "fail".
 
 ## Exercise 3.25
 
