@@ -522,11 +522,15 @@ void *pv;
 
 (d) pc = static_cast<char*>(pv);
 
-## Exercise 3.38
+## Exercise 4.38
 
-**In this section, we noted that it was not only illegal but meaningless to try to add two pointers. Why would adding two pointers be meaningless?**
+**Explain the following expression:**
 
-Because Subtracting two points gives a logically explainable result - the offset in memory between two points. Similarly, you can subtract or add an integral number to/from a pointer, which means "move the pointer up or down". Adding a pointer to a pointer is something which is hard to explain. The result is meaningless.
+```cpp
+double slope = static_cast<double>(j/i);
+```
+
+`j/i` is an integer by truncation and then cast this result to a double and store this double result in a double variable `slope`.
 
 ## Exercise 3.39
 
