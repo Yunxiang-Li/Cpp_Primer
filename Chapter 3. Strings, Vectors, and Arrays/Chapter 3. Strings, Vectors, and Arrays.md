@@ -403,19 +403,19 @@ Because Subtracting two points gives a logically explainable result - the offset
 
 [3.42 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.42.cpp)
 
-# Exercise 3.43
+## Exercise 3.43
 
 **Write three different versions of a program to print the elements of ia. One version should use a range for to manage the iteration, the other two should use an ordinary for loop in one case using subscripts and in the other using pointers. In all three programs write all the types directly. That is, do not use a type alias, auto, or decltype to simplify the code.**
 
 [3.43 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.43.cpp)
 
-# Exercise 3.44
+## Exercise 3.44
 
 **Rewrite the programs from the previous exercises using a type alias for the type of the loop control variables.**
 
 [3.44 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.44.cpp)
 
-# Exercise 3.45
+## Exercise 3.45
 
 **Rewrite the programs again, this time using auto.**
 
