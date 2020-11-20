@@ -486,13 +486,13 @@ double dval;
 
 (d) First promote `ival` from int to float and add with `fval`. Then promote the result from float to double and add with `dval`. Finally convert result from double back to char by truncation.
 
-## Exercise 3.36
+## Exercise 4.36
 
-**Write a program to compare two arrays for equality. Write a similar program to compare two vectors.**
+**Assuming i is an int and d is a double write the expression `i *= d` so that it does integral, rather than floating-point, multiplication.**
 
-[3.36_1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.36_1.cpp)
-
-[3.36_2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.36_2.cpp)
+```cpp
+i *= static_cast<int>(d);
+```
 
 ## Exercise 3.37
 
