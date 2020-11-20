@@ -438,15 +438,23 @@ If false, then decrement `x` by one and the result of `(someValue ? ++x, ++y : -
 
 To conclude, we may increment or decrement `x` by one but the result of this expression is always `y` or `--y` which has no relation with `x`.
 
-## Exercise 3.34
+## Exercise 4.34
 
-**Given that p1 and p2 point to elements in the same array, what does the following code do? Are there values of p1 or p2 that make this code illegal?**
+**Given the variable definitions in this section, explain what conversions take place in the following expressions:**
 
-> p1 += p2 - p1;
+> (a) if (fval)
 
-`p1 += p2 - p1;` means `p1 = p1 + ptrdiff_t(p2 - p1) = p2;`
+> (b) dval = fval + ival;
 
-Here comes a tricky part, if we directly write  `p1 = p1 + p2 - p1` the compiler will not compile since it will try calculate `p1 + p2` first, we can not add two pointers together since operator `+` is not defined here. This code is very smart and if `p2` and `p1` are legal then this code is always legal.
+> (c) dval + ival * cval;
+
+**Remember that you may need to consider the associativity of the operators.**
+
+(a) Convert `fval` from float to bool
+
+(b) First convert `ival` from int to float and add `ival` with `fval`. Then convert the sum from float to double.
+
+(c) First convert `cval` from char to int and multiply `ival` with `cval`. Then convert the sum from float to double.
 
 ## Exercise 3.35
 
