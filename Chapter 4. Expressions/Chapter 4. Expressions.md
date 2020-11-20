@@ -456,11 +456,35 @@ To conclude, we may increment or decrement `x` by one but the result of this exp
 
 (c) First convert `cval` from char to int and multiply `ival` with `cval`. Then convert the sum from float to double.
 
-## Exercise 3.35
+## Exercise 4.35
 
-**Using pointers, write a program to set the elements in an array to zero.**
+**Given the following definitions,**
 
-[3.35 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings%2C%20Vectors%2C%20and%20Arrays/Codes/3.35.cpp)
+```cpp
+char cval;     
+int ival;
+unsigned int ui;
+float fval;
+double dval;
+```
+
+**identify the implicit type conversions, if any, taking place:**
+
+> (a) cval = 'a' + 3;
+
+> (b) fval = ui - ival * 1.0;
+
+> (c) dval = ui * fval;
+
+> (d) cval = ival + fval + dval;
+
+(a) First promote `a` from char to int and add with `3`. Then convert the sum from int back to char.
+
+(b) First convert `ival` from int to double and multiply `ival` with 1.0. Then convert `ival` from int to double and add with the previous double sum. Finally convert result from double back to float by truncation.
+
+(c) First promote `ui` from unsigned int to float and multiply with `fval`. Then convert the result to double.
+
+(d) First promote `ival` from int to float and add with `fval`. Then promote the result from float to double and add with `dval`. Finally convert result from double back to char by truncation.
 
 ## Exercise 3.36
 
