@@ -494,20 +494,33 @@ double dval;
 i *= static_cast<int>(d);
 ```
 
-## Exercise 3.37
+## Exercise 4.37
 
-**What does the following program do?**
+**Rewrite each of the following old-style casts to use a named cast:**
 
+```cpp
+int i;
+double d;
+const string *ps;
+char *pc;
+void *pv;
 ```
-const char ca[] = {'h', 'e', 'l', 'l', 'o'};
-const char *cp = ca;
-while (*cp) 
-{    
-cout << *cp << endl;    ++cp;
-}
-```
 
-Print all elements of the array `ca`.
+> (a) pv = (void*)ps;
+
+> (b) i = int(* pc);
+
+> (c) pv = &d;
+
+> (d) pc = (char*) pv;
+
+(a) pv = static_cast<void*>(const_cast<string*>(ps));
+
+(b) i = static_cast<int>(*pc);
+
+(c) pv = static_cast<void*>(&d);
+
+(d) pc = static_cast<char*>(pv);
 
 ## Exercise 3.38
 
