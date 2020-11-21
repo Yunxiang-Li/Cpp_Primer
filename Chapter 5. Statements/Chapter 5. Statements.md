@@ -23,6 +23,7 @@ We might use a block when the language requires a single statement but the logic
 
 **Use the comma operator (§ 4.10, p. 157) to rewrite the while loop from § 1.4.1 (p. 11) so that it no longer requires a block. Explain whether this rewrite improves or diminishes the readability of this code.**
 
+[5.3 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.3%20Solution.cpp)
 
 ## Exercise 4.4
 
