@@ -27,13 +27,38 @@ We might use a block when the language requires a single statement but the logic
 
 This rewrite diminishes the readability of the code since `,` operator always guarantees the order and discards the left result but we do not care about this feature in this example which is redundant.
 
-## Exercise 4.4
+## Exercise 5.4
 
-**Parenthesize the following expression to show how it is evaluated. Test your answer by compiling the expression (without parentheses) and printing its result.**
+**Explain each of the following examples, and correct any problems you detect.**
 
-> 12 / 3 * 4 + 5 * 15 + 24 % 4 / 2
+```cpp
+(a) while (string::iterator iter != s.end()) { /* . . . */ }
 
-((12 / 3) * 4) + (5 * 15) + ((24 % 4) / 2) result is 91.
+(b) while (bool status = find(word)) { / * . . . * / }
+        if (!status) { /* . . . */ }
+```
+
+(a) `iter` is not initialized but only declared.
+
+We can fix it like this:
+
+```cpp
+strubg::iterator iter = s.begin();
+while (iter != s.end())
+    { /* . . . */ }
+```
+
+(b) `status` is only declared and defined in the while block thus we cannot access it in if block.
+
+We can fix it like this:
+
+```cpp
+bool status;
+while (status = find(word)) 
+    { / * . . . * / }
+if (!status)
+    { /* . . . */ }
+```
 
 ## Exercise 4.5
 
