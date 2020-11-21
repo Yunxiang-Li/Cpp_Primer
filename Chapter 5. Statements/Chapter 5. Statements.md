@@ -1,10 +1,15 @@
 # Chapter 5. Statements
 
-## Exercise 4.1
+## Exercise 5.1
 
-**What is the value returned by 5 + 10 * 20/2?**
+**What is a null statement? When might you use a null statement?**
 
-The return value is 105. ((10 * 20) / 2)) + 5
+null statement is an empty statement like this:
+
+```cpp
+; // null statement
+```
+We might use a null statement when the language requires a statement but the program's logic does not.
 
 ## Exercise 4.2
 
