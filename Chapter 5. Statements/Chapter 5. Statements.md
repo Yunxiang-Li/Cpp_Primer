@@ -25,6 +25,8 @@ We might use a block when the language requires a single statement but the logic
 
 [5.3 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.3%20Solution.cpp)
 
+This rewrite diminishes the readability of the code since `,` operator always guarantees the order and discards the left result but we do not care about this feature in this example which is redundant.
+
 ## Exercise 4.4
 
 **Parenthesize the following expression to show how it is evaluated. Test your answer by compiling the expression (without parentheses) and printing its result.**
