@@ -19,11 +19,10 @@ Block is a (possiby empty) sequence of statements and declarations surrounded by
 
 We might use a block when the language requires a single statement but the logic of our program needs more than one. 
 
-## Exercise 4.3
+## Exercise 5.3
 
-**Order of evaluation for most of the binary operators is left undefined to give the compiler opportunities for optimization. This strategy presents a trade-off between efficient code generation and potential pitfalls in the use of the language by the programmer. Do you consider that an acceptable trade-off? Why or why not?**
+**Use the comma operator (§ 4.10, p. 157) to rewrite the while loop from § 1.4.1 (p. 11) so that it no longer requires a block. Explain whether this rewrite improves or diminishes the readability of this code.**
 
-Yes, I consider this an acceptable trade-off since in C++, performance is the most important thing and we can use parenthesis to avoid undefined behavior.
 
 ## Exercise 4.4
 
