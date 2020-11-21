@@ -4,26 +4,20 @@
 
 **What is a null statement? When might you use a null statement?**
 
-null statement is an empty statement like this:
+Null statement is an empty statement like this:
 
 ```cpp
 ; // null statement
 ```
 We might use a null statement when the language requires a statement but the program's logic does not.
 
-## Exercise 4.2
+## Exercise 5.2
 
-**Using Table 4.12 (p. 166), parenthesize the following expressions to indicate the order in which the operands are grouped:**
+**What is a block? When might you might use a block?**
 
-```Cpp
-(a) * vec.begin()
+Block is a (possiby empty) sequence of statements and declarations surrounded by a pair of curly braces.
 
-(b) * vec.begin() + 1
-```
-
-(a) * (vec.begin())
-
-(b) (* (vec.begin())) + 1
+We might use a block when the language requires a single statement but the logic of our program needs more than one. 
 
 ## Exercise 4.3
 
