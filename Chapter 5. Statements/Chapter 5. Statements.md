@@ -72,18 +72,16 @@ if (!status)
 
 [5.6 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.6%20Solution.cpp)
 
-## Exercise 4.7
+## Exercise 5.7
 
-**What does overflow mean? Show three expressions that will overflow.**
+**Correct the errors in each of the following code fragments:**
 
 ```cpp
-short svalue = 32767; ++svalue; // expected to be 32768, but actually -32768
-
-unsigned uivalue = 0; --uivalue;  // expected to be -1, but actually 4294967295
-
-unsigned short usvalue = 65535; ++usvalue;  // expected to be 65536, but actually 0
+(a) if (ival1 != ival2)    ival1 = ival2else ival1 = ival2 = 0;
+(b) if (ival < minval)    minval = ival;    occurs = 1;
+(c) if (int ival = get_value())    cout << "ival = " << ival << endl;if (!ival)    cout << "ival = 0\n";
+(d) if (ival = 0)    ival = get_value();
 ```
-
 ## Exercise 4.8
 
 **Explain when operands are evaluated in the logical AND, logical OR, and equality operators.**
