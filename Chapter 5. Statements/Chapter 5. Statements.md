@@ -118,6 +118,8 @@ if (ival < minval)
 
 (c) `ival` is a local variable which cannot be access in the later if statement. We can fix this by declaring `ival` out of if statements.
 
+Correct version:
+
 ```cpp
 int ival;
 if (ival = get_value())
@@ -128,13 +130,16 @@ if (!ival) 
 
 (d) Instead of setting `ival`'s value as 0, we actually want to check if `ival` is equal to 0.
 
+Correct version:
+
 ```cpp
 if (ival == 0)    
     ival = get_value();
 ```  
-## Exercise 4.8
 
-**Explain when operands are evaluated in the logical AND, logical OR, and equality operators.**
+## Exercise 5.8
+
+**What is a “dangling else”? How are else clauses resolved in C++?**
 
 - logical **AND** : the second operand is evaluated if and only if the left side is true.
 
