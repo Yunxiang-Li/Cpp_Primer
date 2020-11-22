@@ -141,11 +141,8 @@ if (ival == 0)    
 
 **What is a “dangling else”? How are else clauses resolved in C++?**
 
-- logical **AND** : the second operand is evaluated if and only if the left side is true.
-
-- logical **OR** : the second operand is evaluated if and only if the left side is false.
-
-- equality operators : true only if both operands have the same value, otherwise, it returns false.
+The dangling else is a problem in computer programming in which an optional else clause in an if–else statement results in nested conditionals being ambiguous.
+In C++, an else is always paired with the closest preceding unmatched if.
 
 ## Exercise 4.9 
 
