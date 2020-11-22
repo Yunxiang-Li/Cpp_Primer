@@ -66,13 +66,11 @@ if (!status)
 
 [5.5 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.5%20Solution.cpp)
 
-## Exercise 4.6
+## Exercise 5.6
 
-**Write an expression to determine whether an int value is even or odd.**
+**Rewrite your grading program to use the conditional operator (§ 4.7, p. 151) in place of the if–else statement.**
 
-```cpp
-value % 2 == 0 ? "This int is even" : "This int is odd"
-```
+[5.6 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.6%20Solution.cpp)
 
 ## Exercise 4.7
 
