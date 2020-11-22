@@ -77,11 +77,61 @@ if (!status)
 **Correct the errors in each of the following code fragments:**
 
 ```cpp
-(a) if (ival1 != ival2)    ival1 = ival2else ival1 = ival2 = 0;
-(b) if (ival < minval)    minval = ival;    occurs = 1;
-(c) if (int ival = get_value())    cout << "ival = " << ival << endl;if (!ival)    cout << "ival = 0\n";
-(d) if (ival = 0)    ival = get_value();
+(a) if (ival1 != ival2)    
+        ival1 = ival2
+    else ival1 = ival2 = 0;
+
+(b) if (ival < minval)
+        minval = ival;    
+        occurs = 1;
+        
+(c) if (int ival = get_value())
+        cout << "ival = " << ival << endl;
+    if (!ival) 
+        cout << "ival = 0\n";
+        
+(d) if (ival = 0)    
+        ival = get_value();
 ```
+
+(a) Missing one semicolon behind `ival1 = ival2`.
+
+Correct version:
+
+```cpp
+if (ival1 != ival2)    
+    ival1 = ival2;
+else ival1 = ival2 = 0;
+```
+
+(b) Line of codes `occurs = 1` will always be evaluated. We can add braces for the if statements.
+
+Correct version:
+
+```cpp
+if (ival < minval)
+{
+    minval = ival;    
+    occurs = 1;
+{
+```
+
+(c) `ival` is a local variable which cannot be access in the later if statement. We can fix this by declaring `ival` out of if statements.
+
+```cpp
+int ival;
+if (ival = get_value())
+    cout << "ival = " << ival << endl;
+if (!ival) 
+    cout << "ival = 0\n";
+```
+
+(d) Instead of setting `ival`'s value as 0, we actually want to check if `ival` is equal to 0.
+
+```cpp
+if (ival == 0)    
+    ival = get_value();
+```  
 ## Exercise 4.8
 
 **Explain when operands are evaluated in the logical AND, logical OR, and equality operators.**
