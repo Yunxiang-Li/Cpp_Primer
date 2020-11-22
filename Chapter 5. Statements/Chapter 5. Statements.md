@@ -60,27 +60,11 @@ if (!status)
     { /* . . . */ }
 ```
 
-## Exercise 4.5
+## Exercise 5.5
 
-**Determine the result of the following expressions.**
+**Using an if–else statement, write your own version of the program to generate the letter grade from a numeric grade.**
 
-```cpp
-(a) -30 * 3 + 21 / 5
-
-(b) -30 + 3 * 21 / 5
-
-(c) 30 / 3 * 21 % 5
-
-(d) -30 / 3 * 21 % 4
-```
-
-(a) -86
-
-(b) -18
-
-(c) 0
-
-(d) -2
+[5.5 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.5%20Solution.cpp)
 
 ## Exercise 4.6
 
