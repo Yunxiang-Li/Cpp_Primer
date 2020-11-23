@@ -203,7 +203,20 @@ In C++, an else is always paired with the closest preceding unmatched if.
         break;
     }
         
-        (d) unsigned ival=512, jval=1024, kval=4096;unsigned bufsize;unsigned swt = get_bufCnt();switch(swt) {    case ival:        bufsize = ival * sizeof(int);        break;    case jval:        bufsize = jval * sizeof(int);        break;    case kval:        bufsize = kval * sizeof(int);        break;}
+(d) unsigned ival=512, jval=1024, kval=4096;
+    unsigned bufsize;
+    unsigned swt = get_bufCnt();
+    switch(swt) {    
+        case ival:
+            bufsize = ival * sizeof(int);
+            break;
+        case jval:       
+            bufsize = jval * sizeof(int);        
+            break;    
+        case kval:        
+            bufsize = kval * sizeof(int);        
+            break;
+     }
 ```
 
 (a) No break statement for each case thus if the program run case a statement then all statements below case a statement will also be ran.
@@ -233,7 +246,7 @@ switch (index) {
         ivec[ ix ] = index;        
         break;    
     default:        
-        ix = ivec.size()-1;        
+        ix = ivec.size() - 1;        
         ivec[ ix ] = index;
 }
 ```
@@ -242,6 +255,7 @@ switch (index) {
 
 Correct version:
 
+```cpp
 unsigned evenCnt = 0, oddCnt = 0;
 int digit = get_num() % 10;
 switch (digit) {
@@ -252,6 +266,28 @@ switch (digit) {
         evencnt++;
         break;
 }
+```
+
+(d) Case label must be a constant expression.
+
+Correct version:
+
+```cpp
+const unsigned ival = 512, jval = 1024, kval = 4096;
+unsigned bufsize;
+unsigned swt = get_bufCnt();
+switch(swt) {    
+    case ival:
+        bufsize = ival * sizeof(int);
+        break;
+    case jval:       
+        bufsize = jval * sizeof(int);        
+        break;    
+    case kval:        
+        bufsize = kval * sizeof(int);        
+        break;
+     }
+```
 
 ## Exercise 4.14
 
