@@ -162,15 +162,11 @@ In C++, an else is always paired with the closest preceding unmatched if.
 
 [5.11 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.11%20Solution.cpp)
 
-## Exercise 4.12
+## Exercise 5.12
 
-**Assuming i, j, and k are all ints, explain what i != j < k means.**
+**Modify our vowel-counting program so that it counts the number of occurrences of the following two-character sequences: ff, fl, and fi.**
 
-`<` has higher precedence than `!=` thus `i != j < k` is just `i != (j < k)`.
-
-Therefore this expression first checkes whether j is less than k and return a bool value (true if yes and false if no). 
-
-Then we check whether i is not equal to 1(true) or 0(false).
+[5.12 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.12%20Solution.cpp)
 
 ## Exercise 4.13
 
