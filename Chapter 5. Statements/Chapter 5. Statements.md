@@ -286,7 +286,7 @@ switch(swt) {    
     case kval:        
         bufsize = kval * sizeof(int);        
         break;
-     }
+}
 ```
 
 ## Exercise 4.14
