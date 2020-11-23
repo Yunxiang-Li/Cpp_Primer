@@ -150,14 +150,11 @@ In C++, an else is always paired with the closest preceding unmatched if.
 
 [5.9 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.9%20Solution.cpp)
 
-## Exercise 4.10 
+## Exercise 5.10 
 
-**Write the condition for a while loop that would read ints from the standard input and stop when the value read is equal to 42.**
+**There is one problem with our vowel-counting program as we’ve implemented it: It doesn’t count capital letters as vowels. Write a program that counts both lower- and uppercase letters as the appropriate vowel—that is, your program should count both 'a' and 'A' as part of aCnt, and so forth.**
 
-```cpp
-int a;
-while(cin >> a && a != 42)
-```
+[5.10 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.10%20Solution.cpp)
 
 ## Exercise 4.11
 
