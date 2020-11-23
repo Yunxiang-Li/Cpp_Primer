@@ -168,22 +168,35 @@ In C++, an else is always paired with the closest preceding unmatched if.
 
 [5.12 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.12%20Solution.cpp)
 
-## Exercise 4.13
+## Exercise 5.13
 
-**What are the values of i and d after each assignment?**
+**Each of the programs in the highlighted text on page 184 contains a common programming error. Identify and correct each error.**
 
 ```cpp
-int i;
-double d;
+(a) unsigned aCnt = 0, eCnt = 0, iouCnt = 0;
+    char ch = next_text();
+    switch (ch) {
+        case 'a': aCnt++;    
+        case 'e': eCnt++;    
+        default: iouCnt++;
+    }
+    
+    (b) unsigned index = some_value();switch (index) {    case 1:        int ix = get_value();        ivec[ ix ] = index;        break;    default:        ix = ivec.size()-1;        ivec[ ix ] = index;}(c) unsigned evenCnt = 0, oddCnt = 0;int digit = get_num() % 10;switch (digit) {    case 1, 3, 5, 7, 9:        oddcnt++;        break;    case 2, 4, 6, 8, 10:        evencnt++;        break;}(d) unsigned ival=512, jval=1024, kval=4096;unsigned bufsize;unsigned swt = get_bufCnt();switch(swt) {    case ival:        bufsize = ival * sizeof(int);        break;    case jval:        bufsize = jval * sizeof(int);        break;    case kval:        bufsize = kval * sizeof(int);        break;}
 ```
 
-> (a) d = i = 3.5;
+(a) No break statement for each case thus if the program run case a statement then all statements below case a statement will also be ran.
 
-> (b) i = d = 3.5;
+Correct version:
 
-(a) i = 3, d = 3.0
-
-(b) d = 3.5, i = 3
+```cpp
+unsigned aCnt = 0, eCnt = 0, iouCnt = 0;
+char ch = next_text();
+switch (ch) {
+    case 'a': aCnt++; break;    
+    case 'e': eCnt++; break;   
+    default: iouCnt++; break;
+}
+```
 
 ## Exercise 4.14
 
