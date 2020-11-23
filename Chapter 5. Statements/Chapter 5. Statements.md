@@ -156,13 +156,11 @@ In C++, an else is always paired with the closest preceding unmatched if.
 
 [5.10 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.10%20Solution.cpp)
 
-## Exercise 4.11
+## Exercise 5.11
 
-**Write an expression that tests four values, a, b, c, and d, and ensures that a is greater than b, which is greater than c, which is greater than d.**
+**Modify our vowel-counting program so that it also counts the number of blank spaces, tabs, and newlines read.**
 
-```cpp
-a > b && b > c && c > d
-```
+[5.11 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.11%20Solution.cpp)
 
 ## Exercise 4.12
 
