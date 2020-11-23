@@ -181,7 +181,29 @@ In C++, an else is always paired with the closest preceding unmatched if.
         default: iouCnt++;
     }
     
-    (b) unsigned index = some_value();switch (index) {    case 1:        int ix = get_value();        ivec[ ix ] = index;        break;    default:        ix = ivec.size()-1;        ivec[ ix ] = index;}(c) unsigned evenCnt = 0, oddCnt = 0;int digit = get_num() % 10;switch (digit) {    case 1, 3, 5, 7, 9:        oddcnt++;        break;    case 2, 4, 6, 8, 10:        evencnt++;        break;}(d) unsigned ival=512, jval=1024, kval=4096;unsigned bufsize;unsigned swt = get_bufCnt();switch(swt) {    case ival:        bufsize = ival * sizeof(int);        break;    case jval:        bufsize = jval * sizeof(int);        break;    case kval:        bufsize = kval * sizeof(int);        break;}
+(b) unsigned index = some_value();
+    switch (index) {    
+        case 1:        
+            int ix = get_value();        
+            ivec[ ix ] = index;        
+            break;    
+        default:        
+            ix = ivec.size()-1;        
+            ivec[ ix ] = index;
+     }
+     
+(c) unsigned evenCnt = 0, oddCnt = 0;
+    int digit = get_num() % 10;
+    switch (digit) {
+    case 1, 3, 5, 7, 9:        
+        oddcnt++;        
+        break;
+    case 2, 4, 6, 8, 10: 
+        evencnt++;
+        break;
+    }
+        
+        (d) unsigned ival=512, jval=1024, kval=4096;unsigned bufsize;unsigned swt = get_bufCnt();switch(swt) {    case ival:        bufsize = ival * sizeof(int);        break;    case jval:        bufsize = jval * sizeof(int);        break;    case kval:        bufsize = kval * sizeof(int);        break;}
 ```
 
 (a) No break statement for each case thus if the program run case a statement then all statements below case a statement will also be ran.
@@ -197,6 +219,39 @@ switch (ch) {
     default: iouCnt++; break;
 }
 ```
+
+(b) `ix` may be not in scope if we fall into default statement directly without executing case 1 statement.
+
+Correct version:
+
+```cpp
+unsigned index = some_value();
+switch (index) {
+    int ix;
+    case 1:        
+        ix = get_value();        
+        ivec[ ix ] = index;        
+        break;    
+    default:        
+        ix = ivec.size()-1;        
+        ivec[ ix ] = index;
+}
+```
+
+(c) We cannot write case statement together directly like this. Moreover, case 10 should be actually case 0 since the result of a number mod 10 is in range 0~9.
+
+Correct version:
+
+unsigned evenCnt = 0, oddCnt = 0;
+int digit = get_num() % 10;
+switch (digit) {
+    case 1: case 3: case 5: case 7: case 9:        
+        oddcnt++;        
+        break;
+    case 2: case 4: case 6: case 8: case 0: 
+        evencnt++;
+        break;
+}
 
 ## Exercise 4.14
 
