@@ -144,22 +144,11 @@ if (ival == 0)    
 The dangling else is a problem in computer programming in which an optional else clause in an if–else statement results in nested conditionals being ambiguous.
 In C++, an else is always paired with the closest preceding unmatched if.
 
-## Exercise 4.9 
+## Exercise 5.9 
 
-**Explain the behavior of the condition in the following if:**
+**Write a program using a series of if statements to count the number of vowels in text read from cin.**
 
-```Cpp
-const char *cp = "Hello World";
-if (cp && *cp)
-```
-
-`cp` is a pointer to a const char and `*cp` is a const char, and it's not a nullptr.
-
-In this `if` clause, we first check whether pointer `cp` is `nullptr` or not(it's not).
-
-Then we check whether `*cp`'s content is an empty char or not(it's not either).
-
-Therefore the value of this `if` clause is true since `true && true => true.`
+[5.9 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.9%20Solution.cpp)
 
 ## Exercise 4.10 
 
