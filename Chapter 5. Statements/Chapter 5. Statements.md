@@ -374,3 +374,24 @@ If I could use only one loop, I prefer for loop because it provides more informa
 **Given two vectors of ints, write a program to determine whether one vector is a prefix of the other. For vectors of unequal length, compare the number of elements of the smaller vector. For example, given the vectors containing 0, 1, 1, and 2 and 0, 1, 1, 2, 3, 5, 8, respectively your program should return true.**
 
 [5.17 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.17%20Solution.cpp)
+
+## Exercise 5.18
+
+**Explain each of the following loops. Correct any problems you detect.**
+
+```cpp
+(a) do    
+     int v1, v2;    
+     cout << "Please enter two numbers to sum:" ;    
+     if (cin >> v1 >> v2)       
+         cout << "Sum is: " << v1 + v2 << endl;
+    while (cin);
+    
+(b) do {
+     // . . .
+    } while (int ival = get_response());
+    
+(c) do {   
+     int ival = get_response(); 
+    } while (ival);
+```
