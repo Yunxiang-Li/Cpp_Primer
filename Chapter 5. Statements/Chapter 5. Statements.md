@@ -318,6 +318,16 @@ the output should indicate that the word **now** occurred three times.
 Correct version:
 
 ```cpp
-for (int ix = 0; ix != sz; ++ix)  { /* . . . */ }
+int ix;
+for (ix = 0; ix != sz; ++ix)  { /* . . . */ }
 if (ix != sz)     // . . .
+```
+
+(b) Even if we want to omit the initialization statement part in a for statement, we still need to set it as a null statement.
+
+Correct version:
+
+```cpp
+int ix;
+for (; ix != sz; ++ix) { /* . . . */ }
 ```
