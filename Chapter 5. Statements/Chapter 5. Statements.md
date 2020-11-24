@@ -289,14 +289,15 @@ switch(swt) {    
 }
 ```
 
-## Exercise 4.14
+## Exercise 5.14
 
-**Explain what happens in each of the if tests:**
+**Write a program to read strings from standard input looking for duplicated words. The program should find places in the input where one word is followed immediately by itself. Keep track of the largest number of times a single repetition occurs and which word is repeated. Print the maximum number of duplicates, or else print a message saying that no word was repeated. For example, if the input is**
 
-```cpp
-if (42 = i)   //  Compile error: arithmetic literal cannot be lvalue.
-if (i = 42)   //  First assign 42 to i, then since i is non-zero thus if(i) is always true.
-```
+> how now now now brown cow cow
+
+the output should indicate that the word **now** occurred three times.
+
+[5.14 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.14%20Solution.cpp)
 
 ## Exercise 4.15
 
