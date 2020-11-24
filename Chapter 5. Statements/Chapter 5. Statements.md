@@ -431,3 +431,9 @@ do {   
     ival = get_response(); 
 } while (ival);
 ```
+
+## Exercise 5.19
+
+**Write a program that uses a do while loop to repetitively request two strings from the user and report which string is less than the other.**
+
+[5.19 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.19%20Solution.cpp)
