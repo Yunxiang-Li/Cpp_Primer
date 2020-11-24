@@ -350,15 +350,15 @@ int i;
 while ( cin >> i )
     // ...
 
-// Idiomatic for loop 
+// Rewrite by for loop 
 for (int i = 0; cin >> i;)
     // ...
 
-// for idiomatic
+// Idiomatic for loop 
 for (int i = 0; i != size; ++i)
     // ...
 
-// same as while
+// Rewrite by while loop
 int i = 0;
 while (i != size)
 {
