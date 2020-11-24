@@ -366,3 +366,5 @@ while (i != size)
     ++i;
 }
 ```
+
+If I could use only one loop, I prefer for loop because it provides more information and is written in a better form.
