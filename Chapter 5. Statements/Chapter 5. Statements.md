@@ -395,3 +395,17 @@ If I could use only one loop, I prefer for loop because it provides more informa
      int ival = get_response(); 
     } while (ival);
 ```
+
+(a) We need add brackets if we have more than one statements under the do statement part or this will cause syntax error.
+
+Correct verision:
+
+```cpp
+do {
+ int v1, v2;    
+ cout << "Please enter two numbers to sum:" ;    
+ if (cin >> v1 >> v2)       
+     cout << "Sum is: " << v1 + v2 << endl;
+ }
+while (cin);
+```
