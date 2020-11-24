@@ -298,3 +298,26 @@ switch(swt) {    
 the output should indicate that the word **now** occurred three times.
 
 [5.14 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.14%20Solution.cpp)
+
+## Exercise 5.15
+
+**Explain each of the following loops. Correct any problems you detect.**
+
+```cpp
+(a) for (int ix = 0; ix != sz; ++ix)  { /* . . . */ }
+    if (ix != sz)     // . . .
+        
+(b) int ix;
+    for (ix != sz; ++ix) { /* . . . */ }
+    
+(c) for (int ix = 0; ix != sz; ++ix, ++ sz)  { /* . . . */ }
+```
+
+(a) `ix` is declared in the for statement thus it is accessible only in for blocks so that we cannot access `ix` in the later if statement.
+
+Correct version:
+
+```cpp
+for (int ix = 0; ix != sz; ++ix)  { /* . . . */ }
+if (ix != sz)     // . . .
+```
