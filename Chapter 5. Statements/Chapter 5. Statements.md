@@ -331,3 +331,11 @@ Correct version:
 int ix;
 for (; ix != sz; ++ix) { /* . . . */ }
 ```
+
+(c) After each iteration of the for loop, both `sz` and `ix` are incremented by one thus if `ix != sz` is not false(`sz == 0`) at the beginning then this for loop will be an infinite loop.
+
+Correct version:
+
+```cpp
+for (int ix = 0; ix != sz; ++ix)  { /* . . . */ }
+```
