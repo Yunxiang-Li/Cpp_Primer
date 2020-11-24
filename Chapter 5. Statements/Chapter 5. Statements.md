@@ -398,7 +398,7 @@ If I could use only one loop, I prefer for loop because it provides more informa
 
 (a) We need add brackets if we have more than one statements under the do statement part or this will cause syntax error.
 
-Correct verision:
+Correct version:
 
 ```cpp
 do {
@@ -408,4 +408,26 @@ do {
      cout << "Sum is: " << v1 + v2 << endl;
  }
 while (cin);
+```
+
+(b) We should not declare or initialize a varibale under the while part of a do-while loop.
+
+Correct version:
+
+```cpp
+int ival;
+do {
+ // . . .
+} while (ival = get_response());
+```
+
+(c) `ival` is declared and initialized in the do statement thus we cannot access it under the while statement.
+
+Correct version:
+
+```cpp
+int ival;
+do {   
+    ival = get_response(); 
+} while (ival);
 ```
