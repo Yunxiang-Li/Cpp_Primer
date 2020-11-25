@@ -437,3 +437,9 @@ do {   
 **Write a program that uses a do while loop to repetitively request two strings from the user and report which string is less than the other.**
 
 [5.19 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.19%20Solution.cpp)
+
+## Exercise 5.20
+
+**Write a program to read a sequence of strings from the standard input until either the same word occurs twice in succession or all the words have been read. Use a while loop to read the text one word at a time. Use the break statement to terminate the loop if a word occurs twice in succession. Print the word if it occurs twice in succession, or else print a message saying that no word was repeated.**
+
+[5.20 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.20%20Solution.cpp)
