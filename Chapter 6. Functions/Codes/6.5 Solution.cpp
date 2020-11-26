@@ -1,10 +1,15 @@
 #include <iostream>
 
-int fact(int val)
+int absolute_value(int input)
 {
-  if (val == 0 || val == 1)
-    return 1;
-  return val * fact(val - 1);
+  int res;
+
+  if (input < 0)
+    res = -input;
+  else
+    res = input;
+
+  return res;
 }
 
 int main()
@@ -13,14 +18,11 @@ int main()
 
   std::cout << "Please input an integer and you will get its absolute value!" << '\n';
 
-  int res;
-
   while(std::cin >> input) {
-    if (input < 0)
-      res = -input;
-    else
-      res = input;
-    std::cout << input << "'s absolute value is " << res << std::endl;
+
+    int ans = absolute_value(input);
+
+    std::cout << input << "'s absolute value is " << ans << '\n';
 
     std::cout << "You can now input another integer or quit the program!" << '\n';
   }
