@@ -491,6 +491,6 @@ Without catching exceptions, my system output a message `terminate called after 
 
 ## Exercise 5.25
 
-**Revise your program to throw an exception if the second number is zero. Test your program with a zero input to see what happens on your system if you don’t catch an exception.**
+**Revise your program from the previous exercise to use a try block to catch the exception. The catch clause should print a message to the user and ask them to supply a new number and repeat the code inside the try.**
 
 [5.25 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.25%20Solution.cpp)
