@@ -81,3 +81,13 @@ double square(double x) { return x * x; }
 **Write a function to return the absolute value of its argument.**
 
 [6.5 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.5%20Solution.cpp)
+
+## Exercise 6.6
+
+**Explain the differences between a parameter, a local variable, and a local static variable. Give an example of a function in which each might be useful.**
+
+Parameter: A local variable declared inside the function parameter list
+
+Local variable: A variable declared inside a block;
+
+Local static variable: A variable initialized before the first time execution passes through the object’s definition. Local static variable is not destroyed when a function ends and it is destroyed only when the program terminates.
