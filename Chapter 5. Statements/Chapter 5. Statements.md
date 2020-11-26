@@ -488,3 +488,9 @@ while (sz <= 0);
 
 Without catching exceptions, my system output a message `terminate called after throwing an instance of 'std::runtime_error'
   what():  The divisor cannot be zero!`
+
+## Exercise 5.25
+
+**Revise your program to throw an exception if the second number is zero. Test your program with a zero input to see what happens on your system if you don’t catch an exception.**
+
+[5.25 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.25%20Solution.cpp)
