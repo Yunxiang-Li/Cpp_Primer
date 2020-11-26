@@ -1,15 +1,12 @@
 # Chapter 6. Functions
 
-## Exercise 5.1
+## Exercise 6.1
 
-**What is a null statement? When might you use a null statement?**
+**What is the difference between a parameter and an argument?**
 
-Null statement is an empty statement like this:
+A parameter is a local variable declared inside the function's parameter list. Parameters are initialized only when all arguments are provided in each function call.
 
-```cpp
-; // null statement
-```
-We might use a null statement when the language requires a statement but the program's logic does not.
+Arguments are values provided in a function call which are used to initialize the function's all parameters.
 
 ## Exercise 5.2
 
