@@ -10,6 +10,6 @@ int fact(unsigned int val)
 int main()
 {
   int j = fact(10);  // j equals 362880 which is the result of fact(10)
-  std::cout << "10! is " << j << std::endl;
+  std::cout << "10! is " << j << '\n';
   return 0;
 }
