@@ -479,3 +479,9 @@ while (sz <= 0);
 **Write a program that reads two integers from the standard input and prints the result of dividing the first number by the second.**
 
 [5.23 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.23%20Solution.cpp)
+
+## Exercise 5.24
+
+**Revise your program to throw an exception if the second number is zero. Test your program with a zero input to see what happens on your system if you don’t catch an exception.**
+
+[5.24 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.24%20Solution.cpp)
