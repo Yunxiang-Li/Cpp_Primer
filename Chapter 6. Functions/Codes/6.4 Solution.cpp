@@ -19,7 +19,7 @@ int main()
       continue;
     }
     int res = fact(input);
-    std::cout << input << "! is " << res << std::endl;
+    std::cout << input << "! is " << res << '\n';
 
     std::cout << "You can now input another integer or quit the program!" << '\n';
   }
