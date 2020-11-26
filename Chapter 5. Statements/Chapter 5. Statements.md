@@ -474,4 +474,8 @@ do {
 while (sz <= 0);
 ```
 
-```
+## Exercise 5.23
+
+**Write a program that reads two integers from the standard input and prints the result of dividing the first number by the second.**
+
+[5.23 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.23%20Solution.cpp)
