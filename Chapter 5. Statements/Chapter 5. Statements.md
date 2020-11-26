@@ -454,4 +454,24 @@ do {   
 
 **The last example in this section that jumped back to begin could be better written using a loop. Rewrite the code to eliminate the goto.**
 
-[5.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.22%20Solution.cpp)
+```cpp
+// backward jump over an initialized variable definition is okay
+begin:
+    int sz = get_size();
+    if (sz <= 0) {
+        goto begin;
+    }
+```
+
+Modified version:
+
+```cpp
+int sz;
+
+do {
+    sz = get_size();
+}
+while (sz <= 0);
+```
+
+```
