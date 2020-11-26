@@ -1,4 +1,4 @@
-# Chapter 5. Statements
+# Chapter 6. Functions
 
 ## Exercise 5.1
 
