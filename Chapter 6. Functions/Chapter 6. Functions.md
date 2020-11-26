@@ -8,13 +8,61 @@ A parameter is a local variable declared inside the function's parameter list. P
 
 Arguments are values provided in a function call which are used to initialize the function's all parameters.
 
-## Exercise 5.2
+## Exercise 6.2
 
-**What is a block? When might you might use a block?**
+**Indicate which of the following functions are in error and why. Suggest how you might correct the problems.**
 
-Block is a (possiby empty) sequence of statements and declarations surrounded by a pair of curly braces.
+```cpp
+(a) int f() {
+        string s;     
+        // ...     
+        return s;
+    }
+    
+(b) f2(int i) { /* ... */ }
 
-We might use a block when the language requires a single statement but the logic of our program needs more than one. 
+(c) int calc(int v1, int v1) /* ... */ }
+
+(d) double square(double x) return x * x;
+```
+
+(a) Return type of function `f` is an integer but here we try to return a string which is wrong.
+
+Correct version:
+
+```cpp
+string f() {
+    string s;     
+    // ...     
+    return s;
+}
+```
+
+(b) Function `f2` must have a return type, if no return values needed it should return void.
+
+Correct version:
+
+```cpp
+void f2(int i) { /* ... */ }
+```
+
+(c) Function `calc` have duplicate parameters which is not allowed.
+
+Correct version:
+
+```cpp
+int calc(int v1, int v2) /* ... */ }
+```
+
+(d)
+
+Function blocks shoud be held in brackets.
+
+Correct version:
+
+```cpp
+double square(double x) { return x * x; }
+```
 
 ## Exercise 5.3
 
