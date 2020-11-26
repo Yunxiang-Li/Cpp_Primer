@@ -69,3 +69,9 @@ double square(double x) { return x * x; }
 **Write and test your own version of fact.**
 
 [6.3 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.3%20Solution.cpp)
+
+## Exercise 6.4
+
+**Write a function that interacts with the user, asking for a number and generating the factorial of that number. Call this function from main.**
+
+[6.4 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.4%20Solution.cpp)
