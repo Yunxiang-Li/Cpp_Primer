@@ -8,7 +8,7 @@ int main() {
   std::cout << "Please input two integers for division!" << '\n';
 
   while (std::cin >> a >> b) {
-    try {
+    div: try {
       if (b == 0)
         throw std::runtime_error("The divisor cannot be zero!");
       std::cout << "Result of " << a << " / " << b << " is " << a / b << '\n';
@@ -16,7 +16,9 @@ int main() {
     }
     catch (std::runtime_error &error) {
       std::cout << error.what() << '\n';
-      std::cout << "Please input another two valid integers for division!" << '\n';
+      std::cout << "Please input another one valid divisor for division!" << '\n';
+      std::cin >> b;
+      goto div;
     }
   }
 
