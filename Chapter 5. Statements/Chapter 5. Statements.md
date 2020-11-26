@@ -449,3 +449,9 @@ do {   
 **Revise the program from the exercise in § 5.5.1 (p. 191) so that it looks only for duplicated words that start with an uppercase letter.**
 
 [5.21 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.21%20Solution.cpp)
+
+## Exercise 5.22
+
+**The last example in this section that jumped back to begin could be better written using a loop. Rewrite the code to eliminate the goto.**
+
+[5.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Codes/5.22%20Solution.cpp)
