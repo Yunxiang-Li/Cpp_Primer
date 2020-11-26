@@ -18,7 +18,6 @@ int main() {
       std::cout << error.what() << '\n';
       std::cout << "Please input another two valid integers for division!" << '\n';
     }
-
   }
 
   return 0;
