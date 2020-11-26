@@ -75,3 +75,9 @@ double square(double x) { return x * x; }
 **Write a function that interacts with the user, asking for a number and generating the factorial of that number. Call this function from main.**
 
 [6.4 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.4%20Solution.cpp)
+
+## Exercise 6.5
+
+**Write a function to return the absolute value of its argument.**
+
+[6.5 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.5%20Solution.cpp)
