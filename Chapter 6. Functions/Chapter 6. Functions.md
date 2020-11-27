@@ -91,3 +91,20 @@ Parameter: A local variable declared inside the function parameter list
 Local variable: A variable declared inside a block;
 
 Local static variable: A variable initialized before the first time execution passes through the object’s definition. Local static variable is not destroyed when a function ends and it is destroyed only when the program terminates.
+
+```cpp
+size_t count_add(int n)       // Here n is a parameter.
+{
+    static size_t ctr = 0;    // Here ctr is a static variable.
+    ctr += n;
+    return ctr;
+}
+
+int main()
+{
+    for (size_t i = 0; i != 10; ++i)  // Here i is a local variable.
+      cout << count_add(i) << endl;
+
+    return 0;
+}
+```
