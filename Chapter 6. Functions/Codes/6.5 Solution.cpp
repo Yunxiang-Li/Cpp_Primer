@@ -2,14 +2,9 @@
 
 int absolute_value(int input)
 {
-  int res;
-
-  if (input < 0)
-    res = -input;
-  else
-    res = input;
-
-  return res;
+  
+  return ((input) < 0 ? -input : input);
+  
 }
 
 int main()
