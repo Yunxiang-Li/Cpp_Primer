@@ -108,3 +108,9 @@ int main()
     return 0;
 }
 ```
+
+## Exercise 6.7
+
+**Write a function that returns 0 when it is first called and then generates numbers in sequence each time it is called again.**
+
+[6.7 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.7%20Solution.cpp)
