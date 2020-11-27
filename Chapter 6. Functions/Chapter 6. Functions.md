@@ -131,6 +131,6 @@ int main()
 
 ## Exercise 6.10
 
-**Write a header file named Chapter6.h that contains declarations for the functions you wrote for the exercises in § 6.1 (p. 205).**
+**Using pointers, write a function to swap the values of two ints. Test the function by calling it and printing the swapped values.**
 
 [6.10 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.10%20Solution.cpp)
