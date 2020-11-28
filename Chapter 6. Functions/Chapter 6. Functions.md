@@ -154,3 +154,29 @@ I think the reference version is easier since we do not need to care about point
 **Assuming T is the name of a type, explain the difference between a function declared as void f(T) and void f(T&).**
 
 `void f(T)` pass the argument by value thus local variable `T` will not affect the input argument even `T` changes its value in the function `f(T)`. `void f(T&)` pass a reference which will bound with whatever T object we pass.
+
+## Exercise 6.14
+
+**Give an example of when a parameter should be a reference type. Give an example of when a parameter should not be a reference.**
+
+A parameter should be a reference type:
+
+reset function from the book
+
+```cpp
+void reset(int &i)
+{
+        i = 0;
+}
+```
+
+A parameter should not be a reference:
+
+When a parameter is optional, then we should avoid using reference which will cause an undefined behavior.
+
+```cpp
+void func(oneClass a, anotherClass &b = 0)
+{
+ //...
+}
+```
