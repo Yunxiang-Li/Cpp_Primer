@@ -134,3 +134,9 @@ int main()
 **Using pointers, write a function to swap the values of two ints. Test the function by calling it and printing the swapped values.**
 
 [6.10 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.10%20Solution.cpp)
+
+## Exercise 6.11
+
+**Write and test your own version of reset that takes a reference.**
+
+[6.11 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.11%20Solution.cpp)
