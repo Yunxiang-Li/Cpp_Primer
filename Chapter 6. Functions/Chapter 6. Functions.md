@@ -153,4 +153,4 @@ I think the reference version is easier since we do not need to care about point
 
 **Assuming T is the name of a type, explain the difference between a function declared as void f(T) and void f(T&).**
 
-[6.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.13%20Solution.cpp)
+`void f(T)` pass the argument by value thus local variable `T` will not affect the input argument even `T` changes its value in the function `f(T)`. `void f(T&)` pass a reference which will bound with whatever T object we pass.
