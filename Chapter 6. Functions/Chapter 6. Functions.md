@@ -172,11 +172,14 @@ void reset(int &i)
 
 A parameter should not be a reference:
 
-When a parameter is optional, then we should avoid using reference which will cause an undefined behavior.
+parameter char `c` of `find_char` function example in this chapter. We do not need to set `c` as a const char& since a char is already small enough for us to pass by value.
 
-```cpp
-void func(oneClass a, anotherClass &b = 0)
-{
- //...
-}
-```
+## Exercise 6.15
+
+**Explain the rationale for the type of each of find_char’s parameters In particular, why is s a reference to const but occurs is a plain reference? Why are these parameters references, but the char parameter c is not? What would happen if we made s a plain reference? What if we made occurs a reference to const?**
+
+Because parameter `s` should not be changed by this function. Hoever, parameter `occurs`'s result must be modified by the function.
+
+We can set `c` as a const char& type here but it is not necessary since a char is already small enough for us to pass by value.
+
+We can make `s` a plain refernce but then `s` will have risk of being modified. We cannot make `occurs` a const reference since would not be changed. so occurs = 0; is an error.
