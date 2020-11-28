@@ -148,3 +148,9 @@ int main()
 [6.12 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.12%20Solution.cpp)
 
 I think the reference version is easier since we do not need to care about pointers' process.
+
+## Exercise 6.13
+
+**Assuming T is the name of a type, explain the difference between a function declared as void f(T) and void f(T&).**
+
+[6.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.13%20Solution.cpp)
