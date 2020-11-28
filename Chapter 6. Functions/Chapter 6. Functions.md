@@ -146,3 +146,5 @@ int main()
 **Rewrite the program from exercise 6.10 in § 6.2.1 (p. 210) to use references instead of pointers to swap the value of two ints. Which version do you think would be easier to use and why?**
 
 [6.12 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.12%20Solution.cpp)
+
+I think the reference version is easier since we do not need to care about pointers' process.
