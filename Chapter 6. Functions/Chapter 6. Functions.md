@@ -172,7 +172,7 @@ void reset(int &i)
 
 A parameter should not be a reference:
 
-parameter char `c` of `find_char` function example in this chapter. We do not need to set `c` as a const char& since a char is already small enough for us to pass by value.
+parameter **char** `c` of `find_char` function example in this chapter. We do not need to set `c` as a **const char&** since a **char** is already small enough for us to pass by value.
 
 ## Exercise 6.15
 
@@ -180,6 +180,6 @@ parameter char `c` of `find_char` function example in this chapter. We do not ne
 
 Because parameter `s` should not be changed by this function. Hoever, parameter `occurs`'s result must be modified by the function.
 
-We can set `c` as a const char& type here but it is not necessary since a char is already small enough for us to pass by value.
+We can set `c` as a **const char&** type here but it is not necessary since a **char** is already small enough for us to pass by value.
 
-We can make `s` a plain refernce but then `s` will have risk of being modified. We cannot make `occurs` a const reference since would not be changed. so occurs = 0; is an error.
+We can make `s` a plain refernce but then `s` will have risk of being modified. We cannot make `occurs` a const reference since then `occurs = 0` is an error since this line of code want to change `occurs`'s value which is not allowed.
