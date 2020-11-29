@@ -188,7 +188,9 @@ We can make `s` a plain refernce but then `s` will have risk of being modified. 
 
 **The following function, although legal, is less useful than it might be. Identify and correct the limitation on this function:**
 
-> bool is_empty(string& s) { return s.empty(); }
+```cpp
+bool is_empty(string& s) { return s.empty(); }
+```
 
 This function takes a plain string reference as the parameter which will mislead users that the input string argument may be modified. Moreover, this function do not accept a const string reference as an input argument.
 
@@ -196,4 +198,6 @@ We should change the parameter from `string&` to `const string&`.
 
 Correct version:
 
+```cpp
 > bool is_empty(const string& s) { return s.empty(); }
+```
