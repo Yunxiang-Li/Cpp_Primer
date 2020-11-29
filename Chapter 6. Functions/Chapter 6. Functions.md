@@ -257,4 +257,4 @@ vector<int> vec(10);
 
 **When should reference parameters be references to const? What happens if we make a parameter a plain reference when it could be a reference to const?**
 
-We should use const reference when we can. If we make a parameter a plain reference when it could be a reference to const, the reference value maybe changed. Moreover, const reference accept wider range of input types than plain reference.
+We should use const reference when we can. If we make a parameter a plain reference when it could be a reference to const, the reference value maybe changed(even not changed, this will mislead users that it may change). Moreover, const reference accept wider range of input types than plain reference.
