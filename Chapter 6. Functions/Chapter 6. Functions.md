@@ -207,3 +207,13 @@ Correct version:
 **Write a function to determine whether a string contains any capital letters. Write a function to change a string to all lowercase. Do the parameters you used in these functions have the same type? If so, why? If not, why not?**
 
 [6.17 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.17%20Solution.cpp)
+
+Not the same type. For the function `hasCapital` I use parameter `const string&`, since no modification needed for the input string argument. For the function `convertLower` I use parameter `string&` since this time we need to convert each uppercase letter from the input string argument to lowercase letter.
+
+## Exercise 6.18
+
+**Write declarations for each of the following functions. When you write these declarations, use the name of the function to indicate what the function does.**
+
+> (a) A function named compare that returns a bool and has two parameters that are references to a class named matrix.
+
+> (b) A function named change_val that returns a vector<int> iterator and takes two parameters: One is an int and the other is an iterator for a vector<int>.
