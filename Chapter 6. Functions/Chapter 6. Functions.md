@@ -252,3 +252,9 @@ vector<int> vec(10);
 (c) Legal, function `calc` will convert input int `66` to a double value(66.0).
 
 (d) Legal.
+
+## Exercise 6.20
+
+**When should reference parameters be references to const? What happens if we make a parameter a plain reference when it could be a reference to const?**
+
+We should use const reference when we can. If we make a parameter a plain reference when it could be a reference to const, the reference value maybe changed. Moreover, const reference accept wider range of input types than plain reference.
