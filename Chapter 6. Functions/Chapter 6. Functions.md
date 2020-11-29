@@ -216,4 +216,12 @@ Not the same type. For the function `hasCapital` I use parameter `const string&`
 
 > (a) A function named compare that returns a bool and has two parameters that are references to a class named matrix.
 
+```cpp
+bool compare(const matrix& m1, const matrix& m2);
+```
+
 > (b) A function named change_val that returns a vector<int> iterator and takes two parameters: One is an int and the other is an iterator for a vector<int>.
+
+```cpp
+vector<int>::iterator change_val(const int a, vector<int>::iterator iter);
+```
