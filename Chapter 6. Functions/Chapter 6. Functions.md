@@ -244,3 +244,11 @@ vector<int> vec(10);
 
 (d) sum(vec.begin(), vec.end(), 3.8);
 ```
+
+(a) Illegal, function `calc` accepts one double value but here we provide two double values.
+
+(b) Legal.
+
+(c) Legal, function `calc` will convert input int `66` to a double value(66.0).
+
+(d) Legal.
