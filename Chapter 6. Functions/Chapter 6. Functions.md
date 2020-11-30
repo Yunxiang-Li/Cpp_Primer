@@ -266,3 +266,9 @@ We should use const reference when we can. If we make a parameter a plain refere
 [6.21 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.21%20Solution.cpp)
 
 I choose `const int* const` parameter type for the pointer since both the input pointer's address and the value it points to do not need to be modified.
+
+## Exercise 6.22
+
+**Write a function to swap two int pointers.**
+
+[6.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.22%20Solution.cpp)
