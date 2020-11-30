@@ -263,4 +263,4 @@ We should use const reference when we can. If we make a parameter a plain refere
 
 **Write a function that takes an int and a pointer to an int and returns the larger of the int value or the value to which the pointer points. What type should you use for the pointer?**
 
-We should use const reference when we can. If we make a parameter a plain reference when it could be a reference to const, the reference value maybe changed(even not changed, this will mislead users that it may change). Moreover, const reference accept wider range of input types than plain reference.
+[6.21 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.21%20Solution.cpp)
