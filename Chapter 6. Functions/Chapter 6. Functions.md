@@ -278,3 +278,29 @@ I choose `const int* const` parameter type for the pointer since both the input 
 **Write your own versions of each of the print functions presented in this section. Call each of these functions to print i and j defined as follows:**
 
 [6.23 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.23%20Solution.cpp)
+
+## Exercise 6.24
+
+**Explain the behavior of the following function. If there are problems in the code, explain what they are and how you might fix them.**
+
+```cpp
+void print(const int ia[10])
+{    
+    for (size_t i = 0; i != 10; ++i)
+        cout << ia[i] << endl;
+}
+```
+
+This function works well. The problem is although the input parameter is `const int ia[10]` this is actually equivalant to `const int* ia` which points to the first element of the array `ia`. Therefore the `i`'s upper bound will change if we want to input an array with different size.
+
+If we want to strictly request that we can only input a 10-size array then we should change function parameter to `const int (&ia)[10]`
+
+Correct version:
+
+```cpp
+void print(const int (&ia)[10])
+{    
+    for (size_t i = 0; i != 10; ++i)
+        cout << ia[i] << endl;
+}
+```
