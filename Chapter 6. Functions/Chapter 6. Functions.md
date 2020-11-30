@@ -310,3 +310,9 @@ void print(const int (&ia)[10])
 **Write a main function that takes two arguments. Concatenate the supplied arguments and print the resulting string.**
 
 [6.25 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.25%20Solution.cpp)
+
+## Exercise 6.26
+
+**Write a program that accepts the options presented in this section. Print the values of the arguments passed to main.**
+
+[6.26 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.26%20Solution.cpp)
