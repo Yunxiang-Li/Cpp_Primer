@@ -264,3 +264,5 @@ We should use const reference when we can. If we make a parameter a plain refere
 **Write a function that takes an int and a pointer to an int and returns the larger of the int value or the value to which the pointer points. What type should you use for the pointer?**
 
 [6.21 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.21%20Solution.cpp)
+
+I choose `const int* const` parameter type for the pointer since both the input pointer's address and the value it points to do not need to be modified.
