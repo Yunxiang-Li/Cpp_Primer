@@ -304,3 +304,9 @@ void print(const int (&ia)[10])
         cout << ia[i] << endl;
 }
 ```
+
+## Exercise 6.25
+
+**Write a main function that takes two arguments. Concatenate the supplied arguments and print the resulting string.**
+
+[6.25 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.25%20Solution.cpp)
