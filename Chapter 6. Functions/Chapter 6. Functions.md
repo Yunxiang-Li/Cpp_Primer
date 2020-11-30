@@ -272,3 +272,9 @@ I choose `const int* const` parameter type for the pointer since both the input 
 **Write a function to swap two int pointers.**
 
 [6.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.22%20Solution.cpp)
+
+## Exercise 6.23
+
+**Write your own versions of each of the print functions presented in this section. Call each of these functions to print i and j defined as follows:**
+
+[6.23 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.23%20Solution.cpp)
