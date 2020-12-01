@@ -1,4 +1,4 @@
-# Chapter 6. Functionsadzd
+# Chapter 6. Functions
 
 ## Exercise 6.1
 
