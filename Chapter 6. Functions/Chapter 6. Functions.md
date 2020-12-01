@@ -1,5 +1,5 @@
-# Chapter 6. Functionsaaaaa
-a
+# Chapter 6. Functions
+
 ## Exercise 6.1
 
 **What is the difference between a parameter and an argument?**
