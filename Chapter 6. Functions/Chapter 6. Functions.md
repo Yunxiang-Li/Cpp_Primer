@@ -1,4 +1,4 @@
-# Chapter 6. Functionsad
+# Chapter 6. Functionsadz
 
 ## Exercise 6.1
 
