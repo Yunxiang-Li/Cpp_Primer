@@ -1,4 +1,4 @@
-# Chapter 6. Functionsaa
+# Chapter 6. Functionsaaa
 
 ## Exercise 6.1
 
