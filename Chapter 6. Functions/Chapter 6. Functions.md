@@ -316,3 +316,7 @@ void print(const int (&ia)[10])
 **Write a program that accepts the options presented in this section. Print the values of the arguments passed to main.**
 
 [6.26 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.26%20Solution.cpp)
+
+## Exercise 6.27
+
+**Write a function that takes an initializer_list<int> and produces the sum of the elements in the list.**
