@@ -319,4 +319,6 @@ void print(const int (&ia)[10])
 
 ## Exercise 6.27
 
-**Write a function that takes an initializer_list<int> and produces the sum of the elements in the list.**
+**Write a function that takes an `initializer_list<int>` and produces the sum of the elements in the list.**
+
+[6.27 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.27%20Solution.cpp)
