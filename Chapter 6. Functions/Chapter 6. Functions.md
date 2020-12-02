@@ -362,3 +362,9 @@ It is valid to return a reference when the preexisted object that the reference 
 It is legal. Each iteration, `get(ia, i)` returns the reference to the `ia[i]` thus `get(ia, i)` method just assign each element `ia[i]` with value `i`.
 
 The result from `ia[0]` to `ia[9]` are `0` to `9`.
+
+## Exercise 6.33
+
+**Write a recursive function to print the contents of a vector.**
+
+[6.33 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.33%20Solution.cpp)
