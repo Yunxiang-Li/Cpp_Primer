@@ -368,3 +368,14 @@ The result from `ia[0]` to `ia[9]` are `0` to `9`.
 **Write a recursive function to print the contents of a vector.**
 
 [6.33 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.33%20Solution.cpp)
+
+## Exercise 6.34
+
+**What would happen if the stopping condition in factorial were**
+
+```cpp
+if (val != 0)
+```
+1. When users input a non-negative integer then everything works well as before.
+
+2. When users input a negative integer then the program will have endless recursive calls of `factorial` method(for instance, -1 * -2 * -3 * ...). The program will have a stack overflow error.
