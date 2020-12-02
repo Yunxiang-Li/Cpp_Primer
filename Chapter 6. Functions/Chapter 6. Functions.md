@@ -334,3 +334,17 @@ The type of `elem` in the for loop is `const std::string&`.
 **When you use an initializer_list in a range for would you ever use a reference as the loop control variable? If so, why? If not, why not?**
 
 Each element in the initializer_list is a const element. Therefore, if each element is just a basic type element then we do not need to use any reference since the cost of copy each element is already very low. However, for each other type element(like a complex class object) then we should use const reference.
+
+## Exercise 6.30
+
+**Compile the version of str_subrange as presented on page 223 to see what your compiler does with the indicated errors.**
+
+g++ error:
+
+```
+error: return-statement with no value, in function returning 'bool' [-fpermissive]
+       return; 
+       ^~~~~~
+```
+
+My compiler failed to detect the error 2.
