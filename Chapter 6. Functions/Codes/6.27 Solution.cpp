@@ -1,7 +1,7 @@
 #include <iostream>
 #include <initializer_list>
 
-int sum(std::initializer_list<int> initial_list) {
+int sum(const std::initializer_list<int>& initial_list) {
 
   int res{0};
 
