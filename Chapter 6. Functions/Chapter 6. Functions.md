@@ -347,4 +347,11 @@ error: return-statement with no value, in function returning 'bool' [-fpermissiv
        ^~~~~~
 ```
 
-My compiler failed to detect the error 2.
+My compiler failed to detect the error 2 D:.
+
+
+## Exercise 6.31
+
+**When is it valid to return a reference? A reference to const?**
+
+It is valid to return a reference when the preexisted object that the reference refered to is still exist.
