@@ -379,3 +379,15 @@ if (val != 0)
 1. When users input a non-negative integer then everything works well as before.
 
 2. When users input a negative integer then the program will have endless recursive calls of `factorial` method(for instance, -1 * -2 * -3 * ...). The program will have a stack overflow error.
+
+## Exercise 6.35
+
+**In the call to factorial, why did we pass val - 1 rather than val--?**
+
+For line of codes
+
+```cpp
+return factorial(val - 1) * val;
+```
+
+If we use `val--` instead of `val - 1`, since `val--` will first be used in next recursive call and then decrement by one, then for each recursive call of `factorial` the `val` will never change which will lead program to endless recursive calls. Therefore, the program will then have a stack overflow error.
