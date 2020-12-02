@@ -399,3 +399,27 @@ If we use `val--` instead of `val - 1`, since `val--` will first be used in next
 ```cpp
 string (&func())[10]
 ```
+
+## Exercise 6.37
+
+**Write three additional declarations for the function in the previous exercise. One should use a type alias, one should use a trailing return, and the third should use decltype. Which form do you prefer and why?**
+
+Type alias version:
+
+```cpp
+typedef string strArr[10]; // using strArr = string[10];
+strArr& func();
+```
+
+Trailing return version:
+
+```cpp
+auto func -> string (&)[10];
+```
+
+Decltype version:
+
+```cpp
+string strArr[10];
+decltype(strArr)& func();
+```
