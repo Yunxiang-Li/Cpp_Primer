@@ -349,9 +349,16 @@ error: return-statement with no value, in function returning 'bool' [-fpermissiv
 
 My compiler failed to detect the error 2 D:.
 
-
 ## Exercise 6.31
 
 **When is it valid to return a reference? A reference to const?**
 
 It is valid to return a reference when the preexisted object that the reference refered to is still exist.
+
+## Exercise 6.32
+
+**Indicate whether the following function is legal. If so, explain what it does; if not, correct any errors and then explain it.**
+
+It is legal. Each iteration, `get(ia, i)` returns the reference to the `ia[i]` thus `get(ia, i)` method just assign each element `ia[i]` with value `i`.
+
+The result from `ia[0]` to `ia[9]` are `0` to `9`.
