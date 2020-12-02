@@ -391,3 +391,11 @@ return factorial(val - 1) * val;
 ```
 
 If we use `val--` instead of `val - 1`, since `val--` will first be used in next recursive call and then decrement by one, then for each recursive call of `factorial` the `val` will never change which will lead program to endless recursive calls. Therefore, the program will then have a stack overflow error.
+
+## Exercise 6.36
+
+**Write the declaration for a function that returns a reference to an array of ten strings, without using either a trailing return, decltype, or a type alias.**
+
+```cpp
+string (&func())[10]
+```
