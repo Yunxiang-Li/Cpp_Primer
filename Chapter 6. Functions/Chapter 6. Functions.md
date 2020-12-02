@@ -322,3 +322,9 @@ void print(const int (&ia)[10])
 **Write a function that takes an `initializer_list<int>` and produces the sum of the elements in the list.**
 
 [6.27 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.27%20Solution.cpp)
+
+## Exercise 6.28
+
+**In the second version of error_msg that has an ErrCode parameter, what is the type of elem in the for loop?**
+
+The type of `elem` in the for loop is `const std::string&`.
