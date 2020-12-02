@@ -328,3 +328,9 @@ void print(const int (&ia)[10])
 **In the second version of error_msg that has an ErrCode parameter, what is the type of elem in the for loop?**
 
 The type of `elem` in the for loop is `const std::string&`.
+
+## Exercise 6.29
+
+**When you use an initializer_list in a range for would you ever use a reference as the loop control variable? If so, why? If not, why not?**
+
+Each element in the initializer_list is a const element. Therefore, if each element is just a basic type element then we do not need to use any reference since the cost of copy each element is already very low. However, for each other type element(like a complex class object) then we should use const reference.
