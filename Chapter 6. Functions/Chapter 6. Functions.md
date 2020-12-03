@@ -451,3 +451,5 @@ double get();
 (c) int *reset(int *);
 double *reset(double *);
 ```
+
+(a) Illegal, since `const` in `const int` is a high const then the compiler will treate two functions like same one and function redeclaration is illegal.
