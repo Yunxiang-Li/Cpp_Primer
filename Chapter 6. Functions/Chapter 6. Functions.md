@@ -490,4 +490,8 @@ char *init(int ht, int wd = 80, char bckgrnd = ' ');
 
 (b) Legal, function will be called as `char* init(24, 10, ' ')`.
 
-(c) Legal, but may not be what we expected. function will be called as `char* init(14, 42, ' ')` where 42 is the int value converted by the compiler from the char `*`. Actually user may want to call function as `init(14, 80, '*')` thus user should call like `init(14, ,'*`)`. 
+(c) Legal, but may not be what we expected. function will be called as `char* init(14, 42, ' ')` where 42 is the int value converted by the compiler from the char `*`. Actually user may want to call function as `init(14, 80, '*')` thus user should call like `init(14, ,'*')`. 
+
+## Exercise 6.42
+
+**Give the second parameter of make_plural (§ 6.3.2, p. 224) a default argument of 's'. Test your program by printing singular and plural versions of the words success and failure.**
