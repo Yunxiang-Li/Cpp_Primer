@@ -452,4 +452,8 @@ double get();
 double *reset(double *);
 ```
 
-(a) Illegal, since `const` in `const int` is a high const which will not affect the input(whether input int is a plain int or a const int). Therefore the compiler will treat two functions like same one and function redeclaration is illegal.
+(a) Illegal, since `const` in `const int` is a high const which will not affect the input(whether input int is a plain int or a const int). Therefore the compiler will not treat two functions as overloaded functions and thus function redeclaration is illegal.
+
+(b) Illegal, compiler will not treat two functions as overloaded functions if the only difference is return type.
+
+(c) Legal, both return type and parameter type are different thus compiler will treat two functions as overloaded functions.
