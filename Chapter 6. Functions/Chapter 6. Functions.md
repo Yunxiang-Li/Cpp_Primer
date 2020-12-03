@@ -447,4 +447,7 @@ int calc(const int, const int);
 
 (b) int get();
 double get();
+
+(c) int *reset(int *);
+double *reset(double *);
 ```
