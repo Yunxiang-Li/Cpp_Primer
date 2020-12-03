@@ -440,3 +440,8 @@ decltype(odd)& arrPtr(int i)
 ## Exercise 6.39
 
 **Explain the effect of the second declaration in each one of the following sets of declarations. Indicate which, if any, are illegal.**
+
+```cpp
+(a) int calc(int, int);
+int calc(const int, const int);
+```
