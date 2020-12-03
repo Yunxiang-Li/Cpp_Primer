@@ -495,3 +495,5 @@ char *init(int ht, int wd = 80, char bckgrnd = ' ');
 ## Exercise 6.42
 
 **Give the second parameter of make_plural (§ 6.3.2, p. 224) a default argument of 's'. Test your program by printing singular and plural versions of the words success and failure.**
+
+[6.42 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.42%20Solution.cpp)
