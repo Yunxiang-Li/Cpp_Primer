@@ -444,4 +444,7 @@ decltype(odd)& arrPtr(int i)
 ```cpp
 (a) int calc(int, int);
 int calc(const int, const int);
+
+(b) int get();
+double get();
 ```
