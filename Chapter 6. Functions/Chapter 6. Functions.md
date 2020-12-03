@@ -471,3 +471,23 @@ double *reset(double *);
 (a) Correct, default arguments should be specified from rightmost to leftmost.
 
 (b) Wrong, if we want to set `ht`'s default value, we should set `wd` and `bckgrnd`'s default values first.
+
+## Exercise 6.41
+
+**Which, if any, of the following calls are illegal? Why? Which, if any, are legal but unlikely to match the programmer’s intent? Why?**
+
+```cpp
+char *init(int ht, int wd = 80, char bckgrnd = ' ');
+
+(a) init();
+
+(b) init(24,10);
+
+(c) init(14, '*');
+```
+
+(a) Illegal, `ht` does not have default value.
+
+(b) Legal, function will be called as `char* init(24, 10, ' ')`.
+
+(c) Legal, but may not be what we expected. function will be called as `char* init(14, 42, ' ')` where 42 is the int value converted by the compiler from the char `*`. Actually user may want to call function as `init(14, 80, '*')` thus user should call like `init(14, ,'*)`. 
