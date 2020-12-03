@@ -457,3 +457,13 @@ double *reset(double *);
 (b) Illegal, compiler will not treat two functions as overloaded functions if the only difference is return type.
 
 (c) Legal, both return type and parameter type are different thus compiler will treat two functions as overloaded functions.
+
+## Exercise 6.40
+
+**Which, if either, of the following declarations are errors? Why?**
+
+```cpp
+(a) int ff(int a, int b = 0, int c = 0);
+
+(b) char *init(int ht = 24, int wd, char bckgrnd);
+```
