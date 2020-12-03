@@ -467,3 +467,7 @@ double *reset(double *);
 
 (b) char *init(int ht = 24, int wd, char bckgrnd);
 ```
+
+(a) Correct, default arguments should be specified from rightmost to leftmost.
+
+(b) Wrong, if we want to set `ht`'s default value, we should set `wd` and `bckgrnd`'s default values first.
