@@ -436,3 +436,7 @@ decltype(odd)& arrPtr(int i)
     return (i % 2) ? odd : even;
 }
 ```
+
+## Exercise 6.39
+
+**Explain the effect of the second declaration in each one of the following sets of declarations. Indicate which, if any, are illegal.**
