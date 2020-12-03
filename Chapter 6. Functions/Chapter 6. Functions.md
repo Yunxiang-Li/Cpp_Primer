@@ -452,4 +452,4 @@ double get();
 double *reset(double *);
 ```
 
-(a) Illegal, since `const` in `const int` is a high const then the compiler will treate two functions like same one and function redeclaration is illegal.
+(a) Illegal, since `const` in `const int` is a high const which will not affect the input(whether input int is a plain int or a const int). Therefore the compiler will treat two functions like same one and function redeclaration is illegal.
