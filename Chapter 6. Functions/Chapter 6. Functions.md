@@ -524,4 +524,4 @@ char *init(int ht, int wd = 80, char bckgrnd = ' ');
 
 **Review the programs you’ve written for the earlier exercises and decide whether they should be defined as inline. If so, do so. If not, explain why they should not be inline.**
 
-All functions with exactly one return statement and are used more than once should be defined as inline functions. All other functions should be just normal functions.
+All functions with exactly one valid statement(null statement does not count) which are used more than once should be defined as inline functions. All other functions should be just normal functions.
