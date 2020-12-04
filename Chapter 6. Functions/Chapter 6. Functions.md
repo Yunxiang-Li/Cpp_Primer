@@ -516,6 +516,6 @@ char *init(int ht, int wd = 80, char bckgrnd = ' ');
 
 **Rewrite the isShorter function from § 6.2.2 (p. 211) to be inline.**
 
-[header file for inline function](https://github.com/Yunxiang-Li/Cpp_Primer/tree/master/Chapter%206.%20Functions/Codes)
+[header file for inline function](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/inline.hpp)
 
-[source file](https://github.com/Yunxiang-Li/Cpp_Primer/tree/master/Chapter%206.%20Functions/Codes)
+[source file](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.44%20Solution.cpp)
