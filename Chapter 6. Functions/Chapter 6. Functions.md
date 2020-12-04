@@ -525,3 +525,11 @@ char *init(int ht, int wd = 80, char bckgrnd = ' ');
 **Review the programs you’ve written for the earlier exercises and decide whether they should be defined as inline. If so, do so. If not, explain why they should not be inline.**
 
 All functions with exactly one valid statement(null statement does not count) which are used more than once should be defined as inline functions. All other functions should be just normal functions.
+
+## Exercise 6.46
+
+**Would it be possible to define isShorter as a constexpr? If so, do so. If not, explain why not.**
+
+No, because if a function is a constexpr function then all function calls in this inline function should also be constexpr functions.
+
+Here, however, `std::string.size()` is not a constexpr function thus we cannot define `isShorter` as a constexpr function.
