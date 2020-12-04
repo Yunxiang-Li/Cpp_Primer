@@ -575,3 +575,11 @@ A viable function is a function must have the same number of parameters as there
 
 (d) f(2.56, 3.14)
 ```
+
+(a) Illegal, the call is ambiguous. 2.56 is a double which matches the double version `void f(double, double = 3.14)` but 42 is a int which matches the int version `void f(int, int)`. We have 2 viable functions thus compile cannot decide to use which.
+
+(b) Legal, One int argument 42 thus the one int version `void f(int)` will be called.
+
+(c) Legal, two int arguments thus two int version `void f(int, int)` will be called.
+
+(d) Legal, two double arguments thus two double version `void f(double, double = 3.14)` will be called.
