@@ -507,7 +507,7 @@ char *init(int ht, int wd = 80, char bckgrnd = ' ');
 
 (b) void putValues(int *arr, int size);
 ```
-
-(a) I will put inline function's declaraion and definition in a header because of the one definition rule (ODR) for inline functions, an identical definition for the function must exist in every translation unit that uses it. Therefore, when each source file need to use inline functions they can just get them directly from header files.
+ 
+(a) I will put inline function's declaraion and definition in a header because of two reasons. One is about definition rule (ODR) for inline functions, an identical definition for the function must exist in every translation unit that uses it. The second reason is that we do not need to define this inline function again in each source file which will optimize the program's performance.
 
 (b) I will also put this function's declaration in a header file since it is just a normal function.
