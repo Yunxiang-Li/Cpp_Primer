@@ -626,3 +626,9 @@ int calc(const char*, const char*);
 (c) int calc(char*, char*);
 int calc(char* const, char* const);
 ```
+
+(a) Legal. first for two plain int reference arguments and second for two const int reference arguments.
+
+(b) Legal. first for two plain char pointer arguments and second for two low level const char point arguments.
+
+(c) Illegal. Top level const will be ignored in overload functions. Therefore both functions are for two plain char pinter arguments(or two top level const char pointer arguments)
