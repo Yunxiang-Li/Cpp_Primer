@@ -561,3 +561,17 @@ It is not a good use of assertion here. This `assert` will affect and terminate 
 A candidate function is a function with the same name as the called function and for which a declaration is visible at the point of the call. 
 
 A viable function is a function must have the same number of parameters as there are arguments in the call, and the type of each argument must match—or be convertible to—the type of its corresponding parameter.
+
+## Exercise 6.50
+
+**Given the declarations for f from page 242, list the viable functions, if any for each of the following calls. Indicate which function is the best match, or if the call is illegal whether there is no match or why the call is ambiguous.**
+
+```cpp
+(a) f(2.56, 42)
+
+(b) f(42)
+
+(c) f(42, 0)
+
+(d) f(2.56, 3.14)
+```
