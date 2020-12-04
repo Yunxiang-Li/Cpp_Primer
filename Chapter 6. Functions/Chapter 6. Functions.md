@@ -589,3 +589,23 @@ A viable function is a function must have the same number of parameters as there
 **Write all four versions of f. Each function should print a distinguishing message. Check your answers for the previous exercise. If your answers were incorrect, study this section until you understand why your answers were wrong.**
 
 [6.51 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.51%20Solution.cpp)
+
+## Exercise 6.52
+
+**Given the following declarations,**
+
+```cpp
+void manip(int, int);
+
+double dobj;
+```
+
+what is the rank (§ 6.6.1, p. 245) of each conversion in the following calls?
+
+(a) manip('a', 'z');
+
+(b) manip(55.4, dobj);
+
+(a) Rank 3, two char need to be promoted to int.
+
+(b) Rank 4, two double need to have arithmetic conversion.
