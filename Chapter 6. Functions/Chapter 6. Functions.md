@@ -511,3 +511,11 @@ char *init(int ht, int wd = 80, char bckgrnd = ' ');
 (a) I will put inline function's declaraion and definition in a header because of two reasons. One is about definition rule (ODR) for inline functions, an identical definition for the function must exist in every translation unit that uses it. The second reason is that we do not need to define this inline function again in each source file which will optimize the program's performance.
 
 (b) I will also put this function's declaration in a header file since it is just a normal function.
+
+## Exercise 6.44
+
+**Rewrite the isShorter function from § 6.2.2 (p. 211) to be inline.**
+
+[header file for inline function](https://github.com/Yunxiang-Li/Cpp_Primer/tree/master/Chapter%206.%20Functions/Codes)
+
+[source file](https://github.com/Yunxiang-Li/Cpp_Primer/tree/master/Chapter%206.%20Functions/Codes)
