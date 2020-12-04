@@ -553,3 +553,11 @@ assert(cin);
 ```
 
 It is not a good use of assertion here. This `assert` will affect and terminate the program if user input `EOF` and this situation is very common. We usually use assertion to ensure uncommon situations should never happen.
+
+## Exercise 6.49
+
+**What is a candidate function? What is a viable function?**
+
+A candidate function is a function with the same name as the called function and for which a declaration is visible at the point of the call. 
+
+A viable function is a function must have the same number of parameters as there are arguments in the call, and the type of each argument must match—or be convertible to—the type of its corresponding parameter.
