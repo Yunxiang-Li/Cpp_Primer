@@ -533,3 +533,9 @@ All functions with exactly one valid statement(null statement does not count) wh
 No, because if a function is a constexpr function and we can know its parameter result at compile time then we should know its exactly result or result sets at compile time.
 
 Here, however, `std::string.size()` is not a constexpr function thus we cannot know the result of `isShorter` function at compile time. Therefore, we cannot define `isShorter` as a constexpr function.
+
+## Exercise 6.47
+
+**Revise the program you wrote in the exercises in § 6.3.2 (p. 228) that used recursion to print the contents of a vector to conditionally print information about its execution. For example, you might print the size of the vector on each call. Compile and run the program with debugging turned on and again with it turned off.**
+
+[6.47 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.47%20Solution.cpp)
