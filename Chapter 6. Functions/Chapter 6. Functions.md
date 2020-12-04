@@ -600,7 +600,7 @@ void manip(int, int);
 double dobj;
 ```
 
-what is the rank (§ 6.6.1, p. 245) of each conversion in the following calls?
+**what is the rank (§ 6.6.1, p. 245) of each conversion in the following calls?**
 
 (a) manip('a', 'z');
 
