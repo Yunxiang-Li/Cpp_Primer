@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 // Return the plural version of word if ctr is greater than 1
 std::string make_plural(size_t ctr, const std::string &word, const std::string &ending = "s")
