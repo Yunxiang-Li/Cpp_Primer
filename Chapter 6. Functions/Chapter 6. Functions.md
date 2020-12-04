@@ -497,3 +497,17 @@ char *init(int ht, int wd = 80, char bckgrnd = ' ');
 **Give the second parameter of make_plural (§ 6.3.2, p. 224) a default argument of 's'. Test your program by printing singular and plural versions of the words success and failure.**
 
 [6.42 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.42%20Solution.cpp)
+
+## Exercise 6.43
+
+**Which one of the following declarations and definitions would you put in a header? In a source file? Explain why.**
+
+```cpp
+(a) inline bool eq(const BigInt&, const BigInt&) {...}
+
+(b) void putValues(int *arr, int size);
+```
+
+(a) I will put inline function's declaraion and definition in a header because of the one definition rule (ODR) for inline functions, an identical definition for the function must exist in every translation unit that uses it. Therefore, when each source file need to use inline functions they can just get them directly from header files.
+
+(b) I will also put this function's declaration in a header file since it is just a normal function.
