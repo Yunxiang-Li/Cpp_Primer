@@ -530,6 +530,6 @@ All functions with exactly one valid statement(null statement does not count) wh
 
 **Would it be possible to define isShorter as a constexpr? If so, do so. If not, explain why not.**
 
-No, because if a function is a constexpr function then all function calls in this inline function should also be constexpr functions.
+No, because if a function is a constexpr function then we should know its exactly result or result sets in compile time.
 
-Here, however, `std::string.size()` is not a constexpr function thus we cannot define `isShorter` as a constexpr function.
+Here, however, `std::string.size()` is not a constexpr function thus we cannot know the result of `isShorter` function. Therefore, we cannot define `isShorter` as a constexpr function.
