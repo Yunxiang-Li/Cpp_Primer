@@ -519,3 +519,9 @@ char *init(int ht, int wd = 80, char bckgrnd = ' ');
 [header file for inline function](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/inline.hpp)
 
 [source file](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.44%20Solution.cpp)
+
+## Exercise 6.45
+
+**Review the programs you’ve written for the earlier exercises and decide whether they should be defined as inline. If so, do so. If not, explain why they should not be inline.**
+
+All functions with exactly one return statement and are used more than once should be defined as inline functions. All other functions should be just normal functions.
