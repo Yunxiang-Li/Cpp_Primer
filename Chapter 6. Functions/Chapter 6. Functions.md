@@ -602,10 +602,27 @@ double dobj;
 
 **what is the rank (§ 6.6.1, p. 245) of each conversion in the following calls?**
 
+```cpp
 (a) manip('a', 'z');
 
 (b) manip(55.4, dobj);
+```
 
 (a) Rank 3, two char need to be promoted to int.
 
 (b) Rank 4, two double need to have arithmetic conversion.
+
+## Exercise 6.53
+
+**Explain the effect of the second declaration in each one of the following sets of declarations. Indicate which, if any, are illegal.**
+
+```cpp
+(a) int calc(int&, int&);
+int calc(const int&, const int&);
+
+(b) int calc(char*, char*);
+int calc(const char*, const char*);
+
+(c) int calc(char*, char*);
+int calc(char* const, char* const);
+```
