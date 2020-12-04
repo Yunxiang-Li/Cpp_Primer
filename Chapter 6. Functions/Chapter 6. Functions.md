@@ -545,7 +545,11 @@ Here, however, `std::string.size()` is not a constexpr function thus we cannot k
 **Explain what this loop does and whether it is a good use of assert:**
 
 ```cpp
-string s;while (cin >> s && s != sought) { }  // empty body
+string s;
+
+while (cin >> s && s != sought) { }  // empty body
 
 assert(cin);
 ```
+
+It is not a good use of assertion here. This `assert` will affect and terminate the program if user input `EOF` and this situation is very common. We usually use assertion to ensure uncommon situations should never happen.
