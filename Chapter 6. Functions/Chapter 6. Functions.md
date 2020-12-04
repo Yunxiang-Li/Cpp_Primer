@@ -583,3 +583,9 @@ A viable function is a function must have the same number of parameters as there
 (c) Legal, two int arguments thus two int version `void f(int, int)` will be called.
 
 (d) Legal, two double arguments thus two double version `void f(double, double = 3.14)` will be called.
+
+## Exercise 6.51
+
+**Write all four versions of f. Each function should print a distinguishing message. Check your answers for the previous exercise. If your answers were incorrect, study this section until you understand why your answers were wrong.**
+
+[6.51 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.51%20Solution.cpp)
