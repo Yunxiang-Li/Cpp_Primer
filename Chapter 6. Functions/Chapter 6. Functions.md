@@ -637,3 +637,6 @@ int calc(char* const, char* const);
 
 **Write a declaration for a function that takes two int parameters and returns an int, and declare a vector whose elements have this function pointer type.**
 
+```cpp
+std::vector<int (*func)(int, int)> vec;
+```
