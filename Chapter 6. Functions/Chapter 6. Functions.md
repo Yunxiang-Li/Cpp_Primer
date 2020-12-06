@@ -632,3 +632,8 @@ int calc(char* const, char* const);
 (b) Legal. first for two plain char pointer arguments and second for two low level const char point arguments.
 
 (c) Illegal. Top level const will be ignored in overload functions. Therefore both functions are for two plain char pinter arguments(or two top level const char pointer arguments)
+
+## Exercise 6.54
+
+**Write a declaration for a function that takes two int parameters and returns an int, and declare a vector whose elements have this function pointer type.**
+
