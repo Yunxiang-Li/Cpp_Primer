@@ -648,3 +648,9 @@ std::vector<fp*> vec;
 **Write four functions that add, subtract, multiply, and divide two int values. Store pointers to these functions in your vector from the previous exercise.**
 
 [6.55 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.55%20Solution.cpp)
+
+## Exercise 6.56
+
+**Call each element in the vector and print their result.**
+
+[6.56 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Codes/6.56%20Solution.cpp)
