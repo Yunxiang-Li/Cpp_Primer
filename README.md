@@ -39,7 +39,7 @@ You can check all answers for C++ Primer 5th Edition in this repo.(Although all 
   - [Chapter 3. Strings, Vectors, and Arrays](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%203.%20Strings,%20Vectors,%20and%20Arrays/Chapter%203.%20Strings,%20Vectors,%20and%20Arrays.md)
   - [Chapter 4. Expressions](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%204.%20Expressions/Chapter%204.%20Expressions.md)
   - [Chapter 5. Statements](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Chapter%205.%20Statements.md)
-  - [Chapter 6. Functions]
+  - [Chapter 6. Functions]()
   - [Chapter 7. Classes]
 - Part II: The C++ Library
   - [Chapter 8. The IO Library]
