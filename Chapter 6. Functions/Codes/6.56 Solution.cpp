@@ -1,25 +1,25 @@
 #include <iostream>
 #include <vector>
 
-const int add (const int& a , const int& b) {
+int add (const int& a , const int& b) {
   return a + b;
 }
 
-const int subtract (const int& a , const int& b) {
+int subtract (const int& a , const int& b) {
   return a - b;
 }
 
-const int multiply (const int& a , const int& b) {
+int multiply (const int& a , const int& b) {
   return a * b;
 }
 
-const int divide (const int& a , const int& b) {
+int divide (const int& a , const int& b) {
   return b == 0 ? INT32_MIN : a / b;
 }
 
 int main()
 {
-  const int func(const int&, const int&);
+  int func(const int&, const int&);
   using fp = decltype(func);
   std::vector<fp*> vec;
   vec.push_back(add);
