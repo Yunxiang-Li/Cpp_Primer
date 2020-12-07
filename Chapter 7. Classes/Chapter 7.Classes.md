@@ -8,58 +8,6 @@
 
 **Indicate which of the following functions are in error and why. Suggest how you might correct the problems.**
 
-```cpp
-(a) int f() {
-        string s;     
-        // ...     
-        return s;
-    }
-    
-(b) f2(int i) { /* ... */ }
-
-(c) int calc(int v1, int v1) /* ... */ }
-
-(d) double square(double x) return x * x;
-```
-
-(a) Return type of function `f` is an integer but here we try to return a string which is wrong.
-
-Correct version:
-
-```cpp
-string f() {
-    string s;     
-    // ...     
-    return s;
-}
-```
-
-(b) Function `f2` must have a return type, if no return values needed it should return void.
-
-Correct version:
-
-```cpp
-void f2(int i) { /* ... */ }
-```
-
-(c) Function `calc` have duplicate parameters which is not allowed.
-
-Correct version:
-
-```cpp
-int calc(int v1, int v2) /* ... */ }
-```
-
-(d)
-
-Function blocks shoud be held in brackets.
-
-Correct version:
-
-```cpp
-double square(double x) { return x * x; }
-```
-
 ## Exercise 6.3
 
 **Write and test your own version of fact.**
