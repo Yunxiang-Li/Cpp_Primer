@@ -4,11 +4,7 @@
 
 **What is the difference between a parameter and an argument?**
 
-A parameter is a local variable declared inside the function's parameter list. Parameters are initialized only when all arguments are provided in each function call.
-
-Arguments are values provided in a function call which are used to initialize the function's all parameters.
-
-## Exercise 6.2
+## Exercise 7.2
 
 **Indicate which of the following functions are in error and why. Suggest how you might correct the problems.**
 
