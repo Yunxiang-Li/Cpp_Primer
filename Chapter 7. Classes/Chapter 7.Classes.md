@@ -8,7 +8,7 @@
 
 **Indicate which of the following functions are in error and why. Suggest how you might correct the problems.**
 
-## Exercise 6.3
+## Exercise 7.3
 
 **Write and test your own version of fact.**
 
