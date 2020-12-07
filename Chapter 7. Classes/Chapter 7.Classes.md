@@ -1,6 +1,6 @@
 # Chapter 7.Classes
 
-## Exercise 6.1
+## Exercise 7.1
 
 **What is the difference between a parameter and an argument?**
 
