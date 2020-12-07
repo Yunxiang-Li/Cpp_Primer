@@ -1,4 +1,4 @@
-# Chapter 6. Functions
+# Chapter 7.Classes
 
 ## Exercise 6.1
 
