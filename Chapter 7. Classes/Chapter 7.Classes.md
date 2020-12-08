@@ -1,4 +1,4 @@
-# Chapter 7.Classesabcde
+# Chapter 7.Classesabcd
 
 ## Exercise 7.1
 
