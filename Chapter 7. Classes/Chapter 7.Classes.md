@@ -1,4 +1,4 @@
-# Chapter 7.Classesa
+# Chapter 7.Classes
 
 ## Exercise 7.1
 
