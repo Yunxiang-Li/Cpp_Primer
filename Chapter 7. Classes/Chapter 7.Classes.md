@@ -25,3 +25,9 @@
 **Write a class named Person that represents the name and address of a person. Use a string to hold each of these elements. Subsequent exercises will incrementally add features to this class.**
 
 [7.4 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.4%20Solution.cpp)
+
+## Exercise 7.5
+
+**Provide operations in your Person class to return the name and address. Should these functions be const? Explain your choice.**
+
+[7.5 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.5%20Solution.cpp)
