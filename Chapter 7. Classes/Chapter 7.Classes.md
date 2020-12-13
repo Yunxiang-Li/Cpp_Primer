@@ -65,3 +65,15 @@ Define `print`'s `Sales_data` parameter as a reference to const since it did not
 ```cpp
 if (read(read(cin, data1), data2))
 ```
+
+This line of codes work like this:
+
+```cpp
+std::istream &firstIstream = read(cin, data1);
+std::istream &secondIstream = read(firstStep, data2);
+if (secondIstream)
+```
+
+Inner `read` function first reads and stores `data1`'s members into a `std::istream` object. Outer `read` function then reads and stores the `data2`'s memebers into the same `std::istream` object.
+
+The condition of the if statement check whether the result `std::istream` object is empty or not after trying to read and store `data1` and `data2`'s members.
