@@ -10,7 +10,9 @@
 
 ## Exercise 7.2
 
-**Indicate which of the following functions are in error and why. Suggest how you might correct the problems.**
+**Add the combine and isbn members to the Sales_data class you wrote for the exercises in § 2.6.2 (p. 76).**
+
+[7.2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.2%20Solution.cpp)
 
 ## Exercise 7.3
 
