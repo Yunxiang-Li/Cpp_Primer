@@ -31,3 +31,9 @@
 **Provide operations in your Person class to return the name and address. Should these functions be const? Explain your choice.**
 
 [7.5 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.5%20Solution.cpp)
+
+## Exercise 7.6
+
+**Define your own versions of the add, read, and print functions.**
+
+[7.6 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.6%20Solution.hpp)
