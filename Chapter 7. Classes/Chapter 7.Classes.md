@@ -19,3 +19,9 @@
 **Revise your transaction-processing program from § 7.1.1 (p. 256) to use these members.**
 
 [7.3 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.3%20Solution.cpp)
+
+## Exercise 7.4
+
+**Write a class named Person that represents the name and address of a person. Use a string to hold each of these elements. Subsequent exercises will incrementally add features to this class.**
+
+[7.4 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.4%20Solution.cpp)
