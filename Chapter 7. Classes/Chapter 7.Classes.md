@@ -51,3 +51,9 @@
 Define `read`'s `Sales_data` parameter as plain reference since it intended to change the revenue's value.
 
 Define `print`'s `Sales_data` parameter as a reference to const since it did not intend to change any member's value of this object.
+
+## Exercise 7.9
+
+**Add operations to read and print Person objects to the code you wrote for the exercises in § 7.1.2 (p. 260).**
+
+[7.9 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.9%20Solution.hpp)
