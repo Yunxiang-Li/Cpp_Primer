@@ -12,10 +12,10 @@
 
 **Add the combine and isbn members to the Sales_data class you wrote for the exercises in § 2.6.2 (p. 76).**
 
-[7.2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.2%20Solution.cpp)
+[7.2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.2%20Solution.hpp)
 
 ## Exercise 7.3
 
-**Write and test your own version of fact.**
+**Revise your transaction-processing program from § 7.1.1 (p. 256) to use these members.**
 
-
+[7.3 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.3%20Solution.cpp)
