@@ -76,4 +76,4 @@ if (secondIstream)
 
 Inner `read` function first reads and stores `data1`'s members into a `std::istream` object. Outer `read` function then reads and stores the `data2`'s memebers into the same `std::istream` object.
 
-The condition of the if statement check whether the result `std::istream` object is empty or not after trying to read and store `data1` and `data2`'s members.
+The condition of the if statement checks whether the result `std::istream` object is empty or not after trying to read and store `data1` and `data2`'s members.
