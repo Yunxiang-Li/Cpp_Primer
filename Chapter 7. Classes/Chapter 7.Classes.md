@@ -43,3 +43,11 @@
 **Rewrite the transaction-processing program you wrote for the exercises in § 7.1.2 (p. 260) to use these new functions.**
 
 [7.7 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.7%20Solution.cpp)
+
+## Exercise 7.8
+
+**Why does read define its Sales_data parameter as a plain reference and print define its parameter as a reference to const?**
+
+Define `read`'s `Sales_data` parameter as plain reference since it intended to change the revenue's value.
+
+Define `print`'s `Sales_data` parameter as a reference to const since it did not intend to change any member's value of this object.
