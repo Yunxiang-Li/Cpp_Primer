@@ -105,3 +105,9 @@ The condition of the if statement checks whether the result `std::istream` objec
 ```cpp
 Sales_data() : units_sold(0) , revenue(0){}
 ```
+
+## Exercise 7.15
+
+**Add appropriate constructors to your Person class.**
+
+[7.15 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.15%20Solution.hpp)
