@@ -97,3 +97,11 @@ The condition of the if statement checks whether the result `std::istream` objec
 **Rewrite the program from page 255 to use the istream constructor.**
 
 [7.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.13%20Solution.cpp)
+
+## Exercise 7.14
+
+**Write a version of the default constructor that explicitly initializes the members to the values we have provided as in-class initializers.**
+
+```cpp
+Sales_data() : units_sold(0) , revenue(0){}
+```
