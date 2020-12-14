@@ -91,3 +91,9 @@ The condition of the if statement checks whether the result `std::istream` objec
 **Move the definition of the Sales_data constructor that takes an istream into the body of the Sales_data class.**
 
 [7.12 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.12%20Solution.hpp)
+
+## Exercise 7.13
+
+**Rewrite the program from page 255 to use the istream constructor.**
+
+[7.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.13%20Solution.cpp)
