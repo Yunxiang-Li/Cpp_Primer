@@ -9,13 +9,13 @@ class Person {
   std::string m_name;
   std::string m_address;
 
+ public:
   Person() = default;
   Person(const std::string& name, const std::string& address)
       : m_name(name), m_address(address)
   {
   }
-
- public:
+ 
   const std::string& getName() const;
   const std::string& getAddress() const;
 
