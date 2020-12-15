@@ -133,3 +133,11 @@ A class's default access level is private and a struct's default access level is
 **What is encapsulation? Why is it useful?**
 
 Encapsulation is the separation of implementation from interface. It hides the implementation details of a type. It is useful because users can use the object and all its public methods without knowing implementation details.
+
+## Exercise 7.19
+
+**Indicate which members of your Person class you would declare as public and which you would declare as private. Explain your choice.**
+
+I will declare `constructors, getName(), getAddress()` as public and declare members `name, address` as private.
+
+I do not want users to have direct access to class members since users may modify each member's value which is not what we want. Instead we will provide appropriate access functions(such as `getName` and `getAddress`) to enable users to get what they want but not modify original values.
