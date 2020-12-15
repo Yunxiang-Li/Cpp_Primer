@@ -111,3 +111,13 @@ Sales_data() : units_sold(0) , revenue(0){}
 **Add appropriate constructors to your Person class.**
 
 [7.15 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.15%20Solution.hpp)
+
+## Exercise 7.16
+
+**What, if any, are the constraints on where and how often an access specifier may appear inside a class definition? What kinds of members should be defined after a public specifier? What kinds should be private?**
+
+There are no constraints on where and how often an access specifier may appear.The specified access level remains in effect until the next access specifier or the end of the class body.
+
+The members which are accessible to all parts of the program should be defined inside a public specifier.
+
+The members which are accessible to the member functions of the class but are not accessible to code that uses the class should be defined inside a private specifier.
