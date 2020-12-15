@@ -127,3 +127,9 @@ The members which are accessible to the member functions of the class but are no
 **What, if any, are the differences between using class or struct?**
 
 A class's default access level is private and a struct's default access level is public.
+
+## Exercise 7.18
+
+**What is encapsulation? Why is it useful?**
+
+Encapsulation is the separation of implementation from interface. It hides the implementation details of a type. It is useful because users can use the object and all its public methods without knowing implementation details.
