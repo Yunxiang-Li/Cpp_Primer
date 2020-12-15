@@ -121,3 +121,9 @@ There are no constraints on where and how often an access specifier may appear.T
 The members which are accessible to all parts of the program should be defined inside a public specifier.
 
 The members which are accessible to the member functions of the class but are not accessible to code that uses the class should be defined inside a private specifier.
+
+## Exercise 7.17
+
+**What, if any, are the differences between using class or struct?**
+
+A class's default access level is private and a struct's default access level is public.
