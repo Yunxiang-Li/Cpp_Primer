@@ -132,7 +132,11 @@ A class's default access level is private and a struct's default access level is
 
 **What is encapsulation? Why is it useful?**
 
-Encapsulation is the separation of implementation from interface. It hides the implementation details of a type. It is useful because users can use the object and all its public methods without knowing implementation details.
+Encapsulation is the separation of implementation from interface. It hides the implementation details of a type. 
+
+It is useful because:
+1. User code cannot inadvertently corrupt the state of an encapsulated object.
+2. The implementation of an encapsulated class can change over time without requiring changes in user-level code.
 
 ## Exercise 7.19
 
