@@ -180,9 +180,7 @@ Cons:
 
 **Write your own version of the Screen class.**
 
-[7.23 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.23%20Solution.hpp)
-
-[7.23 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.23%20Solution.cpp)
+[7.23 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.23%20Solution.hpp)
 
 ## Exercise 7.24
 
