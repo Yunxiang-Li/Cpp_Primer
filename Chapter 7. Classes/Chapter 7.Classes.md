@@ -205,3 +205,16 @@ Therefore our Screen class can rely on the default versions of copy and assignme
 [7.26 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.26%20Solution.hpp)
 
 [7.26 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.26%20Solution.cpp)
+
+## Exercise 7.27
+
+**Add the move, set, and display operations to your version of Screen. Test your class by executing the following code:**
+
+```cpp
+Screen myScreen(5, 5, 'X');
+myScreen.move(4,0).set('#').display(cout);
+cout << "\n";
+myScreen.display(cout);
+cout << "\n";
+```
+
