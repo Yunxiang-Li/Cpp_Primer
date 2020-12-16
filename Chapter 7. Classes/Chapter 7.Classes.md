@@ -197,3 +197,11 @@ Cons:
 Yes. Because we have already initialized all other class members of built-in type. And `std::string` type itself can rely on the default versions of copy and assignment.
 
 Therefore our Screen class can rely on the default versions of copy and assignment.
+
+## Exercise 7.26
+
+**Define Sales_data::avg_price as an inline function.**
+
+[7.26 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.26%20Solution.hpp)
+
+[7.26 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.26%20Solution.cpp)
