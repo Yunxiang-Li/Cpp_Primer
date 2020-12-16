@@ -189,3 +189,11 @@ Cons:
 **Give your Screen class three constructors: a default constructor; a constructor that takes values for height and width and initializes the contents to hold the given number of blanks; and a constructor that takes values for height, width, and a character to use as the contents of the screen.**
 
 [7.24 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.24%20Solution.hpp)
+
+## Exercise 7.25
+
+**Can Screen safely rely on the default versions of copy and assignment? If so, why? If not, why not?**
+
+Yes. Because we have already initialized all other class members of built-in type. And `std::string` type itself can rely on the default versions of copy and assignment.
+
+Therefore our Screen class can rely on the default versions of copy and assignment.
