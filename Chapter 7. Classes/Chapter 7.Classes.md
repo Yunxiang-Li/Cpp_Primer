@@ -174,4 +174,4 @@ Cons:
 
 **Update your Person class to hide its implementation.**
 
-[7.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.22%20Solution.cpp)
+[7.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.22%20Solution.hpp)
