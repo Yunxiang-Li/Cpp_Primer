@@ -145,3 +145,21 @@ It is useful because:
 I will declare `constructors, getName(), getAddress()` as public and declare members `name, address` as private.
 
 I do not want users to have direct access to class members since users may modify each member's value which is not what we want. Instead we will provide appropriate access functions(such as `getName` and `getAddress`) to enable users to get what they want but not modify original values.
+
+## Exercise 7.20
+
+**When are friends useful? Discuss the pros and cons of using friends.**
+
+Pros:
+
+1. Users can use friend functions to access class members without specifying the class name.
+
+2. Users can access all non-public class members easily.
+
+3. Programmers can use friends to help test all private members of the class.
+
+Cons:
+
+1. Decrease codes' encapsulation, maintainability and verbosity.
+
+2. Sometimes it may be a bad idea to let users have opportunities to private class members.
