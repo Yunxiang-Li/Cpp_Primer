@@ -169,3 +169,9 @@ Cons:
 **Update your Sales_data class to hide its implementation. The programs you’ve written to use Sales_data operations should still continue to work. Recompile those programs with your new class definition to verify that they still work.**
 
 [7.21 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.21%20Solution.hpp)
+
+## Exercise 7.22
+
+**Update your Person class to hide its implementation.**
+
+[7.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.22%20Solution.cpp)
