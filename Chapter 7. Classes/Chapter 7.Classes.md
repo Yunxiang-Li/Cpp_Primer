@@ -216,3 +216,6 @@ myScreen.display(cout);
 cout << "\n";
 ```
 
+[7.27 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.26%20Solution.hpp)
+
+[7.27 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.26%20Solution.cpp)
