@@ -232,3 +232,11 @@ The result will be like:
 XXXXXXXXXXXXXXXXXXXX#XXXX
 XXXXXXXXXXXXXXXXXXXXXXXXX
 ```
+
+## Exercise 7.29
+
+**Revise your Screen class so that move, set, and display functions return Screen and check your prediction from the previous exercise.**
+
+[7.29 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.29%20Solution.hpp)
+
+[7.29 Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.29%20main.cpp)
