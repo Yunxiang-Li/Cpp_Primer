@@ -271,7 +271,7 @@ Pros:
 For instance:
 
 ```cpp
-void func(const std::string& str1, const std::string& str2) 
+void setStr(const std::string& str1, const std::string& str2) 
 {
   this -> str1 = str1;
   this -> str2 = str2;
@@ -282,3 +282,18 @@ Cons:
 
 1. More letters to read which may be redundant.
 2. Sometimes unnecessary to refering to members through the this pointer.
+
+For instance:
+
+```cpp
+const std::string& getStr() const 
+{
+  return this -> str1;
+}
+```
+
+## Exercise 7.31
+
+**Define a pair of classes X and Y, in which X has a pointer to Y, and Y has an object of type X.**
+
+[7.31 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.31%20Solution.hpp)
