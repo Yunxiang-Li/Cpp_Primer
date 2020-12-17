@@ -216,7 +216,9 @@ myScreen.display(cout);
 cout << "\n";
 ```
 
-[7.27 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.27%20Solution.hpp)
+[7.27 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.27%20Solution.hpp)
+
+[7.27 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.27%20Solution.cpp)
 
 [7.27 Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.27%20main.cpp)
 
@@ -237,6 +239,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXX
 
 **Revise your Screen class so that move, set, and display functions return Screen and check your prediction from the previous exercise.**
 
-[7.29 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.29%20Solution.hpp)
+[7.29 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.29%20Solution.hpp)
+
+[7.29 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.29%20Solution.cpp)
 
 [7.29 Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.29%20main.cpp)
