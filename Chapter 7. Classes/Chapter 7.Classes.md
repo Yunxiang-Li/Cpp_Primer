@@ -226,7 +226,7 @@ cout << "\n";
 
 **What would happen in the previous exercise if the return type of move, set, and display was Screen rather than Screen&?**
 
-If the return type of move, set, and display was Screen rather than Screen&, then `set('#')` and `display(cout)` of `myScreen.move(4,0).set('#').display(cout);` only works on a temporary copy of `myScreen` thus `myScreen` itself remains no changes after being initialized by `Screen myScreen(5, 5, 'X');`.
+If the return type of `move`, `set`, and `display` was `Screen` rather than `Screen&`, then `set('#')` and `display(cout)` of `myScreen.move(4,0).set('#').display(cout);` only works on a temporary copy of `myScreen` thus `myScreen` itself remains no changes after being initialized by `Screen myScreen(5, 5, 'X');`.
 
 The result will be like:
 
@@ -244,3 +244,17 @@ XXXXXXXXXXXXXXXXXXXXXXXXX
 [7.29 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.29%20Solution.cpp)
 
 [7.29 Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.29%20main.cpp)
+
+1. The result when return type of `move`, `set`, and `display` was `Screen&`:
+
+```
+XXXXXXXXXXXXXXXXXXXX#XXXX
+XXXXXXXXXXXXXXXXXXXX#XXXX
+```
+
+2. The result when return type of `move`, `set`, and `display` was `Screen`:
+
+```
+XXXXXXXXXXXXXXXXXXXX#XXXX
+XXXXXXXXXXXXXXXXXXXXXXXXX
+```
