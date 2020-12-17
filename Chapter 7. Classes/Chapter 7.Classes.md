@@ -219,3 +219,16 @@ cout << "\n";
 [7.27 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.27%20Solution.hpp)
 
 [7.27 Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.27%20main.cpp)
+
+## Exercise 7.28
+
+**What would happen in the previous exercise if the return type of move, set, and display was Screen rather than Screen&?**
+
+If the return type of move, set, and display was Screen rather than Screen&, then `set('#')` and `display(cout)` of `myScreen.move(4,0).set('#').display(cout);` only works on a temporary copy of `myScreen` thus `myScreen` itself remains no changes after being initialized by `Screen myScreen(5, 5, 'X');`.
+
+The result will be like:
+
+```
+XXXXXXXXXXXXXXXXXXXX#XXXX
+XXXXXXXXXXXXXXXXXXXXXXXXX
+```
