@@ -258,3 +258,27 @@ XXXXXXXXXXXXXXXXXXXX#XXXX
 XXXXXXXXXXXXXXXXXXXX#XXXX
 XXXXXXXXXXXXXXXXXXXXXXXXX
 ```
+
+## Exercise 7.30
+
+**It is legal but redundant to refer to members through the this pointer. Discuss the pros and cons of explicitly using the this pointer to access members.**
+
+Pros:
+
+1. More explicit for programmers to know that the specified name is a member name.
+2. By refering to members through the this pointer, the member function's parameters are allowed to be same as the member names.
+
+For instance:
+
+```cpp
+void func(const std::string& str1, const std::string& str2) 
+{
+  this -> str1 = str1;
+  this -> str2 = str2;
+}
+```
+
+Cons:
+
+1. More letters to read which may be redundant.
+2. Sometimes unnecessary to refering to members through the this pointer.
