@@ -318,3 +318,13 @@ pos Screen::size() const
 The `pos` type is only defined in the scope of `Screen` class thus the compiler does not know what `pos` actually is and where it exists which will cause an error.
 
 To fix this, we should use `Screen::pos` instead of `pos` so that the compiler will know where to find that `pos` type(in the `Screen` class).
+
+## Exercise 7.34
+
+**What would happen if we put the typedef of pos in the Screen class on page 285 as the last line in the class?**
+
+The
+
+dummy_fcn(pos height)
+           ^
+Unknown type name 'pos'
