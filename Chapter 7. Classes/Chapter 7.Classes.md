@@ -314,3 +314,7 @@ pos Screen::size() const
   return height * width;
 }
 ```
+
+The `pos` type is only defined in the scope of `Screen` class thus the compiler does not know what `pos` actually is here.
+
+To fix this, we should use `Screen::pos` instead of `pos` so that the compiler will know where to find that `pos` type(in the `Screen` class).
