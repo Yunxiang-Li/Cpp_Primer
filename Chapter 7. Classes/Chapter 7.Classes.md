@@ -338,18 +338,18 @@ This is because the compiler only try to find the typedef of `pos` before the fi
 
 ```cpp
 typedef string Type;
-Type initVal();
+Type initVal(); // Type here is string.
 
 class Exercise {
 public:    
-  typedef double Type;
-  Type setVal(Type);
-  Type initVal();
+  typedef double Type; 
+  Type setVal(Type); // Both Type here are double.
+  Type initVal(); // Type here is double.
 private:
   int val;
 };
 
-Type Exercise::setVal(Type parm) {
+Type Exercise::setVal(Type parm) { // First Type here is string because no scope specified thus treat as ::Type(global scope). Second Type is double.
   val = parm + initVal();
   return val;
 }
