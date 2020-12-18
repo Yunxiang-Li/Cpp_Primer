@@ -349,8 +349,32 @@ private:
   int val;
 };
 
-Type Exercise::setVal(Type parm) { // First Type here is string because no scope specified thus treat as ::Type(global scope). Second Type is double.
+Type Exercise::setVal(Type parm) {  // First Type here is string. Second Type is double.
   val = parm + initVal();
   return val;
 }
 ```
+
+First `Type` in `Type Exercise::setVal(Type parm)` is string because no scope specified thus treat as ::Type(global scope) which may not programmers want.
+
+Fix version:
+
+```cpp
+typedef string Type;
+Type initVal(); // Type here is string.
+
+class Exercise {
+public:    
+  typedef double Type; 
+  Type setVal(Type); // Both Type here are double.
+  Type initVal(); 
+private:
+  int val;
+};
+
+Exercise::Type Exercise::setVal(Type parm) {  // First Type here is string. Second Type is double.
+  val = parm + initVal();
+  return val;
+}
+```
+Fix version:
