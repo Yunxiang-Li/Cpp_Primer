@@ -323,6 +323,10 @@ To fix this, we should use `Screen::pos` instead of `pos` so that the compiler w
 
 **What would happen if we put the typedef of pos in the Screen class on page 285 as the last line in the class?**
 
-The compiler will throw an error: Unknown type name 'pos'
+The compiler will throw an error: 
+
+```cpp
+Unknown type name 'pos'
+```
 
 This is because the compiler only try to find the typedef of `pos` before the first use of `pos`. If cannot find, then throw the error.
