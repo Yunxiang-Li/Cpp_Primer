@@ -297,3 +297,9 @@ const std::string& getStr() const
 **Define a pair of classes X and Y, in which X has a pointer to Y, and Y has an object of type X.**
 
 [7.31 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.31%20Solution.hpp)
+
+## Exercise 7.32
+
+**Define your own versions of Screen and Window_mgr in which clear is a member of Window_mgr and a friend of Screen.**
+
+[7.32 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.32%20Solution.hpp)
