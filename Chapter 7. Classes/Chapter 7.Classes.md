@@ -425,7 +425,13 @@ int main() {
 **We might want to supply cin as a default argument to the constructor that takes an istream&. Write the constructor declaration that uses cin as a default argument.**
 
 ```cpp
-Constructor(std::istream &is = std::cin) {
+Sales_data(std::istream &is = std::cin) {
   read(is, *this);
 }
 ```
+
+## Exercise 7.39
+
+**Would it be legal for both the constructor that takes a string and the one that takes an istream& to have default arguments? If not, why not?**
+
+No, it is illegal to do so. Because if so, when user uses default constructor to constructs a class, the compiler will not know which constructor it should use since both constructos(the constructor with string parameter and the constructor with istream& parameter ) fit the requirement. 
