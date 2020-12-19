@@ -408,9 +408,13 @@ struct X {
 **Using the version of Sales_data from this section, determine which constructor is used to initialize each of the following variables and list the values of the data members in each object:**
 
 ```cpp
+// Use Sales_data(std::istream &is) constructor, member values are determined by user's input.
 Sales_data first_item(cin);
+
 int main() {
+  // Use Sales_data(std::string s = "") as the default constructor. Here bookNo = "", cnt = 0 and revenue = 0.0.
   Sales_data next;
+  // Use Sales_data(std::string s = "") as the single parameter constructor; Here bookNo = "9-999-99999-9", cnt = 0 and revenue = 0.0.
   Sales_data last("9-999-99999-9");
 }
 ```
