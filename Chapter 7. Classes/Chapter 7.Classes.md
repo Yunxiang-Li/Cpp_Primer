@@ -378,3 +378,28 @@ Exercise::Type Exercise::setVal(Type parm) {
   return val;
 }
 ```
+
+## Exercise 7.36
+
+**The following initializer is in error. Identify and fix the problem.**
+
+```cpp
+struct X {
+  X (int i, int j): base(i), rem(base % j) { } 
+  int rem, base;
+};
+```
+
+According to the struct `X`, `rem` is declared before `base` thus the compiler will try to initialize `rem` with `base % j` first.
+
+However, at this time `base` is not initialized yet, thus `rem` cannot be initialized correctly(`rem` will have an undefined value).
+
+Fixed version:
+
+```cpp
+struct X {
+  X (int i, int j): base(i), rem(base % j) { } 
+  int base, rem;
+};
+```
+
