@@ -414,7 +414,8 @@ Sales_data first_item(cin);
 int main() {
   // Use Sales_data(std::string s = "") as the default constructor. Here bookNo = "", cnt = 0 and revenue = 0.0.
   Sales_data next;
-  // Use Sales_data(std::string s = "") as the single parameter constructor; Here bookNo = "9-999-99999-9", cnt = 0 and revenue = 0.0.
+  // Use Sales_data(std::string s = "") as the single parameter constructor.
+  // Here bookNo = "9-999-99999-9", cnt = 0 and revenue = 0.0.
   Sales_data last("9-999-99999-9");
 }
 ```
