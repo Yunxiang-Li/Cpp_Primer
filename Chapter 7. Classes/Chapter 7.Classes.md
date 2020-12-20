@@ -455,9 +455,9 @@ No, it is illegal to do so. Because if so, when user uses default constructor to
 ```cpp
 class Tree {
 public:
+  Tree() =default;
   Tree(int height, int width, unsigned int branch, unsigned int age): m_height(height), m_width(width),
                                                                        m_branch(branch), m_age(age) { }
-  Tree() =default;
   Tree(std::istream &in) {
     in >> m_height >> m_width >> m_branch >> m_age;
   }
@@ -469,3 +469,13 @@ private:
   unsigned int m_age{1};
 };
 ```
+
+## Exercise 7.41
+
+**Rewrite your own version of the Sales_data class to use delegating constructors. Add a statement to the body of each of the constructors that prints a message whenever it is executed. Write declarations to construct a Sales_data object in every way possible. Study the output until you are certain you understand the order of execution among delegating constructors.**
+
+[7.41 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.41%20Solution.hpp)
+
+[7.41 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.41%20Solution.cpp)
+
+[7.41 Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.41%20main.cpp)
