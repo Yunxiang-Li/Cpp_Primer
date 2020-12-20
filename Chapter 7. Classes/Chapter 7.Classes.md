@@ -516,7 +516,7 @@ Untrue. The default constructor is auto-generated if there is no user-declared c
 
 **Explain whether the Sales_data constructor that takes a string should be explicit. What are the benefits of making the constructor explicit? What are the drawbacks?**
 
-Whether the conversion of a `string` to `Sales_data` is desired depends on how we think our users will use the conversion. In this case, it might be okay. The `string` in `null_book` probably represents a nonexistent ISBN.
+Whether the conversion of a string to `Sales_data` is desired depends on how we think our users will use the conversion. In this case, it might be okay. The string in `null_book` probably represents a nonexistent ISBN.
 
 Benefits:
 
@@ -526,3 +526,15 @@ Benefits:
 Drawbacks:
 
 - meaningful only on constructors that can be called with a single argument
+
+## Exercise 7.48
+
+**Assuming the Sales_data constructors are not explicit, what operations happen during the following definitions**
+
+```cpp
+string null_isbn("9-999-99999-9");
+Sales_data item1(null_isbn);
+Sales_data item2("9-999-99999-9");
+```
+
+First the string `null_isbn` with value `9-999-99999-9` is defined. Next, a `Sales_data` object `item1` is constructed by the string `null_isbn` according to the one string argument constructor. Then, another `Sales_data` object `item2` is constructed by the string literal `9-999-99999-9`(a `const char*` type). This time string literal `9-999-99999-9` is first converted to a temporary string and then `item2` is constructed in the way just like `item1`.
