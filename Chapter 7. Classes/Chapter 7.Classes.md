@@ -511,3 +511,18 @@ Untrue. Usually we should always provide a default constructor if other construc
 (d) If a class does not define a default constructor, the compiler generates one that initializes each data member to the default value of its associated type.
 
 Untrue. The default constructor is auto-generated if there is no user-declared constructor and each data member is not initialized to the default value. 
+
+## Exercise 7.47
+
+**Explain whether the Sales_data constructor that takes a string should be explicit. What are the benefits of making the constructor explicit? What are the drawbacks?**
+
+Whether the conversion of a `string` to `Sales_data` is desired depends on how we think our users will use the conversion. In this case, it might be okay. The `string` in `null_book` probably represents a nonexistent ISBN.
+
+Benefits:
+
+- prevent the use of a constructor in a context that requires an implicit conversion
+- we can define a constructor which is used only with the direct form of initialization
+
+Drawbacks:
+
+- meaningful only on constructors that can be called with a single argument
