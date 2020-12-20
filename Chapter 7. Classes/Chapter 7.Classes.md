@@ -468,20 +468,4 @@ No, it is illegal to do so. Because if so, when user uses default constructor to
 
 **For the class you wrote for exercise 7.40 in § 7.5.1 (p. 291), decide whether any of the constructors might use delegation. If so, write the delegating constructor(s) for your class. If not, look at the list of abstractions and choose one that you think would use a delegating constructor. Write the class definition for that abstraction.**
 
-```cpp
-class Tree {
-public:
-  Tree() =default;
-  Tree(int height, int width, unsigned int branch, unsigned int age): m_height(height), m_width(width),
-                                                                       m_branch(branch), m_age(age) { }
-  Tree(std::istream &in) {
-    in >> m_height >> m_width >> m_branch >> m_age;
-  }
-
-private:
-  int m_height{0};
-  int m_width{0};
-  unsigned int m_branch{1};
-  unsigned int m_age{1};
-};
-```
+[7.42 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.42%20Solution.hpp)
