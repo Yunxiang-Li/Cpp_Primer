@@ -474,7 +474,7 @@ No, it is illegal to do so. Because if so, when user uses default constructor to
 
 **Assume we have a class named NoDefault that has a constructor that takes an int, but has no default constructor. Define a class C that has a member of type NoDefault. Define the default constructor for C.**
 
-[7.43 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.43%20Solution.hpp)
+[7.43 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.43%20Solution.cpp)
 
 ## Exercise 7.44
 
@@ -483,3 +483,5 @@ No, it is illegal to do so. Because if so, when user uses default constructor to
 ```cpp
 vector<NoDefault> vec(10);
 ```
+
+This declaration is illegal. Here we are trying to initialize a `vector` of 10 `NoDefault` objects and each `NoDefault` object should be initialized by the single argument constructor since no default constructor is provided. However, `vec(10)` here only specifies the vector's size but not each `NoDefault` object's initialized value thus this declaration is illegal since each `NoDefault` object's initialized value is undefined.
