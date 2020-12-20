@@ -1,6 +1,3 @@
-#ifndef EX7_43_HPP
-#define EX7_43_HPP
-
 class NoDefault {
  public:
   NoDefault(int) {};
@@ -16,5 +13,3 @@ class C {
   NoDefault m_member;
 
 };
-
-#endif
