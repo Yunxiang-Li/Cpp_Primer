@@ -485,3 +485,9 @@ vector<NoDefault> vec(10);
 ```
 
 This declaration is illegal. Here we are trying to initialize a `vector` of 10 `NoDefault` objects and each `NoDefault` object should be initialized by the single argument constructor since no default constructor is provided. However, `vec(10)` here only specifies the vector's size but not each `NoDefault` object's initialized value thus this declaration is illegal since each `NoDefault` object's initialized value is undefined.
+
+## Exercise 7.45
+
+**What if we defined the vector in the previous execercise to hold objects of type C?**
+
+This is legal. Because in class `C`, default constructor of `C` will initialize each `Nodefault` member object by `C() : def(NoDefault(0)) {}`.
