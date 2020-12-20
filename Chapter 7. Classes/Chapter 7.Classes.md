@@ -475,3 +475,11 @@ No, it is illegal to do so. Because if so, when user uses default constructor to
 **Assume we have a class named NoDefault that has a constructor that takes an int, but has no default constructor. Define a class C that has a member of type NoDefault. Define the default constructor for C.**
 
 [7.43 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.43%20Solution.hpp)
+
+## Exercise 7.44
+
+**Is the following declaration legal? If not, why not?**
+
+```cpp
+vector<NoDefault> vec(10);
+```
