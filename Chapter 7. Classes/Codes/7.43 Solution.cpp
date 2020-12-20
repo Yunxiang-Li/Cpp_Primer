@@ -5,7 +5,7 @@ class NoDefault {
 
 class C {
  public:
-  C() : m_member(0) {
+  () : m_member(NoDefault(0)) {} {
 
   }
 
