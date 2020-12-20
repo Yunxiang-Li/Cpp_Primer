@@ -490,4 +490,24 @@ This declaration is illegal. Here we are trying to initialize a `vector` of 10 `
 
 **What if we defined the vector in the previous execercise to hold objects of type C?**
 
-This is legal. Because in class `C`, default constructor of `C` will initialize each `Nodefault` member object by `C() : def(NoDefault(0)) {}`.
+This is legal. Because in class `C`, constructor of `C` will initialize each `Nodefault` member object by `C() : def(NoDefault(0)) {}`.
+
+## Exercise 7.46
+
+**Which, if any, of the following statements are untrue? Why?**
+
+(a) A class must provide at least one constructor.
+
+Untrue. It is not necessary for a class to provide at least one constructor since the compiler will create a default constructor for us if no other constructors are found.
+
+(b) A default constructor is a constructor with an empty parameter list.
+
+Untrue. A default constructor is not only a constructor with an empty parameter list but also a constructor with default arguments provided for every parameter. A constructor with member initialize list is not a default constructor.
+
+(c) If there are no meaningful default values for a class, the class should not provide a default constructor.
+
+Untrue. Usually we should always provide a default constructor if other constructors are being defined even if there are no meaningful default values for the class. This action will help us in many other aspects(For instance, we can use vector to hold this class's objects with initialized values easily and we can use another class which holds this class's object as a member to generate a synthesized constructor easily)
+
+(d) If a class does not define a default constructor, the compiler generates one that initializes each data member to the default value of its associated type.
+
+Untrue. The default constructor is auto-generated if there is no user-declared constructor and each data member is not initialized to the default value. 
