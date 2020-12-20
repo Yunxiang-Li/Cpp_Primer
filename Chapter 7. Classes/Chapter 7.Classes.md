@@ -452,6 +452,22 @@ No, it is illegal to do so. Because if so, when user uses default constructor to
 
 (f) Tree
 
+[7.40 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.40%20Solution.hpp)
+
+## Exercise 7.41
+
+**Rewrite your own version of the Sales_data class to use delegating constructors. Add a statement to the body of each of the constructors that prints a message whenever it is executed. Write declarations to construct a Sales_data object in every way possible. Study the output until you are certain you understand the order of execution among delegating constructors.**
+
+[7.41 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.41%20Solution.hpp)
+
+[7.41 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.41%20Solution.cpp)
+
+[7.41 Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.41%20main.cpp)
+
+## Exercise 7.42
+
+**For the class you wrote for exercise 7.40 in § 7.5.1 (p. 291), decide whether any of the constructors might use delegation. If so, write the delegating constructor(s) for your class. If not, look at the list of abstractions and choose one that you think would use a delegating constructor. Write the class definition for that abstraction.**
+
 ```cpp
 class Tree {
 public:
@@ -469,13 +485,3 @@ private:
   unsigned int m_age{1};
 };
 ```
-
-## Exercise 7.41
-
-**Rewrite your own version of the Sales_data class to use delegating constructors. Add a statement to the body of each of the constructors that prints a message whenever it is executed. Write declarations to construct a Sales_data object in every way possible. Study the output until you are certain you understand the order of execution among delegating constructors.**
-
-[7.41 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.41%20Solution.hpp)
-
-[7.41 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.41%20Solution.cpp)
-
-[7.41 Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.41%20main.cpp)
