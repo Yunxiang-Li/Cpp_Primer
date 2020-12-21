@@ -1,7 +1,7 @@
-
-#include <istream>
 #ifndef EX7_40_HPP
 #define EX7_40_HPP
+
+#include <istream>
 
 class Tree {
  public:
