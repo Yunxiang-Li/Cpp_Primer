@@ -538,3 +538,19 @@ Sales_data item2("9-999-99999-9");
 ```
 
 First the string `null_isbn` with value `9-999-99999-9` is defined. Next, a `Sales_data` object `item1` is constructed by the string `null_isbn` according to the one string argument constructor. Then, another `Sales_data` object `item2` is constructed by the string literal `9-999-99999-9`(a `const char*` type). This time string literal `9-999-99999-9` is first converted to a temporary string and then `item2` is constructed in the way just like `item1`.
+
+## Exercise 7.49
+
+**For each of the three following declarations of combine, explain what happens if we call i.combine(s), where i is a Sales_data and s is a string:**
+
+(a) Sales_data &combine(Sales_data);
+
+(b) Sales_data &combine(Sales_data&);
+
+(c) Sales_data &combine(const Sales_data&) const;
+
+(a) Legal. `s` is first converted to a temporary `Sales_data` object by the one string argument constructor and then the `combine` action execute.
+
+(b) Illegal. Cannot convert `std::string` type to `Sales_data&` type (compiler will not allow this since bind a temporary to a non-const reference is meaningless).
+
+(c) Illegal. `Sales_data &combine(const Sales_data&)` part works. However, the trailing const mark can't be put here since the `combine` method will modify the `Sales_data` object's members.
