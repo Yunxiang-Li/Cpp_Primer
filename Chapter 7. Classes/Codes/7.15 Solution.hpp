@@ -1,8 +1,8 @@
-#include <string>
-#include <iostream>
-
 #ifndef PERSON_HPP
 #define PERSON_HPP
+
+#include <string>
+#include <iostream>
 
 class Person {
  private:
