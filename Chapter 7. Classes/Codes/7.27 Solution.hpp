@@ -1,8 +1,8 @@
-#include <string>
-#include <iostream>
-
 #ifndef SCREEN_HPP
 #define SCREEN_HPP
+
+#include <string>
+#include <iostream>
 
 class Screen {
  public:
