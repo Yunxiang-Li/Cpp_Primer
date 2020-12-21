@@ -1,7 +1,8 @@
-#include <string>
-#include <iostream>
 #ifndef EX7_50_HPP
 #define EX7_50_HPP
+
+#include <string>
+#include <iostream>
 
 class Person {
 
