@@ -562,3 +562,5 @@ First the string `null_isbn` with value `9-999-99999-9` is defined. Next, a `Sal
 ## Exercise 7.50
 
 **Determine whether any of your Person class constructors should be explicit.**
+
+[7.50 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.50%20Solution.hpp)
