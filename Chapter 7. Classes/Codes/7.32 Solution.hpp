@@ -1,8 +1,8 @@
-#include <vector>
-#include <string>
-
 #ifndef EX7_32_HPP
 #define EX7_32_HPP
+
+#include <vector>
+#include <string>
 
 class Screen;
 
