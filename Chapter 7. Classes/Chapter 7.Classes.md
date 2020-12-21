@@ -564,3 +564,11 @@ First the string `null_isbn` with value `9-999-99999-9` is defined. Next, a `Sal
 **Determine whether any of your Person class constructors should be explicit.**
 
 [7.50 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.50%20Solution.hpp)
+
+## Exercise 7.51
+
+**Why do you think vector defines its single-argument constructor as explicit, but string does not?**
+
+Beacuse for string type, it makes sense that users want to use string literals such as `abc`(`const char*` type) to initialize a string thus we should remove explicit.
+
+However, for vector, if we do not define its single-argument constructor as explicit then we may face with codes like `func(10)` that we think is `func(cosnt int&)` but actually is `func(const std::vector<int>&)` which is very ambiguous.
