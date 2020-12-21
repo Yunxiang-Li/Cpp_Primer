@@ -543,14 +543,22 @@ First the string `null_isbn` with value `9-999-99999-9` is defined. Next, a `Sal
 
 **For each of the three following declarations of combine, explain what happens if we call i.combine(s), where i is a Sales_data and s is a string:**
 
+```cpp
+
 (a) Sales_data &combine(Sales_data);
 
 (b) Sales_data &combine(Sales_data&);
 
 (c) Sales_data &combine(const Sales_data&) const;
 
+```
+
 (a) Legal. `s` is first converted to a temporary `Sales_data` object by the one string argument constructor and then the `combine` action execute.
 
-(b) Illegal. Cannot convert `std::string` type to `Sales_data&` type (compiler will not allow this since bind a temporary to a non-const reference is meaningless).
+(b) Illegal. Cannot convert `std::string` type to `Sales_data&` type (According to C++ design, binding a temporary to a non-const reference is meaningless and now allowed).
 
-(c) Illegal. `Sales_data &combine(const Sales_data&)` part works. However, the trailing const mark can't be put here since the `combine` method will modify the `Sales_data` object's members.
+(c) Illegal. `Sales_data &combine(const Sales_data&)` part works(According to C++ design, binding a temporary to a const reference is allowed). However, the trailing const mark can't be put here since the `combine` method will modify the `Sales_data` object's members.
+
+## Exercise 7.50
+
+**Determine whether any of your Person class constructors should be explicit.**
