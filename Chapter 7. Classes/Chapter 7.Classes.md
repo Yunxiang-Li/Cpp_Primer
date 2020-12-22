@@ -602,3 +602,18 @@ struct Sales_data {
 **Should the members of Debug that begin with set_ be declared as constexpr? If not, why not?**
 
 Should not. Because a constexpr function can only contain exactly one return statement but here in each `set` method there is only one assignment statement.
+
+## Exercise 7.55
+
+**Is the Data class from § 7.5.5 (p. 298) a literal class? If not, why not? If so, explain why it is literal.**
+
+```cpp
+struct Data {    
+  int ival;
+  string s;
+};
+```
+
+no.
+
+std::string is not a literal type, and it can be verified by following codes:
