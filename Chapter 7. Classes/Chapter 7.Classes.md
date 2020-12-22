@@ -590,3 +590,9 @@ struct Sales_data {
     double revenue;
 };
 ```
+
+## Exercise 7.53
+
+**Define your own version of Debug.**
+
+[7.53 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.53%20Solution.hpp)
