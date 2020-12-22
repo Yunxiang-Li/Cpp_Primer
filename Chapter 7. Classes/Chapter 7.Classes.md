@@ -614,6 +614,4 @@ struct Data {    
 };
 ```
 
-no.
-
-std::string is not a literal type, and it can be verified by following codes:
+No. A literal class requires that each member of class should be literal type. However, here `std::string` type is not a literal type.
