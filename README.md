@@ -40,7 +40,7 @@ You can check all answers for C++ Primer 5th Edition in this repo.(Although all 
   - [Chapter 4. Expressions](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%204.%20Expressions/Chapter%204.%20Expressions.md)
   - [Chapter 5. Statements](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%205.%20Statements/Chapter%205.%20Statements.md)
   - [Chapter 6. Functions](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Chapter%206.%20Functions.md)
-  - [Chapter 7. Classes]
+  - [Chapter 7. Classes](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Chapter%207.Classes.md)
 - Part II: The C++ Library
   - [Chapter 8. The IO Library]
   - [Chapter 9. Sequential Containers]
