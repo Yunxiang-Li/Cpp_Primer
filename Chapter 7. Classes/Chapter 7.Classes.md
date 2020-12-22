@@ -572,3 +572,14 @@ First the string `null_isbn` with value `9-999-99999-9` is defined. Next, a `Sal
 Beacuse for string type, it makes sense that users want to use string literals such as `abc`(`const char*` type) to initialize a string thus we should remove explicit.
 
 However, for vector, if we do not define its single-argument constructor as explicit then we may face with codes like `func(10)` that we think is `func(cosnt int&)` but actually is `func(const std::vector<int>&)` which is very ambiguous.
+
+## Exercise 7.52
+
+**Using our first version of Sales_data from § 2.6.1 (p. 72), explain the following initialization. Identify and fix any problems.**
+
+```cpp
+Sales_data item = {"978-0590353403", 25, 15.99};
+```
+
+Create `Sales_data` class as an aggregate class.
+
