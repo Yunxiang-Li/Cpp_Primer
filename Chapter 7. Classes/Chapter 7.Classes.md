@@ -625,3 +625,9 @@ A static class member is associated with the class instead of each individual ob
 Advantage of a static class member is that each object do not need to store a common data as each object's member. Moreover, if that static data is changed, each object can use the new value directly without any other modifications.
 
 A static member can have incomplete type and can be used as a default argument.
+
+## Exercise 7.57
+
+**Write your own version of the Account class.**
+
+[7.57 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.57%20Solution.hpp)
