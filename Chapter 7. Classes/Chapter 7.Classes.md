@@ -596,3 +596,7 @@ struct Sales_data {
 **Define your own version of Debug.**
 
 [7.53 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.53%20Solution.hpp)
+
+## Exercise 7.54
+
+**Should the members of Debug that begin with set_ be declared as constexpr? If not, why not?**
