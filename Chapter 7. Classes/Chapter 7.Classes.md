@@ -658,3 +658,18 @@ Moreover, C++ does not allow we use in-class initializer inside the parenthese.
 
 Fixed Version:
 
+```cpp
+// example.h
+class Example {
+public:    
+  static constexpr double rate = 6.5; 
+  static const int vecSize = 20;    
+  static vector<double> vec;
+};
+
+// example.C
+#include "example.h"
+
+double constexpr Example::rate;
+vector<double> Example::vec(Example::vecSize);
+```
