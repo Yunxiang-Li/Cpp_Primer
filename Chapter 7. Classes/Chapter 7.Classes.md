@@ -583,3 +583,10 @@ Sales_data item = {"978-0590353403", 25, 15.99};
 
 Create `Sales_data` class as an aggregate class.
 
+```cpp
+struct Sales_data {
+    std::string bookNo;
+    unsigned units_sold;
+    double revenue;
+};
+```
