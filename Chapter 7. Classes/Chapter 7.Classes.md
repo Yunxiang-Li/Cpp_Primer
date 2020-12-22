@@ -600,3 +600,5 @@ struct Sales_data {
 ## Exercise 7.54
 
 **Should the members of Debug that begin with set_ be declared as constexpr? If not, why not?**
+
+Should not. Because a constexpr function can only contain exactly one return statement but here in each `set` method there is only one assignment statement.
