@@ -631,3 +631,23 @@ A static member can have incomplete type and can be used as a default argument.
 **Write your own version of the Account class.**
 
 [7.57 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Codes/7.57%20Solution.hpp)
+
+## Exercise 7.58
+
+**Which, if any, of the following static data member declarations and definitions are errors? Explain why.**
+
+```cpp
+// example.h
+class Example {
+public:    
+  static double rate = 6.5; 
+  static const int vecSize = 20;    
+  static vector<double> vec(vecSize);
+};
+
+// example.C
+#include "example.h"
+
+double Example::rate;
+vector<double> Example::vec;
+```
