@@ -651,3 +651,10 @@ public:    
 double Example::rate;
 vector<double> Example::vec;
 ```
+
+The C++ standard allows only static constant integral or enumeration types to be initialized inside the class. Therefore, since `rate` is a non-const static **double** member, we must initialize it out of the `Example` class.
+
+Moreover, C++ does not allow we use in-class initializer inside the parenthese.
+
+Fixed Version:
+
