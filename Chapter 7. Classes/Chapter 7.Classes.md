@@ -623,3 +623,5 @@ No. A literal class requires that each member of class should be literal type. H
 A static class member is associated with the class instead of each individual object of the class type.
 
 Advantage of a static class member is that each object do not need to store a common data as each object's member. Moreover, if that static data is changed, each object can use the new value directly without any other modifications.
+
+A static member can have incomplete type and can be used as a default argument.
