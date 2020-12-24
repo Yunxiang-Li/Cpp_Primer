@@ -15,3 +15,9 @@
 ## Exercise 8.3
 
 **What causes the following while to terminate?**
+
+```cpp
+while (cin >> i) /*  ...    */
+```
+
+When at least one of `cin` 's error state flag is set (such as `eofbit`, `failbit` and `badbit`).
