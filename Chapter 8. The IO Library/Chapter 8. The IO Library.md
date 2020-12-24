@@ -10,4 +10,4 @@
 
 **Test your function by calling it, passing cin as an argument.**
 
-[8.1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.1%20Solution.cpp)
+[8.2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.2%20Solution.cpp)
