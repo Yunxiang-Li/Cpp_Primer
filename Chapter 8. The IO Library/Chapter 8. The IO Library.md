@@ -11,3 +11,7 @@
 **Test your function by calling it, passing cin as an argument.**
 
 [8.2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.2%20Solution.cpp)
+
+## Exercise 8.3
+
+**What causes the following while to terminate?**
