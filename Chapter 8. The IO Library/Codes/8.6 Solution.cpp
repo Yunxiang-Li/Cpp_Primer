@@ -5,7 +5,7 @@
 
 int main(int argc, char** argv)
 {
-    std::ifstream input(argv[1]); // use "../data/book.txt"
+    std::ifstream input(argv[1]);
 
     Sales_data total;
     if (read(input, total)) {
