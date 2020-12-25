@@ -21,3 +21,9 @@ while (cin >> i) /*  ...    */
 ```
 
 When at least one of `cin` 's error state flag is set (such as `eofbit`, `failbit` and `badbit`).
+
+## Exercise 8.4
+
+**Write a function to open a file for input and read its contents into a vector of strings, storing each line as a separate element in the vector.**
+
+[8.4 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.4%20Solution.cpp)
