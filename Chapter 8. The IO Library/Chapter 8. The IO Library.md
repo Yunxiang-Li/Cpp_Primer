@@ -45,3 +45,9 @@ When at least one of `cin` 's error state flag is set (such as `eofbit`, `failbi
 **Revise the bookstore program from the previous section to write its output to a file. Pass the name of that file as a second argument to main.**
 
 [8.7 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.7%20Solution.cpp)
+
+## Exercise 8.8
+
+**Revise the program from the previous exercise to append its output to its given file. Run the program on the same output file at least twice to ensure that the data are preserved.**
+
+[8.8 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.8%20Solution.cpp)
