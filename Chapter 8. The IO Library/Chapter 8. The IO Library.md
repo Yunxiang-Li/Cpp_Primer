@@ -33,3 +33,9 @@ When at least one of `cin` 's error state flag is set (such as `eofbit`, `failbi
 **Rewrite the previous program to store each word in a separate element.**
 
 [8.5 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.5%20Solution.cpp)
+
+## Exercise 8.6
+
+**Rewrite the bookstore program from § 7.1.1 (p. 256) to read its transactions from a file. Pass the name of the file as an argument to main (§ 6.2.5, p. 218).**
+
+[8.6 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.6%20Solution.cpp)
