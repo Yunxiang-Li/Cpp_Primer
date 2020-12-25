@@ -4,8 +4,8 @@
 
 int main(int argc, char** argv)
 {
-    std::ifstream input(argv[1]);  // "../data/book.txt"
-    std::ofstream output(argv[2]); // "../data/out.txt"
+    std::ifstream input(argv[1]);  
+    std::ofstream output(argv[2]); 
 
     Sales_data total;
     if (read(input, total)) {
