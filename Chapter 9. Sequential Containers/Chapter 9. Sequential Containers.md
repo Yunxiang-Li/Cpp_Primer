@@ -6,9 +6,15 @@
 
 (a) Read a fixed number of words, inserting them in the container alphabetically as they are entered. We’ll see in the next chapter that associative containers are better suited to this problem.
 
+A `list` will be better in this situation. Beacuse we may need to insert each word in the middle according to the requirement of alphabetical order.
+
 (b) Read an unknown number of words. Always insert new words at the back. Remove the next value from the front.
 
+A `deque` will be better in this situation. Because we need to always insert new words at the back and remove the next value from the front. `Deque` is much better than `vector` when it comes to inserting/removing an element from the front/back.
+
 (c) Read an unknown number of integers from a file. Sort the numbers and then print them to standard output.
+
+A `vector` will be better in this situation. Because we do not need to insert or delete any elements from the middle and we just need to read, sort and print thus `vector` will be better than `deque` since it saves more memory space.
 
 ## Exercise 8.2
 
