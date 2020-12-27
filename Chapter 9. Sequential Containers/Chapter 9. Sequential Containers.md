@@ -16,6 +16,13 @@ A `deque` will be better in this situation. Because we need to always insert new
 
 A `vector` will be better in this situation. Because we do not need to insert or delete any elements from the middle and we just need to read, sort and print thus `vector` will be better than `deque` since it saves more memory space.
 
+## Exercise 9.2
+
+**Define a list that holds elements that are deques that hold ints.**
+```cpp
+std::list<std::deque<int>> myList;
+```
+
 ## Exercise 8.2
 
 **Test your function by calling it, passing cin as an argument.**
