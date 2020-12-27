@@ -85,3 +85,5 @@ Because we always need to get data from the input file thus there is no need for
 ## Exercise 8.14
 
 **Why did we declare entry and nums as const auto &?**
+
+Beacause we want to use `entry` and `num` by reference instead of by copy which can be more efficient. However, we do not want to change `entry` or `num` thus we use const reference.
