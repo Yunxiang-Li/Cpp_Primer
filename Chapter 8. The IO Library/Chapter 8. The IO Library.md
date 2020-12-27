@@ -69,3 +69,9 @@ When at least one of `cin` 's error state flag is set (such as `eofbit`, `failbi
 **The program in this section defined its istringstream object inside the outer while loop. What changes would you need to make if record were defined outside that loop? Rewrite the program, moving the definition of record outside the while, and see whether you thought of all the changes that are needed.**
 
 [8.11 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.11%20Solution.cpp)
+
+## Exercise 8.12
+
+**Why didn’t we use in-class initializers in PersonInfo?**
+
+Because we always need to get data from the input file thus there is no need for us to initialize the `PersonInfo` struct on our own.
