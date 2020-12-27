@@ -21,5 +21,4 @@ void storeEachLine(std::ifstream& inputFile) {
       }
     }
   }
-
 }
