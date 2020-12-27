@@ -42,7 +42,7 @@ You can check all answers for C++ Primer 5th Edition in this repo.(Although all 
   - [Chapter 6. Functions](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%206.%20Functions/Chapter%206.%20Functions.md)
   - [Chapter 7. Classes](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%207.%20Classes/Chapter%207.Classes.md)
 - Part II: The C++ Library
-  - [Chapter 8. The IO Library]
+  - [Chapter 8. The IO Library](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Chapter%208.%20The%20IO%20Library.md)
   - [Chapter 9. Sequential Containers]
   - [Chapter 10. Generic Algorithms]
   - [Chapter 11. Associative Containers]
