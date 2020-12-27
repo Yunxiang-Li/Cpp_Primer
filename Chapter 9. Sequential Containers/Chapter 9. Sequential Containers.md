@@ -23,6 +23,12 @@ A `vector` will be better in this situation. Because we do not need to insert or
 std::list<std::deque<int>> myList;
 ```
 
+## Exercise 9.3
+
+**What are the constraints on the iterators that form iterator ranges?**
+
+Both two iterators(`begin` and `end`) must refer to elements of or one past the end of the same container. Moreover, it is possible to reach end by repeatedly incrementing `begin` which indicates `end` must not precede `begin`.
+
 ## Exercise 8.2
 
 **Test your function by calling it, passing cin as an argument.**
