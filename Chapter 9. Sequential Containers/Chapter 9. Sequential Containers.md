@@ -51,4 +51,12 @@ list<int>::iterator iter1 = lst1.begin(), iter2 = lst1.end();
 while (iter1 < iter2) /* ... */
 ```
 
-All iterators are equality comparable. Only random access iterators are relationally comparable.
+All iterators are equality comparable. Only random access iterators are relationally comparable. Here, however, `std::list` container does not support random access thus we cannot write codes like `iter1 < iter2`. We should use `iter1 != iter2` instead.
+
+Fixed version:
+
+```cpp
+list<int> lst1;
+list<int>::iterator iter1 = lst1.begin(), iter2 = lst1.end();
+while (iter1 != iter2) /* ... */
+```
