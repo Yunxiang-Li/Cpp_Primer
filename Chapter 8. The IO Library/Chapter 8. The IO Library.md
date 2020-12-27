@@ -78,4 +78,10 @@ Because we always need to get data from the input file thus there is no need for
 
 ## Exercise 8.13
 
+**Rewrite the phone number program from this section to read from a named file rather than from cin.**
+
 [8.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.13%20Solution.cpp)
+
+## Exercise 8.14
+
+**Why did we declare entry and nums as const auto &?**
