@@ -57,3 +57,9 @@ When at least one of `cin` 's error state flag is set (such as `eofbit`, `failbi
 **Use the function you wrote for the first exercise in § 8.1.2 (p. 314) to print the contents of an istringstream object.**
 
 [8.9 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.9%20Solution.cpp)
+
+## Exercise 8.10
+
+**Write a program to store each line from a file in a vector<string>. Now use an istringstream to read each element from the vector a word at a time.**
+
+[8.10 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.10%20Solution.cpp)
