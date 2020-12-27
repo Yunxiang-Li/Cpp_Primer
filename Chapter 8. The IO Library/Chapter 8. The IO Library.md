@@ -75,3 +75,7 @@ When at least one of `cin` 's error state flag is set (such as `eofbit`, `failbi
 **Why didn’t we use in-class initializers in PersonInfo?**
 
 Because we always need to get data from the input file thus there is no need for us to initialize the `PersonInfo` struct on our own.
+
+## Exercise 8.13
+
+[8.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.13%20Solution.cpp)
