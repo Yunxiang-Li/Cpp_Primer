@@ -63,3 +63,9 @@ When at least one of `cin` 's error state flag is set (such as `eofbit`, `failbi
 **Write a program to store each line from a file in a vector<string>. Now use an istringstream to read each element from the vector a word at a time.**
 
 [8.10 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.10%20Solution.cpp)
+
+## Exercise 8.11
+
+**The program in this section defined its istringstream object inside the outer while loop. What changes would you need to make if record were defined outside that loop? Rewrite the program, moving the definition of record outside the while, and see whether you thought of all the changes that are needed.**
+
+[8.11 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.11%20Solution.cpp)
