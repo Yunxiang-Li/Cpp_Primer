@@ -29,8 +29,8 @@ std::list<std::deque<int>> myList;
 
 Both two iterators(`begin` and `end`) must refer to elements of or one past the end of the same container. Moreover, it is possible to reach end by repeatedly incrementing `begin` which indicates `end` must not precede `begin`.
 
-## Exercise 8.2
+## Exercise 9.4
 
-**Test your function by calling it, passing cin as an argument.**
+**Write a function that takes a pair of iterators to a `vector<int>` and an int value. Look for that value in the range and return a bool indicating whether it was found.**
 
-[8.2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.2%20Solution.cpp)
+[9.4 Solution]()
