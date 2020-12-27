@@ -51,3 +51,9 @@ When at least one of `cin` 's error state flag is set (such as `eofbit`, `failbi
 **Revise the program from the previous exercise to append its output to its given file. Run the program on the same output file at least twice to ensure that the data are preserved.**
 
 [8.8 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.8%20Solution.cpp)
+
+## Exercise 8.9
+
+**Use the function you wrote for the first exercise in § 8.1.2 (p. 314) to print the contents of an istringstream object.**
+
+[8.9 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Codes/8.9%20Solution.cpp)
