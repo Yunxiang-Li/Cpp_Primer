@@ -40,3 +40,15 @@ Both two iterators(`begin` and `end`) must refer to elements of or one past the 
 **Rewrite the previous program to return an iterator to the requested element. Note that the program must handle the case where the element is not found.**
 
 [9.5 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.5%20Solution.cpp)
+
+## Exercise 9.6
+
+**What is wrong with the following program? How might you correct it?**
+
+```cpp
+list<int> lst1;
+list<int>::iterator iter1 = lst1.begin(), iter2 = lst1.end();
+while (iter1 < iter2) /* ... */
+```
+
+All iterators are equality comparable. Only random access iterators are relationally comparable.
