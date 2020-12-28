@@ -97,3 +97,15 @@ auto it3 = v1.cbegin(), it4 = v2.cbegin();
 ```
 
 `v1` is of type `vector<int>::iterator`, `v2` is of type `vector<int>::const_iterator`, `v3` is of type `vector<int>::cosnt_iterator` and `v4` is of type `vector<int>::const_iterator`.
+
+## Exercise 9.11
+
+**Show an example of each of the six ways to create and initialize a vector. Explain what values each vector contains.**
+
+```cpp
+std::vector<int> vec(10);    // Empty
+std::vector<int> vec(10,1);  // 10 int elements and each has value 1
+std::vector<int> vec{1,2,3,4,5}; // 5 int elements. Altogether values are 1, 2, 3, 4 and 5
+std::vector<int> vec(anotherVec); // vec has same elements' numbers and values as anotherVec
+std::vector<int> vec(anotherVec.begin(), anotherVec.end()); // vec has same elements' numbers and values as anotherVec
+```
