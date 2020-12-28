@@ -118,3 +118,9 @@ std::vector<int> vec(anotherVec.begin(), anotherVec.end()); // vec has same elem
 The constructor that takes another container as an argument (excepting array) requires the container type and element type of both containers to be exactly identical. It will copy all elements of the copied container into the new one.
 
 The constructor that takes two iterators as arguments does not require the container type and element type to be exactly identical. Moreover, the element type in the new and original containers can differ as long as it is possible to convert elements we’re copying to the element type of the container we are initializing. It will only copy all elements between two iterators(left inclusive, right exclusive).
+
+## Exercise 9.13
+
+**How would you initialize a `vector<double>` from a `list<int>`? From a `vector<int>`? Write code to check your answers.**
+
+[9.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.13%20Solution.cpp)
