@@ -110,3 +110,11 @@ std::vector<int> vec{1,2,3,4,5}; // 5 int elements. Altogether values are 1, 2, 
 std::vector<int> vec(anotherVec); // vec has same elements' numbers and values as anotherVec
 std::vector<int> vec(anotherVec.begin(), anotherVec.end()); // vec has same elements' numbers and values as anotherVec
 ```
+
+## Exercise 9.12
+
+**Explain the differences between the constructor that takes a container to copy and the constructor that takes two iterators.**
+
+The constructor that takes another container as an argument (excepting array) requires the container type and element type of both containers to be exactly identical. It will copy all elements of the copied container into the new one.
+
+The constructor that takes two iterators as arguments does not require the container type and element type to be exactly identical. Moreover, the element type in the new and original containers can differ as long as it is possible to convert elements we’re copying to the element type of the container we are initializing. It will only copy all elements between two iterators(left inclusive, right exclusive).
