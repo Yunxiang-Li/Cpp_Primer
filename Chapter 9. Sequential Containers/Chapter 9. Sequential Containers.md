@@ -73,6 +73,6 @@ vector<int>::size_type
 
 **What type should be used to read elements in a list of strings? To write them?**
 
-Both `list<string>::iterator` and `list<string>const_iterator` can be used to read elements in a list of strings but `list<string>const_iterator` is better.
+Both ```cpp list<string>::iterator``` and `list<string>const_iterator` can be used to read elements in a list of strings but `list<string>const_iterator` is better.
 
 `list<string>::iterator` should be used to write elements in a list of strings.
