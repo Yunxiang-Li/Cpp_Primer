@@ -73,7 +73,7 @@ vector<int>::size_type
 
 **What type should be used to read elements in a list of strings? To write them?**
 
-Both `list<string>::iterator` and `list<string>const_iterator` can be used to read elements in a list of strings but `list<string>const_iterator` is better.
+Both `list<string>::iterator` and `list<string>::const_iterator` can be used to read elements in a list of strings but `list<string>const_iterator` is better.
 
 `list<string>::iterator` should be used to write elements in a list of strings.
 
@@ -84,3 +84,16 @@ Both `list<string>::iterator` and `list<string>const_iterator` can be used to re
 Function `begin` refers to the plain `iterator` of a container which can be used to both read and write the container's elements.
 
 Function `cbegin` refers to the const `iterator` of a container which can only be used to read the container's elements.
+
+## Exercise 9.10
+
+**What are the types of the following four objects?**
+
+```cpp
+vector<int> v1;
+const vector<int> v2;
+auto it1 = v1.begin(), it2 = v2.begin();
+auto it3 = v1.cbegin(), it4 = v2.cbegin();
+```
+
+`v1` is of type `vector<int>::iterator`, `v2` is of type `vector<int>::const_iterator`, `v3` is of type `vector<int>::iterator` and `v4` is of type `vector<int>::const_iterator`.
