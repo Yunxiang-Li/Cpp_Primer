@@ -96,4 +96,4 @@ auto it1 = v1.begin(), it2 = v2.begin();
 auto it3 = v1.cbegin(), it4 = v2.cbegin();
 ```
 
-`v1` is of type `vector<int>::iterator`, `v2` is of type `vector<int>::const_iterator`, `v3` is of type `vector<int>::iterator` and `v4` is of type `vector<int>::const_iterator`.
+`v1` is of type `vector<int>::iterator`, `v2` is of type `vector<int>::const_iterator`, `v3` is of type `vector<int>::cosnt_iterator` and `v4` is of type `vector<int>::const_iterator`.
