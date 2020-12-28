@@ -103,7 +103,8 @@ auto it3 = v1.cbegin(), it4 = v2.cbegin();
 **Show an example of each of the six ways to create and initialize a vector. Explain what values each vector contains.**
 
 ```cpp
-std::vector<int> vec(10);    // Empty
+std::vector<int> vec;    // Empty
+std::vector<int> vec(10);    // 10 int elements and each has default value 0
 std::vector<int> vec(10,1);  // 10 int elements and each has value 1
 std::vector<int> vec{1,2,3,4,5}; // 5 int elements. Altogether values are 1, 2, 3, 4 and 5
 std::vector<int> vec(anotherVec); // vec has same elements' numbers and values as anotherVec
