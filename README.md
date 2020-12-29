@@ -1,5 +1,5 @@
 # C++ Primer 5th Editiona234
-5
+
 Self-study for C++ Primer 5th Edition<br>
 
 [Amazon book link](https://www.amazon.com/C-Primer-Stanley-B-Lippman-ebook/dp/B0091I7FEQ/ref=sr_1_1?dchild=1&keywords=Cpp+primer&qid=1588913221&sr=8-1)
