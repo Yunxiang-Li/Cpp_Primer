@@ -1,4 +1,4 @@
-# C++ Primer 5th Edition2
+# C++ Primer 5th Edition
 
 Self-study for C++ Primer 5th Edition<br>
 
