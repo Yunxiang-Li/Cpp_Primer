@@ -130,3 +130,9 @@ The constructor that takes two iterators as arguments does not require the conta
 **Write a program to assign the elements from a list of `char*` pointers to C-style character strings to a vector of strings.**
 
 [9.14 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.14%20Solution.cpp)
+
+## Exercise 9.15
+
+**Write a program to determine whether two `vector<int>`s are equal.**
+
+[9.15 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.15%20Solution.cpp)
