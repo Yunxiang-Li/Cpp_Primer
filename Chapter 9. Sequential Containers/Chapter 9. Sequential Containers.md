@@ -142,3 +142,17 @@ The constructor that takes two iterators as arguments does not require the conta
 **Repeat the previous program, but compare elements in a `list<int>` to a `vector<int>`.**
 
 [9.16 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.16%20Solution.cpp)
+
+## Exercise 9.17
+
+**Assuming c1 and c2 are containers, what (if any) constraints does the following usage place on the types of c1 and c2?**
+
+```cpp
+if (c1 < c2)
+```
+
+1. Both `c1` and `c2` should be same container(but not any associative containers).
+
+2. Both `c1` and `c2` should hold elements of same type.
+
+3. Elements type should support relational operators.
