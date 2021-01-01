@@ -136,3 +136,9 @@ The constructor that takes two iterators as arguments does not require the conta
 **Write a program to determine whether two `vector<int>`s are equal.**
 
 [9.15 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.15%20Solution.cpp)
+
+## Exercise 9.16
+
+**Repeat the previous program, but compare elements in a `list<int>` to a `vector<int>`.**
+
+[9.16 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.16%20Solution.cpp)
