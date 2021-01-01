@@ -151,8 +151,8 @@ The constructor that takes two iterators as arguments does not require the conta
 if (c1 < c2)
 ```
 
-1. Both `c1` and `c2` should be same container(but not any associative containers).
+1. Both `c1` and `c2` should be the same container(but not any associative containers).
 
-2. Both `c1` and `c2` should hold elements of same type.
+2. Elements of two containers should be the same type.
 
 3. Elements type should support relational operators.
