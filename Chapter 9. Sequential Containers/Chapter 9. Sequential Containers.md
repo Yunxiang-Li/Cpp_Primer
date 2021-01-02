@@ -248,3 +248,6 @@ int ia[] = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 55, 89 };
 
 **Given that vec holds 25 elements, what does vec.resize(100) do? What if we next wrote vec.resize(10)?**
 
+`vec.resize(100)` will add 75(100 - 25 = 75) elements which are value initialized to the `vec`.
+
+If we next wrote `vec.resize(10)` then from the 11th element to the 100th element of `vec` will be discarded.
