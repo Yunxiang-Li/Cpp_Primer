@@ -226,4 +226,8 @@ If both `elem1` and `elem2` are the off-the-end iterator then nothing happens li
 
 **Using the following definition of ia, copy ia into a vector and into a list. Use the single-iterator form of erase to remove the elements with odd values from your list and the even values from your vector.**
 
+```cpp
+int ia[] = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 55, 89 };
+```
+
 [9.26 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.26%20Solution.cpp)
