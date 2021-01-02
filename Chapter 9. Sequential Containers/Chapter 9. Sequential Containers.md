@@ -193,3 +193,9 @@ while (iter != mid) 
   if (*iter == some_val) 
     iv.insert(iter, 2 * some_val);
 ```
+
+This while loop is an endless loop since `iter` will never change. Moreover, after insertion `mid` iterator will be invalid.
+
+Fixed version:
+
+[9.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.22%20Solution.cpp)
