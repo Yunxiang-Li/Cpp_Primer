@@ -9,7 +9,7 @@ int main() {
     myDeque.emplace_back(inputWord);
   }
 
-  for (std::deque<std::string>::iterator iter = myDeque.begin(); iter != myDeque.end(); ++iter)
+  for (std::deque<std::string>::const_iterator iter = myDeque.cbegin(); iter != myDeque.cend(); ++iter)
     std::cout << *iter << ' ';
 
   return 0;
