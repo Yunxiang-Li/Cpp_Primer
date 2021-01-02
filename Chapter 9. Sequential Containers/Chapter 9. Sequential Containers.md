@@ -174,3 +174,11 @@ if (c1 < c2)
 **Write a program to copy elements from a `list<int>` into two deques. The even-valued elements should go into one deque and the odd ones into the other.**
 
 [9.20 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.20%20Solution.cpp)
+
+## Exercise 9.21
+
+**Explain how the loop from page 345 that used the return from insert to add elements to a list would work if we inserted into a vector instead.**
+
+It works the same way as `list`.
+
+The first call to insert takes the string we just read and puts it in front of the element denoted by `iter`. The value returned by insert is an iterator referring to this new element. We assign that iterator to iter and repeat the while loop to read next new word. As long as there are words need to be inserted, each while loop inserts a new element ahead of `iter` and reassigns the location of the newly inserted element to `iter`. Therefore, each iteration inserts an element ahead of the first element in the vector.
