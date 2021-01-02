@@ -231,3 +231,9 @@ int ia[] = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 55, 89 };
 ```
 
 [9.26 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.26%20Solution.cpp)
+
+## Exercise 9.27
+
+**Write a program to find and remove the odd-valued elements in a `forward_list<int>`.**
+
+[9.27 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.27%20Solution.cpp)
