@@ -211,3 +211,13 @@ Fixed version:
 **Write a program that fetches the first element in a vector using at, the subscript operator, front, and begin. Test your program on an empty vector.**
 
 [9.24 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.24%20Solution.cpp)
+
+## Exercise 9.25
+
+**In the program on page 349 that erased a range of elements, what happens if elem1 and elem2 are equal? What if elem2 or both elem1 and elem2 are the off-the-end iterator?**
+
+If `elem1` and `elem2` are equal, then no elements will be erased since `erase(begin, end)` function is left inclusive and right exclusive([left, right)).
+
+If `elem2` is the off-the-end iterator, then elements from `elem1` to the element before `elem2` will be erased and the off-the-end iterator will be returned.
+
+If both `elem1` and `elem2` are the off-the-end iterator then nothing happens like the situation mentioned above that `elem1` and `elem2` are equal.
