@@ -181,4 +181,15 @@ if (c1 < c2)
 
 It works the same way as `list`.
 
-The first call to insert takes the string we just read and puts it in front of the element denoted by `iter`. The value returned by insert is an iterator referring to this new element. We assign that iterator to iter and repeat the while loop to read next new word. As long as there are words need to be inserted, each while loop inserts a new element ahead of `iter` and reassigns the location of the newly inserted element to `iter`. Therefore, each iteration inserts an element ahead of the first element in the vector.
+Before the loop, we initialize iter to `vec.begin()`. The first call to insert takes the string we just read and puts it in front of the element denoted by `iter`. The value returned by insert is an iterator referring to this new element. We assign that iterator to `iter` and repeat the while, reading another word. As long as there are words to insert, each trip through the while inserts a new element ahead of `iter` and reassigns to `iter` the location of the newly inserted element. That element is the (new) first element. Thus, each iteration inserts an element ahead of the first element in the list.
+
+## Exercise 9.22
+
+**Assuming iv is a vector of ints, what is wrong with the following program? How might you correct the problem(s)?**
+
+```cpp
+vector<int>::iterator iter = iv.begin(), mid= iv.begin() + iv.size()/2;
+while (iter != mid) 
+  if (*iter == some_val) 
+    iv.insert(iter, 2 * some_val);
+```
