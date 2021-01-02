@@ -162,3 +162,9 @@ if (c1 < c2)
 **Write a program to read a sequence of strings from the standard input into a deque. Use iterators to write a loop to print the elements in the deque.**
 
 [9.18 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.18%20Solution.cpp)
+
+## Exercise 9.19
+
+**Rewrite the program from the previous exercise to use a list. List the changes you needed to make.**
+
+[9.19 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.19%20Solution.cpp)
