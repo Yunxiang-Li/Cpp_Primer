@@ -205,3 +205,9 @@ Fixed version:
 **In the first program in this section on page 346, what would the values of val, val2, val3, and val4 be if c.size() is 1?**
 
 `val`, `val2`, `val3` and `val4` will all have the same value since they all refer to the same element(the only element).
+
+## Exercise 9.24
+
+**Write a program that fetches the first element in a vector using at, the subscript operator, front, and begin. Test your program on an empty vector.**
+
+[9.24 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.24%20Solution.cpp)
