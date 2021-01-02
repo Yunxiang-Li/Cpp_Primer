@@ -243,3 +243,8 @@ int ia[] = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 55, 89 };
 **Write a function that takes a `forward_list<string>` and two additional string arguments. The function should find the first string and insert the second immediately following the first. If the first string is not found, then insert the second string at the end of the list.**
 
 [9.28 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.28%20Solution.cpp)
+
+## Exercise 9.29
+
+**Given that vec holds 25 elements, what does vec.resize(100) do? What if we next wrote vec.resize(10)?**
+
