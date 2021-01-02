@@ -251,3 +251,9 @@ int ia[] = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 55, 89 };
 `vec.resize(100)` will add 75(100 - 25 = 75) elements which are value initialized to the `vec`.
 
 If we next wrote `vec.resize(10)` then from the 11th element to the 100th element of `vec` will be discarded.
+
+## Exercise 9.30
+
+**What, if any, restrictions does using the version of resize that takes a single argument place on the element type?**
+
+If we use the version of `resize` that takes a single argument place on the element typewe must supply an initializer or the element type must have a default constructor.
