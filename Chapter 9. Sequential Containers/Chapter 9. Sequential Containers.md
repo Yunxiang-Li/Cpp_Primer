@@ -168,3 +168,9 @@ if (c1 < c2)
 **Rewrite the program from the previous exercise to use a list. List the changes you needed to make.**
 
 [9.19 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.19%20Solution.cpp)
+
+## Exercise 9.20
+
+**Write a program to copy elements from a `list<int>` into two deques. The even-valued elements should go into one deque and the odd ones into the other.**
+
+[9.20 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.20%20Solution.cpp)
