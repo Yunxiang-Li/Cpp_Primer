@@ -221,3 +221,9 @@ If `elem1` and `elem2` are equal, then no elements will be erased since `erase(b
 If `elem2` is the off-the-end iterator, then elements from `elem1` to the element before `elem2` will be erased and the off-the-end iterator will be returned.
 
 If both `elem1` and `elem2` are the off-the-end iterator then nothing happens like the situation mentioned above that `elem1` and `elem2` are equal.
+
+## Exercise 9.26
+
+**Using the following definition of ia, copy ia into a vector and into a list. Use the single-iterator form of erase to remove the elements with odd values from your list and the even values from your vector.**
+
+[9.26 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.26%20Solution.cpp)
