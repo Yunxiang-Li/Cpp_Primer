@@ -370,6 +370,12 @@ Finally, use `resize` function to resize the vector size to be `svec.size()+svec
 
 **If the program in the previous exercise reads 256 words, what is its likely capacity after it is resized? What if it reads 512? 1,000? 1,048?**
 
-According to my program, when reads 256, the capacity is 256. When reads 512, the capacity is 512. When reads 1000, the capacity is 1024. When reads 1048, the capacity is 2048.
+According to my program, when reads 256, the capacity is 512 after resize(size now is 384).
+
+When reads 512, the capacity is 1024 after resize(size now is 768).
+
+When reads 1000, the capacity is 2000 after resize(size now is 1500).
+
+When reads 1048, the capacity is 2048 after resize(size now is 1572).
 
 [9.40 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.40%20Solution.cpp)
