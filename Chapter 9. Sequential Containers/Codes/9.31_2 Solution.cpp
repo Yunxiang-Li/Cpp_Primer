@@ -19,4 +19,6 @@ int main() {
   for (const int element : myFList) {
     std::cout << element << ' ';
   }
+  
+  return 0;
 }
