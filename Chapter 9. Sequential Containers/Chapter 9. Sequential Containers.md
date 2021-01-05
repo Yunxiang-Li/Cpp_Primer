@@ -277,3 +277,9 @@ iter = vi.insert(iter, *iter++);
 ```
 
 It is illegal to write as above since arguments evaluation order in a function is decided by the compiler thus this line of codes may cause undefined behaviour.
+
+## Exercise 9.33
+
+**In the final example in this section what would happen if we did not assign the result of insert to begin? Write a program that omits this assignment to see if your expectation was correct.**
+
+The program will crash because after we insert one element into the vector, `begin` iterator may be invalidated thus we must assign the result of insert to `begin` iterator again to ensure it is always valid.
