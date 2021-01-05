@@ -8,8 +8,7 @@ int main() {
   while (iter != myList.end()) {
     if (*iter % 2) {
       iter = myList.insert(iter, *iter);
-      ++iter;
-      ++iter;
+      std::advance(iter, 2);
     }
     else {
       iter = myList.erase(iter);
