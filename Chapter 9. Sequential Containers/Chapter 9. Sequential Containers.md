@@ -328,3 +328,9 @@ The loop will be endless since the `++iter` is out of the while loop. Moreover, 
 Size of a `vector` is the number of elements it already holds;
 
 Capacity of a `vector` is the number of elements it can hold before next space reallocation.
+
+## Exercise 9.36
+
+**Can a container have a capacity less than its size?**
+
+Never. A container can only have a capacity equal to or greater than its size.
