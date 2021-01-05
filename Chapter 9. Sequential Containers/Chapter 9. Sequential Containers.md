@@ -304,3 +304,19 @@ int main()
 ```
 
 The program will crash because after we insert one element into the vector, `begin` iterator may be invalidated thus we must assign the result of insert to `begin` iterator again to ensure it is always valid.
+
+## Exercise 9.34
+
+**Assuming vi is a container of ints that includes even and odd values, predict the behavior of the following loop. After you’ve analyzed this loop, write a program to test whether your expectations were correct.**
+
+```cpp
+iter = vi.begin();
+while (iter != vi.end())    
+  if (*iter % 2)        
+    iter = vi.insert(iter, *iter);    
+  ++iter;
+```
+
+The loop will be endless since the `++iter` is out of the while loop. Moreover, we need to increment `iter` by `2` instead of `1` each time it refers to an odd element so that we can prevent inserting first odd element infinitely.
+
+[9.34 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.34%20Solution.cpp)
