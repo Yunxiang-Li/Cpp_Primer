@@ -262,6 +262,8 @@ If we use the version of `resize` that takes a single argument place on the elem
 
 **The program on page 354 to remove even-valued elements and duplicate odd ones will not work on a list or forward_list. Why? Revise the program so that it works on these types as well.**
 
+Because `list` and `forward_list`'s elements are not contiguous thus we cannot write codes like `iter += 2`. We should use `++iter; ++iter` or `std::advance(iter, 2)`instead. 
+
 [9.31 list_Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.31_1%20Solution.cpp)
 
-[9.31 forward_list_Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.31_2%20Solution.cppp)
+[9.31 forward_list_Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.31_2%20Solution.cpp)
