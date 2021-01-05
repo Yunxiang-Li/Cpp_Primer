@@ -348,3 +348,20 @@ Therefore both containers do not provide a capacity member.
 **Write a program to explore how vectors grow in the library you use.**
 
 [9.38 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.38%20Solution.cpp)
+
+## Exercise 9.39
+
+**Explain what the following program fragment does:**
+
+```cpp
+vector<string> svec;
+svec.reserve(1024);
+string word;
+while (cin >> word)        
+  svec.push_back(word);
+svec.resize(svec.size()+svec.size()/2);
+```
+
+First use `reserve` function to allocate space for 1024 `string`s. Then prompt user to input `string`s and push each `string` into the `svec`. If the number of `string` elements in the `svec` exceeds 1024 then more space will be reallocated depends on the library's implementation.
+
+Finally, use `resize` function to resize the vector size to be `svec.size()+svec.size()/2`(actually add `svec.size()/2` more value initialized `string`s). Also, If the number of `string` elements in the `svec` after `resize` exceeds the `svec`'s capacity then more space will be reallocated depends on the library's implementation.
