@@ -18,4 +18,6 @@ int main() {
   for (const int element : myList) {
     std::cout << element << ' ';
   }
+  
+  return 0;
 }
