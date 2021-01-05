@@ -257,3 +257,11 @@ If we next wrote `vec.resize(10)` then from the 11th element to the 100th elemen
 **What, if any, restrictions does using the version of resize that takes a single argument place on the element type?**
 
 If we use the version of `resize` that takes a single argument place on the element type, we must supply an initializer or the element type must have a default constructor since all elements should be value initialized.
+
+## Exercise 9.31
+
+**The program on page 354 to remove even-valued elements and duplicate odd ones will not work on a list or forward_list. Why? Revise the program so that it works on these types as well.**
+
+[9.31 list_Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.31%20Solution.cpp)
+
+[9.28 forward_list_Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.28%20Solution.cpp)
