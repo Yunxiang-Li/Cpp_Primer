@@ -334,3 +334,9 @@ Capacity of a `vector` is the number of elements it can hold before next space r
 **Can a container have a capacity less than its size?**
 
 Never. A container can only have a capacity equal to or greater than its size.
+
+## Exercise 9.37
+
+**Why don’t list or array have a capacity member?**
+
+Elements stored in a `list` are not contiguous, we just add/insert/erase each new element individually and do not need to worry about memory reallocation. Additionally, `array` has fixed size, thus both containers does not provide a capacity member.
