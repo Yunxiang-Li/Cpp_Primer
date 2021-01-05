@@ -267,3 +267,13 @@ Because `list` and `forward_list`'s elements are not contiguous thus we cannot w
 [9.31 list_Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.31_1%20Solution.cpp)
 
 [9.31 forward_list_Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.31_2%20Solution.cpp)
+
+## Exercise 9.32
+
+**In the program onpage 354 would it be legal to write the call to insert as follows? If not, why not?**
+
+```cpp
+iter = vi.insert(iter, *iter++);
+```
+
+It is illegal to write as above since arguments evaluation order in a function is decided by the compiler thus this line of codes may cause undefined behaviour.
