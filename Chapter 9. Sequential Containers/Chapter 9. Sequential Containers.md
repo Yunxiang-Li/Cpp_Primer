@@ -320,3 +320,11 @@ while (iter != vi.end())    
 The loop will be endless since the `++iter` is out of the while loop. Moreover, we need to increment `iter` by `2` instead of `1` each time it refers to an odd element so that we can prevent inserting first odd element infinitely.
 
 [9.34 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.34%20Solution.cpp)
+
+## Exercise 9.35
+
+**Explain the difference between a vector’s capacity and its size.**
+
+Size of a `vector` is the number of elements it already holds;
+
+Capacity of a `vector` is the number of elements it can hold before next space reallocation.
