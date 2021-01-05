@@ -4,12 +4,12 @@
 
 int main()
 {
-  std::vector<std::string> vec1;
   std::vector<std::string> vec256(256, "a");
   std::vector<std::string> vec512(512, "b");
   std::vector<std::string> vec1000(1000, "c");
   std::vector<std::string> vec1048(1048, "d");
 
+  std::vector<std::string> vec1;
   for (const std::string& element : vec256)
     vec1.emplace_back(element);
   vec1.resize(vec1.size() + vec1.size() / 2);
