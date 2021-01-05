@@ -339,4 +339,12 @@ Never. A container can only have a capacity equal to or greater than its size.
 
 **Why don’t list or array have a capacity member?**
 
-Elements stored in a `list` are not contiguous, we just add/insert/erase each new element individually and do not need to worry about memory reallocation. Additionally, `array` has fixed size, thus both containers does not provide a capacity member.
+Elements stored in a `list` are not contiguous, we just add/insert/erase each element individually and do not need to worry about memory reallocation. Additionally, `array` has fixed size when initialized thus we do not need a capacity member at all.
+
+Therefore both containers do not provide a capacity member.
+
+## Exercise 9.38
+
+**Write a program to explore how vectors grow in the library you use.**
+
+[9.38 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.38%20Solution.cpp)
