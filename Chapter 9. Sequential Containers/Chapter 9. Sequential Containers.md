@@ -379,3 +379,9 @@ When reads 1000, the capacity is 2000 after resize(size now is 1500).
 When reads 1048, the capacity is 2048 after resize(size now is 1572).
 
 [9.40 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.40%20Solution.cpp)
+
+## Exercise 9.41
+
+**Write a program that initializes a string from a `vector<char>`.**
+
+[9.41 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.41%20Solution.cpp)
