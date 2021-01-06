@@ -385,3 +385,13 @@ When reads 1048, the capacity is 2048 after resize(size now is 1572).
 **Write a program that initializes a string from a `vector<char>`.**
 
 [9.41 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.41%20Solution.cpp)
+
+## Exercise 9.42
+
+**Given that you want to read a character at a time into a string, and you know that you need to read at least 100 characters, how might you improve the performance of your program?**
+
+We can use `string`'s `reserve` function (generally constant time complexity) to allocate space before we read each character.
+
+```cpp
+str.reserve(150)
+```
