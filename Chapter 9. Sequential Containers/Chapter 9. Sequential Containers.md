@@ -407,3 +407,9 @@ str.reserve(150)
 **Rewrite the previous function using an index and replace.**
 
 [9.44 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.44%20Solution.cpp)
+
+## Exercise 9.45
+
+**Write a funtion that takes a string representing a name and two other strings representing a prefix, such as “Mr.” or “Ms.” and a suffix, such as “Jr.” or “III”. Using iterators and the insert and append functions, generate and return a new string with the suffix and prefix added to the given name.**
+
+[9.45 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.45%20Solution.cpp)
