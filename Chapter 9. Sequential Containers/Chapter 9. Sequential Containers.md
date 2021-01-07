@@ -395,3 +395,9 @@ We can use `string`'s `reserve` function (generally constant time complexity) to
 ```cpp
 str.reserve(150)
 ```
+
+## Exercise 9.43
+
+**Write a function that takes three strings, s, oldVal, and newVal. Using iterators, and the insert and erase functions replace all instances of oldVal that appear in s by newVal. Test your function by using it to replace common abbreviations, such as “tho” by “though” and “thru” by “through”.**
+
+[9.43 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.43%20Solution.cpp)
