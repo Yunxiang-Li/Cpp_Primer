@@ -401,3 +401,9 @@ str.reserve(150)
 **Write a function that takes three strings, s, oldVal, and newVal. Using iterators, and the insert and erase functions replace all instances of oldVal that appear in s by newVal. Test your function by using it to replace common abbreviations, such as “tho” by “though” and “thru” by “through”.**
 
 [9.43 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.43%20Solution.cpp)
+
+## Exercise 9.44
+
+**Rewrite the previous function using an index and replace.**
+
+[9.44 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.44%20Solution.cpp)
