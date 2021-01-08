@@ -427,3 +427,13 @@ str.reserve(150)
 [find_first_of Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.47_1%20Solution.cpp)
 
 [find_first_not_of Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.47_2%20Solution.cpp)
+
+## Exercise 9.48
+
+**Given the definitions of name and numbers on page 365, what does numbers.find(name) return?**
+
+```cpp
+string::npos
+```
+
+Since `name` is not in `numbers`.
