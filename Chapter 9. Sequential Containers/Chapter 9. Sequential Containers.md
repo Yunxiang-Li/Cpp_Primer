@@ -424,4 +424,5 @@ str.reserve(150)
 
 **Write a program that finds each numeric character and then each alphabetic character in the string "ab2c3d7R4E6". Write two versions of the program. The first should use find_first_of, and the second find_first_not_of.**
 
-[9.47 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.47%20Solution.cpp)
+[find_first_of Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.47_1%20Solution.cpp)
+[find_first_not_of Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.47_2%20Solution.cpp)
