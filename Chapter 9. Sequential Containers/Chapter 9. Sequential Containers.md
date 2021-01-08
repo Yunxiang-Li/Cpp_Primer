@@ -437,3 +437,9 @@ string::npos
 ```
 
 Since `name` is not in `numbers`.
+
+## Exercise 9.49
+
+**A letter has an ascender if, as with d or f, part of the letter extends above the middle of the line. A letter has a descender if, as with p or g, part of the letter extends below the line. Write a program that reads a file containing words and reports the longest word that contains neither ascenders nor descenders.**
+
+[9.49 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.49%20Solution.cpp)
