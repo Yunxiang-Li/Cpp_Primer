@@ -11,3 +11,9 @@
 **Repeat the previous program, but read values into a list of strings.**
 
 [10.2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.2%20Solution.cpp)
+
+## Exercise 10.3
+
+**Use accumulate to sum the elements in a `vector<int>`.**
+
+[10.3 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.3%20Solution.cpp)
