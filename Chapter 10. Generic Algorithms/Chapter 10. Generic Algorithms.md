@@ -39,3 +39,48 @@ The `std::equal` function on C-style string will only compare by the relational 
 **Using fill_n, write a program to set a sequence of int values to 0.**
 
 [10.6 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.6%20Solution.cpp)
+
+## Exercise 10.7
+
+**Determine if there are any errors in the following programs and, if so, correct the error(s):**
+
+(a)
+```cpp
+vector<int> vec;
+list<int> lst;
+int i;
+while (cin >> i)
+  lst.push_back(i);
+copy(lst.cbegin(), lst.cend(), vec.begin());
+```
+
+Incorrect, `copy(lst.cbegin(), lst.cend(), vec.begin())` requires `vec`'s size is at least same as `lst`. However, `vec` here is empty. We can fix this by resize `vec` before the `copy` function.
+
+Fixed Version:
+
+```cpp
+vector<int> vec;
+list<int> lst;
+int i;
+while (cin >> i)
+  lst.push_back(i);
+vec.resize(lst.size());
+copy(lst.cbegin(), lst.cend(), vec.begin());
+```
+
+(b)
+```cpp
+vector<int> vec;
+vec.reserve(10); // reserve is covered in § 9.4 (p. 356)
+fill_n(vec.begin(), 10, 0);
+```
+
+Syntax is correct, but the `vec`'s size is still 0 and no elements are set. We can also use `resize` function instead of `reverse` to fix this.
+
+Fixed Version:
+
+```cpp
+vector<int> vec;
+vec.resize(10); // reserve is covered in § 9.4 (p. 356)
+fill_n(vec.begin(), 10, 0);
+```
