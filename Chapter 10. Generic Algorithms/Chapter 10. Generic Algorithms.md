@@ -101,4 +101,4 @@ Because it is the `back_inserter`(an insert iterator) which uses containers' ope
 
 **Why do you think the algorithms don’t change the size of containers?**
 
-Because algorithms only operate on iterators, not containers. Thus, algorithms cannot (directly) add or remove elements. C++ is designed so for seperating container operations and algorithms.
+Because algorithms only operate on iterators, not containers. Therefore, algorithms cannot (directly) add or remove elements. C++ is designed so for seperating container operations and algorithms.
