@@ -17,3 +17,9 @@
 **Use accumulate to sum the elements in a `vector<int>`.**
 
 [10.3 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.3%20Solution.cpp)
+
+## Exercise 10.4
+
+**Assuming v is a `vector<double>`, what, if anything, is wrong with calling accumulate(v.cbegin(), v.cend(), 0)?**
+
+The result of `accumulate(v.cbegin(), v.cend(), 0)` will be converted into a interger instead of a double since the third argument `0` is an integer and `accumulate` function will return the result with the exact same type as the third argument.
