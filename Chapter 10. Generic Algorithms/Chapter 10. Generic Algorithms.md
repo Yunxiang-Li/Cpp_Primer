@@ -96,3 +96,9 @@ Because it is the `back_inserter`(an insert iterator) which uses containers' ope
 **Implement your own version of elimDups. Test your program by printing the vector after you read the input, after the call to unique, and after the call to erase.**
 
 [10.9 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.9%20Solution.cpp)
+
+## Exercise 10.10
+
+**Why do you think the algorithms don’t change the size of containers?**
+
+Because algorithms only operate on iterators, not containers. Thus, algorithms cannot (directly) add or remove elements. C++ is designed so for seperating container operations and algorithms.
