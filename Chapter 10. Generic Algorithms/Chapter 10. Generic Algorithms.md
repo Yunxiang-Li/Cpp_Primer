@@ -90,3 +90,9 @@ fill_n(vec.begin(), 10, 0);
 **We said that algorithms do not change the size of the containers over which they operate. Why doesn’t the use of back_inserter invalidate this claim?**
 
 Because it is the `back_inserter`(an insert iterator) which uses containers' operations to change the size of containers not algorithms.
+
+## Exercise 10.9
+
+**Implement your own version of elimDups. Test your program by printing the vector after you read the input, after the call to unique, and after the call to erase.**
+
+[10.9 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.9%20Solution.cpp)
