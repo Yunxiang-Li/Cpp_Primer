@@ -84,3 +84,9 @@ vector<int> vec;
 vec.resize(10); // reserve is covered in § 9.4 (p. 356)
 fill_n(vec.begin(), 10, 0);
 ```
+
+## Exercise 10.8
+
+**We said that algorithms do not change the size of the containers over which they operate. Why doesn’t the use of back_inserter invalidate this claim?**
+
+Because it is the `back_inserter`(an insert iterator) which uses containers' operations to change the size of containers not algorithms.
