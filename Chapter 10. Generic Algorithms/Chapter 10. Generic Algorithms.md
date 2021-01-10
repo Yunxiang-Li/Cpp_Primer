@@ -32,4 +32,4 @@ The result of `accumulate(v.cbegin(), v.cend(), 0)` will be converted into an in
 
 When it comes to C-style strings, we should use `strlen` function from <cstring> header instead of `std::equal` function.
 
-The `std::equal` function on C-style string will only compare by the relational operator which will only compare two C-style strings' address.  
+The `std::equal` function on C-style string will only compare by the relational operator(`==` here) which will only compare two C-style strings' address.  
