@@ -22,4 +22,4 @@
 
 **Assuming v is a `vector<double>`, what, if anything, is wrong with calling accumulate(v.cbegin(), v.cend(), 0)?**
 
-The result of `accumulate(v.cbegin(), v.cend(), 0)` will be converted into a interger instead of a double since the third argument `0` is an integer and `accumulate` function will return the result with the exact same type as the third argument.
+The result of `accumulate(v.cbegin(), v.cend(), 0)` will be converted into an interger instead of a double since the third argument `0` is an integer and `accumulate` function will return the result with the exact same type as the third argument.
