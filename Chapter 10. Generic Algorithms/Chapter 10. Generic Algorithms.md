@@ -23,3 +23,12 @@
 **Assuming v is a `vector<double>`, what, if anything, is wrong with calling accumulate(v.cbegin(), v.cend(), 0)?**
 
 The result of `accumulate(v.cbegin(), v.cend(), 0)` will be converted into an interger instead of a double since the third argument `0` is an integer and `accumulate` function will return the result with the exact same type as the third argument.
+
+## Exercise 10.5
+
+**In the call to equal on rosters, what would happen if both rosters held C-style strings, rather than library strings?**
+
+[10.5 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.5%20Solution.cpp)
+
+When it comes to C-style strings, we should use `strlen` function from <cstring> header instead of `std::equal` function.
+The `std::equal` function on C-style string will only compare by the relational operator which will only compare two C-style strings' address.  
