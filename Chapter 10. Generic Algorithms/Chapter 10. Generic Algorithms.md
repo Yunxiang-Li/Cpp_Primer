@@ -102,3 +102,9 @@ Because it is the `back_inserter`(an insert iterator) which uses containers' ope
 **Why do you think the algorithms don’t change the size of containers?**
 
 Because algorithms only operate on iterators, not containers. Therefore, algorithms cannot (directly) add or remove elements. C++ is designed so for seperating container operations and algorithms.
+
+## Exercise 10.11
+
+**Write a program that uses stable_sort and isShorter to sort a vector passed to your version of elimDups. Print the vector to verify that your program is correct.**
+
+[10.11 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.11%20Solution.cpp)
