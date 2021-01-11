@@ -9,19 +9,19 @@ void printEachElement(const std::vector<std::string>& vec) {
 }
 
 void elimDups(std::vector<std::string>& words) {
-  std::cout << "Vector's elements before sort are: \n";
+  std::cout << "\nVector's elements before sort are: \n";
   printEachElement(words);
 
   std::sort(words.begin(), words.end());
-  std::cout << "Vector's elements after sort are: \n";
+  std::cout << "\nVector's elements after sort are: \n";
   printEachElement(words);
 
   std::vector<std::string>::iterator endUnique = std::unique(words.begin(), words.end());
-  std::cout << "Vector's elements after unique are: \n";
+  std::cout << "\nVector's elements after unique are: \n";
   printEachElement(words);
 
   words.erase(endUnique, words.end());
-  std::cout << "Vector's elements after erase are: \n";
+  std::cout << "\nVector's elements after erase are: \n";
   printEachElement(words);
 }
 
