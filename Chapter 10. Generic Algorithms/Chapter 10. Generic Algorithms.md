@@ -125,4 +125,6 @@ Because algorithms only operate on iterators, not containers. Therefore, algorit
 
 **Write a lambda that takes two ints and returns their sum.**
 
-[10.14 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.14%20Solution.cpp)
+```cpp
+  auto result = [](const int first, const int second) -> int { return (first + second); };
+```
