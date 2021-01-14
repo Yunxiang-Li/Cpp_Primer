@@ -161,3 +161,9 @@ Because algorithms only operate on iterators, not containers. Therefore, algorit
 **Rewrite the previous exercise to use stable_partition, which like stable_sort maintains the original element order in the paritioned sequence.**
 
 [10.19 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.19%20Solution.cpp)
+
+## Exercise 10.20
+
+**The library defines an algorithm named count_if. Like find_if, this function takes a pair of iterators denoting an input range and a predicate that it applies to each element in the given range. count_if returns a count of how often the predicate is true. Use count_if to rewrite the portion of our program that counted how many words are greater than length 6.**
+
+[10.20 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.20%20Solution.cpp)
