@@ -143,3 +143,9 @@ Because algorithms only operate on iterators, not containers. Therefore, algorit
 **Write your own version of the biggies function using lambdas.**
 
 [10.16 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.16%20Solution.cpp)
+
+## Exercise 10.17
+
+**Rewrite exercise 10.12 from § 10.3.1 (p. 387) to use a lambda in the call to sort instead of the compareIsbn function.**
+
+[10.17 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.17%20Solution.cpp)
