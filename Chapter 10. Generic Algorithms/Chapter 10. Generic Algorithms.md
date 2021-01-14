@@ -137,3 +137,9 @@ Because algorithms only operate on iterators, not containers. Therefore, algorit
   int first{10};
   auto res = [first](int second) -> int {return first + second;};
 ```
+
+## Exercise 10.16
+
+**Write your own version of the biggies function using lambdas.**
+
+[10.16 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.16%20Solution.cpp)
