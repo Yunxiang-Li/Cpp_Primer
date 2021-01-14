@@ -128,3 +128,11 @@ Because algorithms only operate on iterators, not containers. Therefore, algorit
 ```cpp
   auto result = [](const int first, const int second) -> int { return (first + second); };
 ```
+
+## Exercise 10.15
+
+**Write a lambda that captures an int from its enclosing function and takes an int parameter. The lambda should return the sum of the captured int and the int parameter.**
+
+```cpp
+
+```
