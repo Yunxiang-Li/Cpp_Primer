@@ -120,3 +120,9 @@ Because algorithms only operate on iterators, not containers. Therefore, algorit
 **The library defines an algorithm named partition that takes a predicate and partitions the container so that values for which the predicate is true appear in the first part and those for which the predicate is false appear in the second part. The algorithm returns an iterator just past the last element for which the predicate returned true. Write a function that takes a string and returns a bool indicating whether the string has five characters or more. Use that function to partition words. Print the elements that have five or more characters.**
 
 [10.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.13%20Solution.cpp)
+
+## Exercise 10.14
+
+**Write a lambda that takes two ints and returns their sum.**
+
+[10.14 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.14%20Solution.cpp)
