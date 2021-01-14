@@ -155,3 +155,9 @@ Because algorithms only operate on iterators, not containers. Therefore, algorit
 **Rewrite biggies to use partition instead of find_if. We described the partition algorithm in exercise 10.13 in § 10.3.1 (p. 387).**
 
 [10.18 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.18%20Solution.cpp)
+
+## Exercise 10.19
+
+**Rewrite the previous exercise to use stable_partition, which like stable_sort maintains the original element order in the paritioned sequence.**
+
+[10.19 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.19%20Solution.cpp)
