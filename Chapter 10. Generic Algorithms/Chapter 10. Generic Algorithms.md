@@ -179,3 +179,9 @@ Because algorithms only operate on iterators, not containers. Therefore, algorit
 **Rewrite the program to count words of size 6 or less using functions in place of the lambdas.**
 
 [10.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.22%20Solution.cpp)
+
+## Exercise 10.23
+
+**How many arguments does bind take?**
+
+If binded function has `n` parameters, then `std::bind` function takes `n + 1` parameters(One additional parameter for the binded functio name).
