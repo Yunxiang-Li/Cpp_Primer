@@ -197,3 +197,7 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 **In the exercises for § 10.3.2 (p. 392) you wrote a version of biggies that uses partition. Rewrite that function to use check_size and bind.**
 
 [10.25 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.25%20Solution.cpp)
+
+## Exercise 10.26
+
+**Explain the differences among the three kinds of insert iterators.**
