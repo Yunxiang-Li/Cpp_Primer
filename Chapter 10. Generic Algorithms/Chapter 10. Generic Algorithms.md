@@ -191,3 +191,9 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 **Use bind and check_size to find the first element in a vector of ints that has a value greater than the length of a specified string value.**
 
 [10.24 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.24%20Solution.cpp)
+
+## Exercise 10.25
+
+**In the exercises for § 10.3.2 (p. 392) you wrote a version of biggies that uses partition. Rewrite that function to use check_size and bind.**
+
+[10.25 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.25%20Solution.cpp)
