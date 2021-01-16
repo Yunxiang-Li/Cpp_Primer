@@ -207,3 +207,9 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 `front_inserter` iterator uses containers' `push_front` function if it exists.
 
 `insert` iterator uses conatiners `insert` function which takes two parameters, first indicates the aimed container and second indicates the start iterator for insertion of the aimed container. Elements are inserted ahead of the element denoted by the given start iterator.
+
+## Exercise 10.27
+
+**In addition to unique (§ 10.2.3, p. 384), the library defines function named unique_copy that takes a third iterator denoting a destination into which to copy the unique elements. Write a program that uses unique_copy to copy the unique elements from a vector into an initially empty list.**
+
+[10.27 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.27%20Solution.cpp)
