@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <functional>
 
-bool strSizeLessThanOrEqualTo(const std::string& str, std::string::size_type sz) {
+bool strSizeLessThanOrEqualTo(const std::string& str, const std::string::size_type& sz) {
   return str.size() <= sz;
 }
 
