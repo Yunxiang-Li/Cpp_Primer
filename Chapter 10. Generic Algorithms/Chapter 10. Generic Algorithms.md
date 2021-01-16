@@ -201,3 +201,7 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 ## Exercise 10.26
 
 **Explain the differences among the three kinds of insert iterators.**
+
+`back_inserter` iterator uses containers' `push_back` function if it exists.
+`front_inserter` iterator uses containers' `push_front` function if it exists.
+`insert` iterator uses conatiners `insert` function which takes a second argument, an iterator into the given container. Elements are inserted ahead of the element denoted by the given iterator.
