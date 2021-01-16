@@ -173,3 +173,9 @@ Because algorithms only operate on iterators, not containers. Therefore, algorit
 **Write a lambda that captures a local int variable and decrements that variable until it reaches 0. Once the variable is 0 additional calls should no longer decrement the variable. The lambda should return a bool that indicates whether the captured variable is 0.**
 
 [10.21 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.21%20Solution.cpp)
+
+## Exercise 10.22
+
+**Rewrite the program to count words of size 6 or less using functions in place of the lambdas.**
+
+[10.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.22%20Solution.cpp)
