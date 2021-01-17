@@ -219,3 +219,9 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 **Copy a vector that holds the values from 1 to 9 inclusive, into three other containers. Use an inserter, a back_inserter, and a front_inserter, respectivly to add elements to these containers. Predict how the output sequence varies by the kind of inserter and verify your predictions by running your programs.**
 
 [10.28 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.28%20Solution.cpp)
+
+## Exercise 10.29
+
+**Write a program using stream iterators to read a text file into a vector of strings.**
+
+[10.29 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.29%20Solution.cpp)
