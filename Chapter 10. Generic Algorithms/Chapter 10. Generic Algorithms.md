@@ -225,3 +225,9 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 **Write a program using stream iterators to read a text file into a vector of strings.**
 
 [10.29 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.29%20Solution.cpp)
+
+## Exercise 10.30
+
+**Use stream iterators, sort, and copy to read a sequence of integers from the standard input, sort them, and then write them back to the standard output.**
+
+[10.30 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.30%20Solution.cpp)
