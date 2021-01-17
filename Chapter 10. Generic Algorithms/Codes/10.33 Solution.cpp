@@ -5,7 +5,7 @@
 int main()
 {
   std::ifstream ifs("abc.txt");
-  std::ofstream ofsOdd, ofsEven;
+  std::ofstream ofsOdd("def.txt"), ofsEven("ghi.txt");
 
   // Set one istream_iterator and two ostream_iterators.
   std::istream_iterator<int> istream_iterator(ifs), istream_endIter;
