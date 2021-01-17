@@ -231,3 +231,9 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 **Use stream iterators, sort, and copy to read a sequence of integers from the standard input, sort them, and then write them back to the standard output.**
 
 [10.30 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.30%20Solution.cpp)
+
+## Exercise 10.31
+
+**Update the program from the previous exercise so that it prints only the unique elements. Your program should use unqiue_copy (§ 10.4.1, p. 403).**
+
+[10.31 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.31%20Solution.cpp)
