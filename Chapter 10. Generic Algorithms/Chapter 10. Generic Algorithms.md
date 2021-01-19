@@ -261,3 +261,9 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 **Now print the elements in reverse order using ordinary iterators.**
 
 [10.35 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.35%20Solution.cpp)
+
+## Exercise 10.36
+
+**Use find to find the last element in a list of ints with value 0.**
+
+[10.36 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.36%20Solution.cpp)
