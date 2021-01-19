@@ -255,3 +255,9 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 **Use reverse_iterators to print a vector in reverse order.**
 
 [10.34 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.34%20Solution.cpp)
+
+## Exercise 10.35
+
+**Now print the elements in reverse order using ordinary iterators.**
+
+[10.35 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.35%20Solution.cpp)
