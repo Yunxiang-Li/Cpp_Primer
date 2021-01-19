@@ -249,3 +249,9 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 **Write a program that takes the names of an input file and two output files. The input file should hold integers. Using an istream_iterator read the input file. Using ostream_iterators, write the odd numbers into the first output file. Each value should be followed by a space. Write the even numbers into the second file. Each of these values should be placed on a separate line.**
 
 [10.33 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.33%20Solution.cpp)
+
+## Exercise 10.34
+
+**Use reverse_iterators to print a vector in reverse order.**
+
+[10.34 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.34%20Solution.cpp)
