@@ -267,3 +267,9 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 **Use find to find the last element in a list of ints with value 0.**
 
 [10.36 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.36%20Solution.cpp)
+
+## Exercise 10.37
+
+**Given a vector that has ten elements, copy the elements from positions 3 through 7 in reverse order to a list.**
+
+[10.37 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.37%20Solution.cpp)
