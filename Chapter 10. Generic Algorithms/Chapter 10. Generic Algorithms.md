@@ -289,3 +289,13 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 **What kind of iterator does a list have? What about a vector?**
 
 A `std::list` have a **Bidirectional** iterator and a `std::vector` have a **Random-access** iterator.
+
+## Exercise 10.40
+
+**What kinds of iterators do you think copy requires? What about reverse or unique?**
+
+`OutputIterator copy (InputIterator first, InputIterator last, OutputIterator result)`
+
+`void reverse (BidirectionalIterator first, BidirectionalIterator last)`
+
+`ForwardIterator unique (ForwardIterator first, ForwardIterator last)`
