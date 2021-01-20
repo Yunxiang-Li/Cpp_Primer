@@ -282,4 +282,4 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 - Output iterators : `++`, `*` (only allow deference as left value and is single-pass)
 - Forward iterators : `==`, `!=`, `++`, `*`, `->` (multiple-pass)
 - Bidirectional iterators : `==`, `!=`, `++`, `--`, `*`, `->` (multiple-pass)
-- Random-access iterators : `==`, `!=`, `<`, `<=`, `>`, `>=`, `++`, `--`, `+`, `+=`, `-`, `-=`, `-`(two iterators), `*`, `->`, `iter[n] == * (iter + n)` (multiple-pass)
+- Random-access iterators : `==`, `!=`, `<`, `<=`, `>`, `>=`, `++`, `--`, `+`, `+=`, `-`, `-=`, `-`(two iterators), `*`, `->`, `iter[n]` (same as `* (iter + n)`) (multiple-pass)
