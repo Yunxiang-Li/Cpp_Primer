@@ -317,3 +317,9 @@ replace_copy(beg, end, dest, old_val, new_val);
 replace_copy_if(beg, end, dest, pred, new_val); 
 // Copy elements in the range [beg, end) to the range beginning at dest, replacing elements with new_val when pred return true.
 ```
+
+## Exercise 10.42
+
+**Reimplement the program that eliminated duplicate words that we wrote in § 10.2.3 (p. 383) to use a list instead of a vector.**
+
+[10.37 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.37%20Solution.cpp)
