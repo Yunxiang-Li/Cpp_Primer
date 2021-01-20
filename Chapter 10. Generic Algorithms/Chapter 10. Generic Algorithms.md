@@ -307,11 +307,11 @@ ForwardIterator unique (ForwardIterator first, ForwardIterator last)
 **Based only on the algorithm and argument names, describe the operation that the each of the following library algorithms performs:**
 
 ```cpp
-replace(beg, end, old_val, new_val); // replace the old_val value in the input range([beg, end)) with new_val.
+replace(beg, end, old_val, new_val); // Replace all elements in the range [beg, end) which have old_val with new_val.
 
-replace_if(beg, end, pred, new_val); // replace the elements in the input range([beg, end)) with the new_val when pred is true.
+replace_if(beg, end, pred, new_val); // Replace all elements in the range [beg, end) with the new_val when pred return true.
 
-replace_copy(beg, end, dest, old_val, new_val); // replace the the new_elements which is old_elements in the input range into dest.
+replace_copy(beg, end, dest, old_val, new_val); // Copy elements in the range [beg, end) to the range beginning at dest, replacing elements which have old_val with new_val.
 
-replace_copy_if(beg, end, dest, pred, new_val); // copy the new_elements which pred is true in the input range into dest.
+replace_copy_if(beg, end, dest, pred, new_val); // Copy elements in the range [beg, end) to the range beginning at dest, replacing elements with new_val when pred return true.
 ```
