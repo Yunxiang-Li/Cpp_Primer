@@ -311,7 +311,9 @@ replace(beg, end, old_val, new_val); // Replace all elements in the range [beg, 
 
 replace_if(beg, end, pred, new_val); // Replace all elements in the range [beg, end) with the new_val when pred return true.
 
-replace_copy(beg, end, dest, old_val, new_val); // Copy elements in the range [beg, end) to the range beginning at dest, replacing elements which have old_val with new_val.
+replace_copy(beg, end, dest, old_val, new_val);
+// Copy elements in the range [beg, end) to the range beginning at dest, replacing elements which have old_val with new_val.
 
-replace_copy_if(beg, end, dest, pred, new_val); // Copy elements in the range [beg, end) to the range beginning at dest, replacing elements with new_val when pred return true.
+replace_copy_if(beg, end, dest, pred, new_val); 
+// Copy elements in the range [beg, end) to the range beginning at dest, replacing elements with new_val when pred return true.
 ```
