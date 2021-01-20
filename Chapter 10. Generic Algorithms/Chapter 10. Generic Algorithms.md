@@ -283,3 +283,9 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 - Forward iterators : `==`, `!=`, `++`, `*`, `->` (multiple-pass)
 - Bidirectional iterators : `==`, `!=`, `++`, `--`, `*`, `->` (multiple-pass)
 - Random-access iterators : `==`, `!=`, `<`, `<=`, `>`, `>=`, `++`, `--`, `+`, `+=`, `-`, `-=`, `-`(two iterators), `*`, `->`, `iter[n]` (same as `* (iter + n)`) (multiple-pass)
+
+## Exercise 10.39
+
+**What kind of iterator does a list have? What about a vector?**
+
+A `std::list` have a **Bidirectional** iterator and a `std::vector` have a **Random-access** iterator.
