@@ -44,7 +44,7 @@ You can check all answers for C++ Primer 5th Edition in this repo.(Although all 
 - Part II: The C++ Library
   - [Chapter 8. The IO Library](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%208.%20The%20IO%20Library/Chapter%208.%20The%20IO%20Library.md)
   - [Chapter 9. Sequential Containers](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Chapter%209.%20Sequential%20Containers.md)
-  - [Chapter 10. Generic Algorithms]
+  - [Chapter 10. Generic Algorithms](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Chapter%2010.%20Generic%20Algorithms.md)
   - [Chapter 11. Associative Containers]
   - [Chapter 12. Dynamic Memory]
 - Part III: Tools for Class Authors
