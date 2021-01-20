@@ -294,8 +294,24 @@ A `std::list` have a **Bidirectional** iterator and a `std::vector` have a **Ran
 
 **What kinds of iterators do you think copy requires? What about reverse or unique?**
 
-`OutputIterator copy (InputIterator first, InputIterator last, OutputIterator result)`
+```cpp
+OutputIterator copy (InputIterator first, InputIterator last, OutputIterator result)
 
-`void reverse (BidirectionalIterator first, BidirectionalIterator last)`
+void reverse (BidirectionalIterator first, BidirectionalIterator last)
 
-`ForwardIterator unique (ForwardIterator first, ForwardIterator last)`
+ForwardIterator unique (ForwardIterator first, ForwardIterator last)
+```
+
+## Exercise 10.41
+
+**Based only on the algorithm and argument names, describe the operation that the each of the following library algorithms performs:**
+
+```cpp
+replace(beg, end, old_val, new_val); // replace the old_val value in the input range([beg, end)) with new_val.
+
+replace_if(beg, end, pred, new_val); // replace the elements in the input range([beg, end)) with the new_val when pred is true.
+
+replace_copy(beg, end, dest, old_val, new_val); // replace the the new_elements which is old_elements in the input range into dest.
+
+replace_copy_if(beg, end, dest, pred, new_val); // copy the new_elements which pred is true in the input range into dest.
+```
