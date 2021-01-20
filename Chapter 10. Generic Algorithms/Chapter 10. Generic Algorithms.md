@@ -273,3 +273,13 @@ If binded function has `n` parameters, then `std::bind` function takes `n + 1` p
 **Given a vector that has ten elements, copy the elements from positions 3 through 7 in reverse order to a list.**
 
 [10.37 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.37%20Solution.cpp)
+
+## Exercise 10.38
+
+**List the five iterator categories and the operations that each supports.**
+
+- Input iterators : `==`, `!=`, `++`, `*`, `->` (only allow deference as right value and is single-pass)
+- Output iterators : `++`, `*` (only allow deference as left value and is single-pass)
+- Forward iterators : `==`, `!=`, `++`, `*`, `->` (multiple-pass)
+- Bidirectional iterators : `==`, `!=`, `++`, `--`, `*`, `->` (multiple-pass)
+- Random-access iterators : `==`, `!=`, `<`, `<=`, `>`, `>=`, `++`, `--`, `+`, `+=`, `-`, `-=`, `-`(two iterators), `*`, `->`, `iter[n] == * (iter + n)` (multiple-pass)
