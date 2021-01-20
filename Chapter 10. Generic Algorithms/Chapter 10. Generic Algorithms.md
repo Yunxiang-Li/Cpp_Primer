@@ -322,4 +322,4 @@ replace_copy_if(beg, end, dest, pred, new_val);
 
 **Reimplement the program that eliminated duplicate words that we wrote in § 10.2.3 (p. 383) to use a list instead of a vector.**
 
-[10.37 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.37%20Solution.cpp)
+[10.42 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Codes/10.42%20Solution.cpp)
