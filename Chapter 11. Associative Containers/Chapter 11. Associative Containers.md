@@ -59,3 +59,9 @@ Use `set` when we need to store one type of elements.
 **Define a map for which the key is the family’s last name and the value is a vector of the children’s names. Write code to add new families and to add new children to an existing family.**
 
 [11.7 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.7%20Solution.cpp)
+
+## Exercise 11.8
+
+**Write a program that stores the excluded words in a vector instead of in a set. What are the advantages to using a set?**
+
+[11.8 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.8%20Solution.cpp)
