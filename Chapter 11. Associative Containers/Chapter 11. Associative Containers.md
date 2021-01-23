@@ -4,7 +4,7 @@
 
 **Describe the differences between a map and a vector.**
 
-A `map` is an associative container of key-value pairs. Each value is binded to a key thus we can get a value by its key.
+A `map` is an associative container of key-value pairs. Each value is bound to a key thus we can get a value by its key.
 
 A `vector` is a sequential container of objects and every object has an associated index thus we can have access to each object by its index.
 
@@ -40,7 +40,7 @@ A `vector` is a sequential container of objects and every object has an associat
 
 `set` : Only store one type of elements as keys.
 
-`map` : Store key-value pairs such as {key, value} and each value is binded to a key.
+`map` : Store key-value pairs such as {key, value} and each value is bound to a key.
 
 Use `set` when we only need to store one type of elements and `map` when we need to store key-value pairs.
 
