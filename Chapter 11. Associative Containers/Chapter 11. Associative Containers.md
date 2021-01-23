@@ -43,3 +43,13 @@ A `vector` is a sequential container of objects and every object has an associat
 `map` : Store key-value pairs such as {key, value} and each value is binded to a key.
 
 Use `set` when we only need to store one type of elements and `map` when we need to store key-value pairs.
+
+## Exercise 11.6
+
+**Explain the difference between a set and a list. When might you use one or the other?**
+
+`set`'s elements are unique and in order, but `list` is neither.
+
+Use `list` when we need to insert or delete elements from any positions occasionally.
+
+Use `set` when we need to store one type of elements.
