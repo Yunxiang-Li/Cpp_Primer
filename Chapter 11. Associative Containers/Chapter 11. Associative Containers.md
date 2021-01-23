@@ -53,3 +53,9 @@ Use `set` when we only need to store one type of elements and `map` when we need
 Use `list` when we need to insert or delete elements from any positions occasionally.
 
 Use `set` when we need to store one type of elements.
+
+## Exercise 11.7
+
+**Define a map for which the key is the family’s last name and the value is a vector of the children’s names. Write code to add new families and to add new children to an existing family.**
+
+[11.7 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.7%20Solution.cpp)
