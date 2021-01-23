@@ -13,4 +13,6 @@ int main()
     std::cout << eachPair.first << " appears " << eachPair.second <<
     ((eachPair.second >= 1) ? " times" : " time") << '\n';
   std::cout << std::endl;
+  
+  return 0;
 }
