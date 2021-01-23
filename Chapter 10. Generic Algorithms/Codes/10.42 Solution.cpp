@@ -15,4 +15,6 @@ int main()
   for (const std::string& element : myList)
     std::cout << element << " ";
   std::cout << std::endl;
+  
+  return 0;
 }
