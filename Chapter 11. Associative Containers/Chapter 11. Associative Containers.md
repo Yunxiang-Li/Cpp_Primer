@@ -33,3 +33,13 @@ A `vector` is a sequential container of objects and every object has an associat
 **Extend your program to ignore case and punctuation. For example, “example.” “example,” and “Example” should all increment the same counter.**
 
 [11.4 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.4%20Solution.cpp)
+
+## Exercise 11.5
+
+**Explain the difference between a map and a set. When might you use one or the other?**
+
+`set` : Only store one type of elements as keys.
+
+`map` : Store key-value pairs such as {key, value} and each value is binded to a key.
+
+Use `set` when we only need to store one type of elements and `map` when we need to store key-value pairs.
