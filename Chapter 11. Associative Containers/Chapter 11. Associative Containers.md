@@ -65,3 +65,9 @@ Use `set` when we need to store one type of elements.
 **Write a program that stores the excluded words in a vector instead of in a set. What are the advantages to using a set?**
 
 [11.8 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.8%20Solution.cpp)
+
+Advantages:
+
+1. All elements in a `set` are ordered specifically. However, elements in a `vector` are only stored by the adding order.
+
+2. Insert an element into a `vector` cost more time than a `set`.
