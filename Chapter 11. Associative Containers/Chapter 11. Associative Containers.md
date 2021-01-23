@@ -22,4 +22,8 @@ A `vector` is a sequential container of objects and every object has an associat
 
 `set` : When we need a collection of certain objects(for instance, to store items that we do not want).
 
-[9.5 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/9.5%20Solution.cpp)
+## Exercise 11.3
+
+**Write your own version of the word-counting program.**
+
+[11.3 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/11.3%20Solution.cpp)
