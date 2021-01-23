@@ -26,4 +26,10 @@ A `vector` is a sequential container of objects and every object has an associat
 
 **Write your own version of the word-counting program.**
 
-[11.3 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Codes/11.3%20Solution.cpp)
+[11.3 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.3%20Solution.cpp)
+
+## Exercise 11.4
+
+**Extend your program to ignore case and punctuation. For example, “example.” “example,” and “Example” should all increment the same counter.**
+
+[11.4 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.4%20Solution.cpp)
