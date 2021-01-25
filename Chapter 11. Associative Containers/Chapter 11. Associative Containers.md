@@ -71,3 +71,12 @@ Advantages:
 1. All elements in a `set` are ordered specifically. However, elements in a `vector` are only stored by the adding order.
 
 2. Insert an element into a `vector` cost more time than a `set`.
+
+## Exercise 11.9
+
+**Define a map that associates words with a list of line numbers on which the word might occur.**
+
+```cpp
+std::map<std::string, std::list<unsigned>> myMap;
+```
+```
