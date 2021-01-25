@@ -93,3 +93,9 @@ However, we cannot define a map from `list<int>::iterator` to int because iterat
 **Redefine bookstore without using decltype.**
 
 [11.11 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.11%20Solution.cpp)
+
+## Exercise 11.12
+
+**Write a program to read a sequence of strings and ints, storing each into a pair. Store the pairs in a vector.**
+
+[11.12 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.12%20Solution.cpp)
