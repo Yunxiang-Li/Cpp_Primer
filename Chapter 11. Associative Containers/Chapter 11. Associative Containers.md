@@ -99,3 +99,9 @@ However, we cannot define a map from `list<int>::iterator` to int because iterat
 **Write a program to read a sequence of strings and ints, storing each into a pair. Store the pairs in a vector.**
 
 [11.12 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.12%20Solution.cpp)
+
+## Exercise 11.13
+
+**There are at least three ways to create the pairs in the program for the previous exercise. Write three versions of that program, creating the pairs in each way. Explain which form you think is easiest to write and understand, and why.**
+
+[11.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.13%20Solution.cpp)
