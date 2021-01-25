@@ -15,7 +15,7 @@ int main() {
     //vec.push_back({str, i});
   }
 
-  for (const auto eachPair : vec)
+  for (const auto &eachPair : vec)
     std::cout << "Current pair's key is " << eachPair.first << " ,value is " << eachPair.second << '\n';
 
   return 0;
