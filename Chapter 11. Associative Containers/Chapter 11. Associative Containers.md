@@ -105,3 +105,5 @@ However, we cannot define a map from `list<int>::iterator` to int because iterat
 **There are at least three ways to create the pairs in the program for the previous exercise. Write three versions of that program, creating the pairs in each way. Explain which form you think is easiest to write and understand, and why.**
 
 [11.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.13%20Solution.cpp)
+
+I think `vec.emplace_back(str, i);` is the easiest way to write and understand since it does not require us to use `std::pair` or braced initializer list directly.
