@@ -107,3 +107,9 @@ However, we cannot define a map from `list<int>::iterator` to int because iterat
 [11.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.13%20Solution.cpp)
 
 I think `vec.emplace_back(str, i);` is the easiest way to write and understand since it does not require us to use `std::pair` or braced initializer list directly.
+
+## Exercise 11.14
+
+**Extend the map of children to their family name that you wrote for the exercises in § 11.2.1 (p. 424) by having the vector store a pair that holds a child’s name and birthday.**
+
+[11.14 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.14%20Solution.cpp)
