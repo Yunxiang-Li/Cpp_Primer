@@ -84,4 +84,6 @@ std::map<std::string, std::list<unsigned>> myMap;
 
 **Could we define a map from `vector<int>::iterator` to int? What about from `list<int>::iterator` to int? In each case, if not, why not?**
 
-[11.10 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.10%20Solution.cpp)
+We can define a map from `vector<int>::iterator` to int because iterators of `std::vector` are random access iterators thus they can be compared by `<` operator.
+
+However, we cannot define a map from `list<int>::iterator` to int because iterators of `std::list` are bidirectional iterators thus they cannot be compared by `<` operator.
