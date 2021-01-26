@@ -123,3 +123,15 @@ Mapped_type of `std::map<int, std::vector<int>>` is `std::vector<int>`.
 Key_type of `std::map<int, std::vector<int>>` is `int`.
 
 Value_type of `std::map<int, std::vector<int>>` is `std::pair<const int, std::vector<int>>`.
+
+## Exercise 11.16
+
+**Using a map iterator write an expression that assigns a value to an element.**
+
+```cpp
+std::map<int, const std::string> myMap;
+myMap[5] = "Hello";
+myMap[20] = "Word";
+std::map<int, const std::string>::iterator iter = myMap.begin();
+iter -> second = "hello";
+```
