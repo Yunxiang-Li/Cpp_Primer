@@ -113,3 +113,13 @@ I think `vec.emplace_back(str, i);` is the easiest way to write and understand s
 **Extend the map of children to their family name that you wrote for the exercises in § 11.2.1 (p. 424) by having the vector store a pair that holds a child’s name and birthday.**
 
 [11.14 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.14%20Solution.cpp)
+
+## Exercise 11.15
+
+**What are the mapped_type, key_type, and value_type of a map from int to` vector<int>`?**
+
+Mapped_type of `std::map<int, std::vector<int>>` is `std::vector<int>`.
+
+Key_type of `std::map<int, std::vector<int>>` is `int`.
+
+Value_type of `std::map<int, std::vector<int>>` is `std::pair<const int, std::vector<int>>`.
