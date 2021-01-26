@@ -163,3 +163,13 @@ type of map_it is:
 ```cpp
 std::map<std::string, size_t>::iterator
 ```
+
+## Exercise 11.19
+
+**Define a variable that you initialize by calling begin() on the multiset named bookstore from § 11.2.2 (p. 425). Write the variable’s type without using auto or decltype.**
+
+```cpp
+using compareType = bool (*)(const Sales_data &lhs, const Sales_data &rhs);
+std::multiset<Sales_data, compareType> bookstore(compareIsbn);
+std::multiset<Sales_data, compareType>::iterator map_iter = bookstore.begin();
+```
