@@ -135,3 +135,21 @@ myMap[20] = "Word";
 std::map<int, const std::string>::iterator iter = myMap.begin();
 iter -> second = "hello";
 ```
+
+## Exercise 11.17
+
+**Assuming c is a multiset of strings and v is a vector of strings, explain the following calls. Indicate whether each call is legal:**
+
+```cpp
+// Legal, calls c's insert function.
+copy(v.begin(), v.end(), inserter(c, c.end())); 
+
+// Illegal since c does not have push_back function. 
+copy(v.begin(), v.end(), back_inserter(c));
+
+// Legal, calls v's insert function.
+copy(c.begin(), c.end(), inserter(v, v.end()));
+
+// Legal, calls v's push_back function.
+copy(c.begin(), c.end(), back_inserter(v));
+```
