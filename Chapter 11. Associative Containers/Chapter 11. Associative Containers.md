@@ -153,3 +153,13 @@ copy(c.begin(), c.end(), inserter(v, v.end()));
 // Legal, calls v's push_back function.
 copy(c.begin(), c.end(), back_inserter(v));
 ```
+
+## Exercise 11.18
+
+**Write the type of map_it from the loop on page 430 without using auto or decltype.**
+
+type of map_it is:
+
+```cpp
+std::map<std::string, size_t>::iterator
+```
