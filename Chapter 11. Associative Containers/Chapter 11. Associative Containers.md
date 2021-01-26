@@ -179,3 +179,5 @@ std::multiset<Sales_data, compareType>::iterator map_iter = bookstore.begin();
 **Rewrite the word-counting program from § 11.1 (p. 421) to use insert instead of subscripting. Which program do you think is easier to write and read? Explain your reasoning.**
 
 [11.20 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.20%20Solution.cpp)
+
+I think the subscripting way is easier to understand.
