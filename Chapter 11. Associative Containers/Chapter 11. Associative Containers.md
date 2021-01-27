@@ -181,3 +181,14 @@ std::multiset<Sales_data, compareType>::iterator map_iter = bookstore.begin();
 [11.20 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.20%20Solution.cpp)
 
 I think the subscripting way is easier to understand.
+
+## Exercise 11.21
+
+**Assuming word_count is a map from string to size_t and word is a string, explain the following loop:**
+
+```cpp
+while (cin >> word)  
+  ++word_count.insert({word, 0}).first->second;
+```
+
+First insert a new `std::pair` {word, 0} into the `word_count` map, then `word_count.insert({word, 0})` return a `std::pair` with its member `pair::first` set to an iterator pointing to either the newly inserted element `word` or to the element with an equivalent key in the map. The `pair::second` element in the pair is set to true if a new element was inserted or false if an equivalent key already existed. Then we dereference the `pair::first` iterator and access the mapped value of size_t type and increment this value by one.
