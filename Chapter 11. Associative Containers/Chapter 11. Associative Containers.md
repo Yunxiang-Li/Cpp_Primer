@@ -192,3 +192,5 @@ while (cin >> word)  
 ```
 
 First insert a new `std::pair` {word, 0} into the `word_count` map, then `word_count.insert({word, 0})` return a `std::pair` with its member `pair::first` set to an iterator pointing to either the newly inserted element `word` or to the element with an equivalent key in the map. The `pair::second` element in the pair is set to true if a new element was inserted or false if an equivalent key already existed. Then we dereference the `pair::first` iterator and access the mapped value of size_t type and increment this value by one.
+
+When insert a new word, a new `std::pair` {word, 0} will be added to the map and just then the counter will be increased by one(actually {word, 1} for each new added word). When a word is already in the map then we just increase its counter by one.
