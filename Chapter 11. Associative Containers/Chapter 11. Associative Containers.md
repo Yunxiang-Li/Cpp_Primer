@@ -202,3 +202,9 @@ When insert a new word, a new `std::pair` {word, 0} will be added to the map and
 Argument type: `std::pair<std::string, std::vector<int>>`
 
 Return value type: `std::pair<std::map<std::string, std::vector<int>>::iterator, bool>`
+
+## Exercise 11.23
+
+**Rewrite the map that stored vectors of children’s names with a key that is the family last name for the exercises in § 11.2.1 (p. 424) to use a multimap.**
+
+[11.23 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.23%20Solution.cpp)
