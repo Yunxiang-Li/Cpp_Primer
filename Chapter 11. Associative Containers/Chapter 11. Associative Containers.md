@@ -245,3 +245,11 @@ In my program, the type which can be used to subscript the map is `int`, the typ
 
 I would use `count` to solve problems such like finding all values with a specific key in `std::multimap` or `std::multiset`.
 I might use `find` instead when dealing with same question but in `std::map` or `std::set`.
+
+## Exercise 11.28
+
+**Define and initialize a variable to hold the result of calling find on a map from string to vector of int.**
+
+```cpp
+std::map<std::string, std::vector<int>>::iterator map_iter =std::map<std::string, std::vector<int>> myMap;
+```
