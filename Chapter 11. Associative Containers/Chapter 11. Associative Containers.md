@@ -311,3 +311,19 @@ When same key appears multiple times, using subscript operator will only keep th
 **Our program does no checking on the validity of either input file. In particular, it assumes that the rules in the transformation file are all sensible. What would happen if a line in that file has a key, one space, and then the end of the line? Predict the behavior and then check it against your version of the program.**
 
 The program in the book will crash, but in my program (11.33), these situations will be checked and handled.
+
+## Exercise 11.37
+
+**What are the advantages of an unordered container as compared to the ordered version of that container? What are the advantages of the ordered version?**
+
+Aadvantages of an unordered container:
+
+1. Has better peformance when the key type has no obvious ordering relationship among all elements.
+
+2. Useful for applications where the cost of maintaining the elements in order is prohibitive.
+
+Advantages of the ordered version:
+
+1. We can use iterators of ordered containers tp access all elements in order by key.
+
+2. We can define an ordered container that uses a customized class type for its key type without defning `equal` or `hash` functions.
