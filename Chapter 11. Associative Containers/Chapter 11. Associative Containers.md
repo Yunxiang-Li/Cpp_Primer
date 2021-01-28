@@ -251,5 +251,13 @@ I might use `find` instead when dealing with same question but in `std::map` or 
 **Define and initialize a variable to hold the result of calling find on a map from string to vector of int.**
 
 ```cpp
-std::map<std::string, std::vector<int>>::iterator map_iter =std::map<std::string, std::vector<int>> myMap;
+std::map<std::string, std::vector<int>>::iterator map_iter = std::map<std::string, std::vector<int>> myMap;
 ```
+
+## Exercise 11.29
+
+**What do upper_bound, lower_bound, and equal_range return when you pass them a key that is not in the container?**
+
+The `lower_bound` and `upper_bound` will return equal iterators and both will refer to the point where the key can be inserted without disrupting the original order.
+
+`equal_range` will return a `std::pair` where `pair::first` is equivalent to the result of `lower_bound` and `pair::second` is equivalent to the result of `upper_bound`
