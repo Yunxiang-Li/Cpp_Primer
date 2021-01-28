@@ -290,5 +290,16 @@ The `lower_bound` and `upper_bound` will return equal iterators and both will re
 
 **What would happen if we used the subscript operator instead of find in the transform function?**
 
-This is illegal. Use subscript operator instead of find in the `transform` function will insert a new pair if the key is not found but our map here is a reference of a const map
-which do not allow inserting new key-value pairs.
+This is illegal and will cause error. Using subscript operator instead of `find` in the `transform` function will insert a new key-value pair if the key is not found but our map here is a reference of a const map which do not allow inserting new key-value pairs.
+
+## Exercise 11.35
+
+**In buildMap, what effect, if any, would there be from rewriting**
+
+```cpp
+trans_map[key] = value.substr(1);
+```
+as
+```cpp
+trans_map.insert({key, value.substr(1)})?
+```
