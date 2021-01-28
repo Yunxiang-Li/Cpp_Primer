@@ -208,3 +208,14 @@ Return value type: `std::pair<std::map<std::string, std::vector<int>>::iterator,
 **Rewrite the map that stored vectors of children’s names with a key that is the family last name for the exercises in § 11.2.1 (p. 424) to use a multimap.**
 
 [11.23 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.23%20Solution.cpp)
+
+## Exercise 11.24
+
+**What does the following program do?**
+
+```cpp
+map<int, int> m;
+m[0] = 1;
+```
+
+Initialize an empty `std::map<int, int> m`, create a new key with value `0` and set mapped_value associated with the key `0` with value `1`.
