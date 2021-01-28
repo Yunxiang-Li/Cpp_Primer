@@ -238,3 +238,10 @@ v[0] = 1;
 [11.26 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.26%20Solution.cpp)
 
 In my program, the type which can be used to subscript the map is `int`, the type which the subscript operator returns is `std::string`.
+
+## Exercise 11.27
+
+**What kinds of problems would you use count to solve? When might you use find instead?**
+
+I would use `count` to solve problems such like finding all values with a specific key in `std::multimap` or `std::multiset`.
+I might use `find` instead when dealing with same question but in `std::map` or `std::set`.
