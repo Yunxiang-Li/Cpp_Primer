@@ -285,3 +285,10 @@ The `lower_bound` and `upper_bound` will return equal iterators and both will re
 **Implement your own version of the word-transformation program.**
 
 [11.33 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.33%20Solution.cpp)
+
+## Exercise 11.34
+
+**What would happen if we used the subscript operator instead of find in the transform function?**
+
+This is illegal. Use subscript operator instead of find in the `transform` function will insert a new pair if the key is not found but our map here is a reference of a const map
+which do not allow inserting new key-value pairs.
