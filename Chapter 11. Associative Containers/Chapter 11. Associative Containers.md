@@ -273,3 +273,9 @@ The `lower_bound` and `upper_bound` will return equal iterators and both will re
 **Write a program that defines a multimap of authors and their works. Use find to find an element in the multimap and erase that element. Be sure your program works correctly if the element you look for is not in the map.**
 
 [11.31 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.31%20Solution.cpp)
+
+## Exercise 11.32
+
+**Using the multimap from the previous exercise, write a program to print the list of authors and their works alphabetically.**
+
+[11.32 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.32%20Solution.cpp)
