@@ -267,3 +267,9 @@ The `lower_bound` and `upper_bound` will return equal iterators and both will re
 **Explain the meaning of the operand pos.first->second used in the output expression of the final program in this section.**
 
 `pos.first` represents the iteraor which refers to the first element with the matching key we want. and `-> second` part first deference this iterator and then access its second member which is the value we want to print.
+
+## Exercise 11.31
+
+**Write a program that defines a multimap of authors and their works. Use find to find an element in the multimap and erase that element. Be sure your program works correctly if the element you look for is not in the map.**
+
+[11.31 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.31%20Solution.cpp)
