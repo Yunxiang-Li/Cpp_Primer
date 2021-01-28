@@ -219,3 +219,14 @@ m[0] = 1;
 ```
 
 Initialize an empty `std::map<int, int> m`, create a new key with value `0` and set mapped_value associated with the key `0` with value `1`.
+
+## Exercise 11.25
+
+**Contrast the following program with the one in the previous exercise**
+
+```cpp
+vector<int> v;
+v[0] = 1;
+```
+
+`v` is an empty vector thus we cannot read or write by using subscript operator like `v[0]`.
