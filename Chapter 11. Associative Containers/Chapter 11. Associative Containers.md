@@ -260,4 +260,10 @@ std::map<std::string, std::vector<int>>::iterator map_iter = std::map<std::strin
 
 The `lower_bound` and `upper_bound` will return equal iterators and both will refer to the point where the key can be inserted without disrupting the original order.
 
-`equal_range` will return a `std::pair` where `pair::first` is equivalent to the result of `lower_bound` and `pair::second` is equivalent to the result of `upper_bound`
+`equal_range` will return a `std::pair` where `pair::first` is equivalent to the result of `lower_bound` and `pair::second` is equivalent to the result of `upper_bound`.
+
+## Exercise 11.30
+
+**Explain the meaning of the operand pos.first->second used in the output expression of the final program in this section.**
+
+`pos.first` represents the iteraor which refers to the first element with the matching key we want. and `-> second` part first deference this iterator and then access its second member which is the value we want to print.
