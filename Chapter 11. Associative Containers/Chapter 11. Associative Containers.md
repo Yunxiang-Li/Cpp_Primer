@@ -324,7 +324,7 @@ Aadvantages of an unordered container:
 
 Advantages of the ordered version:
 
-1. We can use iterators of ordered containers tp access all elements in order by key.
+1. We can use iterators of ordered containers to access all elements in order by key.
 
 2. We can define an ordered container that uses a customized class type for its key type without defning `equal` or `hash` functions.
 
