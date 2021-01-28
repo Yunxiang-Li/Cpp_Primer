@@ -230,3 +230,9 @@ v[0] = 1;
 ```
 
 `v` is an empty vector thus we cannot read or write by using subscript operator like `v[0]`.
+
+## Exercise 11.26
+
+**What type can be used to subscript a map? What type does the subscript operator return? Give a concrete example—that is, define a map and then write the types that can be used to subscript the map and the type that would be returned from the subscript operator.**
+
+[11.26 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.26%20Solution.cpp)
