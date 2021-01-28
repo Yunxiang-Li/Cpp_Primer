@@ -279,3 +279,9 @@ The `lower_bound` and `upper_bound` will return equal iterators and both will re
 **Using the multimap from the previous exercise, write a program to print the list of authors and their works alphabetically.**
 
 [11.32 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.32%20Solution.cpp)
+
+## Exercise 11.33
+
+**Implement your own version of the word-transformation program.**
+
+[11.33 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.33%20Solution.cpp)
