@@ -6,7 +6,7 @@ int main()
 {
 
   std::multimap<std::string, std::string> author_work_map{{"ERNEST HEMINGWAY", "Anna Karenina"},
-      {"ERNEST HEMINGWAY", "Buddenbrooks"}, {"GEORGE R.R. MARTIN", " Game of Thrones"}};
+      {"ERNEST HEMINGWAY", "Buddenbrooks"}, {"GEORGE R.R. MARTIN", "Game of Thrones"}};
 
   for (auto pair : author_work_map)
     std::cout << "Author is " << pair.first << " and relative book is " << pair.second << '\n';
