@@ -303,3 +303,5 @@ as
 ```cpp
 trans_map.insert({key, value.substr(1)})?
 ```
+
+When same key appears multiple times, using subscript operator will only keep the last time's key-value pair but using `insert` function will only keep the first time's key-value pair.
