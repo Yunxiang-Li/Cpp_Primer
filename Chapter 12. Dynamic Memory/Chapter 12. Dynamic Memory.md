@@ -40,7 +40,7 @@ Because the type of `i` is `dataSize`(actually `std::vector<std::string>::size_t
 
 **We did not make the constructor that takes an initializer_list explicit (§ 7.5.4, p. 296). Discuss the pros and cons of this design choice.**
 
-For this design choice(explicit)
+For this design choice(makes the constructor that takes an `initializer_list` explicit)
 
 Pros:
 
@@ -50,4 +50,4 @@ Therefore it is more clear for programmers.
 
 Cons:
 
-The compiler needs to construct a temporary StrBlob object each time thus it is hard to use.
+No harm but looks a little bit more redundant.
