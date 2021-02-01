@@ -23,3 +23,9 @@ Because of the `shared_ptr`, both `b1` and `b2` will have 4 elements at the end 
 [12.2 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.2%20Solution.hpp)
 
 [12.2 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.2%20Solution.cpp)
+
+## Exercise 12.3
+
+**Does this class need const versions of push_back and pop_back? If so, add them. If not, why aren’t they needed?**
+
+We can add const versions of `push_back` and `pop_back` but there are not any logical reasons. The compiler will not complain because this doesn't modify `m_data` (which is a `shared_ptr`) but rather things `m_data` points to which is a legal action.
