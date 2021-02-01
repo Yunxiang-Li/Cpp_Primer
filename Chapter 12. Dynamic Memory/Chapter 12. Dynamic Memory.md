@@ -28,4 +28,10 @@ Because of the `shared_ptr`, both `b1` and `b2` will have 4 elements at the end 
 
 **Does this class need const versions of push_back and pop_back? If so, add them. If not, why aren’t they needed?**
 
-We can add const versions of `push_back` and `pop_back` but there are not any logical reasons. The compiler will not complain because this doesn't modify `m_data` (which is a `shared_ptr`) but rather things `m_data` points to which is a legal action.
+We can add const versions of `push_back` and `pop_back` but there are not any logical reasons. The compiler will not complain because this doesn't modify `m_data` (which is a `shared_ptr`) but things `m_data` points to which is a legal action.
+
+## Exercise 12.4
+
+**In our check function we didn’t check whether i was greater than zero. Why is it okay to omit that check?**
+
+Because the type of `i` is `dataSize`(actually `std::vector<std::string>::size_type`) which is an unsigned integer thus `i` can never be less than `0`.
