@@ -40,10 +40,14 @@ Because the type of `i` is `dataSize`(actually `std::vector<std::string>::size_t
 
 **We did not make the constructor that takes an initializer_list explicit (§ 7.5.4, p. 296). Discuss the pros and cons of this design choice.**
 
+For this design choice(explicit)
+
 Pros:
 
-The compiler will not use this constructor in an automatic conversion thus it is more clear for programmers.
+When using the constructor with a single parameter, the compiler cannot convert a single input variable to be the right type for that constructor.
+
+Therefore it is more clear for programmers.
 
 Cons:
 
-When using the constructor with a single parameter, the compiler cannot convert a single input variable to be the right type for that constructor.
+The compiler needs to construct a temporary StrBlob object each time thus it is hard to use.
