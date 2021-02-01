@@ -1,9 +1,9 @@
 # Chapter 12. Dynamic Memory
 
 
-## Exercise 11.3
+## Exercise 12.1
 
-**Write your own version of the word-counting program.**
+**How many elements do b1 and b2 have at the end of this code?**
 
-[11.3 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.3%20Solution.cpp)
+[12.1 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Codes/11.3%20Solution.cpp)
 
