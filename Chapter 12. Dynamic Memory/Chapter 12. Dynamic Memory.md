@@ -20,5 +20,6 @@ Because of the `shared_ptr`, both `b1` and `b2` will have 4 elements at the end 
 
 **Write your own version of the StrBlob class including the const versions of front and back.**
 
-[12.2 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/edit/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.2%20Solution.cpp)
+[12.2 Header](https://github.com/Yunxiang-Li/Cpp_Primer/edit/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.2%20Solution.hpp)
 
+[12.2 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.2%20Solution.cpp)
