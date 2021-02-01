@@ -35,3 +35,15 @@ We can add const versions of `push_back` and `pop_back` but there are not any lo
 **In our check function we didn’t check whether i was greater than zero. Why is it okay to omit that check?**
 
 Because the type of `i` is `dataSize`(actually `std::vector<std::string>::size_type`) which is an unsigned integer thus `i` can never be less than `0`.
+
+## Exercise 12.5
+
+**We did not make the constructor that takes an initializer_list explicit (§ 7.5.4, p. 296). Discuss the pros and cons of this design choice.**
+
+Pros:
+
+The compiler will not use this constructor in an automatic conversion thus it is more clear for programmers.
+
+Cons:
+
+When using the constructor with a single parameter, the compiler cannot convert a single input variable to be the right type for that constructor.
