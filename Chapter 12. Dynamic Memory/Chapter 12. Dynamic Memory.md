@@ -89,3 +89,11 @@ r = q;
 auto q2 = make_shared<int>(42), r2 = make_shared<int>(100);
 r2 = q2;
 ```
+
+For pointer `q` and `r`:
+
+`q` points to an integer with value 42, `r` points to an integer with value 100. Then `r = q` makes `r` also point to the integer with value 42(what `q` points to) thus no one points to the integer with value 100 now. Therefore we have no change to free the dynamic memory of the integer with value 100 and a memory leak will happen.
+
+For smart(`shared_ptr`) pointer `q2` and `r2`:
+
+`q2` points to an integer with value 42, `r2` points to an integer with value 100. After `r2 = q2`, `r2` also points to the integer with value 42(what `q2` points to) thus no one points to the integer with value 100 now. Since `r2` is a `shared_ptr` and the count of `shared_ptr` which point to the integer with value 100 is 0 now, the `shared_ptr` will free the redundant memory automatically and there will be no memory leak at all.
