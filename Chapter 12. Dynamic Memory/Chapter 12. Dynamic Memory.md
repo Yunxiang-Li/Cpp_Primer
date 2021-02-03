@@ -67,3 +67,12 @@ No harm but looks a little bit more redundant.
 ## Exercise 12.8
 
 **Explain what if anything is wrong with the following function.**
+
+```cpp
+bool b() 
+{    
+  int* p = new int;    
+  // ...    
+  return p;
+}
+```
