@@ -1,5 +1,6 @@
 #include <vector>
 #include <iostream>
+#include <new>
 
 /**
  * Generate and return a pointer of a dynamic vector of integers.
