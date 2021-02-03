@@ -78,3 +78,7 @@ bool b()
 ```
 
 `p` is originally a pointer to an integer,  `return p` just convert the `p` to be a bool thus we have no chance to free `p` as a pointer anymore. Therefore a memory leak will happen.
+
+## Exercise 12.9
+
+**Explain what happens in the following code:**
