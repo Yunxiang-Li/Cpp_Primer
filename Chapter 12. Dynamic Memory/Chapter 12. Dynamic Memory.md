@@ -62,4 +62,4 @@ No harm but looks a little bit more redundant.
 
 **Redo the previous exercise, this time using shared_ptr.**
 
-[12.6 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.6%20Solution.cpp)
+[12.7 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.7%20Solution.cpp)
