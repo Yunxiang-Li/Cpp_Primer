@@ -107,4 +107,12 @@ shared_ptr<int> p(new int(42));
 process(shared_ptr<int>(p));
 ```
 
-Correct, `shared_ptr<int> p(new int(42))` will set the reference count of `p` to 1. When we call `process(shared_ptr<int>(p))`, the `shared_ptr<int> p` is pass by value thus the reference count of `p` is now 2. After the `process(shared_ptr<int>(p))`, the `shared_ptr<int> p` inside the function is destroyed and the reference count of `p` is now 1 again.
+Correct, `shared_ptr<int> p(new int(42))` will set the reference count of `p` to 1. When we call `process(shared_ptr<int>(p))`, we create another `shared_ptr<int> p` which sets the reference count of `p` to 2. After the `process(shared_ptr<int>(p))`, the `shared_ptr<int> p` inside the function is destroyed and the reference count of `p` is now 1 again.
+
+## Exercise 12.11
+
+**What would happen if we called process as follows?**
+
+```cpp
+process(shared_ptr<int>(p.get()));
+```
