@@ -123,3 +123,24 @@ Even if user does not dereference `shared_ptr<int> p`, when the outer scope ends
 ## Exercise 12.12
 
 **Using the declarations of p and sp explain each of the following calls to process. If the call is legal, explain what it does. If the call is illegal, explain why:**
+
+```cpp
+auto p = new int();
+auto sp = make_shared<int>();
+```
+
+(a) process(sp);
+
+Legal. Just pass a `shared_ptr` by value.
+
+(b) process(new int());
+
+Illegal. A plain pointer cannot be converted to a `shared_ptr` implicitly.
+
+(c) process(p);
+
+Also illegal. A plain pointer cannot be converted to a `shared_ptr` implicitly.
+
+(d) process(shared_ptr<int>(p));
+  
+Legal, creates a `shared_ptr` by the plain pointer and pass it to the function by value.
