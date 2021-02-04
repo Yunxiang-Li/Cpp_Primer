@@ -97,3 +97,14 @@ For pointer `q` and `r`:
 For smart(`shared_ptr`) pointer `q2` and `r2`:
 
 `q2` points to an integer with value 42, `r2` points to an integer with value 100. After `r2 = q2`, `r2` also points to the integer with value 42(what `q2` points to) thus no one points to the integer with value 100 now. Since `r2` is a `shared_ptr` and the count of `shared_ptr` which point to the integer with value 100 is 0 now, the `shared_ptr` will free the redundant memory automatically and there will be no memory leak at all.
+
+## Exercise 12.10
+
+**Explain whether the following call to the process function defined on page 464 is correct. If not, how would you correct the call?**
+
+```cpp
+shared_ptr<int> p(new int(42));
+process(shared_ptr<int>(p));
+```
+
+Correct, `shared_ptr<int> p(new int(42))` will set the reference count of `p` to 1. When we call `process(shared_ptr<int>(p))`, the `shared_ptr<int> p` is pass by value thus the reference count of `p` is now 2. After the `process(shared_ptr<int>(p))`, the `shared_ptr<int> p` inside the function is destroyed and the reference count of `p` is now 1 again.
