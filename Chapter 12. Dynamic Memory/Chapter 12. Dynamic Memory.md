@@ -129,18 +129,18 @@ auto p = new int();
 auto sp = make_shared<int>();
 ```
 
-(a) process(sp);
+(a) `process(sp);`
 
 Legal. Just pass a `shared_ptr` by value.
 
-(b) process(new int());
+(b) `process(new int());`
 
 Illegal. A plain pointer cannot be converted to a `shared_ptr` implicitly.
 
-(c) process(p);
+(c) `process(p);`
 
 Also illegal. A plain pointer cannot be converted to a `shared_ptr` implicitly.
 
-(d) process(shared_ptr<int>(p));
+(d) `process(shared_ptr<int>(p));`
   
 Legal, creates a `shared_ptr` by the plain pointer and pass it to the function by value.
