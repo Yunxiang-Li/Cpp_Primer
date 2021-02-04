@@ -116,3 +116,5 @@ Correct, `shared_ptr<int> p(new int(42))` will set the reference count of `p` to
 ```cpp
 process(shared_ptr<int>(p.get()));
 ```
+
+This is illegal. `p.get()` function will return a built-in pointer which also points to where `p` points to. `shared_ptr<int>(p.get())` creates a new `shared_ptr` by the built-in pointer `p.get()`. After `process(shared_ptr<int>(p.get()))`, memory built-in pointer `p.get()` points to will be freed since the function is already executed completely. Because both `shared_ptr<int> p` and built-in pointer `p.get()` points to the same integer thus when user tries to dereference `shared_ptr<int> p`, an undefined behavior occurs.
