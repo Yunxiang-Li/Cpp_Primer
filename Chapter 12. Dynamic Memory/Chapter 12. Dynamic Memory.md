@@ -161,3 +161,9 @@ Both `p` and `sp` point to the same memory, we already free the memory by `delet
 **Write your own version of a function that uses a shared_ptr to manage a connection.**
 
 [12.14 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.14%20Solution.cpp)
+
+## Exercise 12.15
+
+**Rewrite the first exercise to use a lambda (§ 10.3.2, p. 388) in place of the end_connection function.**
+
+[12.15 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.15%20Solution.cpp)
