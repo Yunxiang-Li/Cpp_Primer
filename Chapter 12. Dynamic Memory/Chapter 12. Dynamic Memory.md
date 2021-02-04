@@ -144,3 +144,15 @@ Also illegal. A plain pointer cannot be converted to a `shared_ptr` implicitly.
 (d) `process(shared_ptr<int>(p));`
   
 Legal, creates a `shared_ptr` by the plain pointer and pass it to the function by value.
+
+## Exercise 12.13
+
+**What happens if we execute the following code?**
+
+```cpp
+auto sp = make_shared<int>();
+auto p = sp.get();
+delete p;
+```
+
+When we try to dereference `sp` later, an undefined behavior occurs. Even if we do not dereference `sp`, out of the scope of `sp`, a double free issue will happen. 
