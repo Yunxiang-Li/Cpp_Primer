@@ -118,3 +118,8 @@ process(shared_ptr<int>(p.get()));
 ```
 
 This is illegal. `p.get()` function will return a built-in pointer which also points to where `p` points to. `shared_ptr<int>(p.get())` creates a new `shared_ptr` by the built-in pointer `p.get()`. After `process(shared_ptr<int>(p.get()))`, memory built-in pointer `p.get()` points to will be freed since the function is already executed completely. Because both `shared_ptr<int> p` and built-in pointer `p.get()` points to the same integer thus when user tries to dereference `shared_ptr<int> p`, an undefined behavior occurs.
+Even if user does not dereference `shared_ptr<int> p`, when the outer scope ends, `shared_ptr<int> p` will also be freed again which will cause a double free issue.
+
+## Exercise 12.12
+
+**Using the declarations of p and sp explain each of the following calls to process. If the call is legal, explain what it does. If the call is illegal, explain why:**
