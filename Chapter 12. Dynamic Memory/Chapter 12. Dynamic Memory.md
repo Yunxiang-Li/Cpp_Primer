@@ -207,8 +207,16 @@ Process finished with exit code -1073740940 (0xC0000374)
 
 (c) IntP p2(pi2);
 
+Can compile but will cause a dangling pointer issue. When out of scope, `unique_ptr p2` will try to call `delete` function on pointer `pi2` can free memory that `pi2` points to. However, programmers may still try to use `pi2` which will cause problems.
+
 (d) IntP p3(&ix);
+
+Can compile but an error will occur just like (b).
 
 (e) IntP p4(new int(2048));
 
+Legal.
+
 (f) IntP p5(p2.get());
+
+Illegal, will cause double free problem since two `unique_ptr` point to the same object.
