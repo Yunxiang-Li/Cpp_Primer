@@ -227,4 +227,6 @@ Illegal, will cause double free problem since two `unique_ptr` point to the same
 
 Because there may be more than one `shared_ptr` which point to the same object, and each `shared_ptr` will destroy automatically if it no longer points to that object.
 
+Moreover, if we want the object that each `shared_ptr` points to we can use `shared_ptr.get()` or just dereference the `shared_ptr`.
+
 Therefore it is meaningless to add a `release` function for `shared_ptr`.
