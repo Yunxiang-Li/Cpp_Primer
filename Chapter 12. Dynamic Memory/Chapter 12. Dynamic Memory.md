@@ -224,3 +224,7 @@ Illegal, will cause double free problem since two `unique_ptr` point to the same
 ## Exercise 12.18
 
 **Why doesn’t shared_ptr have a release member?**
+
+Because there may be more than one `shared_ptr` which point to the same object, and each `shared_ptr` will destroy automatically if it no longer points to that object.
+
+Therefore it is meaningless to add a `release` function for `shared_ptr`.
