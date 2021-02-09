@@ -195,7 +195,15 @@ typedef unique_ptr<int> IntP;
 
 (a) IntP p0(ix);
 
+Illegal, we cannot use an integer to initialize a `unique_ptr`.
+
 (b) IntP p1(pi);
+
+Can compile but an error will occur. Because the pointer `pi` is not initialized by `new` and memory that `unique_ptr p1` points to will be freed when it is out of scope. Therefore `unique_ptr p1` will try to call `delete` function even though `pi` is not initialized by `new` and an error will occur.
+
+Error message:
+
+Process finished with exit code -1073740940 (0xC0000374)
 
 (c) IntP p2(pi2);
 
