@@ -183,3 +183,24 @@ error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std:
 error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = std::__cxx11::basic_string<char>; _Dp = std::default_delete<std::__cxx11::basic_string<char> >]'
      std::unique_ptr<std::string> unique_ptrThree = unique_ptrOne;
 ```
+
+## Exercise 12.17
+
+**Which of the following unique_ptr declarations are illegal or likely to result in subsequent program error? Explain what the problem is with each one.**
+
+```cpp
+int ix = 1024, *pi = &ix, *pi2 = new int(2048);
+typedef unique_ptr<int> IntP;
+```
+
+(a) IntP p0(ix);
+
+(b) IntP p1(pi);
+
+(c) IntP p2(pi2);
+
+(d) IntP p3(&ix);
+
+(e) IntP p4(new int(2048));
+
+(f) IntP p5(p2.get());
