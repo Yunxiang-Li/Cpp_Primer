@@ -220,3 +220,7 @@ Legal.
 (f) IntP p5(p2.get());
 
 Illegal, will cause double free problem since two `unique_ptr` point to the same object.
+
+## Exercise 12.18
+
+**Why doesn’t shared_ptr have a release member?**
