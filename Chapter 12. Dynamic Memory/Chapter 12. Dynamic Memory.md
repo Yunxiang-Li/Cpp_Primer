@@ -167,3 +167,9 @@ Both `p` and `sp` point to the same memory, we already free the memory by `delet
 **Rewrite the first exercise to use a lambda (§ 10.3.2, p. 388) in place of the end_connection function.**
 
 [12.15 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.15%20Solution.cpp)
+
+## Exercise 12.16
+
+**Compilers don’t always give easy-to-understand error messages if we attempt to copy or assign a unique_ptr. Write a program that contains these errors to see how your compiler diagnoses them.**
+
+[12.16 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.16%20Solution.cpp)
