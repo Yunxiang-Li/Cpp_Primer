@@ -244,3 +244,11 @@ Therefore it is meaningless to add a `release` function for `shared_ptr`.
 **Write a program that reads an input file a line at a time into a StrBlob and uses a StrBlobPtr to print each element in that StrBlob.**
 
 [12.20 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.20%20Solution.cpp)
+
+## Exercise 12.21
+
+**We could have written StrBlobPtr’s deref member as follows, Which version do you think is better and why?**
+
+```cpp
+std::string& deref() const{ return (*check(curr, "dereference past end"))[curr]; }
+```
