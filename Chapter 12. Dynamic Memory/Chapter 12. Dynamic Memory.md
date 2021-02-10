@@ -254,3 +254,11 @@ std::string& deref() const{ return (*check(curr, "dereference past end"))[curr];
 ```
 
 I believe the original version is much better since it has more readability.
+
+## Exercise 12.22
+
+**What changes would need to be made to StrBlobPtr to create a class that can be used with a const StrBlob? Define a class named ConstStrBlobPtr that can point to a const StrBlob.**
+
+[12.22 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.21%20Solution.hpp)
+
+[12.22 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.22%20Solution.cpp)
