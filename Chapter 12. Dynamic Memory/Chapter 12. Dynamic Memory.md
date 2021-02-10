@@ -252,3 +252,5 @@ Therefore it is meaningless to add a `release` function for `shared_ptr`.
 ```cpp
 std::string& deref() const{ return (*check(curr, "dereference past end"))[curr]; }
 ```
+
+I believe the original version is much better since it has more readability.
