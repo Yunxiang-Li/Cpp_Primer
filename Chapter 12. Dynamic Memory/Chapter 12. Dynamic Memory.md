@@ -235,10 +235,6 @@ Therefore it is meaningless to add a `release` function for `shared_ptr`.
 
 **Define your own version of StrBlobPtr and update your StrBlob class with the appropriate friend declaration and begin and end members.**
 
-[StrBlob.hpp](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.13%20Solution.hpp)
+[12.19 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.18%20Solution.hpp)
 
-[StrBlob.cpp](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.17%20Solution.cpp)
-
-[StrBlobPtr.hpp](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.18%20Solution.hpp)
-
-[StrBlobPtr.cpp](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.19%20Solution.cpp)
+[12.19 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.19%20Solution.cpp)
