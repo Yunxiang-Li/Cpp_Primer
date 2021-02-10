@@ -238,3 +238,9 @@ Therefore it is meaningless to add a `release` function for `shared_ptr`.
 [12.19 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.18%20Solution.hpp)
 
 [12.19 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.19%20Solution.cpp)
+
+## Exercise 12.20
+
+**Write a program that reads an input file a line at a time into a StrBlob and uses a StrBlobPtr to print each element in that StrBlob.**
+
+[12.20 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.20%20Solution.cpp)
