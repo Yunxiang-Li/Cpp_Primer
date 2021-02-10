@@ -11,6 +11,7 @@ class StrBlob {
   typedef std::vector<std::string>::size_type dataSize;
   StrBlob();
   StrBlob(std::initializer_list<std::string> initializer_list);
+ 
   dataSize size() const;
   bool empty() const;
   void push_back(const std::string& str);
