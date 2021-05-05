@@ -296,3 +296,5 @@ delete[] pa;
 **Rewrite the program on page 481 using an allocator.**
 
 [12.26 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.26%20Solution.cpp)
+
+**I will ignore exercises range from 12.27 - 12.33. You can click this [link](https://github.com/pezy/CppPrimer/blob/master/ch12/README.md) to see solutions.** 
