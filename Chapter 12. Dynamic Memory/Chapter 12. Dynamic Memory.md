@@ -268,3 +268,11 @@ I believe the original version is much better since it has more readability.
 **Write a program to concatenate two string literals, putting the result in a dynamically allocated array of char. Write a program to concatenate two library strings that have the same value as the literals used in the first program**
 
 [12.23 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.23%20Solution.cpp)
+
+## Exercise 12.24
+
+**Write a program that reads a string from the standard input into a dynamically allocated character array. Describe how your program handles varying size inputs. Test your program by giving it a string of data that is longer than the array size you’ve allocated.**
+
+I handle varying size input by first asking the string size from users and then create the dynamic array with specific length. If the input string size is longer than the array size then all out-of-range characters will be discarded.
+
+[12.24 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.24%20Solution.cpp)
