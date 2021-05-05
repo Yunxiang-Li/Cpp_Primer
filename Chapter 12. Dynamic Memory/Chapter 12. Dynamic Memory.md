@@ -276,3 +276,17 @@ I believe the original version is much better since it has more readability.
 I handle varying size input by first asking the string size from users and then create the dynamic array with specific length. If the input string size is longer than the array size then all out-of-range characters will be discarded.
 
 [12.24 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.24%20Solution.cpp)
+
+## Exercise 12.25
+
+**Given the following new expression, how would you delete `pa`?**
+
+```cpp
+int *pa = new int[10];
+```
+
+Answer: 
+
+```cpp
+delete[] pa;
+```
