@@ -290,3 +290,9 @@ Answer:
 ```cpp
 delete[] pa;
 ```
+
+## Exercise 12.26
+
+**Rewrite the program on page 481 using an allocator.**
+
+[12.26 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.26%20Solution.cpp)
