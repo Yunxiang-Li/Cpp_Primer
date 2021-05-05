@@ -46,7 +46,7 @@ You can check all answers for C++ Primer 5th Edition in this repo.(Although all 
   - [Chapter 9. Sequential Containers](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%209.%20Sequential%20Containers/Chapter%209.%20Sequential%20Containers.md)
   - [Chapter 10. Generic Algorithms](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2010.%20Generic%20Algorithms/Chapter%2010.%20Generic%20Algorithms.md)
   - [Chapter 11. Associative Containers](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2011.%20Associative%20Containers/Chapter%2011.%20Associative%20Containers.md)
-  - [Chapter 12. Dynamic Memory]
+  - [Chapter 12. Dynamic Memory](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Chapter%2012.%20Dynamic%20Memory.md)
 - Part III: Tools for Class Authors
   - [Chapter 13. Copy Control]
   - [Chapter 14. Overloaded Operations and Conversions]
