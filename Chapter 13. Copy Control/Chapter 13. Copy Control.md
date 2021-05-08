@@ -79,6 +79,7 @@ class HasPtr
 {
 public:
   HasPtr(const std::string &s = std::string()) : ps(new std::string(s)), i(0) { }
+  
   HasPtr(const HasPtr& hp) : ps(new std::string(*hp.ps)), i(hp.i) {}
 
 private:    
@@ -116,7 +117,9 @@ class HasPtr
 {
 public:
   HasPtr(const std::string &s = std::string()) : ps(new std::string(s)), i(0) { }
+  
   HasPtr(const HasPtr& hp) : ps(new std::string(*hp.ps)), i(hp.i) {}
+  
   HasPtr& operator=(const HasPtr& hp) 
   {
     std::string* newStr = new std::string(*hp.ps);
@@ -124,6 +127,58 @@ public:
     this -> ps = newStr;
     this -> i = hp.i;
     return this;
+  }
+
+private:    
+  std::string *ps;
+  int    i;
+};
+```
+
+## Exercise 13.9
+
+**What is a destructor? What does the synthesized destructor do? When is a destructor synthesized?**
+
+A destructor is a special member function that is called when the lifetime of an object ends. 
+
+The purpose of the synthesized destructor is to free resources that the object may have acquired during its lifetime.
+
+The compiler creates a synthesized destructor for any class that does not define its own destructor.
+
+## Exercise 13.10
+
+**What happens when a StrBlob object is destroyed? What about a StrBlobPtr?**
+
+When a **StrBlob** object destroyed, the `use_count` of the dynamic object will decrement. It will be freed if the reference count of that dynamic object is zero.
+
+When a **StrBlobPter** object is destroyed the object dynamically allocated will not be freed until we call `delete`/`delete[]`.
+
+## Exercise 13.11
+
+**Add a destructor to your HasPtr class from the previous exercises.**
+
+Here is my solution:
+
+```cpp
+class HasPtr
+{
+public:
+  HasPtr(const std::string &s = std::string()) : ps(new std::string(s)), i(0) { }
+  
+  HasPtr(const HasPtr& hp) : ps(new std::string(*hp.ps)), i(hp.i) {}
+  
+  HasPtr& operator=(const HasPtr& hp) 
+  {
+    std::string* newStr = new std::string(*hp.ps);
+    delete this -> ps;
+    this -> ps = newStr;
+    this -> i = hp.i;
+    return this;
+  }
+  
+  ~HasPtr() 
+  {
+    delete this -> ps;
   }
 
 private:    
