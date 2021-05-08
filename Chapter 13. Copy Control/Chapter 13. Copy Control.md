@@ -10,15 +10,21 @@ When copy initialization happens, either the copy constructor or the move constr
 
 Copy constructor is used when:
 
-- Define variables using an =
+- Define variables using an `=`
 - Pass an object as an argument to a parameter of non-reference type
 - Return an object from a function that has a non-reference return type
 - Brace initialize the elements in an array or the members of an aggregate class
 - Some class types also use copy initialization for the objects they allocate.
 
-## Exercise 12.2
+## Exercise 13.2
 
-**Write your own version of the StrBlob class including the const versions of front and back.**
+**Explain why the following declaration is illegal:**
+
+```cpp
+Sales_data::Sales_data(Sales_data rhs);
+```
+
+If the copy constructor declaration is like this, the call would never succeed to call the copy constructor, `Sales_data rhs` is a non-reference argument to a parameter, thus, we'd need to use the copy constructor of class `Sales_data` to copy the argument, which we'd need to call the copy constructor again, and so on indefinitely.
 
 [12.2 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.2%20Solution.hpp)
 
