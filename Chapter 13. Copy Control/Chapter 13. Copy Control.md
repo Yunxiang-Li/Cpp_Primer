@@ -42,7 +42,7 @@ Altogether, the `Point` class's copy constructor is called 6 times.
 
 ```cpp
 Point global;
-Point foo_bar(Point arg) // 1. Copy constructor is called here to assign the input argument
+Point foo_bar(Point arg) // 1. Copy constructor is called here once to create an input Point instance arg.
 {
   // 2-3. Copy constructor is called here twice: 1. Copy arg to initialize local
   // 2. Create a new Point instance by the copy constructor
@@ -80,6 +80,51 @@ class HasPtr
 public:
   HasPtr(const std::string &s = std::string()) : ps(new std::string(s)), i(0) { }
   HasPtr(const HasPtr& hp) : ps(new std::string(*hp.ps)), i(hp.i) {}
+
+private:    
+  std::string *ps;
+  int    i;
+};
+```
+
+## Exercise 13.6
+
+**What is a copy-assignment operator? When is this operator used? What does the synthesized copy-assignment operator do? When is it synthesized?**
+
+The **copy-assignment operator** is a non-template non-static member function with the name `operator=`.
+
+This operator is used when assignment occurred.
+
+The synthesized **copy-assignment operator** assigns each non-static member of the right-hand operand(object) to corresponding member of the left-hand operand(object) using the **copy-assignment operator** for the type of that member.
+
+It is synthesized when the class does not define its own **copy-assignment operator**.
+
+## Exercise 13.7
+
+**What happens when we assign one `StrBlob` to another? What about `StrBlobPtrs`?**
+
+In both situations, only shallow copy will occur as all pointers point to the same address. The use_count changed the same as exercise 13.3.
+
+## Exercise 13.8
+
+**Write the assignment operator for the `HasPtr` class from exercise 13.5 in § 13.1.1 (p. 499). As with the copy constructor, your assignment operator should copy the object to which `ps` points.**
+
+Here is my solution:
+
+```cpp
+class HasPtr
+{
+public:
+  HasPtr(const std::string &s = std::string()) : ps(new std::string(s)), i(0) { }
+  HasPtr(const HasPtr& hp) : ps(new std::string(*hp.ps)), i(hp.i) {}
+  HasPtr& operator=(const HasPtr& hp) 
+  {
+    std::string* newStr = new std::string(*hp.ps);
+    delete this -> ps;
+    this -> ps = newStr;
+    this -> i = hp.i;
+    return this;
+  }
 
 private:    
   std::string *ps;
