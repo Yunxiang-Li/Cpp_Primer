@@ -187,4 +187,38 @@ private:    
 };
 ```
 
-[13.5 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.2%20Solution.hpp)
+## Exercise 13.12
+
+**How many destructor calls occur in the following code fragment?**
+
+```cpp
+bool fcn(const Sales_data *trans, Sales_data accum)
+{
+  Sales_data item1(*trans), item2(accum);
+  return item1.isbn() != item2.isbn();
+}
+```
+
+Altogether the destructor of `Sales_data` class is called 3 times. One for `item1`, one for `item2` and one for `accum`.
+Here `trans` is a pointer to a `Sales_data` instance which will not be freed by the destructor autimatically.
+
+## Exercise 13.13
+
+**A good way to understand copy-control members and constructors is to define a simple class with these members in which each member prints its name:**
+
+```cpp
+struct X 
+{
+  X() 
+    {
+      std::cout << "X()" << std::endl;
+    }    
+  X(const X&) 
+    {
+      std::cout << "X(const X&)" << std::endl;
+    }
+};
+```
+Add the copy-assignment operator and destructor to X and write a program using X objects in various ways: Pass them as nonreference and reference parameters; dynamically allocate them; put them in containers; and so forth. Study the output until you are certain you understand when and why each copy-control member is used. As you read the output, remember that the compiler can omit calls to the copy constructor.
+
+[13.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.13%20Solution.cpp)
