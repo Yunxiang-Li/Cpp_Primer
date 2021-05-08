@@ -44,10 +44,12 @@ Altogether, the `Point` class's copy constructor is called 6 times.
 Point global;
 Point foo_bar(Point arg) // 1. Copy constructor is called here to assign the input argument
 {
-  // 2-3. Copy constructor is called here twice: 1. Copy arg to initialize local 2. Create a new Point instance by the copy constructor
+  // 2-3. Copy constructor is called here twice: 1. Copy arg to initialize local
+  // 2. Create a new Point instance by the copy constructor
   Point local = arg, *heap = new Point(global); 
   *heap = local;
-  // 4-5. Copy constructor is called here twice: brace initialization of a Point array. First two elements are local and *heap, next two elements are 2 default Point instances.
+  // 4-5. Copy constructor is called here twice: brace initialization of a Point array.
+  // First two elements are local and *heap, next two elements are 2 default Point instances.
   Point pa[ 4 ] = { local, *heap }; 
   // 6. Copy constructor is called here once to create the return value(a Point class).
   return *heap;
