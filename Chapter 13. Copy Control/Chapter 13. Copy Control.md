@@ -222,3 +222,18 @@ struct X
 Add the copy-assignment operator and destructor to X and write a program using X objects in various ways: Pass them as nonreference and reference parameters; dynamically allocate them; put them in containers; and so forth. Study the output until you are certain you understand when and why each copy-control member is used. As you read the output, remember that the compiler can omit calls to the copy constructor.
 
 [13.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.13%20Solution.cpp)
+
+My output:
+
+```cpp
+X()
+X(const X&)
+hereX(const X&)
+X(const X&)
+X(const X&)
+~X()
+~X()
+~X()
+~X()
+~X()
+```
