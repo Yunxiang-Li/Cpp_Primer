@@ -269,7 +269,16 @@ Altogether the custom copy constructor will be called 5 times(2 for constructing
 
 **What if the parameter in `f` were `const numbered&`? Does that change the output? If so, why? What output gets generated?**
 
-Yes, the output will be changed because `void f (const numbered& s) { cout << s.mysn << endl; }` here argument is passed by reference thus copy constructor will not be called when `f` function is called.
+Yes, the output will be changed(still 3 different serial numbers) because `void f (const numbered& s) { cout << s.mysn << endl; }` here argument is passed by reference thus copy constructor will not be called when `f` function is called.
 
 Altogether the custom copy constructor will be called 2 times(For constructing `b` and `c`).
 
+## Exercise 13.17
+
+**Write versions of numbered and f corresponding to the previous three exercises and check whether you correctly predicted the output.**
+
+[13.14 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.14%20Solution.cpp)
+
+[13.15 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.15%20Solution.cpp)
+
+[13.16 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.16%20Solution.cpp)
