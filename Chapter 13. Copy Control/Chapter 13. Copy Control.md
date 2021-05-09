@@ -253,7 +253,7 @@ numbered a, b = a, c = b;
 f(a); f(b); f(c);
 ```
 
-The output will be 3 identical serial numbers.
+The output will be 3 identical serial numbers. `a` is created by the default constructor, `b` and `c` are created by the synthesized copy constructor.
 
 ## Exercise 13.15
 
