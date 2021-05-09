@@ -300,3 +300,15 @@ I think `Employee` class does not need any copy-control members since it is mean
 [13.19 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.19%20Employee.hpp)
 
 [13.19 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.19%20Employee.cpp)
+
+## Exercise 13.20
+
+**Explain what happens when we copy, assign, or destroy objects of our `TextQuery` and `QueryResult` classes from § 12.3 (p. 484).**
+
+Members (smart pointer and container) will be copied.
+
+## Exercise 13.21
+
+**Do you think the `TextQuery` and `QueryResult` classes need to define their own versions of the copy-control members? If so, why? If not, why not? Implement whichever copy-control operations you think these classes require.**
+
+Synthesized copy-control members are already enough thus no need to define our custom ones.
