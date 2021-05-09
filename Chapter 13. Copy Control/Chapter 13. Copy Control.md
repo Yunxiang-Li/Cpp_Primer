@@ -219,7 +219,7 @@ struct X
     }
 };
 ```
-Add the copy-assignment operator and destructor to X and write a program using X objects in various ways: Pass them as nonreference and reference parameters; dynamically allocate them; put them in containers; and so forth. Study the output until you are certain you understand when and why each copy-control member is used. As you read the output, remember that the compiler can omit calls to the copy constructor.
+**Add the copy-assignment operator and destructor to X and write a program using X objects in various ways: Pass them as nonreference and reference parameters; dynamically allocate them; put them in containers; and so forth. Study the output until you are certain you understand when and why each copy-control member is used. As you read the output, remember that the compiler can omit calls to the copy constructor.**
 
 [13.13 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.13%20Solution.cpp)
 
@@ -228,7 +228,7 @@ My output:
 ```cpp
 X()
 X(const X&)
-hereX(const X&)
+(const X&)
 X(const X&)
 X(const X&)
 ~X()
@@ -237,3 +237,39 @@ X(const X&)
 ~X()
 ~X()
 ```
+
+## Exercise 13.14
+
+**Assume that `numbered` is a class with a default constructor that generates a unique serial number for each object, which is stored in a data member named `mysn`. Assuming `numbered` uses the synthesized copy-control members and given the following function:**
+
+```cpp
+void f (numbered s) { cout << s.mysn << endl; }
+```
+
+**what output does the following code produce?**
+
+```cpp
+numbered a, b = a, c = b;
+f(a); f(b); f(c);
+```
+
+The output will be 3 identical serial numbers.
+
+## Exercise 13.15
+
+**Assume `numbered` has a copy constructor that generates a new serial number. Does that change the output of the calls in the previous exercise? If so, why? What output gets generated?**
+
+Yes, the output will be changed because custom copy constructor will generate 3 different serial numbers for `a`, `b` and `c`.
+
+Moreover, `void f (numbered s) { cout << s.mysn << endl; }` here will also call the custom copy constructor once for each function call since here argument is passed by value.
+
+Altogether the custom copy constructor will be called 5 times(2 for constructing `b` and `c`, 3 when passing `a`, `b` and `c` into function `f` by value).
+
+## Exercise 13.16
+
+**What if the parameter in `f` were `const numbered&`? Does that change the output? If so, why? What output gets generated?**
+
+Yes, the output will be changed because `void f (const numbered& s) { cout << s.mysn << endl; }` here argument is passed by reference thus copy constructor will not be called when `f` function is called.
+
+Altogether the custom copy constructor will be called 2 times(For constructing `b` and `c`).
+
