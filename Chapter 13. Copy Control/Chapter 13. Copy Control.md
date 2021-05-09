@@ -282,3 +282,11 @@ Altogether the custom copy constructor will be called 2 times(For constructing `
 [13.15 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.15%20Solution.cpp)
 
 [13.16 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.16%20Solution.cpp)
+
+## Exercise 13.18
+
+**Define an `Employee` class that contains an employee name and a unique employee identifier. Give the class a default constructor and a constructor that takes a string representing the employee’s name. Each constructor should generate a unique ID by incrementing a static data member.**
+
+[13.18 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.18%20Employee.hpp)
+
+[13.18 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.18%20Employee.cpp)
