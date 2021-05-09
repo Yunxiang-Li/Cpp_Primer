@@ -1,6 +1,6 @@
 #include <iostream>
 
-static int uniqueNum{10};
+static int uniqueNum{1};
 
 class numbered {
  public:
@@ -20,3 +20,8 @@ int main() {
     return 0;
 }
 
+/** Output:
+ * 1
+ * 1
+ * 1
+ */
