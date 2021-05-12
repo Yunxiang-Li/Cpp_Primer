@@ -126,7 +126,7 @@ public:
     delete this -> ps;
     this -> ps = newStr;
     this -> i = hp.i;
-    return this;
+    return *this;
   }
 
 private:    
@@ -173,7 +173,7 @@ public:
     delete this -> ps;
     this -> ps = newStr;
     this -> i = hp.i;
-    return this;
+    return *this;
   }
   
   ~HasPtr() 
@@ -317,4 +317,6 @@ Synthesized copy-control members are already enough thus no need to define our c
 
 **Assume that we want `HasPtr` to behave like a value. That is, each object should have its own copy of the `string` to which the objects point. We’ll show the definitions of the copy-control members in the next section. However, you already know everything you need to know to implement these members. Write the `HasPtr` copy constructor and copy-assignment operator before reading on.**
 
-[13.22 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.22%20Solution.cpp)
+[13.22 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.22%20HasPtr.hpp)
+
+[13.22 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.22%20HasPtr.cpp)
