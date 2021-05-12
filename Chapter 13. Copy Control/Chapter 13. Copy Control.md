@@ -358,3 +358,38 @@ The reason the class does not need a destructor is that `StrBlob` class uses sma
 [13.27 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.27%20HasPtr.hpp)
 
 [13.27 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.27%20HasPtr.cpp)
+
+## Exercise 13.28
+
+**Given the following classes, implement a default constructor and the necessary copy-control members.**
+
+Here I change `int count` to `int* count`
+
+(a)
+
+```cpp
+class TreeNode {
+ private:
+  std::string value;
+  int*         count;
+  TreeNode    *left;
+  TreeNode    *right;
+};
+```
+
+(b)
+
+```cpp
+class BinStrTree { 
+ private: 
+  TreeNode *root;
+};
+```
+
+[13.28 TreeNode Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.28%20TreeNode.hpp)
+
+[13.28 TreeNode Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.28%20TreeNode.cpp)
+
+[13.28 BinStrTree Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.28%20BinStrTree.hpp)
+
+[13.28 BinStrTree Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.28%20BinStrTree.cpp)
