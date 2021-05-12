@@ -342,3 +342,11 @@ If `HasPtr` didn't define the copy constructor, when copy constructed, just stri
 Copy constructor and copy-assignment operator will dynamically allocate memory to create their own member objects, rather than share objects with right hand operand.
 
 The reason the class does not need a destructor is that `StrBlob` class uses smart pointers which can help free the dynamically allocated memoryautomatically.
+
+## Exercise 13.26
+
+**Write your own version of the StrBlob class described in the previous exercise.**
+
+[13.26 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.26%20StrBlob.hpp)
+
+[13.26 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.26%20StrBlob.cpp)
