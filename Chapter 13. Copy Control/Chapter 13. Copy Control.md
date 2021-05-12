@@ -320,3 +320,25 @@ Synthesized copy-control members are already enough thus no need to define our c
 [13.22 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.22%20HasPtr.hpp)
 
 [13.22 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.22%20HasPtr.cpp)
+
+## Exercise 13.23
+
+**Compare the copy-control members that you wrote for the solutions to the previous section’s exercises to the code presented here. Be sure you understand the differences, if any, between your code and ours.**
+
+It is crucially important for assignment operators to work correctly, even when an object is assigned to itself. A good way to do so is to copy the right-hand operand before destroying the left-hand operand.
+
+## Exercise 13.24
+
+**What would happen if the version of `HasPtr` in this section didn’t define a destructor? What if HasPtr didn’t define the `copy constructor`?**
+
+If `HasPtr` didn't define a destructor, a synthesized destructor will be created but wont release the dynamically allocated memory. Therefore, memory leak will happened.
+
+If `HasPtr` didn't define the copy constructor, when copy constructed, just string's address is copied, the string content witch `ps` points to wont be copied.
+
+## Exercise 13.25
+
+**Assume we want to define a version of `StrBlob` that acts like a value. Also assume that we want to continue to use a `shared_ptr` so that our `StrBlobPtr` class can still use a `weak_ptr` to the `vector`. Your revised class will need a copy constructor and copy-assignment operator but will not need a destructor. Explain what the copy constructor and copy-assignment operators must do. Explain why the class does not need a destructor.**
+
+Copy constructor and copy-assignment operator will dynamically allocate memory to create their own member objects, rather than share objects with right hand operand.
+
+The reason the class does not need a destructor is that `StrBlob` class uses smart pointers which can help free the dynamically allocated memoryautomatically.
