@@ -350,3 +350,11 @@ The reason the class does not need a destructor is that `StrBlob` class uses sma
 [13.26 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.26%20StrBlob.hpp)
 
 [13.26 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.26%20StrBlob.cpp)
+
+## Exercise 13.27
+
+**Define your own reference-counted version of `HasPtr`.**
+
+[13.27 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.27%20HasPtr.hpp)
+
+[13.27 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.27%20HasPtr.cpp)
