@@ -417,3 +417,9 @@ Because `swap(lhs.ps, rhs.ps)` will call `std::swap(std::string*, std::string*)`
 [13.31 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.31%20HasPtr.cpp)
 
 [13.31 Main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.31%20main.cpp)
+
+## Exercise 13.32
+
+**Would the pointerlike version of `HasPtr` benefit from defining a `swap` function? If so, what is the benefit? If not, why not?**
+
+For the pointerlike version, no dynamic memory allocation needed. Therefore, a specific version for it will not improve the performance.
