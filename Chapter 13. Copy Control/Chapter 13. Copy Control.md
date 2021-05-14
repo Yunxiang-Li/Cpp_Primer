@@ -407,3 +407,13 @@ Because `swap(lhs.ps, rhs.ps)` will call `std::swap(std::string*, std::string*)`
 [13.30 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.30%20HasPtr.hpp)
 
 [13.30 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.30%20HasPtr.cpp)
+
+## Exercise 13.31
+
+**Give your class a `<` operator and define a `vector` of `HasPtrs`. Give that vector some elements and then `sort` the `vector`. Note when `swap` is called.**
+
+[13.31 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.31%20HasPtr.hpp)
+
+[13.31 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.31%20HasPtr.cpp)
+
+[13.31 Main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.31%20main.cpp)
