@@ -398,4 +398,12 @@ class BinStrTree { 
 
 **Explain why the calls to `swap` inside `swap(HasPtr&, HasPtr&)` do not cause a recursion loop.**
 
-Because `swap(lhs.ps, rhs.ps)` and `swap(lhs.i, rhs.i)` call `std::swap` function and function `swap(HasPtr&, HasPtr&)` is our custom function thus calls inside don't cause a recursion loop.
+Because `swap(lhs.ps, rhs.ps)` will call `std::swap(std::string*, std::string*)` function and `swap(lhs.i, rhs.i)`  will call `std::swap(int, int)` function. However, function `swap(HasPtr&, HasPtr&)` is our custom function which takes 2 reference of `HasPtr` object thus `swap` calls inside do not cause a recursion loop.
+
+## Exercise 13.30
+
+**Write and test a `swap` function for your valuelike version of `HasPtr`. Give your `swap` a print statement that notes when it is executed.**
+
+[13.30 Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.30%20HasPtr.hpp)
+
+[13.30 Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.30%20HasPtr.cpp)
