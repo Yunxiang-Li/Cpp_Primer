@@ -456,4 +456,4 @@ See Exercise 13.37
 
 **We did not use copy and swap to define the `Message` assignment operator. Why do you suppose this is so?**
 
-`Message` class's custom `swap` function needs to remove both `Message` object's old binding relations and then add both new binding relations, which is nearly twice inefficient  as normal copy assignment operator function. Therefore, there is no need to combine `copy` and `swap` together to define the `Message` class's copy assignment operator.
+`Message` class's custom `swap` function needs to remove both `Message` object's old binding relations and then add both `Message` object's new binding relations, which is nearly twice inefficient as normal copy assignment operator function. Therefore, there is no need to combine `copy` and `swap` together to define the `Message` class's copy assignment operator.
