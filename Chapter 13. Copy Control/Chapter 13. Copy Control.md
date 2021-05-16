@@ -423,3 +423,37 @@ Because `swap(lhs.ps, rhs.ps)` will call `std::swap(std::string*, std::string*)`
 **Would the pointerlike version of `HasPtr` benefit from defining a `swap` function? If so, what is the benefit? If not, why not?**
 
 For the pointerlike version, no dynamic memory allocation needed. Therefore, a specific version for it will not improve the performance.
+
+## Exercise 13.33
+
+**Why is the parameter to the `save` and `remove` members of `Message` a `Folder&`? Why didn’t we define that parameter as `Folder`? Or `const Folder&`?**
+
+Because `save` and `remove` operations will modify the given `Folder` argument thus we cannot define as `const Folder&` which prohibits updating. Moreover, if we define as `Folder` then we will only update the copy, when function calls end, original `Folder` objects are not modified.
+
+## Exercise 13.34
+
+**Write the `Message` class as described in this section.**
+
+See Exercise 13.37
+
+## Exercise 13.35
+
+**What would happen if `Message` used the synthesized versions of the copy-control members?**
+
+Default synthesized versions of the copy-control members cannot update `Message` and `Folder` objects correctly. For instance, synthesized copy constructor will not bind the new `Message` object's content to each relavant `Folder` objects. Moreover, synthesized copy assignment operator will neither remove left `Message` object's content from its binding `Folder` objects nor add right `Message` object's content.
+
+## Exercise 13.36
+
+**Design and implement the corresponding `Folder` class. That class should hold a `set` that points to the `Messages` in that `Folder`.**
+
+See Exercise 13.37
+
+## Exercise 13.37
+
+**Add members to the `Message` class to insert or remove a given `Folder*` into `folders`. These members are analogous to `Folder`’s `addMsg` and `remMsg` operations.**
+
+## Exercise 13.38
+
+**We did not use copy and swap to define the `Message` assignment operator. Why do you suppose this is so?**
+
+`Message` class's custom `swap` function needs to remove both `Message` object's old binding relations and then add both new binding relations, which is nearly twice inefficient  as normal copy assignment operator function. Therefore, there is no need to combine `copy` and `swap` together to define the `Message` class's copy assignment operator.
