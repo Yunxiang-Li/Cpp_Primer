@@ -458,7 +458,7 @@ See Exercise 13.37
 
 [13.37 Folder Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.37%20Folder.hpp)
 
-[13.37 Folder Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.37%20Folder.cpp)
+[13.37 Folder Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.37%20Folder.cpp)
 
 [13.37 Main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/10.37%20main.cpp)
 
