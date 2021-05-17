@@ -452,6 +452,16 @@ See Exercise 13.37
 
 **Add members to the `Message` class to insert or remove a given `Folder*` into `folders`. These members are analogous to `Folder`’s `addMsg` and `remMsg` operations.**
 
+[13.37 Message Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.37%20Message.hpp)
+
+[13.37 Message Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.37%20Message.cpp)
+
+[13.37 Folder Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.37%20Folder.hpp)
+
+[13.37 Folder Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.37%20Folder.cpp)
+
+[13.37 Main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/10.37%20main.cpp)
+
 ## Exercise 13.38
 
 **We did not use copy and swap to define the `Message` assignment operator. Why do you suppose this is so?**
