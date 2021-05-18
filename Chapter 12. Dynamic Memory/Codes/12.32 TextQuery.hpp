@@ -2,9 +2,6 @@
 #define TEXTQUERY_HPP
 
 #include <fstream>
-#include <string>
-#include <memory>
-#include <vector>
 #include <map>
 #include <set>
 #include "StrBlob.hpp"
