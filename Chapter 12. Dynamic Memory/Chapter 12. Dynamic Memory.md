@@ -322,3 +322,31 @@ delete[] pa;
 [12.29 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.29%20main.cpp)
 
 I believe the `do while` version is a little bit better for the design logic since we need at least one turn of process.
+
+## Exercise 12.30
+
+**Define your own versions of the `TextQuery` and `QueryResult` classes and execute the `runQueries` function from § 12.3.1 (p. 486).**
+
+Same as Exercise 12.27
+
+## Exercise 12.31
+
+**What difference(s) would it make if we used a `vector` instead of a `set` to hold the line numbers? Which approach is better? Why?**
+
+`std::vector` can not avoid duplicate elements thus `std::set` is better in this situation.
+
+## Exercise 12.32
+
+**Rewrite the `TextQuery` and `QueryResult` classes to use a `StrBlob` instead of a `vector<string>` to hold the input file.**
+
+[12.32 StrBlob Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.32%20StrBlob.hpp)
+
+[12.32 StrBlob Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.32%20StrBlob.cpp)
+
+[12.32 TextQuery Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.32%20TextQuery.hpp)
+
+[12.32 TextQuery Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.32%20TextQuery.cpp)
+
+[12.32 QueryResult Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.32%20QueryResult.hpp)
+
+[12.32 QueryResult Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.32%20QueryResult.cpp)
