@@ -19,9 +19,8 @@ TextQuery::TextQuery(std::ifstream& file) : m_fileContentsVecPtr(new std::vector
             // If this word's mapping relationship is still not set
             if (!res)
                 res.reset(new std::set<lineNo>());
-            // If this word's mapping relationship is set, then insert the word's existing lines.
-            else
-                res -> insert(fileLinesNumber);
+            // Then insert the word's existing lines.
+            res -> insert(fileLinesNumber);
         }
     }
 }
