@@ -308,3 +308,9 @@ delete[] pa;
 [12.27 QueryResult Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.27%20QueryResult.hpp)
 
 [12.27 QueryResult Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.27%20QueryResult.cpp)
+
+## Exercise 12.28
+
+**Write a program to implement text queries without defining classes to manage the data. Your program should take a file and interact with a user to query for words in that file. Use `vector`, `map`, and `set` containers to hold the data for the file and to generate the results for the queries.**
+
+[12.28 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.28%20Solution.cpp)
