@@ -297,6 +297,14 @@ delete[] pa;
 
 [12.26 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.26%20Solution.cpp)
 
-## Skip
+## Exercise 12.27
 
-**I will skip exercises range from 12.27 - 12.33. You can click this [link](https://github.com/pezy/CppPrimer/blob/master/ch12/README.md) to see solutions.** 
+**The `TextQuery` and `QueryResult` classes use only capabilities that we have already covered. Without looking ahead, write your own versions of these classes.**
+
+[12.27 TextQuery Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.27%20TextQuery.hpp)
+
+[12.27 TextQuery Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.27%20TextQuery.cpp)
+
+[12.27 QueryResult Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.27%20QueryResult.hpp)
+
+[12.27 QueryResult Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2012.%20Dynamic%20Memory/Codes/12.27%20QueryResult.cpp)
