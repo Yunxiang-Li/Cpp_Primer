@@ -488,6 +488,22 @@ See Exercise 13.37
 
 **Why did we use postfix increment in the call to `construct` inside `push_back`? What would happen if it used the prefix increment?**
 
-Because postfix will ensure that first element will be placed at first vacant place(where `m_elements` points to) and last element will be placed at last vacant place(one element before `m_first_free` points to).
+Because postfix will ensure that first element will be placed at first vacant place(where `m_elements` points to).
 
-If we use prefix increment without any more modifications, then first element will be placed at second vacant place(one element after `m_elements` points to) and last element will be placed at one element after last vacant place(where `m_first_free` points to), which is definitely illegal.
+If we use prefix increment without any more modifications, then first element will be placed at second vacant place(one element after `m_elements` points to). Therefore, one vacant place is ignored which may cause issues later.
+
+## Exercise 13.42
+
+**Test your `StrVec` class by using it in place of the `vector<string>` in your `TextQuery` and `QueryResult` classes (§ 12.3, p. 484).**
+
+`StrVec` class is same as Exercise 13.40
+
+[13.42 TextQuery Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.42%20TextQuery.hpp)
+
+[13.42 TextQuery Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.42%20TextQuery.cpp)
+
+[13.42 QueryResult Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.42%20QueryResult.hpp)
+
+[13.42 QueryResult Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.42%20QueryResult.cpp)
+
+[13.42 Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.42%20main.cpp)
