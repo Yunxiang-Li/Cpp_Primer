@@ -483,3 +483,11 @@ See Exercise 13.37
 [13.40 StrVec Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.40%20StrVec.hpp)
 
 [13.40 StrVec Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.40%20StrVec.cpp)
+
+## Exercise 13.41
+
+**Why did we use postfix increment in the call to `construct` inside `push_back`? What would happen if it used the prefix increment?**
+
+Because postfix will ensure that first element will be placed at first vacant place(where `m_elements` points to) and last element will be placed at last vacant place(one element before `m_first_free` points to).
+
+If we use prefix increment without any more modifications, then first element will be placed at second vacant place(one element after `m_elements` points to) and last element will be placed at one element after last vacant place(where `m_first_free` points to), which is definitely illegal.
