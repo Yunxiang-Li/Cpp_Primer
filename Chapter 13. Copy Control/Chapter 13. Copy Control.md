@@ -507,3 +507,29 @@ If we use prefix increment without any more modifications, then first element wi
 [13.42 QueryResult Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.42%20QueryResult.cpp)
 
 [13.42 Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.42%20main.cpp)
+
+## Exercise 13.43
+
+**Rewrite the `free` member to use `for_each` and a lambda (§ 10.3.2, p. 388) in place of the `for` loop to destroy the elements. Which implementation do you prefer, and why?**
+
+Old version(`for` loop):
+```cpp
+void StrVec::m_free() {
+    if (m_elements) {
+        for (std::string* ptr = m_first_free; ptr != m_elements;)
+            alloc.destroy(--ptr);
+        alloc.deallocate(m_elements, m_capacity());
+    }
+}
+```
+
+New version(`for_each` and a lambda):
+```cpp
+void StrVec::m_free() {
+    if (m_elements)
+        std::for_each(m_elements, m_first_free, [](std::string& eachStr){alloc.destroy(&eachStr);});
+    alloc.deallocate(m_elements, m_capacity());
+}
+```
+
+I prefer new version since we do not need to care about prefix/postfix and order issues.
