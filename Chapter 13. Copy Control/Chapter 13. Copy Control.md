@@ -460,10 +460,18 @@ See Exercise 13.37
 
 [13.37 Folder Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.37%20Folder.cpp)
 
-[13.37 Main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/10.37%20main.cpp)
+[13.37 Main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.37%20main.cpp)
 
 ## Exercise 13.38
 
 **We did not use copy and swap to define the `Message` assignment operator. Why do you suppose this is so?**
 
 `Message` class's custom `swap` function needs to remove both `Message` object's old binding relations and then add both `Message` object's new binding relations, which is nearly twice inefficient as normal copy assignment operator function. Therefore, there is no need to combine `copy` and `swap` together to define the `Message` class's copy assignment operator.
+
+## Exercise 13.39
+
+**Write your own version of `StrVec`, including versions of `reserve`, `capacity` (§ 9.4, p. 356), and `resize` (§ 9.3.5, p. 352).**
+
+[13.39 StrVec Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.39%20StrVec.hpp)
+
+[13.39 StrVecSource](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.39%20StrVec.cpp)
