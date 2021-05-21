@@ -475,3 +475,11 @@ See Exercise 13.37
 [13.39 StrVec Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.39%20StrVec.hpp)
 
 [13.39 StrVec Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.39%20StrVec.cpp)
+
+## Exercise 13.40
+
+**Add a constructor that takes an `initializer_list<string>` to your `StrVec` class.**
+
+[13.40 StrVec Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.40%20StrVec.hpp)
+
+[13.40 StrVec Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.40%20StrVec.cpp)
