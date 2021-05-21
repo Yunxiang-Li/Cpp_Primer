@@ -533,3 +533,11 @@ void StrVec::m_free() {
 ```
 
 I prefer new version since we do not need to care about prefix/postfix and order issues.
+
+## Exercise 13.44
+
+**Write a class named `String` that is a simplified version of the library `string` class. Your class should have at least a default constructor and a constructor that takes a pointer to a C-style string. Use an `allocator` to allocate memory that your `String` class uses.**
+
+[13.44 String Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.44%20String.hpp)
+
+[13.44 String Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.44%20String.cpp)
