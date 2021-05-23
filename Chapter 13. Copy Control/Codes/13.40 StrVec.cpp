@@ -106,3 +106,5 @@ void StrVec::m_alloc_n_move(size_t newCap) {
     m_first_free = newPtr;
     m_cap = m_elements + newCap;
 }
+
+std::allocator<std::string>StrVec::alloc;
