@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <iostream>
 #include "String.hpp"
 
 String::String(const char* charPtr) {
@@ -17,7 +18,7 @@ String& String::operator=(const String& str) {
     m_free();
     m_elements = pair.first;
     m_first_free = pair.second;
-
+    std::cout << "copy assignment is called!" << std::endl;
     return *this;
 }
 
@@ -52,3 +53,5 @@ void String::m_free() {
     if (m_elements)
         std::for_each(m_elements, m_first_free, [](char& charPtr){alloc.destroy(&charPtr);});
 }
+
+std::allocator<char> String::alloc;
