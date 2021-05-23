@@ -53,3 +53,5 @@ void String::m_free() {
     if (m_elements)
         std::for_each(m_elements, m_first_free, [](char& charPtr){alloc.destroy(&charPtr);});
 }
+
+std::allocator<char> String::alloc;
