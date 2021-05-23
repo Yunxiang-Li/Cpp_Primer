@@ -541,3 +541,45 @@ I prefer new version since we do not need to care about prefix/postfix and order
 [13.44 String Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.44%20String.hpp)
 
 [13.44 String Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.44%20String.cpp)
+
+## Exercise 13.45
+
+**Distinguish between an rvalue reference and an lvalue reference.**
+
+lvalue reference: reference that can bind to an lvalue. (Regular reference)
+
+rvalue reference: reference to an object that is about to be destroyed.
+
+I usually memorize lvalue as having address and rvalue as not having address.
+
+## Exercise 13.46
+
+**Which kind of reference can be bound to the following initializers?**
+
+```cpp
+int f();
+
+vector<int> vi(100);
+
+int? r1 = f(); 
+
+int& r2 = vi[0];
+
+int& r3 = r1;
+
+int&& r4 = vi[0] * f();
+```
+
+```cpp
+// f() return a temporary integer which is a rvalue.
+int&& r1 = f(); 
+
+// Subscript result is a lvalue.
+int& r2 = vi[0];
+
+// A non-temporary variable is a lvalue.
+int& r3 = r1;
+
+// The result of an expression multiplication is a temporary integer which is a rvalue
+int&& r4 = vi[0] * f();
+```
