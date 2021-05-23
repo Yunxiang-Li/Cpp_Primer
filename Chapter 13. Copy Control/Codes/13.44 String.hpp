@@ -9,7 +9,7 @@ class String {
  public:
     String() : String("") {}
     explicit String(const char*);
-    explicit String(const String&);
+    String(const String&);
     String& operator=(const String&);
     ~String();
     const char* m_c_str() const;
