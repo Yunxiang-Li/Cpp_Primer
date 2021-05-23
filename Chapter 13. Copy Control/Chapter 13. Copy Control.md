@@ -590,6 +590,14 @@ int&& r4 = vi[0] * f();
 
 **Give the copy constructor and copy-assignment operator in your `String` class from exercise 13.44 in § 13.5 (p. 531) a statement that prints a message each time the function is executed.**
 
-[13.47 String Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.44%20String.hpp)
+[13.47 String Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.44%20String.hpp)(Same as Exercise 13.44)
 
 [13.47 String Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.47%20String.cpp)
+
+## Exercise 13.48
+
+**Define a `vector<String>` and call `push_back` several times on that `vector`. Run your program and see how often `Strings` are copied.**
+
+`String` class is same as Exercise 13.47
+
+[13.48 Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.48%20main.cpp)
