@@ -38,6 +38,4 @@ class StrVec {
     static std::allocator<std::string> alloc;
 };
 
-//std::allocator<std::string>StrVec::alloc;
-
 #endif
