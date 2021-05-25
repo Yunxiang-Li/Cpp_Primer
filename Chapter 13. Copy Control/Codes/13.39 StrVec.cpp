@@ -1,6 +1,8 @@
 #include "StrVec.hpp"
 #include <memory>
 
+std::allocator<std::string>StrVec::alloc;
+
 StrVec::StrVec(const StrVec& str_vec) {
     std::pair<std::string*, std::string*> newPair = m_alloc_n_copy(str_vec.m_begin(), str_vec.m_end());
     m_elements = newPair.first;
