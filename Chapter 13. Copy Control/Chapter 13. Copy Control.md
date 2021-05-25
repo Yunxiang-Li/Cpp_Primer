@@ -601,3 +601,15 @@ int&& r4 = vi[0] * f();
 `String` class is same as Exercise 13.47
 
 [13.48 Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.48%20main.cpp)
+
+## Exercise 13.49
+
+**Add a move constructor and move-assignment operator to your `StrVec`, `String`, and `Message` classes.**
+
+`StrVec` : [Header]() | [Source]()
+
+`String` : [Header]() | [Source]()
+
+`Message` : [Header]() | [Source]()
+
+`Folder` : Same as Exercise 13.37
