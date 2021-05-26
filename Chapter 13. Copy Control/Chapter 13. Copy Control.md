@@ -613,3 +613,13 @@ int&& r4 = vi[0] * f();
 `Folder` : [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20Folder.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20Folder.cpp)
 
 `Message` : [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20Message.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20Message.cpp)
+
+## Exercise 13.50
+
+**Put print statements in the move operations in your `String` class and rerun the program from exercise 13.48 in § 13.6.1 (p. 534) that used a `vector<String>` to see when the copies are avoided.**
+
+Test program: same as exercise 13.48
+
+My program avoids copy constructor once(Use move constructor instead) and copy assignment once(Use move assignment instead).
+
+`StrVec` : Header is same as exercise 13.49 | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.50%20String.cpp)
