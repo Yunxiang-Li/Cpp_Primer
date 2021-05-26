@@ -27,7 +27,7 @@ StrVec& StrVec::operator=(const StrVec& str_vec) {
     return *this;
 }
 
-StrVec::StrVec(StrVec&& str_vec) noexcept : m_elements(str_vec.m_elements), m_first_free(str_vec.m_first_free),
+StrVec::StrVec(StrVec&& str_vec) noexcept : m_elements(std::move(str_vec.m_elements)), m_first_free(std::move(str_vec.m_first_free)),
 m_cap(str_vec.m_cap) {
     str_vec.m_elements = str_vec.m_first_free = str_vec.m_cap = nullptr;
 }
@@ -35,9 +35,9 @@ m_cap(str_vec.m_cap) {
 StrVec& StrVec::operator=(StrVec&& str_vec) noexcept {
     if (this != &str_vec) {
         m_free();
-        m_elements = str_vec.m_elements;
-        m_first_free = str_vec.m_first_free;
-        m_cap = str_vec.m_cap;
+        m_elements = std::move(str_vec.m_elements);
+        m_first_free = std::move(str_vec.m_first_free);
+        m_cap = std::move(str_vec.m_cap);
         str_vec.m_elements = str_vec.m_first_free = str_vec.m_cap = nullptr;
     }
     return *this;
