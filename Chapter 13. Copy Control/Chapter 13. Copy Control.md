@@ -675,3 +675,19 @@ Therefore we should implement two assignment operators: `HasPtr& operator=(const
 [13.53 HasPtr Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.53%20HasPtr.hpp)
 
 [13.53 HasPtr Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.53%20HasPtr.cpp)
+
+## Exercise 13.54
+
+**What would happen if we defined a `HasPtr` move-assignment operator but did not change the copy-and-swap operator? Write code to test your answer.**
+
+Here is my result:
+
+```cpp
+error: ambiguous overload for 'operator=' (operand types are 'HasPtr' and 'std::remove_reference<HasPtr&>::type' {aka 'HasPtr'}) hp1 = std::move(hp4);  // Error, `operator=` is ambiguous.
+```
+
+[13.54 HasPtr Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.54%20HasPtr.hpp)
+
+[13.54 HasPtr Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.54%20HasPtr.cpp)
+
+[Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.54%20main.cpp)
