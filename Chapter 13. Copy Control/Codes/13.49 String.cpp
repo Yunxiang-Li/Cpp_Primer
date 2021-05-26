@@ -21,15 +21,16 @@ String& String::operator=(const String& str) {
     return *this;
 }
 
-String::String(String&& str) noexcept : m_elements(str.m_elements), m_first_free(str.m_first_free) {
+String::String(String&& str) noexcept : m_elements(std::move(str.m_elements)), m_first_free(std::move(str.m_first_free))
+{
     str.m_elements = str.m_first_free = nullptr;
 }
 
 String & String::operator=(String&& str) noexcept {
     if (this != &str) {
         m_free();
-        m_elements = str.m_elements;
-        m_first_free = str.m_first_free;
+        m_elements = std::move(str.m_elements);
+        m_first_free = std::move(str.m_first_free);
         str.m_elements = str.m_first_free = nullptr;
     }
     return *this;
