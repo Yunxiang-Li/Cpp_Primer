@@ -1,5 +1,4 @@
 #include <algorithm>
-#include <iostream>
 #include "String.hpp"
 
 String::String(const char* charPtr) {
@@ -21,7 +20,7 @@ String& String::operator=(const String& str) {
     return *this;
 }
 
-String::String(String&& str) noexcept : m_elements(std::move(str.m_elements)), m_first_free(std::move(str.m_first_free))
+String::String(String&& str) noexcept : m_elements(str.m_elements), m_first_free(str.m_first_free)
 {
     str.m_elements = str.m_first_free = nullptr;
 }
@@ -29,8 +28,8 @@ String::String(String&& str) noexcept : m_elements(std::move(str.m_elements)), m
 String & String::operator=(String&& str) noexcept {
     if (this != &str) {
         m_free();
-        m_elements = std::move(str.m_elements);
-        m_first_free = std::move(str.m_first_free);
+        m_elements = str.m_elements;
+        m_first_free = str.m_first_free;
         str.m_elements = str.m_first_free = nullptr;
     }
     return *this;
@@ -53,7 +52,7 @@ size_t String::m_length() const {
 }
 
 std::pair<char *, char *> String::m_alloc_n_copy(const char* begin, const char* end) {
-    char* beginPtr = alloc.allocate(end - begin, 0);
+    char* beginPtr = alloc.allocate(end - begin, nullptr);
     return {beginPtr, std::uninitialized_copy(begin, end, beginPtr)};
 }
 
