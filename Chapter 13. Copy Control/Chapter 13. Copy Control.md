@@ -618,8 +618,21 @@ int&& r4 = vi[0] * f();
 
 **Put print statements in the move operations in your `String` class and rerun the program from exercise 13.48 in § 13.6.1 (p. 534) that used a `vector<String>` to see when the copies are avoided.**
 
-Test program: same as exercise 13.48
-
 My program avoids copy constructor once(Use move constructor instead) and copy assignment once(Use move assignment instead).
 
+Test program: same as exercise 13.48
+
 `StrVec` : Header is same as exercise 13.49 | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.50%20String.cpp)
+
+## Exercise 13.51
+
+**Although `unique_ptrs` cannot be copied, in § 12.1.5 (p. 471) we wrote a `clone` function that returned a `unique_ptr` by value. Explain why that function is legal and how it works.**
+
+```cpp
+unique_ptr<int> clone(int p) {
+    // ok: explicitly create a unique_ptr<int> from int*
+    return unique_ptr<int>(new int(p));
+}
+```
+
+Because the result of `clone` is a rvalue thus it uses the move-assignment operator instead of copy-assignment operator. Therefore, it is legal and can work.
