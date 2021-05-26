@@ -12,6 +12,7 @@ class String {
     String(const String&);
     String& operator=(const String&);
     ~String();
+ 
     const char* m_c_str() const;
     size_t m_size() const;
     size_t m_length() const;
