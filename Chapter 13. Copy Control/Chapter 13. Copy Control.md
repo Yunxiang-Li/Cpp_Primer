@@ -606,13 +606,13 @@ int&& r4 = vi[0] * f();
 
 **Add a move constructor and move-assignment operator to your `StrVec`, `String`, and `Message` classes.**
 
-`StrVec` : [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20StrVec.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20StrVec.cpp)
+`StrVec` : [13.49 StrVec Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20StrVec.hpp) | [13.49 StrVec Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20StrVec.cpp)
 
-`String` : [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20String.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20String.cpp)
+`String` : [13.49 String Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20String.hpp) | [13.49 String Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20String.cpp)
 
-`Folder` : [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20Folder.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20Folder.cpp)
+`Folder` : [13.49 Folder Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20Folder.hpp) | [13.49 Folder Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20Folder.cpp)
 
-`Message` : [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20Message.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20Message.cpp)
+`Message` : [13.49 Message Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20Message.hpp) | [13.49 Message Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.49%20Message.cpp)
 
 ## Exercise 13.50
 
@@ -622,7 +622,7 @@ My program avoids copy constructor once(Use move constructor instead) and copy a
 
 Test program: same as exercise 13.48
 
-`StrVec` : Header is same as exercise 13.49 | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.50%20String.cpp)
+`StrVec` : Header is same as exercise 13.49 | [13.50 StrVec Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.50%20String.cpp)
 
 ## Exercise 13.51
 
@@ -636,3 +636,42 @@ unique_ptr<int> clone(int p) {
 ```
 
 Because the result of `clone` is a rvalue thus it uses the move-assignment operator instead of copy-assignment operator. Therefore, it is legal and can work.
+
+## Exercise 13.52
+
+**Explain in detail what happens in the assignments of the `HasPtr` objects on page 541. In particular, describe step by step what happens to values of `hp`, `hp2`, and of the `rhs` parameter in the `HasPtr` assignment operator.**
+
+```cpp
+class HasPtr {
+  public:
+    // added move constructor    
+    HasPtr(HasPtr &&p) noexcept : ps(p.ps), i(p.i) {p.ps = 0;}
+    // assignment operator is both the move- and copy-assignment operator
+    HasPtr& operator=(HasPtr rhs){
+      swap(*this, rhs);
+      return *this;
+    }   
+    // other members as in § 13.2.1 (p. 511)
+};
+
+hp = hp2; //  hp2 is an lvalue;copy constructor used to copy hp2
+hp = std::move(hp2); // move constructor moves hp2
+```
+
+The assignment operator has a nonreference parameter `rhs`, which means the parameter is copy initialized. Depending on the type of the argument, copy initialization uses either the copy constructor or the move constructor. lvalues are copied and rvalues are moved. 
+
+`hp = hp2;` : the copy-assignment operator is called. First, `hp2`'s(`rhs`'s) data members are copyed and stored in an intermediate object. Then, `hp2`'s(`rhs`'s) data members are deleted. Finally, the copyed data members in the intermediate object are assigned to `hp`.
+
+`hp = std::move(hp2);` : the move-assignment operator is called. First, `std::move()` return the rvalue reference of `hp2`. Second, the data members of the `hp2`(`rhs`) are moved to `hp1`. Finally, `hp2`(`rhs`) is in a valid state which can be then safely used or destroyed .
+
+## Exercise 13.53
+
+**As a matter of low-level efficiency, the `HasPtr` assignment operator is not ideal. Explain why. Implement a copy-assignment and move-assignment operator for `HasPtr` and compare the operations executed in your new move-assignment operator versus the copy-and-swap version.**
+
+According to exercise 13.52, if we want to use a single assignment operator to solve both situations: `HasPtr& operator=(HasPtr rhs);`. No matter the copy-assignment operator is called or the copy-assignment operator is called, argument `rhs` is always passed by value(copy initialized) which is less efficient if `HasPtr` is very large and has many members to copy.
+
+Therefore we should implement two assignment operators: `HasPtr& operator=(const HasPtr& rhs)` for copy assignment and `HasPtr& operator=(const HasPtr& rhs);` for move assignment
+
+[13.53 HasPtr Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.53%20HasPtr.hpp)
+
+[13.53 HasPtr Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.53%20HasPtr.cpp)
