@@ -683,7 +683,9 @@ Therefore we should implement two assignment operators: `HasPtr& operator=(const
 Here is my result:
 
 ```cpp
-error: ambiguous overload for 'operator=' (operand types are 'HasPtr' and 'std::remove_reference<HasPtr&>::type' {aka 'HasPtr'}) hp1 = std::move(hp4);  // Error, `operator=` is ambiguous.
+// Error, `operator=` is ambiguous.
+error: ambiguous overload for 'operator=' 
+(operand types are 'HasPtr' and 'std::remove_reference<HasPtr&>::type' {aka 'HasPtr'}) hp1 = std::move(hp4);
 ```
 
 [13.54 HasPtr Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.54%20HasPtr.hpp)
