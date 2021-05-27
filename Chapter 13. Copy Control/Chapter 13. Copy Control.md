@@ -693,3 +693,11 @@ error: ambiguous overload for 'operator='
 [13.54 HasPtr Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.54%20HasPtr.cpp)
 
 [Test](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.54%20main.cpp)
+
+## Exercise 13.55
+
+**Add an rvalue reference version of `push_back` to your `StrBlob`.**
+
+[13.55 StrBlob Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.55%20StrBlob.hpp)
+
+[13.55 StrBlob Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.55%20StrBlob.cpp)
