@@ -701,3 +701,36 @@ error: ambiguous overload for 'operator='
 [13.55 StrBlob Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.55%20StrBlob.hpp)
 
 [13.55 StrBlob Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.55%20StrBlob.cpp)
+
+## Exercise 13.56
+
+**What would happen if we defined `sorted` as:**
+
+```cpp
+Foo Foo::sorted() const & {
+  Foo ret(*this);
+  return ret.sorted();
+}
+```
+
+Local `Foo` object `ret` here is a lvalue thus `ret.sorted` will call `Foo sorted() const &` instead of `Foo sorted() &&`. Therefore, the result will be a forever dead loop.
+
+## Exercise 13.57
+
+**What would happen if we defined `sorted` as:**
+
+```cpp
+Foo Foo::sorted() const & { return Foo(*this).sorted(); }
+```
+
+`Foo(*this)` is a rvalue thus `Foo(*this).sorted()` will call `Foo sorted() &&` instead of `Foo sorted() const &`. We create a temporary `Foo` object as current `Foo` object's copy and run move version of `sorted` function on it to get a new lvalue result.
+
+## Exercise 13.58
+
+**Write versions of class `Foo` with print statements in their `sorted` functions to test your answers to the previous two exercises.**
+
+[13.58 Foo Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.58%20Foo.hpp)
+
+[13.58 Foo Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.58%20Foo.cpp)
+
+[13.58 Main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2013.%20Copy%20Control/Codes/13.58%20main.cpp)
