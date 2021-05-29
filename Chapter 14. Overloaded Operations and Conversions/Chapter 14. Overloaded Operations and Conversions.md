@@ -48,22 +48,6 @@ Solution:
 
 **Explain how to decide whether the following should be class members:**
 
-(a) %
-
-(b) %=
-
-(c) ++
-
-(d) ->
-
-(e) <<
-
-(f) &&
-
-(g) ==
-
-(h) ()
-
 Solution:
 
 (a) `%`: symmetric operator thus non-member operator.
