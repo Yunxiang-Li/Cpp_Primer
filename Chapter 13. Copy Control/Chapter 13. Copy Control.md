@@ -1,4 +1,4 @@
-# Chapter 13. Copy Control.md
+# Chapter 13. Copy Control
 
 ## Exercise 13.1
 
