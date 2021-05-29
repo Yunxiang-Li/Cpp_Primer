@@ -65,3 +65,21 @@ Solution:
 (g) `==`: symmetric operator thus non-member operator. 
 
 (h) `()`: must be member operator.
+
+## Exercise 14.4
+
+**In exercise 7.40 from § 7.5.1 (p. 291) you wrote a sketch of one of the following classes. Decide what, if any, overloaded operators your class should provide.**
+
+(a) Book
+
+(b) Date
+
+(c) Employee
+
+(d) Vehicle
+
+(e) Object
+
+(f) Tree
+
+For instance, for `Book` class, `==` and `!=` operators should be overloaded at least. We may also want to overload `>>` and `<<` operators.
