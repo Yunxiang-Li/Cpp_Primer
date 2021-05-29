@@ -58,7 +58,7 @@ Solution:
 
 (d) `->`: must be member operator.
 
-(e) `<<`: non-member operator since we're not allowed to modify ostream.
+(e) `<<`: non-member operator is a better choice since we're not allowed to modify ostream.
 
 (f) `&&`: symmetric operator thus non-member operator. We should normally avoid overloading `&&` operator.
 
