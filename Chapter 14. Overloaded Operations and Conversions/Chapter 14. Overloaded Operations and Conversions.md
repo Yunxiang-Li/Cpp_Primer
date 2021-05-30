@@ -58,7 +58,7 @@ Solution:
 
 (d) `->`: must be member operator.
 
-(e) `<<`: non-member operator is a better choice since we're not allowed to modify ostream.
+(e) `<<`: If member operator then relative class must have to be members of `ostream`. However, we cannot add members to `std::ostream` class.
 
 (f) `&&`: symmetric operator thus non-member operator. We should normally avoid overloading `&&` operator.
 
@@ -83,3 +83,17 @@ Solution:
 (f) Tree
 
 For instance, for `Book` class, `==` and `!=` operators should be overloaded at least. We may also want to overload `>>` and `<<` operators.
+
+## Exercise 14.6
+
+**Define an output operator for your `Sales_data` class.**
+
+Same as exercise 14.2.
+
+## Exercise 14.7
+
+**Define an output operator for you `String` class you wrote for the exercises in § 13.5 (p. 531).**
+
+[14.7 String Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.7%20String.hpp)
+
+[14.7 String Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.7%20String.cpp)
