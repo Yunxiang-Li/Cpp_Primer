@@ -97,3 +97,11 @@ Same as exercise 14.2.
 [14.7 String Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.7%20String.hpp)
 
 [14.7 String Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.7%20String.cpp)
+
+## Exercise 14.8
+
+**Define an output operator for the class you chose in exercise 7.40 from § 7.5.1 (p. 291).**
+
+[14.8 Book Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.8%20Book.hpp)
+
+[14.8 Book Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.8%20Book.cpp)
