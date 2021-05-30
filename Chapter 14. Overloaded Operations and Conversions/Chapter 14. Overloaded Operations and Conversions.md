@@ -105,3 +105,39 @@ Same as exercise 14.2.
 [14.8 Book Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.8%20Book.hpp)
 
 [14.8 Book Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.8%20Book.cpp)
+
+## Exercise 14.9
+
+**Define an input operator for your `Sales_data` class.**
+
+Same as exercise 14.2.
+
+## Exercise 14.10
+
+**Describe the behavior of the `Sales_data` input operator if given the following input:**
+
+(a) 0-201-99999-9 10 24.95
+
+(b) 10 24.95 0-210-99999-9
+
+Result:
+
+(a) correct format.
+
+(b) illegal input.
+
+## Exercise 14.11
+
+**What, if anything, is wrong with the following `Sales_data` input operator? What would happen if we gave this operator the data in the previous exercise?**
+
+```cpp
+istream& operator>>(istream& in, Sales_data& s)
+{
+  double price;
+  in >> s.bookNo >> s.units_sold >> price;
+  s.revenue = s.units_sold * price;
+  return in;
+}
+```
+
+Codes above do not have any input checks thus when user input is in wrong format, there will be no warnings and may cause issues.
