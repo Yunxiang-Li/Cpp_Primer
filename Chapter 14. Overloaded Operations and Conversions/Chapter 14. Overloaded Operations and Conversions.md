@@ -58,7 +58,7 @@ Solution:
 
 (d) `->`: must be member operator.
 
-(e) `<<`: If member operator then relative class must have to be members of `ostream`. However, we cannot add members to `std::ostream` class.
+(e) `<<`: If member operator then relative class must have to be members of `ostream`. However, we cannot add members to `std::ostream` class. Therefore non-member operator.
 
 (f) `&&`: symmetric operator thus non-member operator. We should normally avoid overloading `&&` operator.
 
