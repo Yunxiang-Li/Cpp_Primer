@@ -141,3 +141,9 @@ istream& operator>>(istream& in, Sales_data& s)
 ```
 
 Codes above do not have any input checks thus when user input is in wrong format, there will be no warnings and may cause issues.
+
+## Exercise 14.12
+
+**Define an input operator for the class you used in exercise 7.40 from § 7.5.1 (p. 291). Be sure the operator handles input errors.**
+
+Same as exercise 14.8.
