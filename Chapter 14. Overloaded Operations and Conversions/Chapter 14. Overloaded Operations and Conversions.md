@@ -193,3 +193,9 @@ Same as exercise 14.15.
 `StrVec`: [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.18%20StrVec.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.18%20StrVec.cpp)
 
 `String`: [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.18%20String.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.18%20String.cpp)
+
+## Exercise 14.19
+
+**Should the class you chose for exercise 7.40 from § 7.5.1(p. 291) define the relational operators? If so, implement them. If not, explain why not.**
+
+Same as exercise 14.15.
