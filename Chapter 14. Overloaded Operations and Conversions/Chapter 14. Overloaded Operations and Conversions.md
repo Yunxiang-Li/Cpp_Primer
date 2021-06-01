@@ -167,3 +167,13 @@ If we instead call `operator+` to help us define `opeator+=`, then we have to us
 [14.15 Book Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.15%20Book.hpp)
 
 [14.15 Book Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.15%20Book.cpp)
+
+## Exercise 14.16
+
+**Define equality and inequality operators for your `StrBlob`(§ 12.1.1, p. 456), `StrBlobPtr` (§ 12.1.6, p. 474), `StrVec` (§ 13.5, p.526), and `String` (§ 13.5, p. 531) classes.**
+
+`StrBlob` and `ConstStrBlobPtr`: [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.16%20StrBlob.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.16%20StrBlob.cpp)
+
+StrVec: [Header]() | [Source]()
+
+String: [Header]() | [Source]()
