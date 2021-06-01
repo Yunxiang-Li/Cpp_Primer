@@ -10,8 +10,11 @@ class Book {
   friend bool operator!=(const Book&, const Book&);
 
   friend Book operator+(const Book&, const Book&);
+
   friend bool operator<(const Book&, const Book&);
   friend bool operator>(const Book&, const Book&);
+  friend bool operator<=(const Book&, const Book&);
+  friend bool operator>=(const Book&, const Book&);
 
  public:
   Book() = default;
