@@ -147,3 +147,23 @@ Codes above do not have any input checks thus when user input is in wrong format
 **Define an input operator for the class you used in exercise 7.40 from § 7.5.1 (p. 291). Be sure the operator handles input errors.**
 
 Same as exercise 14.8.
+
+## Exercise 14.13
+
+**Which other arithmetic operators (Table 4.1 (p. 139)), if any, do you think `Sales_data` ought to support? Define any you think the class should include.**
+
+I think operator `+` and compound assignment `+=` are already enough.
+
+## Exercise 14.14
+
+**Why do you think it is more efficient to define `operator+` to call `operator+=` rather than the other way around?**
+
+If we instead call `operator+` to help us define `opeator+=`, then we have to use an unnecessary temporary object as in the `operator+`'s example above.
+
+## Exercise 14.15
+
+**Should the class you chose for exercise 7.40 from § 7.5.1(p. 291) define any of the arithmetic operators? If so, implement them. If not, explain why not.**
+
+[14.15 Book Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.15%20Book.hpp)
+
+[14.15 Book Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.15%20Book.cpp)
