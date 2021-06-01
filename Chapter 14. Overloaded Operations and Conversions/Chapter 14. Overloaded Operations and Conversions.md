@@ -176,4 +176,4 @@ If we instead call `operator+` to help us define `opeator+=`, then we have to us
 
 StrVec: [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.16%20StrVec.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.16%20StrVec.cpp)
 
-String: [Header]() | [Source]()
+String: [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.16%20String.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.16%20String.cpp)
