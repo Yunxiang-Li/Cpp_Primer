@@ -44,3 +44,11 @@ bool operator<(const Book& bookOne, const Book& bookTwo) {
 bool operator>(const Book& bookOne, const Book& bookTwo) {
     return (bookTwo < bookOne);
 }
+
+bool operator<=(const Book& bookOne, const Book& bookTwo) {
+    return !(bookOne > bookTwo);
+}
+
+bool operator>=(const Book& bookOne, const Book& bookTwo) {
+    return !(bookOne < bookTwo);
+}
