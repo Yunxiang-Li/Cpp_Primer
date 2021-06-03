@@ -261,3 +261,13 @@ Disadvantage: For both functions, we have to use a temporary `Sales_data` object
 **Implement any other assignment operators your class should define. Explain which types should be used as operands and why.**
 
 Same as exercise 14.24.
+
+## Exercise 14.26
+
+**Define subscript operators for your `StrVec`, `String`, `StrBlob`, and `StrBlobPtr` classes.**
+
+`StrBlob` and `ConstStrBlobPtr`: [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.26%20StrBlob.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.26%20StrBlob.cpp)
+
+`StrVec`: [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.26%20StrVec.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.26%20StrVec.cpp)
+
+`String`: [Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.18%20String.hpp) | [Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.18%20String.cpp)
