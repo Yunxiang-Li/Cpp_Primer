@@ -254,3 +254,10 @@ Disadvantage: For both functions, we have to use a temporary `Sales_data` object
 [14.24 Date Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.24%20Date.hpp)
 
 [14.24 Date Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.24%20Date.cpp)
+
+
+## Exercise 14.25
+
+**Implement any other assignment operators your class should define. Explain which types should be used as operands and why.**
+
+Same as exercise 14.24.
