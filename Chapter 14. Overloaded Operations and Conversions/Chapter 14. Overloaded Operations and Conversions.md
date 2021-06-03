@@ -199,3 +199,42 @@ Same as exercise 14.15.
 **Should the class you chose for exercise 7.40 from § 7.5.1(p. 291) define the relational operators? If so, implement them. If not, explain why not.**
 
 Same as exercise 14.15.
+
+## Exercise 14.20
+
+**Define the addition and compound-assignment operators for your `Sales_data` class.**
+
+Same as exercise 14.2.
+
+## Exercise 14.21
+
+**Write the `Sales_data` operators so that `+` does the actual addition and `+=` calls `+`. Discuss the disadvantages of this approach compared to the way these operators were defined in § 14.3 (p. 560) and § 14.4 (p. 564).**
+
+Instead of exercise 14.2
+
+```cpp
+Sales_data& Sales_data::operator+=(const Sales_data &rhs)
+{
+    Sales_data old_data = *this;
+    *this = old_data + rhs;
+    return *this;
+}
+
+Sales_data operator+(const Sales_data &lhs, const Sales_data &rhs)
+{
+    Sales_data sum;
+    sum.units_sold = lhs.units_sold + rhs.units_sold;
+    sum.revenue = lhs.revenue + rhs.revenue;
+    return sum;
+}
+```
+
+Disadvantage: For both functions, we have to use a temporary `Sales_data` object to store the intermediate value which is not very efficient.
+
+## Exercise 14.22
+
+**Define a version of the assignment operator that can assign a `string` representing an ISBN to a `Sales_data`.**
+
+[14.22 Sales_data Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.22%20Sales_data.hpp)
+
+[14.22 Sales_data Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.22%20Sales_data.cpp)
