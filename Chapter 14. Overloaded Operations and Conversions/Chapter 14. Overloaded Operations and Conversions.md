@@ -238,3 +238,11 @@ Disadvantage: For both functions, we have to use a temporary `Sales_data` object
 [14.22 Sales_data Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.22%20Sales_data.hpp)
 
 [14.22 Sales_data Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.22%20Sales_data.cpp)
+
+## Exercise 14.23
+
+**Define an `initializer_list` assignment operator for your version of the `StrVec` class.**
+
+[14.23 StrVec Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.23%20StrVec.hpp)
+
+[14.23 StrVec Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.23%20StrVec.cpp)
