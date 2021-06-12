@@ -77,6 +77,9 @@ class ConstStrBlobPtr {
   ConstStrBlobPtr& operator++();
   ConstStrBlobPtr operator++(int);
 
+  ConstStrBlobPtr& operator--();
+  ConstStrBlobPtr operator--(int);
+
   const std::string& deref() const;
   ConstStrBlobPtr& incr();
 
