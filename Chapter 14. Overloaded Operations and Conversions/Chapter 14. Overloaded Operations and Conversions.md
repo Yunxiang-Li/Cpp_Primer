@@ -301,3 +301,17 @@ Because `++` and `--` operators will change the state of the object thus we cann
 [14.30 StrBlobPtr Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.30%20StrBlob.hpp)
 
 [14.30 StrBlobPtr Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.30%20StrBlob.cpp)
+
+## Exercise 14.31
+
+**Our `StrBlobPtr` class does not define the copy constructor, assignment operator, or a destructor. Why is that okay?**
+
+We do not need to handle any dynamic allocation thus synthesized copy constructor/assignment operator/destructor is enough.
+
+## Exercise 14.32
+
+**Define a class that holds a pointer to a `StrBlobPtr`. Define the overloaded arrow operator for that class.**
+
+[14.31 StrBlobPtrContainer Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.31%20StrBlobPtrContainer.hpp)
+
+[14.31 StrBlobPtrContainer Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.31%20StrBlobPtrContainer.cpp)
