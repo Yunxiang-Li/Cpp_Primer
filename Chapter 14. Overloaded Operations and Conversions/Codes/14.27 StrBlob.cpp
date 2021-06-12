@@ -159,3 +159,15 @@ ConstStrBlobPtr ConstStrBlobPtr::operator++(int) {
     ++ *this;
     return currPtr;
 }
+
+ConstStrBlobPtr& ConstStrBlobPtr::operator--() {
+    --m_curr;
+    check(-1, "Increment past begin of the ConstStrBlobPtr");
+    return *this;
+}
+
+ConstStrBlobPtr ConstStrBlobPtr::operator--(int) {
+    ConstStrBlobPtr currPtr = *this;
+    -- *this;
+    return currPtr;
+}
