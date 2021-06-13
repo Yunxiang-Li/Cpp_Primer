@@ -351,3 +351,13 @@ struct FunctionObject {
 The ReadStr class is the same as exercise 14.35
 
 [14.36 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.36%20main.cpp)
+
+## Exercise 14.37
+
+**Write a class that tests whether two values are equal. Use that object and the library algorithms to write a program to replace all instances of a given value in a sequence.**
+
+[14.37 EqualCheck Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.37%20EqualCheck.hpp)
+
+[14.37 EqualCheck Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.37%20EqualCheck.cpp)
+
+[14.37 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.37%20main.cpp)
