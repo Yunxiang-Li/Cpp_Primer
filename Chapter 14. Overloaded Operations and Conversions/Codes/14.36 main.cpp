@@ -16,4 +16,5 @@ int main()
     for (const std::string& eachStr : vec)
         std::cout << eachStr << '\n';
 
+    return 0;
 }
