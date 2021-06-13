@@ -385,3 +385,9 @@ The ReadStr class is the same as exercise 14.35
 **Rewrite the `biggies` function from § 10.3.2 (p. 391) to use function-object classes in place of lambdas.**
 
 [14.40 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.40%20Solution.cpp)
+
+## Exercise 14.41
+
+**Why do you suppose the new standard added lambdas? Explain when you would use a lambda and when you would write a class instead.**
+
+If we only use the function once, then we should use lambda functions since they are more convenient. If we want to use the function multiple times, then we should write a class and overload the `operator()` thus we do not need to write same lambda functions multiple times.
