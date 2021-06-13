@@ -371,3 +371,11 @@ The ReadStr class is the same as exercise 14.35
 [14.38 StringBoundTest Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.38%20StringBoundTest.cpp)
 
 [14.38 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.38%20main.cpp)
+
+## Exercise 14.39
+
+**Revise the previous program to report the count of words that are sizes 1 through 9 and 10 or more.**
+
+`StringBoundTest` class is same as exercise 14.38
+
+[14.39 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.39%20main.cpp)
