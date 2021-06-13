@@ -361,3 +361,13 @@ The ReadStr class is the same as exercise 14.35
 [14.37 EqualCheck Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.37%20EqualCheck.cpp)
 
 [14.37 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.37%20main.cpp)
+
+## Exercise 14.38
+
+**Write a class that tests whether the length of a given `string` matches a given bound. Use that object to write a program to report how many words in an input file are of sizes 1 through 10 inclusive.**
+
+[14.38 StringBoundTest Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.38%20StringBoundTest.hpp)
+
+[14.38 StringBoundTest Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.38%20StringBoundTest.cpp)
+
+[14.38 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.38%20main.cpp)
