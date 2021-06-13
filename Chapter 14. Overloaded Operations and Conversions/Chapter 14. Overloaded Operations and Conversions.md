@@ -379,3 +379,9 @@ The ReadStr class is the same as exercise 14.35
 `StringBoundTest` class is same as exercise 14.38
 
 [14.39 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.39%20main.cpp)
+
+## Exercise 14.40
+
+**Rewrite the `biggies` function from § 10.3.2 (p. 391) to use function-object classes in place of lambdas.**
+
+[14.40 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.40%20Solution.cpp)
