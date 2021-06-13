@@ -343,3 +343,11 @@ struct FunctionObject {
 [14.35 ReadStr Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.35%20ReadStr.cpp)
 
 [14.35 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.35%20main.cpp)
+
+## Exercise 14.36
+
+**Use the class from the previous exercise to read the standard input, storing each line as an element in a `vector`.**
+
+The ReadStr class is the same as exercise 14.35
+
+[14.36 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.36%20main.cpp)
