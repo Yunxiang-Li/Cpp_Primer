@@ -315,3 +315,31 @@ We do not need to handle any dynamic allocation thus synthesized copy constructo
 [14.31 StrBlobPtrContainer Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.31%20StrBlobPtrContainer.hpp)
 
 [14.31 StrBlobPtrContainer Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.31%20StrBlobPtrContainer.cpp)
+
+## Exercise 14.33
+
+**How many operands may an overloaded function-call operator take?**
+
+An overloaded operator function has the same requirement as the normal function opeator. Therefore value can be from 0 to 256.
+
+## Exercise 14.34
+
+**Define a function-object class to perform an if-then-else operation: The call operator for this class should take three parameters. It should test its first parameter and if that test succeeds, it should return its second parameter; otherwise, it should return its third parameter.**
+
+```cpp
+struct FunctionObject {
+    int operator()(bool b, int iA, int iB) {
+        return b ? iA : iB;
+    }
+};
+```
+
+## Exercise 14.35
+
+**Write a class like `PrintString` that reads a line of input from an `istream` and returns a `string` representing what was read. If the read fails, return the empty `string`.**
+
+[14.35 ReadStr Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.35%20ReadStr.hpp)
+
+[14.35 ReadStr Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.35%20ReadStr.cpp)
+
+[14.35 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.35%20main.cpp)
