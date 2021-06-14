@@ -391,3 +391,25 @@ The ReadStr class is the same as exercise 14.35
 **Why do you suppose the new standard added lambdas? Explain when you would use a lambda and when you would write a class instead.**
 
 If we only use the function once, then we should use lambda function since it is much more convenient. If we want to use the function multiple times, then we should write a class and overload the `operator()` thus we do not need to write same lambda function multiple times.
+
+## Exercise 14.42
+
+**Using library function objects and adaptors, define an expression to**
+
+(a) Count the number of values that are greater than 1024
+
+```cpp
+std::count_if(ivec.cbegin(), ivec.cend(),  std::bind(std::greater<int>(), std::placeholders::_1, 1024));
+```
+
+(b) Find the first string that is not equal to `pooh`
+
+```cpp
+std::find_if(svec.cbegin(), svec.cend(), std::bind(std::not_equal_to<std::string>(),  std::placeholders::_1, "pooh"));
+```
+
+(c) Multiply all values by 2
+
+```cpp
+std::transform(ivec.begin(), ivec.end(), ivec.begin(), std::bind(std::multiplies<int>(),  std::placeholders::_1, 2));
+```
