@@ -419,3 +419,9 @@ std::transform(ivec.begin(), ivec.end(), ivec.begin(), std::bind(std::multiplies
 **Using library function objects, determine whether a given `int` value is divisible by any element in a container of `int`s.**
 
 [14.43 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.43%20main.cpp)
+
+## Exercise 14.44
+
+**Write your own version of a simple desk calculator that can handle binary operations.**
+
+[14.44 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.44%20main.cpp)
