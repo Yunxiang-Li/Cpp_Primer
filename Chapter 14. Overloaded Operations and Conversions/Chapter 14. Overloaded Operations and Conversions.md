@@ -413,3 +413,9 @@ std::find_if(svec.cbegin(), svec.cend(), std::bind(std::not_equal_to<std::string
 ```cpp
 std::transform(ivec.begin(), ivec.end(), ivec.begin(), std::bind(std::multiplies<int>(),  std::placeholders::_1, 2));
 ```
+
+## Exercise 14.43
+
+**Using library function objects, determine whether a given `int` value is divisible by any element in a container of `int`s.**
+
+[14.43 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.43%20main.cpp)
