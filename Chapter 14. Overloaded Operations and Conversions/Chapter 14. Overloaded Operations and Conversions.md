@@ -462,3 +462,5 @@ I create a `Tree` class in exercise 7.40. It can have a conversion to `bool` acc
 ## Exercise 14.49
 
 **Regardless of whether it is a good idea to do so, define a conversion to `bool` for the class from the previous exercise.**
+
+[14.49 Solution](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.49%20Solution.hpp)
