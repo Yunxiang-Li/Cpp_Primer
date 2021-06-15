@@ -433,3 +433,11 @@ std::transform(ivec.begin(), ivec.end(), ivec.begin(), std::bind(std::multiplies
 [14.45 Sales_data Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.45%20Sales_data.hpp)
 
 [14.45 Sales_data Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.45%20Sales_data.cpp)
+
+## Exercise 14.46
+
+**Explain whether defining these `Sales_data` conversion operators is a good idea and whether they should be `explicit`.**
+
+1 It's not a good idea to do so since these conversions are ambiguous.
+
+2 They should be `explicit` to prevent implicit conversion.
