@@ -441,3 +441,24 @@ std::transform(ivec.begin(), ivec.end(), ivec.begin(), std::bind(std::multiplies
 1 It's not a good idea to do so since these conversions are ambiguous.
 
 2 They should be `explicit` to prevent implicit conversion.
+
+## Exercise 14.47
+
+**Explain the difference between these two conversion operators:**
+
+```cpp
+struct Integral {
+  operator const int(); // The conversion result will be a const integer(however const keyword here will be ignored by the compiler).
+  operator int() const; // The conversion process will not modify Integral struct's members.
+};
+```
+
+## Exercise 14.48
+
+**Determine whether the class you used in exercise 7.40 from § 7.5.1 (p. 291) should have a conversion to `bool`. If so, explain why, and explain whether the operator should be `explicit`. If not, explain why not.**
+
+I create a `Tree` class in exercise 7.40. It can have a conversion to `bool` according to requirements but it must be `explicit` to prevent implicit conversion.
+
+## Exercise 14.49
+
+**Regardless of whether it is a good idea to do so, define a conversion to `bool` for the class from the previous exercise.**
