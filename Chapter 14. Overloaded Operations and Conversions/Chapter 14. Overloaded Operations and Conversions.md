@@ -425,3 +425,11 @@ std::transform(ivec.begin(), ivec.end(), ivec.begin(), std::bind(std::multiplies
 **Write your own version of a simple desk calculator that can handle binary operations.**
 
 [14.44 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.44%20main.cpp)
+
+## Exercise 14.45
+
+**Write conversion operators to convert a `Sales_data` to `string` and to `double`. What values do you think these operators should return?**
+
+[14.45 Sales_data Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.45%20Sales_data.hpp)
+
+[14.45 Sales_data Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2014.%20Overloaded%20Operations%20and%20Conversions/Codes/14.45%20Sales_data.cpp)
