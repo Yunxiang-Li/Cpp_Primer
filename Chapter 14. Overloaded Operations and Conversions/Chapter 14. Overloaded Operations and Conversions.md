@@ -493,7 +493,7 @@ calc(dval); // which calc?
 
 `void calc(int)` is the best viable function.
 
-`LongDouble` is a class/struct defined in exercise 14.50 and we have the rank order from high to low below:
+`LongDouble` is a class/struct defined in exercise 14.50 and we have the conversion rank order from high to low below:
 
 1. exact match
 2. const conversion
@@ -502,3 +502,32 @@ calc(dval); // which calc?
 5. class-type conversion
 
 We can see that class-type conversion has the lowest rank thus `void calc(int)` is preferred than `void calc(LongDouble)`.
+
+## Exercise 14.52
+
+**Which `operator+`, if any, is selected for each of the addition expressions? List the candidate functions, the viable functions, and the type conversions on the arguments for each viable function:**
+
+```cpp
+struct LongDouble {
+  // member operator+ for illustration purposes; + is usually a nonmember
+  LongDouble operator+(const SmallInt&);
+  // other members as in § 14.9.2 (p. 587)
+};
+LongDouble operator+(LongDouble&, double);
+SmallInt si;
+LongDouble ld;
+ld = si + ld; 
+ld = ld + si;
+```
+
+For `si + ld`, only built-int `operator+` is matched. However, both `int + double` and `int + float` of built-in `operator+` are equally viable. Therefore `si + ld` is ambiguous.
+
+For `ld + si`, both `LongDouble operator+(const SmallInt&)` and `LongDouble operator+(LongDouble&, double)` are viable. When it comes to `LongDouble operator+(const SmallInt&)`, compiler needs to convert `si` to an integer first and then a const integer(a const conversion here), For `LongDouble operator+(LongDouble&, double)`, compiler needs to convert `si` to an integer first and then a double(an arithmetic conversion here). According to the conversion rank order from high to low below:
+
+1. exact match
+2. const conversion
+3. promotion
+4. arithmetic or pointer conversion
+5. class-type conversion
+
+const conversion has a higher rank than the arithmetic conversion thus `LongDouble operator+(const SmallInt&)` will be preferred.
