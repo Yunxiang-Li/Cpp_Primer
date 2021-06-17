@@ -482,5 +482,23 @@ float ex2 = ldObj; // Legal, operator float() conversion function will be called
 
 ## Exercise 14.51
 
-**Show the conversion sequences (if any) needed to call each version of `calc` and explain why the best viable function is selected.
-**
+**Show the conversion sequences (if any) needed to call each version of `calc` and explain why the best viable function is selected.**
+
+```cpp
+void calc(int);
+void calc(LongDouble);
+double dval;
+calc(dval); // which calc?
+```
+
+`void calc(int)` is the best viable function.
+
+`LongDouble` is a class/struct defined in exercise 14.50 and we have the rank order from high to low below:
+
+1. exact match
+2. const conversion
+3. promotion
+4. arithmetic or pointer conversion
+5. class-type conversion
+
+We can see that class-type conversion has the lowest rank thus `void calc(int)` is preferred than `void calc(LongDouble)`.
