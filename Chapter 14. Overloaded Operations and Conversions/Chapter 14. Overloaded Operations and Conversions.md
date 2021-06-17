@@ -531,3 +531,26 @@ For `ld + si`, both `LongDouble operator+(const SmallInt&)` and `LongDouble oper
 5. class-type conversion
 
 const conversion has a higher rank than the arithmetic conversion thus `LongDouble operator+(const SmallInt&)` will be preferred.
+
+## Exercise 14.53
+
+**Given the definition of `SmallInt` on page 588, determine whether the following addition expression is legal. If so, what addition operator is used? If not, how might you change the code to make it legal?**
+
+```cpp
+SmallInt s1;
+double d = s1 + 3.14;
+```
+
+`double d = s1 + 3.14;` is ambiguous since `s1` can be converted to an integer or `3.14` can be converted to a SmallInt object. Both conversions are equally viable. To fix it, we can modify it to:
+
+```cpp
+SmallInt s1;
+double d = s1 + SmallInt(3.14);
+```
+
+or 
+
+```cpp
+SmallInt s1;
+double d = std::static_cast<int>(s1) + 3.14;
+```
