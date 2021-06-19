@@ -15,6 +15,7 @@ In particular base classes ordinarily should define a virtual destructor, even i
 base class members:
 
 `private`: Only base class itself and its friends can access.
+
 `protected`: Base class itself, its friends and all derived classes can access.
 
 ## Exercise 15.3
