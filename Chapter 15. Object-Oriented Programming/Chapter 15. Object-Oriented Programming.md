@@ -34,5 +34,16 @@ base class members:
 class Base { ... };
 (a) class Derived : public Derived { ... }; // Incorrect, a class cannot inherit itself.
 (b) class Derived : private Base { ... }; // Correct.
-(c) class Derived : public Base; // Incorrect, a derived class is declared like any other class. The declaration should only contain the class name.
+// Incorrect, a derived class is declared like any other class. The declaration should only contain the class name.
+(c) class Derived : public Base; 
 ```
+
+## Exercise 15.5
+
+**Define your own version of the `Bulk_quote` class.**
+
+`Quote` class is same as exercise 15.3.
+
+[15.5 Bulk_quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.5%20Bulk_quote.hpp)
+
+[15.5 Bulk_quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.5%20Bulk_quote.cpp)
