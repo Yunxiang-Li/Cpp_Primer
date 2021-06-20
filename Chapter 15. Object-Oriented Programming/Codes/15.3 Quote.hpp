@@ -21,7 +21,7 @@ class Quote {
   double mPrice;
 };
 
-double printTotal(std::ostream& os, const Quote& quote, size_t n) {
+static double printTotal(std::ostream& os, const Quote& quote, size_t n) {
     double res = quote.net_price(n);
     os << "ISBN: " << quote.isbn() << " # sold: " << n << " total due: " << res << '\n';
 
@@ -29,4 +29,3 @@ double printTotal(std::ostream& os, const Quote& quote, size_t n) {
 }
 
 #endif
-
