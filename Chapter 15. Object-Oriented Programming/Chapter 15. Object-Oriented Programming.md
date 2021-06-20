@@ -25,3 +25,14 @@ base class members:
 [15.3 Quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.3%20Quote.hpp)
 
 [15.3 Quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.3%20Quote.cpp)
+
+## Exercise 15.4
+
+**Which of the following declarations, if any, are incorrect? Explain why.**
+
+```cpp
+class Base { ... };
+(a) class Derived : public Derived { ... }; // Incorrect, a class cannot inherit itself.
+(b) class Derived : private Base { ... }; // Correct.
+(c) class Derived : public Base; // Incorrect, a derived class is declared like any other class. The declaration should only contain the class name.
+```
