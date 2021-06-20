@@ -47,3 +47,9 @@ class Base { ... };
 [15.5 Bulk_quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.5%20Bulk_quote.hpp)
 
 [15.5 Bulk_quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.5%20Bulk_quote.cpp)
+
+## Exercise 15.6
+
+**Test your `print_total` function from the exercises in § 15.2.1 (p. 595) by passing both `Quote` and `Bulk_quote` objects on that function.**
+
+[15.6 Test](https://github.com/Yunxiang-Li/Cpp_Primer/tree/master/Chapter%2015.%20Object-Oriented%20Programming/Codes)
