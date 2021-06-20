@@ -3,7 +3,7 @@
 
 #include "Quote.hpp"
 
-class Bulk_quote : Quote {
+class Bulk_quote : public Quote {
  public:
   Bulk_quote() = default;
   Bulk_quote(const std::string& bookNo, double price, size_t qty, double discount) : Quote(bookNo, price), m_qty(qty),
