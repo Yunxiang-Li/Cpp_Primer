@@ -129,3 +129,26 @@ private:
 The `base` class wants to print the `basename`, the `derived` class wants to first print the `basename` and then print the `i`.
 
 There is a problem: `print(os)` in `derived` class should call the `print` function from the base class. However here the class scope `base::` was omitted. As a result, it will cause an infinite recursion and call `derived::print` function again and again.
+
+## Exercise 15.14
+
+**Given the classes from the previous exercise and the following objects, determine which function is called at run time:**
+
+```cpp
+base bobj; base *bp1 = &bobj; base &br1 = bobj;
+derived dobj; base *bp2 = &dobj; base &br2 = dobj;
+
+(a) bobj.print(); // base::print() is called.
+
+(b) dobj.print(); // derived::print() is called.
+
+(c) bp1->name(); // base::name() is called.
+
+(d) bp2->name(); // base::name() is called.
+
+(e) br1.print(); // base::print() is called.
+
+(f) br2.print(); // derived::print() is called.
+```
+
+(e) and (f) are called at run time.
