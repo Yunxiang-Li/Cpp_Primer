@@ -81,3 +81,19 @@ A pointer or reference to a base-class type can refer to an object of derived ty
 **Recalling the discussion from §8.1 (p. 311), explain how the program on page 317 that passed an `ifstream` to the `Sales_data` read function works.**
 
 the function takes an `istream` parameter which means an `istream` object or an object which derived from `istream` class will work. Because the `ifstream` object is a derived class of `istream` class thus it works.
+
+## Exercise 15.11
+
+**Add a virtual `debug` function to your `Quote` class hierarchy that displays the data members of the respective classes.**
+
+[15.11 Quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.11%20Quote.hpp)
+
+[15.11 Quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.11%20Quote.cpp)
+
+[15.11 Bulk_quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.11%20Bulk_quote.hpp)
+
+[15.11 Bulk_quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.11%20Bulk_quote.cpp)
+
+[15.11 Limit_quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.11%20Limit_quote.hpp)
+
+[15.11 Limit_quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.11%20Limit_quote.cpp)
