@@ -97,3 +97,35 @@ the function takes an `istream` parameter which means an `istream` object or an 
 [15.11 Limit_quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.11%20Limit_quote.hpp)
 
 [15.11 Limit_quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.11%20Limit_quote.cpp)
+
+## Exercise 15.12
+
+**Is it ever useful to declare a member function as both `override` and `final`? Why or why not?**
+
+Yes. By adding `override` keyword, the compile to check if this member function override the same name virtual function from the base class. By adding `final` keyword, the compiler will check if there are no attemps to override this virtual function by any derived classes. 
+
+## Exercise 15.13
+
+**Given the following classes, explain each `print` function:**
+
+```cpp
+class base {
+public:
+  string name() { return basename; }
+  virtual void print(ostream &os) { os << basename; }
+private:
+  string basename;
+};
+class derived : public base {
+public:
+  void print(ostream &os) { print(os); os << " " << i; }
+private:
+  int i;
+};
+```
+
+**If there is a problem in this code, how would you fix it?**
+
+The `base` class wants to print the `basename`, the `derived` class wants to first print the `basename` and then print the `i`.
+
+There is a problem: `print(os)` in `derived` class should call the `print` function from the base class. However here the class scope `base::` was omitted. As a result, it will cause an infinite recursion and call `derived::print` function again and again.
