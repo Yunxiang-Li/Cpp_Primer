@@ -166,3 +166,17 @@ derived dobj; base *bp2 = &dobj; base &br2 = dobj;
 [15.15 Bulk_quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.15%20Bulk_quote.hpp)
 
 [15.15 Bulk_quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.15%20Bulk_quote.cpp)
+
+## Exercise 15.16
+
+**Rewrite the class representing a limited discount strategy, which you wrote for the exercises in § 15.2.2 (p. 601), to inherit from `Disc_quote`.**
+
+[15.16 Limit_quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.16%20Limit_quote.hpp)
+
+[15.16 Limit_quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.16%20Limit_quote.cpp)
+
+## Exercise 15.17
+
+**Try to define an object of type `Disc_quote` and see what errors you get from the compiler.**
+
+Error: Allocating an object of abstract class type `Disc_quote`
