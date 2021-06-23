@@ -152,3 +152,17 @@ derived dobj; base *bp2 = &dobj; base &br2 = dobj;
 ```
 
 (e) and (f) are called at run time.
+
+## Exercise 15.15
+
+**Define your own versions of `Disc_quote` and `Bulk_quote`.**
+
+`Quote` class is the same as exercise 15.11.
+
+[15.15 Disc_quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.15%20Disc_quote.hpp)
+
+[15.15 Disc_quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.15%20Disc_quote.cpp)
+
+[15.15 Bulk_quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.15%20Bulk_quote.hpp)
+
+[15.15 Bulk_quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.15%20Bulk_quote.cpp)
