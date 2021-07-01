@@ -180,3 +180,22 @@ derived dobj; base *bp2 = &dobj; base &br2 = dobj;
 **Try to define an object of type `Disc_quote` and see what errors you get from the compiler.**
 
 Error: Allocating an object of abstract class type `Disc_quote`
+
+## Exercise 15.18
+
+**Given the classes from page 612 and page 613, and assuming each object has the type specified in the comments, determine which of these assignments are legal. Explain why those that are illegal aren’t allowed:**
+
+`cpp
+Base *p = &d1; // d1 has type Pub_Derv (Legal)
+
+p = &d2; // d2 has type Priv_Derv (Illegal, User code may use the derived-to-base conversion only if inherits publicly)
+
+p = &d3; // d3 has type Prot_Derv (Illegal, User code may use the derived-to-base conversion only if inherits publicly)
+
+p = &dd1; // dd1 has type Derived_from_Public (Legal)
+
+p = &dd2; // dd2 has type Derived_from_Private (Illegal, User code may use the derived-to-base conversion only if inherits publicly)
+
+p = &dd3; // dd3 has type Derived_from_Protected(Illegal, User code may use the derived-to-base conversion only if inherits publicly)
+
+```
