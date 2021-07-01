@@ -185,7 +185,7 @@ Error: Allocating an object of abstract class type `Disc_quote`
 
 **Given the classes from page 612 and page 613, and assuming each object has the type specified in the comments, determine which of these assignments are legal. Explain why those that are illegal aren’t allowed:**
 
-`cpp
+```cpp
 Base *p = &d1; // d1 has type Pub_Derv (Legal)
 
 p = &d2; // d2 has type Priv_Derv (Illegal, User code may use the derived-to-base conversion only if inherits publicly)
