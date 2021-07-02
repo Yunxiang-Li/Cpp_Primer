@@ -225,3 +225,11 @@ Derived_from_Public     dd1; // legal
 Derived_from_Private    dd2; // illegal
 Derived_from_Protected  dd3; // legal
 ```
+
+## Exercise 15.20
+
+**Write code to test your answers to the previous two exercises.**
+
+[15.20 Solution Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.20%20Solution.hpp)
+
+[15.20 main](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.20%20main.cpp)
