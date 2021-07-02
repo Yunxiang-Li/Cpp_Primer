@@ -247,3 +247,9 @@ Derived_from_Protected  dd3; // legal
 I choose (b).
 
 [15.21 GeometricPrimitives Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.21%20GeometricPrimitives.hpp)
+
+## Exercise 15.22
+
+**For the class you chose in the previous exercise, identify some of the likely virtual functions as well as public and protected members.**
+
+Same as exercise 15.21.
