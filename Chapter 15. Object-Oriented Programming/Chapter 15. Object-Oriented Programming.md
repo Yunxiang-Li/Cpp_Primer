@@ -239,5 +239,11 @@ Derived_from_Protected  dd3; // legal
 **Choose one of the following general abstractions containing a family of types (or choose one of your own). Organize the types into an inheritance hierarchy:**
 
 (a) Graphical file formats (such as gif, tiff, jpeg, bmp)
+
 (b) Geometric primitives (such as box, circle, sphere, cone)
+
 (c) C+ + language types (such as class, function, member function)
+
+I choose (b).
+
+[15.21 GeometricPrimitives Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.21%20GeometricPrimitives.hpp)
