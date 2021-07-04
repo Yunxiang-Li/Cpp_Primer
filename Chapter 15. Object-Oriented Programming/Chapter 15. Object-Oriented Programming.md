@@ -267,3 +267,7 @@ Same as exercise 15.21.
 To conclude, if we need inheritance thus the **base** class should define a virtual destructor.
 
 The destructor needs to be **virtual** to allow derived classes to be dynamically allocated.
+
+## Exercise 15.25
+
+**Why did we define a default constructor for `Disc_quote`? What effect, if any, would removing that constructor have on the behavior of `Bulk_quote`?**
