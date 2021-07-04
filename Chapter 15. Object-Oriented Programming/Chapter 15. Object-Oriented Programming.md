@@ -271,3 +271,5 @@ The destructor needs to be **virtual** to allow derived classes to be dynamicall
 ## Exercise 15.25
 
 **Why did we define a default constructor for `Disc_quote`? What effect, if any, would removing that constructor have on the behavior of `Bulk_quote`?**
+
+The reason is that a `Disc_quote` class has already defined a 4 parameters constructorhas, which prevented the compiler to generate a synthesized default constructor for `Disc_quote`'s derived class `Bulk_quote`. Therefore, all `Disc_quote`'s derived classes' default constructors are defined as deleted. Thats why `Disc_quote`'s default constructor must be defined explicitly so that the derived classes can call it when executing their own constructors.
