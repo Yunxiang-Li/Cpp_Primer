@@ -273,3 +273,11 @@ The destructor needs to be **virtual** to allow derived classes to be dynamicall
 **Why did we define a default constructor for `Disc_quote`? What effect, if any, would removing that constructor have on the behavior of `Bulk_quote`?**
 
 The reason is that a `Disc_quote` class has already defined a 4 parameters constructor, which prevented the compiler to generate a synthesized default constructor for `Disc_quote`'. Therefore, all `Disc_quote`'s derived classes' default constructors are defined as deleted. Thats why `Disc_quote`'s default constructor must be defined explicitly so that the derived classes can call it when executing their own constructors.
+
+## Exercise 15.26
+
+**Define the `Quote` and `Bulk_quote` copy-control members to do the same job as the synthesized versions. Give them and the other constructors print statements that identify which function is running. Write programs using these classes and predict what objects will be created and destroyed. Compare your predictions with the output and continue experimenting until your predictions are reliably correct.**
+
+[15.26 Quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.26%20Quote.hpp)
+
+[15.26 Quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.26%20Quote.cpp)
