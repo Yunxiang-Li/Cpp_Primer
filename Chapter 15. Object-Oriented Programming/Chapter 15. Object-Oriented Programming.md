@@ -281,3 +281,7 @@ The reason is that a `Disc_quote` class has already defined a 4 parameters const
 [15.26 Quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.26%20Quote.hpp)
 
 [15.26 Quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.26%20Quote.cpp)
+
+[15.26 Bulk_quote Header](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.26%20Bulk_quote.hpp)
+
+[15.26 Bulk_quote Source](https://github.com/Yunxiang-Li/Cpp_Primer/blob/master/Chapter%2015.%20Object-Oriented%20Programming/Codes/15.26%20Bulk_quote.cpp)
